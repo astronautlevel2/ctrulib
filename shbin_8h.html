@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -158,10 +158,22 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca2d020e11d0a10bf346268f1a37c82cdd">RESULT_TEXCOORD2</a> = 0x6, 
 <br />
-&#160;&#160;<a class="el" href="shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca4d549c494244eee17d7261d9bf42e463">RESULT_VIEW</a> = 0x8
+&#160;&#160;<a class="el" href="shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca4d549c494244eee17d7261d9bf42e463">RESULT_VIEW</a> = 0x8, 
+<br />
+&#160;&#160;<a class="el" href="shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca16e72f6515e6c7f87e0e873f41e9a482">RESULT_DUMMY</a> = 0x9
 <br />
  }<tr class="memdesc:a8051aa25e78e83fb12b45b90d4f9457c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output attribute.  <a href="shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457c">More...</a><br /></td></tr>
 <tr class="separator:a8051aa25e78e83fb12b45b90d4f9457c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ab6f0a4e64f7ec402eef735474591e21e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21e">DVLE_geoShaderMode</a> { <br />
+&#160;&#160;<a class="el" href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21ea68878fe0f5ad091d4f91b6cbcf223a5f">GSH_POINT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21ea628f99d5a2ba9db446c5f9c79130ddfc">GSH_VARIABLE_PRIM</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21ea6a30a5b1a9e76013f934700874014ac0">GSH_FIXED_PRIM</a> = 2
+<br />
+ }<tr class="memdesc:ab6f0a4e64f7ec402eef735474591e21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometry shader operation modes.  <a href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21e">More...</a><br /></td></tr>
+<tr class="separator:ab6f0a4e64f7ec402eef735474591e21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -207,6 +219,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab6f0a4e64f7ec402eef735474591e21e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="shbin_8h.html#ab6f0a4e64f7ec402eef735474591e21e">DVLE_geoShaderMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Geometry shader operation modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab6f0a4e64f7ec402eef735474591e21ea68878fe0f5ad091d4f91b6cbcf223a5f"></a>GSH_POINT&#160;</td><td class="fielddoc">
+<p>Point processing mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab6f0a4e64f7ec402eef735474591e21ea628f99d5a2ba9db446c5f9c79130ddfc"></a>GSH_VARIABLE_PRIM&#160;</td><td class="fielddoc">
+<p>Variable-size primitive processing mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab6f0a4e64f7ec402eef735474591e21ea6a30a5b1a9e76013f934700874014ac0"></a>GSH_FIXED_PRIM&#160;</td><td class="fielddoc">
+<p>Fixed-size primitive processing mode. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a8051aa25e78e83fb12b45b90d4f9457c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -242,6 +279,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8051aa25e78e83fb12b45b90d4f9457ca4d549c494244eee17d7261d9bf42e463"></a>RESULT_VIEW&#160;</td><td class="fielddoc">
 <p>View. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8051aa25e78e83fb12b45b90d4f9457ca16e72f6515e6c7f87e0e873f41e9a482"></a>RESULT_DUMMY&#160;</td><td class="fielddoc">
+<p>Dummy attribute (used as passthrough for geometry shader input). </p>
 </td></tr>
 </table>
 
@@ -291,7 +331,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a19">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a17">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a25">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a14">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a16">graphics/gpu/simple_tri/source/main.c</a>, and <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a20">graphics/gpu/textured_cube/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a19">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a17">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a24">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a14">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a16">graphics/gpu/simple_tri/source/main.c</a>, <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a20">graphics/gpu/textured_cube/source/main.c</a>, and <a class="el" href="graphics_2printing_2system-font_2source_2main_8c-example.html#a49">graphics/printing/system-font/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -328,7 +368,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The parsed shader binary. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a2">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a2">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a3">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a2">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a2">graphics/gpu/simple_tri/source/main.c</a>, and <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a2">graphics/gpu/textured_cube/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a2">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a2">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a3">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a2">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a2">graphics/gpu/simple_tri/source/main.c</a>, <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a2">graphics/gpu/textured_cube/source/main.c</a>, and <a class="el" href="graphics_2printing_2system-font_2source_2main_8c-example.html#a2">graphics/printing/system-font/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>

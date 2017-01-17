@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a726ca809ffd3d67ab4b8476646f26635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a726ca809ffd3d67ab4b8476646f26635"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb49720dc49f7d4e4cf9adbf2948e409"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>RL_SUCCESS</b> = 0, 
 <br />
 &#160;&#160;<b>RL_INFO</b> = 1, 
@@ -153,10 +153,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>RL_STATUS</b> = RL_FATAL - 6
 <br />
- }<tr class="memdesc:a726ca809ffd3d67ab4b8476646f26635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code level values. <br /></td></tr>
-<tr class="separator:a726ca809ffd3d67ab4b8476646f26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:adb49720dc49f7d4e4cf9adbf2948e409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code level values. <br /></td></tr>
+<tr class="separator:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:a0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0411cd49bb5b71852cecd93bcbf0ca2d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:aae05225933a42f81e7c4a9fb286596f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>RS_SUCCESS</b> = 0, 
 <br />
 &#160;&#160;<b>RS_NOP</b> = 1, 
@@ -183,10 +183,210 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>RS_INVALIDRESVAL</b> = 63
 <br />
- }<tr class="memdesc:a0411cd49bb5b71852cecd93bcbf0ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code summary values. <br /></td></tr>
-<tr class="separator:a0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:aae05225933a42f81e7c4a9fb286596f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code summary values. <br /></td></tr>
+<tr class="separator:aae05225933a42f81e7c4a9fb286596f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:abed82baf7f470b522273a3e37c24c600"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed82baf7f470b522273a3e37c24c600"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:a39fca1837c5ce7715cbf571669660c13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39fca1837c5ce7715cbf571669660c13"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>RM_COMMON</b> = 0, 
+<br />
+&#160;&#160;<b>RM_KERNEL</b> = 1, 
+<br />
+&#160;&#160;<b>RM_UTIL</b> = 2, 
+<br />
+&#160;&#160;<b>RM_FILE_SERVER</b> = 3, 
+<br />
+&#160;&#160;<b>RM_LOADER_SERVER</b> = 4, 
+<br />
+&#160;&#160;<b>RM_TCB</b> = 5, 
+<br />
+&#160;&#160;<b>RM_OS</b> = 6, 
+<br />
+&#160;&#160;<b>RM_DBG</b> = 7, 
+<br />
+&#160;&#160;<b>RM_DMNT</b> = 8, 
+<br />
+&#160;&#160;<b>RM_PDN</b> = 9, 
+<br />
+&#160;&#160;<b>RM_GSP</b> = 10, 
+<br />
+&#160;&#160;<b>RM_I2C</b> = 11, 
+<br />
+&#160;&#160;<b>RM_GPIO</b> = 12, 
+<br />
+&#160;&#160;<b>RM_DD</b> = 13, 
+<br />
+&#160;&#160;<b>RM_CODEC</b> = 14, 
+<br />
+&#160;&#160;<b>RM_SPI</b> = 15, 
+<br />
+&#160;&#160;<b>RM_PXI</b> = 16, 
+<br />
+&#160;&#160;<b>RM_FS</b> = 17, 
+<br />
+&#160;&#160;<b>RM_DI</b> = 18, 
+<br />
+&#160;&#160;<b>RM_HID</b> = 19, 
+<br />
+&#160;&#160;<b>RM_CAM</b> = 20, 
+<br />
+&#160;&#160;<b>RM_PI</b> = 21, 
+<br />
+&#160;&#160;<b>RM_PM</b> = 22, 
+<br />
+&#160;&#160;<b>RM_PM_LOW</b> = 23, 
+<br />
+&#160;&#160;<b>RM_FSI</b> = 24, 
+<br />
+&#160;&#160;<b>RM_SRV</b> = 25, 
+<br />
+&#160;&#160;<b>RM_NDM</b> = 26, 
+<br />
+&#160;&#160;<b>RM_NWM</b> = 27, 
+<br />
+&#160;&#160;<b>RM_SOC</b> = 28, 
+<br />
+&#160;&#160;<b>RM_LDR</b> = 29, 
+<br />
+&#160;&#160;<b>RM_ACC</b> = 30, 
+<br />
+&#160;&#160;<b>RM_ROMFS</b> = 31, 
+<br />
+&#160;&#160;<b>RM_AM</b> = 32, 
+<br />
+&#160;&#160;<b>RM_HIO</b> = 33, 
+<br />
+&#160;&#160;<b>RM_UPDATER</b> = 34, 
+<br />
+&#160;&#160;<b>RM_MIC</b> = 35, 
+<br />
+&#160;&#160;<b>RM_FND</b> = 36, 
+<br />
+&#160;&#160;<b>RM_MP</b> = 37, 
+<br />
+&#160;&#160;<b>RM_MPWL</b> = 38, 
+<br />
+&#160;&#160;<b>RM_AC</b> = 39, 
+<br />
+&#160;&#160;<b>RM_HTTP</b> = 40, 
+<br />
+&#160;&#160;<b>RM_DSP</b> = 41, 
+<br />
+&#160;&#160;<b>RM_SND</b> = 42, 
+<br />
+&#160;&#160;<b>RM_DLP</b> = 43, 
+<br />
+&#160;&#160;<b>RM_HIO_LOW</b> = 44, 
+<br />
+&#160;&#160;<b>RM_CSND</b> = 45, 
+<br />
+&#160;&#160;<b>RM_SSL</b> = 46, 
+<br />
+&#160;&#160;<b>RM_AM_LOW</b> = 47, 
+<br />
+&#160;&#160;<b>RM_NEX</b> = 48, 
+<br />
+&#160;&#160;<b>RM_FRIENDS</b> = 49, 
+<br />
+&#160;&#160;<b>RM_RDT</b> = 50, 
+<br />
+&#160;&#160;<b>RM_APPLET</b> = 51, 
+<br />
+&#160;&#160;<b>RM_NIM</b> = 52, 
+<br />
+&#160;&#160;<b>RM_PTM</b> = 53, 
+<br />
+&#160;&#160;<b>RM_MIDI</b> = 54, 
+<br />
+&#160;&#160;<b>RM_MC</b> = 55, 
+<br />
+&#160;&#160;<b>RM_SWC</b> = 56, 
+<br />
+&#160;&#160;<b>RM_FATFS</b> = 57, 
+<br />
+&#160;&#160;<b>RM_NGC</b> = 58, 
+<br />
+&#160;&#160;<b>RM_CARD</b> = 59, 
+<br />
+&#160;&#160;<b>RM_CARDNOR</b> = 60, 
+<br />
+&#160;&#160;<b>RM_SDMC</b> = 61, 
+<br />
+&#160;&#160;<b>RM_BOSS</b> = 62, 
+<br />
+&#160;&#160;<b>RM_DBM</b> = 63, 
+<br />
+&#160;&#160;<b>RM_CONFIG</b> = 64, 
+<br />
+&#160;&#160;<b>RM_PS</b> = 65, 
+<br />
+&#160;&#160;<b>RM_CEC</b> = 66, 
+<br />
+&#160;&#160;<b>RM_IR</b> = 67, 
+<br />
+&#160;&#160;<b>RM_UDS</b> = 68, 
+<br />
+&#160;&#160;<b>RM_PL</b> = 69, 
+<br />
+&#160;&#160;<b>RM_CUP</b> = 70, 
+<br />
+&#160;&#160;<b>RM_GYROSCOPE</b> = 71, 
+<br />
+&#160;&#160;<b>RM_MCU</b> = 72, 
+<br />
+&#160;&#160;<b>RM_NS</b> = 73, 
+<br />
+&#160;&#160;<b>RM_NEWS</b> = 74, 
+<br />
+&#160;&#160;<b>RM_RO</b> = 75, 
+<br />
+&#160;&#160;<b>RM_GD</b> = 76, 
+<br />
+&#160;&#160;<b>RM_CARD_SPI</b> = 77, 
+<br />
+&#160;&#160;<b>RM_EC</b> = 78, 
+<br />
+&#160;&#160;<b>RM_WEB_BROWSER</b> = 79, 
+<br />
+&#160;&#160;<b>RM_TEST</b> = 80, 
+<br />
+&#160;&#160;<b>RM_ENC</b> = 81, 
+<br />
+&#160;&#160;<b>RM_PIA</b> = 82, 
+<br />
+&#160;&#160;<b>RM_ACT</b> = 83, 
+<br />
+&#160;&#160;<b>RM_VCTL</b> = 84, 
+<br />
+&#160;&#160;<b>RM_OLV</b> = 85, 
+<br />
+&#160;&#160;<b>RM_NEIA</b> = 86, 
+<br />
+&#160;&#160;<b>RM_NPNS</b> = 87, 
+<br />
+&#160;&#160;<b>RM_AVD</b> = 90, 
+<br />
+&#160;&#160;<b>RM_L2B</b> = 91, 
+<br />
+&#160;&#160;<b>RM_MVD</b> = 92, 
+<br />
+&#160;&#160;<b>RM_NFC</b> = 93, 
+<br />
+&#160;&#160;<b>RM_UART</b> = 94, 
+<br />
+&#160;&#160;<b>RM_SPM</b> = 95, 
+<br />
+&#160;&#160;<b>RM_QTM</b> = 96, 
+<br />
+&#160;&#160;<b>RM_NFP</b> = 97, 
+<br />
+&#160;&#160;<b>RM_APPLICATION</b> = 254, 
+<br />
+&#160;&#160;<b>RM_INVALIDRESVAL</b> = 255
+<br />
+ }<tr class="memdesc:a39fca1837c5ce7715cbf571669660c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code module values. <br /></td></tr>
+<tr class="separator:a39fca1837c5ce7715cbf571669660c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf8fd5f0e57d456151c951e0f3715fc4"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>RD_SUCCESS</b> = 0, 
 <br />
 &#160;&#160;<b>RD_INVALID_RESULT_VALUE</b> = 0x3FF, 
@@ -237,8 +437,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>RD_INVALID_SELECTION</b> = RD_INVALID_RESULT_VALUE - 23
 <br />
- }<tr class="memdesc:abed82baf7f470b522273a3e37c24c600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code generic description values. <br /></td></tr>
-<tr class="separator:abed82baf7f470b522273a3e37c24c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code generic description values. <br /></td></tr>
+<tr class="separator:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,23 +110,35 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPageInfo.html">PageInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory page information.  <a href="structPageInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessEvent.html">ProcessEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to a process.  <a href="structProcessEvent.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAttachProcessEvent.html">AttachProcessEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the attachment of a process.  <a href="structAttachProcessEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExitProcessEvent.html">ExitProcessEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the exiting of a process.  <a href="structExitProcessEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCreateThreadEvent.html">CreateThreadEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the creation of a thread.  <a href="structCreateThreadEvent.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAttachThreadEvent.html">AttachThreadEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the attachment of a thread.  <a href="structAttachThreadEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExitThreadEvent.html">ExitThreadEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the exiting of a thread.  <a href="structExitThreadEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFaultExceptionEvent.html">FaultExceptionEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to fault exceptions (CPU exceptions other than stop points and undefined syscalls).  <a href="structFaultExceptionEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStopPointExceptionEvent.html">StopPointExceptionEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to stop points.  <a href="structStopPointExceptionEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUserBreakExceptionEvent.html">UserBreakExceptionEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to <a class="el" href="svc_8h.html#a71559e1c5662a82ac2b83bd6c5c8234c">svcBreak</a>.  <a href="structUserBreakExceptionEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDebuggerBreakExceptionEvent.html">DebuggerBreakExceptionEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to <a class="el" href="svc_8h.html#a9609f301ffe5836bc68a8f73fece12b4">svcBreakDebugProcess</a>.  <a href="structDebuggerBreakExceptionEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExceptionEvent.html">ExceptionEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to exceptions.  <a href="structExceptionEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSchedulerInOutEvent.html">SchedulerInOutEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the scheduler.  <a href="structSchedulerInOutEvent.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScheduleInOutEvent.html">ScheduleInOutEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to the scheduler.  <a href="structScheduleInOutEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSyscallInOutEvent.html">SyscallInOutEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event relating to syscalls.  <a href="structSyscallInOutEvent.html#details">More...</a><br /></td></tr>
@@ -140,6 +152,14 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDebugEventInfo.html">DebugEventInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a debug event.  <a href="structDebugEventInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structThreadContext.html">ThreadContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCodeSetInfo.html">CodeSetInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information on address space for process. All sizes are in pages (0x1000 bytes)  <a href="structCodeSetInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStartupInfo.html">StartupInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for the main thread of a process.  <a href="structStartupInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -147,6 +167,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0b30bcbc98ad85fe81ac6de8ea464276">CUR_PROCESS_HANDLE</a>&#160;&#160;&#160;0xFFFF8001</td></tr>
 <tr class="memdesc:a0b30bcbc98ad85fe81ac6de8ea464276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pseudo handle for the current process. <br /></td></tr>
 <tr class="separator:a0b30bcbc98ad85fe81ac6de8ea464276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2d7dbdeeb091dc83e76117eeb5ae1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada2d7dbdeeb091dc83e76117eeb5ae1f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ada2d7dbdeeb091dc83e76117eeb5ae1f">SVC_STOP_POINT</a>&#160;&#160;&#160;__asm__ volatile(&quot;svc 0xFF&quot;);</td></tr>
+<tr class="memdesc:ada2d7dbdeeb091dc83e76117eeb5ae1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop point, does nothing if the process is not attached (as opposed to 'bkpt' instructions) <br /></td></tr>
+<tr class="separator:ada2d7dbdeeb091dc83e76117eeb5ae1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -160,7 +184,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7f804146f815c96c98e7712bce3993bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the thread static buffer.  <a href="#a7f804146f815c96c98e7712bce3993bf">More...</a><br /></td></tr>
 <tr class="separator:a7f804146f815c96c98e7712bce3993bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4318daa12693ba8a3bb8dde536393b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a1f4318daa12693ba8a3bb8dde536393b">svcBackdoor</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>(*callback)(void))</td></tr>
-<tr class="memdesc:a1f4318daa12693ba8a3bb8dde536393b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a function in kernel mode.  <a href="#a1f4318daa12693ba8a3bb8dde536393b">More...</a><br /></td></tr>
+<tr class="memdesc:a1f4318daa12693ba8a3bb8dde536393b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a function in supervisor mode.  <a href="#a1f4318daa12693ba8a3bb8dde536393b">More...</a><br /></td></tr>
 <tr class="separator:a1f4318daa12693ba8a3bb8dde536393b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Process management</div></td></tr>
 <tr class="memitem:a0348d3f35f25e455d7497687224b49a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0348d3f35f25e455d7497687224b49a5">svcOpenProcess</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *process, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> processId)</td></tr>
@@ -182,12 +206,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a4895a8c4e616aecd47eb260e262b0d3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a4895a8c4e616aecd47eb260e262b0d3c">svcGetProcessList</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *processCount, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *processIds, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processIdMaxCount)</td></tr>
 <tr class="memdesc:a4895a8c4e616aecd47eb260e262b0d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of running processes.  <a href="#a4895a8c4e616aecd47eb260e262b0d3c">More...</a><br /></td></tr>
 <tr class="separator:a4895a8c4e616aecd47eb260e262b0d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef70e1f36a42f1d8e351d7bf1c9a2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a3ef70e1f36a42f1d8e351d7bf1c9a2ff">svcGetThreadList</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *threadCount, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *threadIds, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> threadIdMaxCount, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process)</td></tr>
+<tr class="memdesc:a3ef70e1f36a42f1d8e351d7bf1c9a2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of the threads of a process.  <a href="#a3ef70e1f36a42f1d8e351d7bf1c9a2ff">More...</a><br /></td></tr>
+<tr class="separator:a3ef70e1f36a42f1d8e351d7bf1c9a2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ecb788e88b2b9990c72c01b73f290b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7ecb788e88b2b9990c72c01b73f290b2">svcCreatePort</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *portServer, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *portClient, const char *name, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> maxSessions)</td></tr>
 <tr class="memdesc:a7ecb788e88b2b9990c72c01b73f290b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a port.  <a href="#a7ecb788e88b2b9990c72c01b73f290b2">More...</a><br /></td></tr>
 <tr class="separator:a7ecb788e88b2b9990c72c01b73f290b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3063414d90f09e17398bdb7cd6955b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a3063414d90f09e17398bdb7cd6955b71">svcConnectToPort</a> (volatile <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, const char *portName)</td></tr>
 <tr class="memdesc:a3063414d90f09e17398bdb7cd6955b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to a port.  <a href="#a3063414d90f09e17398bdb7cd6955b71">More...</a><br /></td></tr>
 <tr class="separator:a3063414d90f09e17398bdb7cd6955b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8029b05c85dafb902f485382a82fe0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a8029b05c85dafb902f485382a82fe0af">svcCreateCodeSet</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, const <a class="el" href="structCodeSetInfo.html">CodeSetInfo</a> *info, void *code_ptr, void *ro_ptr, void *data_ptr)</td></tr>
+<tr class="memdesc:a8029b05c85dafb902f485382a82fe0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up virtual address space for a new process.  <a href="#a8029b05c85dafb902f485382a82fe0af">More...</a><br /></td></tr>
+<tr class="separator:a8029b05c85dafb902f485382a82fe0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb2eca70e97548fed8f521be9d81d5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a8fb2eca70e97548fed8f521be9d81d5e">svcCreateProcess</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> codeset, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *arm11kernelcaps, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> arm11kernelcaps_num)</td></tr>
+<tr class="memdesc:a8fb2eca70e97548fed8f521be9d81d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up virtual address space for a new process.  <a href="#a8fb2eca70e97548fed8f521be9d81d5e">More...</a><br /></td></tr>
+<tr class="separator:a8fb2eca70e97548fed8f521be9d81d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee49171a3a435f8879a019620b51dcd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aee49171a3a435f8879a019620b51dcd0">svcSetProcessAffinityMask</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
+<tr class="memdesc:aee49171a3a435f8879a019620b51dcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a process's affinity mask.  <a href="#aee49171a3a435f8879a019620b51dcd0">More...</a><br /></td></tr>
+<tr class="separator:aee49171a3a435f8879a019620b51dcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7666520d212d0b7de8c703b4c3b00e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7e7666520d212d0b7de8c703b4c3b00e">svcSetProcessIdealProcessor</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorid)</td></tr>
+<tr class="memdesc:a7e7666520d212d0b7de8c703b4c3b00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a process's ideal processor.  <a href="#a7e7666520d212d0b7de8c703b4c3b00e">More...</a><br /></td></tr>
+<tr class="separator:a7e7666520d212d0b7de8c703b4c3b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ea2b0b1a60242d167664de882a4562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a20ea2b0b1a60242d167664de882a4562">svcRun</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, const <a class="el" href="structStartupInfo.html">StartupInfo</a> *info)</td></tr>
+<tr class="memdesc:a20ea2b0b1a60242d167664de882a4562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches the main thread of the process.  <a href="#a20ea2b0b1a60242d167664de882a4562">More...</a><br /></td></tr>
+<tr class="separator:a20ea2b0b1a60242d167664de882a4562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Synchronization</div></td></tr>
 <tr class="memitem:af83b6eb4ee03ce1aae2ccb64906e759c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#af83b6eb4ee03ce1aae2ccb64906e759c">svcCreateMutex</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *mutex, bool initially_locked)</td></tr>
 <tr class="memdesc:af83b6eb4ee03ce1aae2ccb64906e759c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a mutex.  <a href="#af83b6eb4ee03ce1aae2ccb64906e759c">More...</a><br /></td></tr>
@@ -201,9 +243,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a8c072d1a9707bb0324b4ba2e7c4fc794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a8c072d1a9707bb0324b4ba2e7c4fc794">svcReleaseSemaphore</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *count, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> semaphore, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> release_count)</td></tr>
 <tr class="memdesc:a8c072d1a9707bb0324b4ba2e7c4fc794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a semaphore.  <a href="#a8c072d1a9707bb0324b4ba2e7c4fc794">More...</a><br /></td></tr>
 <tr class="separator:a8c072d1a9707bb0324b4ba2e7c4fc794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20de33221dc4c14672d79606f6697bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a20de33221dc4c14672d79606f6697bff">svcCreateEvent</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *event, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> reset_type)</td></tr>
-<tr class="memdesc:a20de33221dc4c14672d79606f6697bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an event handle.  <a href="#a20de33221dc4c14672d79606f6697bff">More...</a><br /></td></tr>
-<tr class="separator:a20de33221dc4c14672d79606f6697bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4888a213bf9515d2332ce8a686b3087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ac4888a213bf9515d2332ce8a686b3087">svcCreateEvent</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *event, <a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a> reset_type)</td></tr>
+<tr class="memdesc:ac4888a213bf9515d2332ce8a686b3087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an event handle.  <a href="#ac4888a213bf9515d2332ce8a686b3087">More...</a><br /></td></tr>
+<tr class="separator:ac4888a213bf9515d2332ce8a686b3087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c2d3d3b17455505aa7d277ba230a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#af1c2d3d3b17455505aa7d277ba230a7a">svcSignalEvent</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
 <tr class="memdesc:af1c2d3d3b17455505aa7d277ba230a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals an event.  <a href="#af1c2d3d3b17455505aa7d277ba230a7a">More...</a><br /></td></tr>
 <tr class="separator:af1c2d3d3b17455505aa7d277ba230a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,10 +273,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:aae891b70703b67fac1b50bab9c4b64af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aae891b70703b67fac1b50bab9c4b64af">svcReplyAndReceive</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *index, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *handles, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> handleCount, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> replyTarget)</td></tr>
 <tr class="memdesc:aae891b70703b67fac1b50bab9c4b64af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to and receives a new request.  <a href="#aae891b70703b67fac1b50bab9c4b64af">More...</a><br /></td></tr>
 <tr class="separator:aae891b70703b67fac1b50bab9c4b64af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8db0e990f91fa29d392986a3050a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a2f8db0e990f91fa29d392986a3050a17">svcBindInterrupt</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> interruptId, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> eventOrSemaphore, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> priority, bool isManualClear)</td></tr>
+<tr class="memdesc:a2f8db0e990f91fa29d392986a3050a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an event or semaphore handle to an ARM11 interrupt.  <a href="#a2f8db0e990f91fa29d392986a3050a17">More...</a><br /></td></tr>
+<tr class="separator:a2f8db0e990f91fa29d392986a3050a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecce8ec0ae7a047d6df92e8dafd6e099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aecce8ec0ae7a047d6df92e8dafd6e099">svcUnbindInterrupt</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> interruptId, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> eventOrSemaphore)</td></tr>
+<tr class="memdesc:aecce8ec0ae7a047d6df92e8dafd6e099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds an event or semaphore handle from an ARM11 interrupt.  <a href="#aecce8ec0ae7a047d6df92e8dafd6e099">More...</a><br /></td></tr>
+<tr class="separator:aecce8ec0ae7a047d6df92e8dafd6e099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Time</div></td></tr>
-<tr class="memitem:ab8e4ebb5ae2ee5b3d802e25d9f5622d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab8e4ebb5ae2ee5b3d802e25d9f5622d7">svcCreateTimer</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *timer, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> reset_type)</td></tr>
-<tr class="memdesc:ab8e4ebb5ae2ee5b3d802e25d9f5622d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timer.  <a href="#ab8e4ebb5ae2ee5b3d802e25d9f5622d7">More...</a><br /></td></tr>
-<tr class="separator:ab8e4ebb5ae2ee5b3d802e25d9f5622d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021efa7b65d0263f55278c04c4329c5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a021efa7b65d0263f55278c04c4329c5c">svcCreateTimer</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *timer, <a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a> reset_type)</td></tr>
+<tr class="memdesc:a021efa7b65d0263f55278c04c4329c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timer.  <a href="#a021efa7b65d0263f55278c04c4329c5c">More...</a><br /></td></tr>
+<tr class="separator:a021efa7b65d0263f55278c04c4329c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d7b4a986e1f146dfc4d6149d1a5b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab3d7b4a986e1f146dfc4d6149d1a5b5b">svcSetTimer</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> timer, <a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> initial, <a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> interval)</td></tr>
 <tr class="memdesc:ab3d7b4a986e1f146dfc4d6149d1a5b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer.  <a href="#ab3d7b4a986e1f146dfc4d6149d1a5b5b">More...</a><br /></td></tr>
 <tr class="separator:ab3d7b4a986e1f146dfc4d6149d1a5b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,12 +302,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a2fea2f7321bb5bb8fa64d4064ae07e39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a2fea2f7321bb5bb8fa64d4064ae07e39">svcDuplicateHandle</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> original)</td></tr>
 <tr class="memdesc:a2fea2f7321bb5bb8fa64d4064ae07e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates a handle.  <a href="#a2fea2f7321bb5bb8fa64d4064ae07e39">More...</a><br /></td></tr>
 <tr class="separator:a2fea2f7321bb5bb8fa64d4064ae07e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a9bb9e4b5959bebca2f32cdd3e598a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a48a9bb9e4b5959bebca2f32cdd3e598a">svcGetHandleInfo</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> param)</td></tr>
+<tr class="memdesc:a48a9bb9e4b5959bebca2f32cdd3e598a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a handle info.  <a href="#a48a9bb9e4b5959bebca2f32cdd3e598a">More...</a><br /></td></tr>
+<tr class="separator:a48a9bb9e4b5959bebca2f32cdd3e598a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581cf88669bf459816e5ce5899f1e378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a581cf88669bf459816e5ce5899f1e378">svcGetSystemInfo</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *out, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> type, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> param)</td></tr>
 <tr class="memdesc:a581cf88669bf459816e5ce5899f1e378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the system info.  <a href="#a581cf88669bf459816e5ce5899f1e378">More...</a><br /></td></tr>
 <tr class="separator:a581cf88669bf459816e5ce5899f1e378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74eda6b0292d56adb840e3f37a736829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a74eda6b0292d56adb840e3f37a736829">svcKernelSetState</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> type, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> param0, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> param1, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> param2)</td></tr>
-<tr class="memdesc:a74eda6b0292d56adb840e3f37a736829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current kernel state.  <a href="#a74eda6b0292d56adb840e3f37a736829">More...</a><br /></td></tr>
-<tr class="separator:a74eda6b0292d56adb840e3f37a736829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada13386ccb8cb809658a9878a9941a8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ada13386ccb8cb809658a9878a9941a8b">svcKernelSetState</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> type,...)</td></tr>
+<tr class="memdesc:ada13386ccb8cb809658a9878a9941a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current kernel state.  <a href="#ada13386ccb8cb809658a9878a9941a8b">More...</a><br /></td></tr>
+<tr class="separator:ada13386ccb8cb809658a9878a9941a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Memory management</h2></td></tr>
@@ -393,12 +444,6 @@ Memory management</h2></td></tr>
 <tr class="memitem:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0cfa6639abe895a1a2e6eb1984bc5c46">svcFlushProcessDataCache</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, void const *addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
 <tr class="memdesc:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes a process's data cache.  <a href="#a0cfa6639abe895a1a2e6eb1984bc5c46">More...</a><br /></td></tr>
 <tr class="separator:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5848ed471a047cd3298615c4c49f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7d5848ed471a047cd3298615c4c49f6c">svcReadProcessMemory</a> (void *buffer, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
-<tr class="memdesc:a7d5848ed471a047cd3298615c4c49f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from a process's memory.  <a href="#a7d5848ed471a047cd3298615c4c49f6c">More...</a><br /></td></tr>
-<tr class="separator:a7d5848ed471a047cd3298615c4c49f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141d92c97fb3f2565c657dd721e1e30c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a141d92c97fb3f2565c657dd721e1e30c">svcWriteProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, const void *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
-<tr class="memdesc:a141d92c97fb3f2565c657dd721e1e30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to a process's memory.  <a href="#a141d92c97fb3f2565c657dd721e1e30c">More...</a><br /></td></tr>
-<tr class="separator:a141d92c97fb3f2565c657dd721e1e30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Multithreading</h2></td></tr>
@@ -406,6 +451,16 @@ Multithreading</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a848b6094dcf31bfb0fa5cc999348c2d4">CUR_THREAD_HANDLE</a>&#160;&#160;&#160;0xFFFF8000</td></tr>
 <tr class="memdesc:a848b6094dcf31bfb0fa5cc999348c2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pseudo handle for the current thread. <br /></td></tr>
 <tr class="separator:a848b6094dcf31bfb0fa5cc999348c2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe6b9db49aa88865e1fff5e559f6fdf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a> { <br />
+&#160;&#160;<a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa5e28681d7775d2a1fe89b4644ed8d57e">RESET_ONESHOT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa09868fdada28ca7c71200f2996ced929">RESET_STICKY</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa7b810dd120f32f073cf6f36de294191e">RESET_PULSE</a> = 2
+<br />
+ }<tr class="memdesc:adfe6b9db49aa88865e1fff5e559f6fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset types (for use with events and timers)  <a href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">More...</a><br /></td></tr>
+<tr class="separator:adfe6b9db49aa88865e1fff5e559f6fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:a112aee8cca0c18b91f98d39db55c4807"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a112aee8cca0c18b91f98d39db55c4807">ThreadInfoType</a> { <a class="el" href="svc_8h.html#a112aee8cca0c18b91f98d39db55c4807a5e0a7120c0d6495acc852bc43a3ea851">THREADINFO_TYPE_UNKNOWN</a>
  }<tr class="memdesc:a112aee8cca0c18b91f98d39db55c4807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of thread info.  <a href="svc_8h.html#a112aee8cca0c18b91f98d39db55c4807">More...</a><br /></td></tr>
 <tr class="separator:a112aee8cca0c18b91f98d39db55c4807"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,9 +487,9 @@ Multithreading</h2></td></tr>
 <tr class="memitem:a4d259199317256bae13fe0600e52a7d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a4d259199317256bae13fe0600e52a7d3">svcGetThreadAffinityMask</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> thread, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
 <tr class="memdesc:a4d259199317256bae13fe0600e52a7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a thread's affinity mask.  <a href="#a4d259199317256bae13fe0600e52a7d3">More...</a><br /></td></tr>
 <tr class="separator:a4d259199317256bae13fe0600e52a7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a04b1dedbaf6545907992182ddccd3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a9a04b1dedbaf6545907992182ddccd3a">svcSetThreadAffinityMask</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> thread, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
-<tr class="memdesc:a9a04b1dedbaf6545907992182ddccd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a thread's affinity mask.  <a href="#a9a04b1dedbaf6545907992182ddccd3a">More...</a><br /></td></tr>
-<tr class="separator:a9a04b1dedbaf6545907992182ddccd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c00a1577efa9e79fdfd5d301132467b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7c00a1577efa9e79fdfd5d301132467b">svcSetThreadAffinityMask</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> thread, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
+<tr class="memdesc:a7c00a1577efa9e79fdfd5d301132467b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a thread's affinity mask.  <a href="#a7c00a1577efa9e79fdfd5d301132467b">More...</a><br /></td></tr>
+<tr class="separator:a7c00a1577efa9e79fdfd5d301132467b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94bc1c06056b8c4d4cd7754f7a65fb34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a94bc1c06056b8c4d4cd7754f7a65fb34">svcGetThreadIdealProcessor</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *processorid, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> thread)</td></tr>
 <tr class="memdesc:a94bc1c06056b8c4d4cd7754f7a65fb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a thread's ideal processor.  <a href="#a94bc1c06056b8c4d4cd7754f7a65fb34">More...</a><br /></td></tr>
 <tr class="separator:a94bc1c06056b8c4d4cd7754f7a65fb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +502,15 @@ Multithreading</h2></td></tr>
 <tr class="memitem:aa528da59a295ad8a09f951e1b52c658e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aa528da59a295ad8a09f951e1b52c658e">svcGetThreadId</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
 <tr class="memdesc:aa528da59a295ad8a09f951e1b52c658e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ID of a thread.  <a href="#aa528da59a295ad8a09f951e1b52c658e">More...</a><br /></td></tr>
 <tr class="separator:aa528da59a295ad8a09f951e1b52c658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977a76e261890d9d989451e073c5bb7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a977a76e261890d9d989451e073c5bb7e">svcGetResourceLimit</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *resourceLimit, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process)</td></tr>
+<tr class="memdesc:a977a76e261890d9d989451e073c5bb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resource limit set of a process.  <a href="#a977a76e261890d9d989451e073c5bb7e">More...</a><br /></td></tr>
+<tr class="separator:a977a76e261890d9d989451e073c5bb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e4d553b1da2524491cb6c6e899c036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab6e4d553b1da2524491cb6c6e899c036">svcGetResourceLimitLimitValues</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *values, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> resourceLimit, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *names, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> nameCount)</td></tr>
+<tr class="memdesc:ab6e4d553b1da2524491cb6c6e899c036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value limits of a resource limit set.  <a href="#ab6e4d553b1da2524491cb6c6e899c036">More...</a><br /></td></tr>
+<tr class="separator:ab6e4d553b1da2524491cb6c6e899c036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbefc668774b98e042a80363bf30dce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#adbefc668774b98e042a80363bf30dce2">svcGetResourceLimitCurrentValues</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *values, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> resourceLimit, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *names, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> nameCount)</td></tr>
+<tr class="memdesc:adbefc668774b98e042a80363bf30dce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the values of a resource limit set.  <a href="#adbefc668774b98e042a80363bf30dce2">More...</a><br /></td></tr>
+<tr class="separator:adbefc668774b98e042a80363bf30dce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd17333e3949eaef28ccda04dc7db0f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#acd17333e3949eaef28ccda04dc7db0f7">svcGetProcessIdOfThread</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
 <tr class="memdesc:acd17333e3949eaef28ccda04dc7db0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the process ID of a thread.  <a href="#acd17333e3949eaef28ccda04dc7db0f7">More...</a><br /></td></tr>
 <tr class="separator:acd17333e3949eaef28ccda04dc7db0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,14 +520,6 @@ Multithreading</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Debugging</h2></td></tr>
-<tr class="memitem:a15668f707ae2a742896d12b225397079"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a15668f707ae2a742896d12b225397079">ProcessEventReason</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a15668f707ae2a742896d12b225397079a8956580d5d401467493079e8f8b42785">REASON_CREATE</a> = 1, 
-<br />
-&#160;&#160;<a class="el" href="svc_8h.html#a15668f707ae2a742896d12b225397079a415c1d2eac956a2a1585ab96d7437446">REASON_ATTACH</a> = 2
-<br />
- }<tr class="memdesc:a15668f707ae2a742896d12b225397079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reasons for a process event.  <a href="svc_8h.html#a15668f707ae2a742896d12b225397079">More...</a><br /></td></tr>
-<tr class="separator:a15668f707ae2a742896d12b225397079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:a2e62624dcd35d5795b6f1c99933c576f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576f">ExitProcessEventReason</a> { <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576fabcafb4124032dcfde248279cb8404d87">EXITPROCESS_EVENT_NONE</a> = 0, 
 <br />
@@ -491,69 +547,130 @@ Debugging</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12ab8652e6cba764ad8b8b205981fa10a2d">USERBREAK_ASSERT</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12a7989abf688e2db27610f1cdf30ddf553">USERBREAK_USER</a> = 2
+&#160;&#160;<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12a7989abf688e2db27610f1cdf30ddf553">USERBREAK_USER</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12a218f8d14ce85ff686531587f41271b91">USERBREAK_LOAD_RO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12ab82dbfb966f5522c2e5bfbdf1949d5a9">USERBREAK_UNLOAD_RO</a> = 4
 <br />
  }<tr class="memdesc:a1fff1d6b844aedbb1babaa23e0292a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reasons for a user break.  <a href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12">More...</a><br /></td></tr>
 <tr class="separator:a1fff1d6b844aedbb1babaa23e0292a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ad31e210a0f421d1ca7f5c55c7110f961"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">ExceptionEventType</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961af0db3171590b417c16566ff1ad24482a">EXC_EVENT_UNDEFINED_INSTRUCTION</a> = 0, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a93595971d3fb771d02e6aed6512af6e9">EXCEVENT_UNDEFINED_INSTRUCTION</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961ae1304149ad493b35438d958a0166cd72">EXC_EVENT_UNKNOWN1</a> = 1, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a8a8d6492fced221e5c4fafba19af8336">EXCEVENT_PREFETCH_ABORT</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a7e07ce966ae13ebb8ccf11290ed13015">EXC_EVENT_UNKNOWN2</a> = 2, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961ad0388e2bb9502bf104eeae6d61d6178d">EXCEVENT_DATA_ABORT</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961af474b28fbc82cf2b0c14ccdc1aeed6ec">EXC_EVENT_UNKNOWN3</a> = 3, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a395e456839766ff94e2ed7e62a4393a6">EXCEVENT_UNALIGNED_DATA_ACCESS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a036aca1e81b15aa82ec4c9a188bd2dd6">EXC_EVENT_ATTACH_BREAK</a> = 4, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a84e1ee736127c4a2fed63ba26f7f62de">EXCEVENT_ATTACH_BREAK</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a56be3ed966ecc66f686eb9af17bca9db">EXC_EVENT_BREAKPOINT</a> = 5, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961ade5c633f2939b0c6847bf00eb191e09d">EXCEVENT_STOP_POINT</a> = 5, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961abae8a3bc7d96ea3b8e50b44d48d2c56e">EXC_EVENT_USER_BREAK</a> = 6, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a2675f2c2f8166cebd857bf45bf200380">EXCEVENT_USER_BREAK</a> = 6, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a692d1c89f327bdd6881641ca5f580e38">EXC_EVENT_DEBUGGER_BREAK</a> = 7, 
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a5447fb68701a56078c86d7c11825d4b6">EXCEVENT_DEBUGGER_BREAK</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961abbfe6c82660addcd2f660a0c03db6b01">EXC_EVENT_UNDEFINED_SYSCALL</a> = 8
+&#160;&#160;<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961a069cc910b91b81ad647d57eda968d6f0">EXCEVENT_UNDEFINED_SYSCALL</a> = 8
 <br />
  }<tr class="memdesc:ad31e210a0f421d1ca7f5c55c7110f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reasons for an exception event.  <a href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">More...</a><br /></td></tr>
 <tr class="separator:ad31e210a0f421d1ca7f5c55c7110f961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:a41645e97dc3a37acd97b0f0f13be76e9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9">StopPointType</a> { <br />
+&#160;&#160;<a class="el" href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9af2bda711cb2e87898ee01c75aa6eb461">STOPPOINT_SVC_FF</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9ab0418158fb52e5f649f8695a747620b9">STOPPOINT_BREAKPOINT</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9ae012399e05b534e04b300fdc210debdd">STOPPOINT_WATCHPOINT</a> = 2
+<br />
+ }<tr class="memdesc:a41645e97dc3a37acd97b0f0f13be76e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop point types.  <a href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9">More...</a><br /></td></tr>
+<tr class="separator:a41645e97dc3a37acd97b0f0f13be76e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ab1fabb8a9dfe0eca4fdd8502dbfa0754"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754">DebugEventType</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754ae334276477e4b55cc7ca69b71596761d">DBG_EVENT_PROCESS</a> = 0, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754ac0a513ef6cb7b18b882ca3b4484be376">DBGEVENT_ATTACH_PROCESS</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a40cf8530f0bf292d6bf48527021e4fbf">DBG_EVENT_CREATE_THREAD</a> = 1, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754ab39b8b0c362f20d8f3b6a789684ad382">DBGEVENT_ATTACH_THREAD</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a17ad4b82962304127bc4607131773a86">DBG_EVENT_EXIT_THREAD</a> = 2, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754acec82ab612fb6a61454e6acf13d9535d">DBGEVENT_EXIT_THREAD</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a1e41cfa7397cfbe97ca5ee5f3ee44d8e">DBG_EVENT_EXIT_PROCESS</a> = 3, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a2635a9230834ce193ced7e11ad3d719a">DBGEVENT_EXIT_PROCESS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a90f80bf5da513a9416bb5f384abee8ff">DBG_EVENT_EXCEPTION</a> = 4, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a208e5e5396544ebdbca5c2683b496a3a">DBGEVENT_EXCEPTION</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754adf97374d84384ae35f90e7974874f729">DBG_EVENT_DLL_LOAD</a> = 5, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754afa511c30bbe05ddaad3c96c2fe2237dc">DBGEVENT_DLL_LOAD</a> = 5, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754ac73fbf24d4b4264bcb68e56e9ed2696f">DBG_EVENT_DLL_UNLOAD</a> = 6, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a167c6fa74bcf640f56641a04983627f9">DBGEVENT_DLL_UNLOAD</a> = 6, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754af77772496edc7f00c166af04c4e2365f">DBG_EVENT_SCHEDULE_IN</a> = 7, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a07ea6a6fba8ff752c67e2c00425d3ac8">DBGEVENT_SCHEDULE_IN</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754af14ba928a4615bb89115e55c590dbc2e">DBG_EVENT_SCHEDULE_OUT</a> = 8, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a62cf6b93175e700b82259c66273eb0b3">DBGEVENT_SCHEDULE_OUT</a> = 8, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a6f23bf867f42901fda0d755c14589f01">DBG_EVENT_SYSCALL_IN</a> = 9, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a5357e98f2337ea80ce759ca8ad26bc03">DBGEVENT_SYSCALL_IN</a> = 9, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754ad86cd363a5ab32bbdf06cc17af92a989">DBG_EVENT_SYSCALL_OUT</a> = 10, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a61a1fa34dc49e06bc7e2d5941fdf2614">DBGEVENT_SYSCALL_OUT</a> = 10, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754afc3fe835bd42a12daa6da370c57cd1d0">DBG_EVENT_OUTPUT_STRING</a> = 11, 
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754abee1dd8bd40f035cdb41dd2f8c4ad11c">DBGEVENT_OUTPUT_STRING</a> = 11, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754abeaa4885ce5303ed190873fa3f05b8ce">DBG_EVENT_MAP</a> = 12
+&#160;&#160;<a class="el" href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754a63a5ec76f06ef716a8ba8b1ab9c0e5de">DBGEVENT_MAP</a> = 12
 <br />
  }<tr class="memdesc:ab1fabb8a9dfe0eca4fdd8502dbfa0754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug event type.  <a href="svc_8h.html#ab1fabb8a9dfe0eca4fdd8502dbfa0754">More...</a><br /></td></tr>
 <tr class="separator:ab1fabb8a9dfe0eca4fdd8502dbfa0754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:a83538f74b19d2e9f22e2630c77d54a10"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a> { <br />
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a5872517d76bec4682d82e14d79a149b4">DBG_NO_ERRF_CPU_EXCEPTION_DUMPS</a> = BIT(0), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a684e18527dea1cd28cc7cd31a1b72c6d">DBG_SIGNAL_FAULT_EXCEPTION_EVENTS</a> = BIT(1), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a0870552809a38121a3f9f8bfac2a7ab5">DBG_SIGNAL_SCHEDULE_EVENTS</a> = BIT(2), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a54c6d15e4546cac787bfe3fd7511d7c9">DBG_SIGNAL_SYSCALL_EVENTS</a> = BIT(3), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a4e4de28dc35f3748319a155b3a5e561c">DBG_SIGNAL_MAP_EVENTS</a> = BIT(4)
+<br />
+ }<tr class="memdesc:a83538f74b19d2e9f22e2630c77d54a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug flags for an attached process, set by <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>.  <a href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">More...</a><br /></td></tr>
+<tr class="separator:a83538f74b19d2e9f22e2630c77d54a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a19ce0516fc6c9dc090735a831ab7a742"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a> { <br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742ae09b0f61029f9fdf0b4ea02c41fa13e5">THREADCONTEXT_CONTROL_CPU_GPRS</a> = BIT(0), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742aa8407752003ccddf5fc32867e67037cf">THREADCONTEXT_CONTROL_CPU_SPRS</a> = BIT(1), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742a2d5de33762b476d2926b7cfb7f3be89b">THREADCONTEXT_CONTROL_FPU_GPRS</a> = BIT(2), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742ae68cca5d6bd39c7225566ae87c541f8e">THREADCONTEXT_CONTROL_FPU_SPRS</a> = BIT(3), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742a313d7fc004fc7a953e10b08fccbd21ab">THREADCONTEXT_CONTROL_CPU_REGS</a> = BIT(0) | BIT(1), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742ae77e6ad949115f805c2a35ba85cce3f9">THREADCONTEXT_CONTROL_FPU_REGS</a> = BIT(2) | BIT(3), 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742a03849f12becc677a30246a307c3b9670">THREADCONTEXT_CONTROL_ALL</a> = BIT(0) | BIT(1) | BIT(2) | BIT(3)
+<br />
+ }<tr class="memdesc:a19ce0516fc6c9dc090735a831ab7a742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control flags for <a class="el" href="svc_8h.html#a45d96608f9a397c81e8a254d8948f5c5">svcGetDebugThreadContext</a> and <a class="el" href="svc_8h.html#aec567b6e8ea8fe1ac41ac1fe117a6345">svcSetDebugThreadContext</a>.  <a href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">More...</a><br /></td></tr>
+<tr class="separator:a19ce0516fc6c9dc090735a831ab7a742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a3b0c49c519df71cc261f32f8bbede7e2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">DebugThreadParameter</a> { <br />
+&#160;&#160;<a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2a97e8406ac167715321789f422a4d16c2">DBGTHREAD_PARAMETER_PRIORITY</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2a2e0c36bd04e34f464fdc099160c2a07d">DBGTHREAD_PARAMETER_SCHEDULING_MASK_LOW</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2a38a33d4f8a4da4fce35bafdeaa43deb7">DBGTHREAD_PARAMETER_CPU_IDEAL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2a4edc8a76257320fcebd0176a9a05bf6d">DBGTHREAD_PARAMETER_CPU_CREATOR</a> = 3
+<br />
+ }<tr class="memdesc:a3b0c49c519df71cc261f32f8bbede7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread parameter field for svcGetDebugThreadParameter.  <a href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">More...</a><br /></td></tr>
+<tr class="separator:a3b0c49c519df71cc261f32f8bbede7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:a71559e1c5662a82ac2b83bd6c5c8234c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a71559e1c5662a82ac2b83bd6c5c8234c">svcBreak</a> (<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12">UserBreakType</a> breakReason)</td></tr>
 <tr class="memdesc:a71559e1c5662a82ac2b83bd6c5c8234c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breaks execution.  <a href="#a71559e1c5662a82ac2b83bd6c5c8234c">More...</a><br /></td></tr>
 <tr class="separator:a71559e1c5662a82ac2b83bd6c5c8234c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0911b65d402c9400ec8203acf467b4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aa0911b65d402c9400ec8203acf467b4c">svcOutputDebugString</a> (const char *str, int length)</td></tr>
-<tr class="memdesc:aa0911b65d402c9400ec8203acf467b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a debug string.  <a href="#aa0911b65d402c9400ec8203acf467b4c">More...</a><br /></td></tr>
-<tr class="separator:aa0911b65d402c9400ec8203acf467b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c4f6fd3748a647851724b2c7f6e6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a68c4f6fd3748a647851724b2c7f6e6f3">svcBreakRO</a> (<a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12">UserBreakType</a> breakReason, const void *croInfo, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> croInfoSize) __asm__(&quot;svcBreak&quot;)</td></tr>
+<tr class="memdesc:a68c4f6fd3748a647851724b2c7f6e6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breaks execution (LOAD_RO and UNLOAD_RO).  <a href="#a68c4f6fd3748a647851724b2c7f6e6f3">More...</a><br /></td></tr>
+<tr class="separator:a68c4f6fd3748a647851724b2c7f6e6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1deb19f13c53015347aa5c8785fe612e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a1deb19f13c53015347aa5c8785fe612e">svcOutputDebugString</a> (const char *str, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> length)</td></tr>
+<tr class="memdesc:a1deb19f13c53015347aa5c8785fe612e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a debug string.  <a href="#a1deb19f13c53015347aa5c8785fe612e">More...</a><br /></td></tr>
+<tr class="separator:a1deb19f13c53015347aa5c8785fe612e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb595bace1a8798b73437b7b4ee5212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a1fb595bace1a8798b73437b7b4ee5212">svcDebugActiveProcess</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> processId)</td></tr>
 <tr class="memdesc:a1fb595bace1a8798b73437b7b4ee5212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a debug handle for an active process.  <a href="#a1fb595bace1a8798b73437b7b4ee5212">More...</a><br /></td></tr>
 <tr class="separator:a1fb595bace1a8798b73437b7b4ee5212"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -566,9 +683,30 @@ Debugging</h2></td></tr>
 <tr class="memitem:ae43be244fb71321c8101547a20b65693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ae43be244fb71321c8101547a20b65693">svcGetProcessDebugEvent</a> (<a class="el" href="structDebugEventInfo.html">DebugEventInfo</a> *info, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug)</td></tr>
 <tr class="memdesc:ae43be244fb71321c8101547a20b65693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current debug event of a debugged process.  <a href="#ae43be244fb71321c8101547a20b65693">More...</a><br /></td></tr>
 <tr class="separator:ae43be244fb71321c8101547a20b65693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b7f1b3c9dc87fd7c85d2c65432ff93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ac2b7f1b3c9dc87fd7c85d2c65432ff93">svcContinueDebugEvent</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags)</td></tr>
-<tr class="memdesc:ac2b7f1b3c9dc87fd7c85d2c65432ff93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continues the current debug event of a debugged process.  <a href="#ac2b7f1b3c9dc87fd7c85d2c65432ff93">More...</a><br /></td></tr>
-<tr class="separator:ac2b7f1b3c9dc87fd7c85d2c65432ff93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afb068c84788f20213bb66c55d7a343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a> flags)</td></tr>
+<tr class="memdesc:a6afb068c84788f20213bb66c55d7a343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continues the current debug event of a debugged process (not necessarily the same as <a class="el" href="svc_8h.html#ae43be244fb71321c8101547a20b65693">svcGetProcessDebugEvent</a>).  <a href="#a6afb068c84788f20213bb66c55d7a343">More...</a><br /></td></tr>
+<tr class="separator:a6afb068c84788f20213bb66c55d7a343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d96608f9a397c81e8a254d8948f5c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a45d96608f9a397c81e8a254d8948f5c5">svcGetDebugThreadContext</a> (<a class="el" href="structThreadContext.html">ThreadContext</a> *context, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> threadId, <a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a> controlFlags)</td></tr>
+<tr class="memdesc:a45d96608f9a397c81e8a254d8948f5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the saved registers of a thread, either inactive or awaiting <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>, belonging to a debugged process.  <a href="#a45d96608f9a397c81e8a254d8948f5c5">More...</a><br /></td></tr>
+<tr class="separator:a45d96608f9a397c81e8a254d8948f5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec567b6e8ea8fe1ac41ac1fe117a6345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aec567b6e8ea8fe1ac41ac1fe117a6345">svcSetDebugThreadContext</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> threadId, <a class="el" href="structThreadContext.html">ThreadContext</a> *context, <a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a> controlFlags)</td></tr>
+<tr class="memdesc:aec567b6e8ea8fe1ac41ac1fe117a6345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the saved registers of a thread, either inactive or awaiting <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>, belonging to a debugged process.  <a href="#aec567b6e8ea8fe1ac41ac1fe117a6345">More...</a><br /></td></tr>
+<tr class="separator:aec567b6e8ea8fe1ac41ac1fe117a6345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701306ea4d920baf3243f0fe7139fb9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a701306ea4d920baf3243f0fe7139fb9f">svcQueryDebugProcessMemory</a> (<a class="el" href="structMemInfo.html">MemInfo</a> *info, <a class="el" href="structPageInfo.html">PageInfo</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr)</td></tr>
+<tr class="memdesc:a701306ea4d920baf3243f0fe7139fb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries memory information of a debugged process.  <a href="#a701306ea4d920baf3243f0fe7139fb9f">More...</a><br /></td></tr>
+<tr class="separator:a701306ea4d920baf3243f0fe7139fb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5848ed471a047cd3298615c4c49f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7d5848ed471a047cd3298615c4c49f6c">svcReadProcessMemory</a> (void *buffer, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:a7d5848ed471a047cd3298615c4c49f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from a debugged process's memory.  <a href="#a7d5848ed471a047cd3298615c4c49f6c">More...</a><br /></td></tr>
+<tr class="separator:a7d5848ed471a047cd3298615c4c49f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141d92c97fb3f2565c657dd721e1e30c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a141d92c97fb3f2565c657dd721e1e30c">svcWriteProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, const void *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:a141d92c97fb3f2565c657dd721e1e30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to a debugged process's memory.  <a href="#a141d92c97fb3f2565c657dd721e1e30c">More...</a><br /></td></tr>
+<tr class="separator:a141d92c97fb3f2565c657dd721e1e30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31e6106eb7e5f4b7ef62cca1054e83f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab31e6106eb7e5f4b7ef62cca1054e83f">svcSetHardwareBreakPoint</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> registerId, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> control, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> value)</td></tr>
+<tr class="memdesc:ab31e6106eb7e5f4b7ef62cca1054e83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an hardware breakpoint or watchpoint.  <a href="#ab31e6106eb7e5f4b7ef62cca1054e83f">More...</a><br /></td></tr>
+<tr class="separator:ab31e6106eb7e5f4b7ef62cca1054e83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9dcfc6cb021384b48ccc7e5275bfc4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ad9dcfc6cb021384b48ccc7e5275bfc4b">svcGetDebugThreadParam</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *unused, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> debug, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> threadId, <a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">DebugThreadParameter</a> parameter)</td></tr>
+<tr class="memdesc:ad9dcfc6cb021384b48ccc7e5275bfc4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a debugged thread's parameter.  <a href="#ad9dcfc6cb021384b48ccc7e5275bfc4b">More...</a><br /></td></tr>
+<tr class="separator:ad9dcfc6cb021384b48ccc7e5275bfc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Syscall wrappers. </p>
@@ -616,44 +754,103 @@ Debugging</h2></td></tr>
 
 <p>Debug event type. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754ae334276477e4b55cc7ca69b71596761d"></a>DBG_EVENT_PROCESS&#160;</td><td class="fielddoc">
-<p>Process event. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754ac0a513ef6cb7b18b882ca3b4484be376"></a>DBGEVENT_ATTACH_PROCESS&#160;</td><td class="fielddoc">
+<p>Process attached event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a40cf8530f0bf292d6bf48527021e4fbf"></a>DBG_EVENT_CREATE_THREAD&#160;</td><td class="fielddoc">
-<p>Thread creation event. </p>
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754ab39b8b0c362f20d8f3b6a789684ad382"></a>DBGEVENT_ATTACH_THREAD&#160;</td><td class="fielddoc">
+<p>Thread attached event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a17ad4b82962304127bc4607131773a86"></a>DBG_EVENT_EXIT_THREAD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754acec82ab612fb6a61454e6acf13d9535d"></a>DBGEVENT_EXIT_THREAD&#160;</td><td class="fielddoc">
 <p>Thread exit event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a1e41cfa7397cfbe97ca5ee5f3ee44d8e"></a>DBG_EVENT_EXIT_PROCESS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a2635a9230834ce193ced7e11ad3d719a"></a>DBGEVENT_EXIT_PROCESS&#160;</td><td class="fielddoc">
 <p>Process exit event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a90f80bf5da513a9416bb5f384abee8ff"></a>DBG_EVENT_EXCEPTION&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a208e5e5396544ebdbca5c2683b496a3a"></a>DBGEVENT_EXCEPTION&#160;</td><td class="fielddoc">
 <p>Exception event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754adf97374d84384ae35f90e7974874f729"></a>DBG_EVENT_DLL_LOAD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754afa511c30bbe05ddaad3c96c2fe2237dc"></a>DBGEVENT_DLL_LOAD&#160;</td><td class="fielddoc">
 <p>DLL load event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754ac73fbf24d4b4264bcb68e56e9ed2696f"></a>DBG_EVENT_DLL_UNLOAD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a167c6fa74bcf640f56641a04983627f9"></a>DBGEVENT_DLL_UNLOAD&#160;</td><td class="fielddoc">
 <p>DLL unload event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754af77772496edc7f00c166af04c4e2365f"></a>DBG_EVENT_SCHEDULE_IN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a07ea6a6fba8ff752c67e2c00425d3ac8"></a>DBGEVENT_SCHEDULE_IN&#160;</td><td class="fielddoc">
 <p>Schedule in event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754af14ba928a4615bb89115e55c590dbc2e"></a>DBG_EVENT_SCHEDULE_OUT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a62cf6b93175e700b82259c66273eb0b3"></a>DBGEVENT_SCHEDULE_OUT&#160;</td><td class="fielddoc">
 <p>Schedule out event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a6f23bf867f42901fda0d755c14589f01"></a>DBG_EVENT_SYSCALL_IN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a5357e98f2337ea80ce759ca8ad26bc03"></a>DBGEVENT_SYSCALL_IN&#160;</td><td class="fielddoc">
 <p>Syscall in event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754ad86cd363a5ab32bbdf06cc17af92a989"></a>DBG_EVENT_SYSCALL_OUT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a61a1fa34dc49e06bc7e2d5941fdf2614"></a>DBGEVENT_SYSCALL_OUT&#160;</td><td class="fielddoc">
 <p>Syscall out event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754afc3fe835bd42a12daa6da370c57cd1d0"></a>DBG_EVENT_OUTPUT_STRING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754abee1dd8bd40f035cdb41dd2f8c4ad11c"></a>DBGEVENT_OUTPUT_STRING&#160;</td><td class="fielddoc">
 <p>Output string event. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754abeaa4885ce5303ed190873fa3f05b8ce"></a>DBG_EVENT_MAP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ab1fabb8a9dfe0eca4fdd8502dbfa0754a63a5ec76f06ef716a8ba8b1ab9c0e5de"></a>DBGEVENT_MAP&#160;</td><td class="fielddoc">
 <p>Map event. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug flags for an attached process, set by <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a5872517d76bec4682d82e14d79a149b4"></a>DBG_NO_ERRF_CPU_EXCEPTION_DUMPS&#160;</td><td class="fielddoc">
+<p>Don't produce err:f-format dumps for CPU exceptions (including watchpoints and breakpoints, regardless of any <a class="el" href="svc_8h.html#ada13386ccb8cb809658a9878a9941a8b">svcKernelSetState</a> call). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a684e18527dea1cd28cc7cd31a1b72c6d"></a>DBG_SIGNAL_FAULT_EXCEPTION_EVENTS&#160;</td><td class="fielddoc">
+<p>Signal fault exception events. See <a class="el" href="structFaultExceptionEvent.html">FaultExceptionEvent</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a0870552809a38121a3f9f8bfac2a7ab5"></a>DBG_SIGNAL_SCHEDULE_EVENTS&#160;</td><td class="fielddoc">
+<p>Signal schedule in/out events. See <a class="el" href="structScheduleInOutEvent.html">ScheduleInOutEvent</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a54c6d15e4546cac787bfe3fd7511d7c9"></a>DBG_SIGNAL_SYSCALL_EVENTS&#160;</td><td class="fielddoc">
+<p>Signal syscall in/out events. See <a class="el" href="structSyscallInOutEvent.html">SyscallInOutEvent</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a4e4de28dc35f3748319a155b3a5e561c"></a>DBG_SIGNAL_MAP_EVENTS&#160;</td><td class="fielddoc">
+<p>Signal map events. See <a class="el" href="structMapEvent.html">MapEvent</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a3b0c49c519df71cc261f32f8bbede7e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">DebugThreadParameter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread parameter field for svcGetDebugThreadParameter. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3b0c49c519df71cc261f32f8bbede7e2a97e8406ac167715321789f422a4d16c2"></a>DBGTHREAD_PARAMETER_PRIORITY&#160;</td><td class="fielddoc">
+<p>Thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3b0c49c519df71cc261f32f8bbede7e2a2e0c36bd04e34f464fdc099160c2a07d"></a>DBGTHREAD_PARAMETER_SCHEDULING_MASK_LOW&#160;</td><td class="fielddoc">
+<p>Low scheduling mask. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3b0c49c519df71cc261f32f8bbede7e2a38a33d4f8a4da4fce35bafdeaa43deb7"></a>DBGTHREAD_PARAMETER_CPU_IDEAL&#160;</td><td class="fielddoc">
+<p>Ideal processor. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3b0c49c519df71cc261f32f8bbede7e2a4edc8a76257320fcebd0176a9a05bf6d"></a>DBGTHREAD_PARAMETER_CPU_CREATOR&#160;</td><td class="fielddoc">
+<p>Processor that created the threod. </p>
 </td></tr>
 </table>
 
@@ -671,32 +868,32 @@ Debugging</h2></td></tr>
 
 <p>Reasons for an exception event. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961af0db3171590b417c16566ff1ad24482a"></a>EXC_EVENT_UNDEFINED_INSTRUCTION&#160;</td><td class="fielddoc">
-<p>Undefined instruction. arg: (None) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a93595971d3fb771d02e6aed6512af6e9"></a>EXCEVENT_UNDEFINED_INSTRUCTION&#160;</td><td class="fielddoc">
+<p>Undefined instruction. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961ae1304149ad493b35438d958a0166cd72"></a>EXC_EVENT_UNKNOWN1&#160;</td><td class="fielddoc">
-<p>Unknown. arg: (None) </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a8a8d6492fced221e5c4fafba19af8336"></a>EXCEVENT_PREFETCH_ABORT&#160;</td><td class="fielddoc">
+<p>Prefetch abort. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a7e07ce966ae13ebb8ccf11290ed13015"></a>EXC_EVENT_UNKNOWN2&#160;</td><td class="fielddoc">
-<p>Unknown. arg: address. </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961ad0388e2bb9502bf104eeae6d61d6178d"></a>EXCEVENT_DATA_ABORT&#160;</td><td class="fielddoc">
+<p>Data abort (other than the below kind). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961af474b28fbc82cf2b0c14ccdc1aeed6ec"></a>EXC_EVENT_UNKNOWN3&#160;</td><td class="fielddoc">
-<p>Unknown. arg: address. </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a395e456839766ff94e2ed7e62a4393a6"></a>EXCEVENT_UNALIGNED_DATA_ACCESS&#160;</td><td class="fielddoc">
+<p>Unaligned data access. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a036aca1e81b15aa82ec4c9a188bd2dd6"></a>EXC_EVENT_ATTACH_BREAK&#160;</td><td class="fielddoc">
-<p>Attached break. arg: (None) </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a84e1ee736127c4a2fed63ba26f7f62de"></a>EXCEVENT_ATTACH_BREAK&#160;</td><td class="fielddoc">
+<p>Attached break. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a56be3ed966ecc66f686eb9af17bca9db"></a>EXC_EVENT_BREAKPOINT&#160;</td><td class="fielddoc">
-<p>Breakpoint reached. arg: (None) </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961ade5c633f2939b0c6847bf00eb191e09d"></a>EXCEVENT_STOP_POINT&#160;</td><td class="fielddoc">
+<p>Stop point reached. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961abae8a3bc7d96ea3b8e50b44d48d2c56e"></a>EXC_EVENT_USER_BREAK&#160;</td><td class="fielddoc">
-<p>User break occurred. arg: <a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12">UserBreakType</a>. </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a2675f2c2f8166cebd857bf45bf200380"></a>EXCEVENT_USER_BREAK&#160;</td><td class="fielddoc">
+<p>User break occurred. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a692d1c89f327bdd6881641ca5f580e38"></a>EXC_EVENT_DEBUGGER_BREAK&#160;</td><td class="fielddoc">
-<p>Debugger break occurred. arg: (None) </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a5447fb68701a56078c86d7c11825d4b6"></a>EXCEVENT_DEBUGGER_BREAK&#160;</td><td class="fielddoc">
+<p>Debugger break occurred. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961abbfe6c82660addcd2f660a0c03db6b01"></a>EXC_EVENT_UNDEFINED_SYSCALL&#160;</td><td class="fielddoc">
-<p>Undefined syscall. arg: attempted syscall. </p>
+<tr><td class="fieldname"><a class="anchor" id="ad31e210a0f421d1ca7f5c55c7110f961a069cc910b91b81ad647d57eda968d6f0"></a>EXCEVENT_UNDEFINED_SYSCALL&#160;</td><td class="fielddoc">
+<p>Undefined syscall. </p>
 </td></tr>
 </table>
 
@@ -891,23 +1088,88 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15668f707ae2a742896d12b225397079"></a>
+<a class="anchor" id="adfe6b9db49aa88865e1fff5e559f6fdf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="svc_8h.html#a15668f707ae2a742896d12b225397079">ProcessEventReason</a></td>
+          <td class="memname">enum <a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reasons for a process event. </p>
+<p>Reset types (for use with events and timers) </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a15668f707ae2a742896d12b225397079a8956580d5d401467493079e8f8b42785"></a>REASON_CREATE&#160;</td><td class="fielddoc">
-<p>Process created. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adfe6b9db49aa88865e1fff5e559f6fdfa5e28681d7775d2a1fe89b4644ed8d57e"></a>RESET_ONESHOT&#160;</td><td class="fielddoc">
+<p>When the primitive is signaled, it will wake up exactly one thread and will clear itself automatically. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a15668f707ae2a742896d12b225397079a415c1d2eac956a2a1585ab96d7437446"></a>REASON_ATTACH&#160;</td><td class="fielddoc">
-<p>Process attached. </p>
+<tr><td class="fieldname"><a class="anchor" id="adfe6b9db49aa88865e1fff5e559f6fdfa09868fdada28ca7c71200f2996ced929"></a>RESET_STICKY&#160;</td><td class="fielddoc">
+<p>When the primitive is signaled, it will wake up all threads and it won't clear itself automatically. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adfe6b9db49aa88865e1fff5e559f6fdfa7b810dd120f32f073cf6f36de294191e"></a>RESET_PULSE&#160;</td><td class="fielddoc">
+<p>Only meaningful for timers: same as ONESHOT but it will periodically signal the timer instead of just once. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a41645e97dc3a37acd97b0f0f13be76e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="svc_8h.html#a41645e97dc3a37acd97b0f0f13be76e9">StopPointType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop point types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a41645e97dc3a37acd97b0f0f13be76e9af2bda711cb2e87898ee01c75aa6eb461"></a>STOPPOINT_SVC_FF&#160;</td><td class="fielddoc">
+<p>See <a class="el" href="svc_8h.html#ada2d7dbdeeb091dc83e76117eeb5ae1f">SVC_STOP_POINT</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41645e97dc3a37acd97b0f0f13be76e9ab0418158fb52e5f649f8695a747620b9"></a>STOPPOINT_BREAKPOINT&#160;</td><td class="fielddoc">
+<p>Breakpoint. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41645e97dc3a37acd97b0f0f13be76e9ae012399e05b534e04b300fdc210debdd"></a>STOPPOINT_WATCHPOINT&#160;</td><td class="fielddoc">
+<p>Watchpoint. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control flags for <a class="el" href="svc_8h.html#a45d96608f9a397c81e8a254d8948f5c5">svcGetDebugThreadContext</a> and <a class="el" href="svc_8h.html#aec567b6e8ea8fe1ac41ac1fe117a6345">svcSetDebugThreadContext</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742ae09b0f61029f9fdf0b4ea02c41fa13e5"></a>THREADCONTEXT_CONTROL_CPU_GPRS&#160;</td><td class="fielddoc">
+<p>Control r0-r12. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742aa8407752003ccddf5fc32867e67037cf"></a>THREADCONTEXT_CONTROL_CPU_SPRS&#160;</td><td class="fielddoc">
+<p>Control sp, lr, pc, cpsr. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742a2d5de33762b476d2926b7cfb7f3be89b"></a>THREADCONTEXT_CONTROL_FPU_GPRS&#160;</td><td class="fielddoc">
+<p>Control d0-d15 (or f0-f31). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742ae68cca5d6bd39c7225566ae87c541f8e"></a>THREADCONTEXT_CONTROL_FPU_SPRS&#160;</td><td class="fielddoc">
+<p>Control fpscr, fpexc. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742a313d7fc004fc7a953e10b08fccbd21ab"></a>THREADCONTEXT_CONTROL_CPU_REGS&#160;</td><td class="fielddoc">
+<p>Control r0-r12, sp, lr, pc, cpsr. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742ae77e6ad949115f805c2a35ba85cce3f9"></a>THREADCONTEXT_CONTROL_FPU_REGS&#160;</td><td class="fielddoc">
+<p>Control d0-d15, fpscr, fpexc. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742a03849f12becc677a30246a307c3b9670"></a>THREADCONTEXT_CONTROL_ALL&#160;</td><td class="fielddoc">
+<p>Control all of the above. </p>
 </td></tr>
 </table>
 
@@ -952,6 +1214,12 @@ Debugging</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1fff1d6b844aedbb1babaa23e0292a12a7989abf688e2db27610f1cdf30ddf553"></a>USERBREAK_USER&#160;</td><td class="fielddoc">
 <p>User related. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1fff1d6b844aedbb1babaa23e0292a12a218f8d14ce85ff686531587f41271b91"></a>USERBREAK_LOAD_RO&#160;</td><td class="fielddoc">
+<p>Load RO. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1fff1d6b844aedbb1babaa23e0292a12ab82dbfb966f5522c2e5bfbdf1949d5a9"></a>USERBREAK_UNLOAD_RO&#160;</td><td class="fielddoc">
+<p>Unload RO. </p>
 </td></tr>
 </table>
 
@@ -1149,10 +1417,59 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Executes a function in kernel mode. </p>
+<p>Executes a function in supervisor mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to execute. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f8db0e990f91fa29d392986a3050a17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcBindInterrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>interruptId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>eventOrSemaphore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isManualClear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binds an event or semaphore handle to an ARM11 interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interruptId</td><td>Interrupt identfier (see <a href="https://www.3dbrew.org/wiki/ARM11_Interrupts">https://www.3dbrew.org/wiki/ARM11_Interrupts</a>). </td></tr>
+    <tr><td class="paramname">eventOrSemaphore</td><td>Event or semaphore handle to bind to the given interrupt. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority of the interrupt for the current process. </td></tr>
+    <tr><td class="paramname">isManualClear</td><td>Indicates whether the interrupt has to be manually cleared or not (= level-high active). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1201,6 +1518,48 @@ Debugging</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">debug</td><td>Debug handle of the process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a68c4f6fd3748a647851724b2c7f6e6f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void svcBreakRO </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12">UserBreakType</a>&#160;</td>
+          <td class="paramname"><em>breakReason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>croInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>croInfoSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Breaks execution (LOAD_RO and UNLOAD_RO). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">breakReason</td><td>Debug reason for breaking. </td></tr>
+    <tr><td class="paramname">croInfo</td><td>Library information. </td></tr>
+    <tr><td class="paramname">croInfoSize</td><td>Size of the above structure. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1340,7 +1699,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac2b7f1b3c9dc87fd7c85d2c65432ff93"></a>
+<a class="anchor" id="a6afb068c84788f20213bb66c55d7a343"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1353,7 +1712,7 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a>&#160;</td>
           <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
@@ -1364,11 +1723,11 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Continues the current debug event of a debugged process. </p>
+<p>Continues the current debug event of a debugged process (not necessarily the same as <a class="el" href="svc_8h.html#ae43be244fb71321c8101547a20b65693">svcGetProcessDebugEvent</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">debug</td><td>Debug handle of the process. </td></tr>
-    <tr><td class="paramname">flags</td><td>Flags to continue with. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags to continue with, see <a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1529,7 +1888,63 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a20de33221dc4c14672d79606f6697bff"></a>
+<a class="anchor" id="a8029b05c85dafb902f485382a82fe0af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcCreateCodeSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCodeSetInfo.html">CodeSetInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>code_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ro_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up virtual address space for a new process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Pointer to output the code set handle to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">info</td><td>Description for setting up the addresses </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">code_ptr</td><td>Pointer to .text in shared memory </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">ro_ptr</td><td>Pointer to .rodata in shared memory </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">data_ptr</td><td>Pointer to .data in shared memory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4888a213bf9515d2332ce8a686b3087"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1542,7 +1957,7 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a>&#160;</td>
           <td class="paramname"><em>reset_type</em>&#160;</td>
         </tr>
         <tr>
@@ -1557,7 +1972,7 @@ Debugging</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">event</td><td>Pointer to output the created event handle to. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">reset_type</td><td>Type of reset the event uses. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">reset_type</td><td>Type of reset the event uses (RESET_ONESHOT/RESET_STICKY). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1706,6 +2121,55 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8fb2eca70e97548fed8f521be9d81d5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcCreateProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>codeset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>arm11kernelcaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>arm11kernelcaps_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up virtual address space for a new process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Pointer to output the process handle to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">codeset</td><td>Codeset created for this process </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">arm11kernelcaps</td><td>ARM11 Kernel Capabilities from exheader </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">arm11kernelcaps_num</td><td>Number of kernel capabilities </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a6875852b77e9295f0acefa95a721a102"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1814,7 +2278,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab8e4ebb5ae2ee5b3d802e25d9f5622d7"></a>
+<a class="anchor" id="a021efa7b65d0263f55278c04c4329c5c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1827,7 +2291,7 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdf">ResetType</a>&#160;</td>
           <td class="paramname"><em>reset_type</em>&#160;</td>
         </tr>
         <tr>
@@ -1980,6 +2444,111 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a45d96608f9a397c81e8a254d8948f5c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetDebugThreadContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structThreadContext.html">ThreadContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>debug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>threadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a>&#160;</td>
+          <td class="paramname"><em>controlFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetches the saved registers of a thread, either inactive or awaiting <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>, belonging to a debugged process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">context</td><td>Values of the registers to fetch, see <a class="el" href="structThreadContext.html">ThreadContext</a>. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">debug</td><td>Debug handle of the parent process. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">threadId</td><td>ID of the thread to fetch the saved registers of. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">controlFlags</td><td>Which registers to fetch, see <a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9dcfc6cb021384b48ccc7e5275bfc4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetDebugThreadParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *&#160;</td>
+          <td class="paramname"><em>unused</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>debug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>threadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">DebugThreadParameter</a>&#160;</td>
+          <td class="paramname"><em>parameter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a debugged thread's parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">unused</td><td>Unused. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Output value. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">debug</td><td>Debug handle of the process. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">threadId</td><td>ID of the thread </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">parameter</td><td>Parameter to fetch, see <a class="el" href="svc_8h.html#a3b0c49c519df71cc261f32f8bbede7e2">DebugThreadParameter</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a58fdedb2d4414d6a5b2d7cd378abf336"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2009,6 +2578,48 @@ Debugging</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">dmaState</td><td>Pointer to output the state of the DMA to. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">dma</td><td>Handle of the DMA. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a48a9bb9e4b5959bebca2f32cdd3e598a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetHandleInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a handle info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Pointer to output the handle info to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">handle</td><td>Handle to get the info for. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">param</td><td>Parameter clarifying the handle info type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2224,6 +2835,139 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a977a76e261890d9d989451e073c5bb7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetResourceLimit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>resourceLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the resource limit set of a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">resourceLimit</td><td>Pointer to output the resource limit set handle to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">process</td><td>Process to get the resource limits of. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adbefc668774b98e042a80363bf30dce2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetResourceLimitCurrentValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>resourceLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>nameCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the values of a resource limit set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">values</td><td>Pointer to output the values to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">resourceLimit</td><td>Resource limit set to use. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">names</td><td>Resource limit names to get the values of. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nameCount</td><td>Number of resource limit names. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6e4d553b1da2524491cb6c6e899c036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetResourceLimitLimitValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>resourceLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>nameCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the value limits of a resource limit set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">values</td><td>Pointer to output the value limits to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">resourceLimit</td><td>Resource limit set to use. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">names</td><td>Resource limit names to get the limits of. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nameCount</td><td>Number of resource limit names. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a581cf88669bf459816e5ce5899f1e378"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2434,6 +3178,55 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3ef70e1f36a42f1d8e351d7bf1c9a2ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetThreadList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *&#160;</td>
+          <td class="paramname"><em>threadCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>threadIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>threadIdMaxCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a list of the threads of a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">threadCount</td><td>Pointer to output the thread count to. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">threadIds</td><td>Pointer to output the thread IDs to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">threadIdMaxCount</td><td>Maximum number of thread IDs. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">process</td><td>Process handle to list the threads of. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a77c839315b2c8158fddde6f98e113e7e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2476,7 +3269,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a74eda6b0292d56adb840e3f37a736829"></a>
+<a class="anchor" id="ada13386ccb8cb809658a9878a9941a8b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2489,20 +3282,8 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>param0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>param1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>param2</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2515,10 +3296,7 @@ Debugging</h2></td></tr>
 <p>Sets the current kernel state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of state to set. </td></tr>
-    <tr><td class="paramname">param0</td><td>First parameter of the state. </td></tr>
-    <tr><td class="paramname">param1</td><td>Second parameter of the state. </td></tr>
-    <tr><td class="paramname">param2</td><td>Third parameter of the state. </td></tr>
+    <tr><td class="paramname">type</td><td>Type of state to set (the other parameters depend on it). </td></tr>
   </table>
   </dd>
 </dl>
@@ -2693,7 +3471,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa0911b65d402c9400ec8203acf467b4c"></a>
+<a class="anchor" id="a1deb19f13c53015347aa5c8785fe612e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2706,7 +3484,7 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
           <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
@@ -2721,7 +3499,56 @@ Debugging</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>String to output. </td></tr>
-    <tr><td class="paramname">length</td><td>Length of the string to output. </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the string to output, needs to be positive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a701306ea4d920baf3243f0fe7139fb9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcQueryDebugProcessMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMemInfo.html">MemInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPageInfo.html">PageInfo</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>debug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queries memory information of a debugged process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>Pointer to output memory info to. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Pointer to output page info to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">debug</td><td>Debug handle of the process to query memory from. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">addr</td><td>Virtual memory address to query. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2855,7 +3682,7 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reads from a process's memory. </p>
+<p>Reads from a debugged process's memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Buffer to read data to. </td></tr>
@@ -2983,6 +3810,41 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a20ea2b0b1a60242d167664de882a4562"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcRun </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structStartupInfo.html">StartupInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Launches the main thread of the process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to a <a class="el" href="structStartupInfo.html" title="Information for the main thread of a process. ">StartupInfo</a> structure describing information for the main thread. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3e2f6333bfcd2a2953b5bde79122e913"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3007,7 +3869,175 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9a04b1dedbaf6545907992182ddccd3a"></a>
+<a class="anchor" id="aec567b6e8ea8fe1ac41ac1fe117a6345"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetDebugThreadContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>debug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>threadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structThreadContext.html">ThreadContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a>&#160;</td>
+          <td class="paramname"><em>controlFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the saved registers of a thread, either inactive or awaiting <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>, belonging to a debugged process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">debug</td><td>Debug handle of the parent process. </td></tr>
+    <tr><td class="paramname">threadId</td><td>ID of the thread to update the saved registers of. </td></tr>
+    <tr><td class="paramname">context</td><td>Values of the registers to update, see <a class="el" href="structThreadContext.html">ThreadContext</a>. </td></tr>
+    <tr><td class="paramname">controlFlags</td><td>Which registers to update, see <a class="el" href="svc_8h.html#a19ce0516fc6c9dc090735a831ab7a742">ThreadContextControlFlags</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab31e6106eb7e5f4b7ef62cca1054e83f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetHardwareBreakPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>registerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets an hardware breakpoint or watchpoint. </p>
+<p>This is an interface to the BRP/WRP registers, see <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ddi0360f/CEGEBGFC.html">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0360f/CEGEBGFC.html</a> . </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">registerId</td><td>range 0..5 = breakpoints (BRP0-5), 0x100..0x101 = watchpoints (WRP0-1). The previous stop point for the register is disabled. </td></tr>
+    <tr><td class="paramname">control</td><td>Value of the control regiser. </td></tr>
+    <tr><td class="paramname">value</td><td>Value of the value register: either and address (if bit21 of control is clear) or the debug handle of a process to fetch the context ID of. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aee49171a3a435f8879a019620b51dcd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetProcessAffinityMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>affinitymask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>processorcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a process's affinity mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
+    <tr><td class="paramname">affinitymask</td><td>Pointer to retrieve the affinity masks from. </td></tr>
+    <tr><td class="paramname">processorcount</td><td>Number of processors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7e7666520d212d0b7de8c703b4c3b00e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetProcessIdealProcessor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>processorid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a process's ideal processor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
+    <tr><td class="paramname">processorid</td><td>ID of the thread's ideal processor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c00a1577efa9e79fdfd5d301132467b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3020,7 +4050,7 @@ Debugging</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
           <td class="paramname"><em>affinitymask</em>, </td>
         </tr>
         <tr>
@@ -3207,7 +4237,7 @@ Debugging</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="mvd_2source_2main_8c-example.html#a12">mvd/source/main.c</a>, and <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a1">threads/thread-basic/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a1">threads/thread-basic/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -3347,6 +4377,41 @@ Debugging</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">process</td><td>Handle of the process to terminate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aecce8ec0ae7a047d6df92e8dafd6e099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcUnbindInterrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>interruptId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>eventOrSemaphore</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unbinds an event or semaphore handle from an ARM11 interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interruptId</td><td>Interrupt identfier, see (see <a href="https://www.3dbrew.org/wiki/ARM11_Interrupts">https://www.3dbrew.org/wiki/ARM11_Interrupts</a>). </td></tr>
+    <tr><td class="paramname">eventOrSemaphore</td><td>Event or semaphore handle to unbind from the given interrupt. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3558,7 +4623,7 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes to a process's memory. </p>
+<p>Writes to a debugged process's memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">debug</td><td>Debug handle of the process. </td></tr>

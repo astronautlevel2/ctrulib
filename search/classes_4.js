@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['float24uniform_5fs',['float24Uniform_s',['../structfloat24Uniform__s.html',1,'']]],
-  ['fs_5farchive',['FS_archive',['../structFS__archive.html',1,'']]],
-  ['fs_5fdirent',['FS_dirent',['../structFS__dirent.html',1,'']]],
-  ['fs_5fpath',['FS_path',['../structFS__path.html',1,'']]]
+  ['errf_5fexceptiondata',['ERRF_ExceptionData',['../structERRF__ExceptionData.html',1,'']]],
+  ['errf_5fexceptioninfo',['ERRF_ExceptionInfo',['../structERRF__ExceptionInfo.html',1,'']]],
+  ['errf_5ffatalerrinfo',['ERRF_FatalErrInfo',['../structERRF__FatalErrInfo.html',1,'']]],
+  ['exceptionevent',['ExceptionEvent',['../structExceptionEvent.html',1,'']]],
+  ['exitprocessevent',['ExitProcessEvent',['../structExitProcessEvent.html',1,'']]],
+  ['exitthreadevent',['ExitThreadEvent',['../structExitThreadEvent.html',1,'']]]
 ];

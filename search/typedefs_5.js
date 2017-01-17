@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rbtree_5fnode_5fcomparator_5ft',['rbtree_node_comparator_t',['../rbtree_8h.html#ae05f4152c5dc8cc92b62d22f3b21a644',1,'rbtree.h']]],
-  ['rbtree_5fnode_5fdestructor_5ft',['rbtree_node_destructor_t',['../rbtree_8h.html#a32532a9ceeff76fef73c59c66c666189',1,'rbtree.h']]],
-  ['result',['Result',['../types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163',1,'types.h']]]
+  ['ndspauxcallback',['ndspAuxCallback',['../ndsp_8h.html#ac7a08ac8efd0376efd6a6e1b1a064ca8',1,'ndsp.h']]],
+  ['ndspcallback',['ndspCallback',['../ndsp_8h.html#a7b56d354bc3e6300c2463e54cdc5c29f',1,'ndsp.h']]]
 ];

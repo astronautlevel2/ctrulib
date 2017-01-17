@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['s16',['s16',['../types_8h.html#aa980e2c02ba2305e0f489d5650655425',1,'types.h']]],
-  ['s32',['s32',['../types_8h.html#ae9b1af5c037e57a98884758875d3a7c4',1,'types.h']]],
-  ['s64',['s64',['../types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269',1,'types.h']]],
-  ['s8',['s8',['../types_8h.html#a9e382f207c65ca13ab4ae98363aeda80',1,'types.h']]]
+  ['rbtree_5fnode_5fcomparator_5ft',['rbtree_node_comparator_t',['../rbtree_8h.html#ae05f4152c5dc8cc92b62d22f3b21a644',1,'rbtree.h']]],
+  ['rbtree_5fnode_5fdestructor_5ft',['rbtree_node_destructor_t',['../rbtree_8h.html#a32532a9ceeff76fef73c59c66c666189',1,'rbtree.h']]],
+  ['recursivelock',['RecursiveLock',['../synchronization_8h.html#ae161b0db2ef331125217c64729e18179',1,'synchronization.h']]],
+  ['result',['Result',['../types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163',1,'types.h']]]
 ];

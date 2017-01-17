@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['reason_5fattach',['REASON_ATTACH',['../svc_8h.html#a15668f707ae2a742896d12b225397079a415c1d2eac956a2a1585ab96d7437446',1,'svc.h']]],
-  ['reason_5fcreate',['REASON_CREATE',['../svc_8h.html#a15668f707ae2a742896d12b225397079a8956580d5d401467493079e8f8b42785',1,'svc.h']]],
+  ['reset_5foneshot',['RESET_ONESHOT',['../svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa5e28681d7775d2a1fe89b4644ed8d57e',1,'svc.h']]],
+  ['reset_5fpulse',['RESET_PULSE',['../svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa7b810dd120f32f073cf6f36de294191e',1,'svc.h']]],
+  ['reset_5fsticky',['RESET_STICKY',['../svc_8h.html#adfe6b9db49aa88865e1fff5e559f6fdfa09868fdada28ca7c71200f2996ced929',1,'svc.h']]],
   ['result_5fcolor',['RESULT_COLOR',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca6b81634995b57789b661054cc6f3f818',1,'shbin.h']]],
+  ['result_5fdummy',['RESULT_DUMMY',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca16e72f6515e6c7f87e0e873f41e9a482',1,'shbin.h']]],
   ['result_5fnormalquat',['RESULT_NORMALQUAT',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457caaf090d8cb169300f6f5c4fc2642ea330',1,'shbin.h']]],
   ['result_5fposition',['RESULT_POSITION',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca6021eb9e55492dbae0932ab01219056e',1,'shbin.h']]],
   ['result_5ftexcoord0',['RESULT_TEXCOORD0',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca686ed8a3d0fe7df040cb19b3e1ccb675',1,'shbin.h']]],
   ['result_5ftexcoord0w',['RESULT_TEXCOORD0W',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457caf42f5212faa4845a7032ff0ca8029387',1,'shbin.h']]],
   ['result_5ftexcoord1',['RESULT_TEXCOORD1',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca5e378c1916a05bf9656d6e3eca373525',1,'shbin.h']]],
   ['result_5ftexcoord2',['RESULT_TEXCOORD2',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca2d020e11d0a10bf346268f1a37c82cdd',1,'shbin.h']]],
-  ['result_5fview',['RESULT_VIEW',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca4d549c494244eee17d7261d9bf42e463',1,'shbin.h']]]
+  ['result_5fview',['RESULT_VIEW',['../shbin_8h.html#a8051aa25e78e83fb12b45b90d4f9457ca4d549c494244eee17d7261d9bf42e463',1,'shbin.h']]],
+  ['rotation_5fclockwise_5f180',['ROTATION_CLOCKWISE_180',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ea52c064a159d002d5d41819fb8747371d',1,'y2r.h']]],
+  ['rotation_5fclockwise_5f270',['ROTATION_CLOCKWISE_270',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ea1871297dae513f029c1ea4d359b5a5fd',1,'y2r.h']]],
+  ['rotation_5fclockwise_5f90',['ROTATION_CLOCKWISE_90',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ead2694fe82efeff2a555a3c51b9a24259',1,'y2r.h']]],
+  ['rotation_5fnone',['ROTATION_NONE',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ea3c485d0686ff0555d4db0c22959f9dec',1,'y2r.h']]],
+  ['runflag_5faptreinit',['RUNFLAG_APTREINIT',['../env_8h.html#adc29c2ff13d900c2f185ee95427fb06ca426e94cb64bcd44449b1a13d3a977df8',1,'env.h']]],
+  ['runflag_5faptworkaround',['RUNFLAG_APTWORKAROUND',['../env_8h.html#adc29c2ff13d900c2f185ee95427fb06cad5366df45cecac4dad1f375eaa0555ab',1,'env.h']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['pageinfo',['PageInfo',['../structPageInfo.html',1,'']]],
-  ['pollfd',['pollfd',['../structpollfd.html',1,'']]],
-  ['printconsole',['PrintConsole',['../structPrintConsole.html',1,'']]],
-  ['processevent',['ProcessEvent',['../structProcessEvent.html',1,'']]]
+  ['os_5fversionbin',['OS_VersionBin',['../structOS__VersionBin.html',1,'']]],
+  ['outputstringevent',['OutputStringEvent',['../structOutputStringEvent.html',1,'']]]
 ];

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -82,22 +82,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment">    RTC example made by Aurelio Mannara for ctrulib</span></div>
-<div class="line"><span class="comment">    This code was modified for the last time on: 12/13/2014 2:45 UTC+1</span></div>
-<div class="line"><span class="comment"></span></div>
-<div class="line"><span class="comment">    This wouldn&#39;t be possible without the amazing work done by:</span></div>
-<div class="line"><span class="comment">    -Smealum</span></div>
-<div class="line"><span class="comment">    -fincs</span></div>
-<div class="line"><span class="comment">    -WinterMute</span></div>
-<div class="line"><span class="comment">    -yellows8</span></div>
-<div class="line"><span class="comment">    -plutoo</span></div>
-<div class="line"><span class="comment">    -mtheall</span></div>
-<div class="line"><span class="comment">    -Many others who worked on 3DS and I&#39;m surely forgetting about</span></div>
+<div class="line"><span class="comment">    RTC example made by Aurelio Mannara for libctru</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="3ds_8h.html">3ds.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* months[12] = {<span class="stringliteral">&quot;January&quot;</span>, <span class="stringliteral">&quot;February&quot;</span>, <span class="stringliteral">&quot;March&quot;</span>, <span class="stringliteral">&quot;April&quot;</span>, <span class="stringliteral">&quot;May&quot;</span>, <span class="stringliteral">&quot;June&quot;</span>, <span class="stringliteral">&quot;July&quot;</span>, <span class="stringliteral">&quot;August&quot;</span>, <span class="stringliteral">&quot;September&quot;</span>, <span class="stringliteral">&quot;October&quot;</span>, <span class="stringliteral">&quot;November&quot;</span>, <span class="stringliteral">&quot;December&quot;</span>};</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* weekDays[7] = {<span class="stringliteral">&quot;Sunday&quot;</span>, <span class="stringliteral">&quot;Monday&quot;</span>, <span class="stringliteral">&quot;Tuesday&quot;</span>, <span class="stringliteral">&quot;Wednesday&quot;</span>, <span class="stringliteral">&quot;Thursday&quot;</span>, <span class="stringliteral">&quot;Friday&quot;</span>, <span class="stringliteral">&quot;Saturday&quot;</span>};</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> daysAtStartOfMonthLUT[12] =</div>
+<div class="line">{</div>
+<div class="line">    0   %7, <span class="comment">//januari       31</span></div>
+<div class="line">    31  %7, <span class="comment">//februari      28+1(leap year)</span></div>
+<div class="line">    59  %7, <span class="comment">//maart         31</span></div>
+<div class="line">    90  %7, <span class="comment">//april         30</span></div>
+<div class="line">    120 %7, <span class="comment">//mei           31</span></div>
+<div class="line">    151 %7, <span class="comment">//juni          30</span></div>
+<div class="line">    181 %7, <span class="comment">//juli          31</span></div>
+<div class="line">    212 %7, <span class="comment">//augustus      31</span></div>
+<div class="line">    243 %7, <span class="comment">//september     30</span></div>
+<div class="line">    273 %7, <span class="comment">//oktober       31</span></div>
+<div class="line">    304 %7, <span class="comment">//november      30</span></div>
+<div class="line">    334 %7  <span class="comment">//december      31</span></div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#define isLeapYear(year) (((year)%4) == 0)</span></div>
+<div class="line"></div>
+<div class="line">uint getDayOfWeek(uint day, uint month, uint year)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//http://en.wikipedia.org/wiki/Calculating_the_day_of_the_week</span></div>
+<div class="line"></div>
+<div class="line">    day += 2*(3-((year/100)%4));</div>
+<div class="line">    year %= 100;</div>
+<div class="line">    day += year + (year/4);</div>
+<div class="line">    day += daysAtStartOfMonthLUT[month] - (isLeapYear(year) &amp;&amp; (month &lt;= 1));</div>
+<div class="line">    <span class="keywordflow">return</span> day % 7;</div>
+<div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line">{</div>
@@ -118,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="comment">//hidKeysDown returns information about which buttons have been just pressed (and they weren&#39;t in the previous frame)</span></div>
 <div class="line">        <a class="code" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> kDown = <a name="a5"></a><a class="code" href="hid_8h.html#aa2cababf764bf0b4297dc2e2fffe2a76">hidKeysDown</a>();</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordflow">if</span> (kDown &amp; <a name="a6"></a><a class="code" href="hid_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a616a1f5c4ed36080ca954453084aea3b">KEY_START</a>) <span class="keywordflow">break</span>; <span class="comment">// break in order to return to hbmenu</span></div>
+<div class="line">        <span class="keywordflow">if</span> (kDown &amp; <a name="a6"></a><a class="code" href="hid_8h.html#afa231099d07583c3ed0981e0bb665f55a616a1f5c4ed36080ca954453084aea3b">KEY_START</a>) <span class="keywordflow">break</span>; <span class="comment">// break in order to return to hbmenu</span></div>
 <div class="line"></div>
 <div class="line">        <span class="comment">//Print current time</span></div>
 <div class="line">        time_t unixTime = time(NULL);</div>
@@ -132,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordtype">int</span> year = timeStruct-&gt;tm_year +1900;</div>
 <div class="line"></div>
 <div class="line">        printf(<span class="stringliteral">&quot;\x1b[0;0H%02i:%02i:%02i&quot;</span>, hours, minutes, seconds);</div>
-<div class="line">        printf(<span class="stringliteral">&quot;\x1b[1;0H%02i/%02i/%04i&quot;</span>, day, month, year);</div>
+<div class="line">        printf(<span class="stringliteral">&quot;\n%s %s %i %i&quot;</span>, weekDays[getDayOfWeek(day, month, year)], months[month], day, year);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// Flush and swap framebuffers</span></div>
 <div class="line">        <a name="a7"></a><a class="code" href="gfx_8h.html#aea1808bd74fe0c00f9794e455fc8499b">gfxFlushBuffers</a>();</div>

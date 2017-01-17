@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">apt.h File Reference</div>  </div>
 </div><!--header-->
@@ -105,20 +104,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaptCaptureBufInfo.html">aptCaptureBufInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT capture buffer information.  <a href="structaptCaptureBufInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaptHookCookie.html">aptHookCookie</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT hook cookie.  <a href="structaptHookCookie.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a0a15fd6db254424d37e462fb2fe410ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a15fd6db254424d37e462fb2fe410ce"></a>
+typedef <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>APT_AppletAttr</b></td></tr>
+<tr class="separator:a0a15fd6db254424d37e462fb2fe410ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab9ede8bc76064b9da878b9bf9626f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abab9ede8bc76064b9da878b9bf9626f5"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#abab9ede8bc76064b9da878b9bf9626f5">aptHookFn</a>) (<a class="el" href="apt_8h.html#a65688ade2995260aadd4ab7539df58a6">APT_HookType</a> hook, void *param)</td></tr>
 <tr class="memdesc:abab9ede8bc76064b9da878b9bf9626f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT hook function. <br /></td></tr>
 <tr class="separator:abab9ede8bc76064b9da878b9bf9626f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9496a9fa3eefa3d4c43435aa9884baa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9496a9fa3eefa3d4c43435aa9884baa5"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a9496a9fa3eefa3d4c43435aa9884baa5">aptMessageCb</a>) (void *user, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> sender, void *msg, size_t msgsize)</td></tr>
+<tr class="memdesc:a9496a9fa3eefa3d4c43435aa9884baa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT message callback. <br /></td></tr>
+<tr class="separator:a9496a9fa3eefa3d4c43435aa9884baa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a932c939a3c27fefb8eadfd97704f8867"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> { <br />
+&#160;&#160;<b>APPID_NONE</b> = 0, 
+<br />
 &#160;&#160;<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867a8f37528864cd8f92fda4cfe47683fbc0">APPID_HOMEMENU</a> = 0x101, 
 <br />
 &#160;&#160;<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867a87b7c295b2b641f99a0575b75158588d">APPID_CAMERA</a> = 0x110, 
@@ -162,49 +173,99 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a932c939a3c27fefb8eadfd97704f8867"><td class="mdescLeft">&#160;</td><td class="mdescRight">NS Application IDs.  <a href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">More...</a><br /></td></tr>
 <tr class="separator:a932c939a3c27fefb8eadfd97704f8867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:af758bda479df7ac72bc891fb7c068f47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a> { <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47a89cf5389dbaa1450c13c06add477a5ff">APP_NOTINITIALIZED</a>, 
+<tr class="memitem:a9593943634f18b7678ec5dab635ff605"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a> { <br />
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605a24ea14a4343ca2b4b534b5da32772688">APTPOS_NONE</a> = -1, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47a71b026b3a2b676e4176ee9f8dae22f1d">APP_RUNNING</a>, 
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605ae4531c99a0a8f8803fd75296a4b65227">APTPOS_APP</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47a424275934bd427edfec40795fd3dfc87">APP_SUSPENDED</a>, 
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605aeadeceaba1dcca5d89aa8d24963a3fdb">APTPOS_APPLIB</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47aee012b4f899fb0d3885f261b6c8f6302">APP_EXITING</a>, 
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605ae501a457f683909c1f53d62408d0c677">APTPOS_SYS</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47a95c4af5ec1843b957bcf1389d17a9ac1">APP_SUSPENDING</a>, 
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605a2fc1817b3a3a4157f90271fc5a1346d6">APTPOS_SYSLIB</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47ad69419936a7afd06c6767cad6341e058">APP_SLEEPMODE</a>, 
+&#160;&#160;<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605a34acfdba1f4294f8d91bb6cf83beda46">APTPOS_RESIDENT</a> = 4
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47a80154eb5cf9d6e4a50b6842e3372793f">APP_PREPARE_SLEEPMODE</a>, 
+ }<tr class="memdesc:a9593943634f18b7678ec5dab635ff605"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT applet position.  <a href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">More...</a><br /></td></tr>
+<tr class="separator:a9593943634f18b7678ec5dab635ff605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a0c86495cfcd1fb626efeb9138cb9e622"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c86495cfcd1fb626efeb9138cb9e622"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a0c86495cfcd1fb626efeb9138cb9e622">APT_QueryReply</a> { <br />
+&#160;&#160;<b>APTREPLY_REJECT</b> = 0, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47aa6ae16e4812f03d3cf7d0109c4fe166f">APP_APPLETSTARTED</a>, 
+&#160;&#160;<b>APTREPLY_ACCEPT</b> = 1, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47ac95725568a2a4bc7bbff2c892b8ad119">APP_APPLETCLOSED</a>
+&#160;&#160;<b>APTREPLY_LATER</b> = 2
 <br />
- }<tr class="memdesc:af758bda479df7ac72bc891fb7c068f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">App status values.  <a href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">More...</a><br /></td></tr>
-<tr class="separator:af758bda479df7ac72bc891fb7c068f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:a0c86495cfcd1fb626efeb9138cb9e622"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT query reply. <br /></td></tr>
+<tr class="separator:a0c86495cfcd1fb626efeb9138cb9e622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a2722d05c62173b5d6e4a22a4666a6873"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873">APT_Signal</a> { <br />
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873acd8c323472bd444cb228cec75d548c4e">APTSIGNAL_NONE</a> = 0, 
+<br />
 &#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873ae56c10181fe655bfd60690c5d32866a2">APTSIGNAL_HOMEBUTTON</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a046b52a126ac897dc193379ed860d06a">APTSIGNAL_PREPARESLEEP</a> = 3, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873ad085835392043f93d9e5e10204c35e1b">APTSIGNAL_HOMEBUTTON2</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873af8166042874c4fdb924214cdd5896c6e">APTSIGNAL_ENTERSLEEP</a> = 5, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a03000a0f1fad0511a293d88a72176c4f">APTSIGNAL_SLEEP_QUERY</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873ae944de692c8d9ef085d909e138e21bc9">APTSIGNAL_WAKEUP</a> = 6, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873aeb102d4c3a815b2f5dc8b0d620b7baf2">APTSIGNAL_SLEEP_CANCEL</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a32a307f57737ea8366297b23f550bb7f">APTSIGNAL_ENABLE</a> = 7, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873ae09630e05e425bdd78326593a5211c23">APTSIGNAL_SLEEP_ENTER</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a5cf102854cc06805f4997227fc7df22b">APTSIGNAL_SLEEP_WAKEUP</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873ab87eaa3f2baff06850ff8625b1450cec">APTSIGNAL_SHUTDOWN</a> = 7, 
 <br />
 &#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a079561f459d1f1838a33834beffb8aed">APTSIGNAL_POWERBUTTON</a> = 8, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a6475f5b012c2f4a00c2db6ca44a19b4f">APTSIGNAL_UTILITY</a> = 9, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873aa517964f8ed1d6e340feaf7b7bc0f645">APTSIGNAL_POWERBUTTON2</a> = 9, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a3031c83ed6b3b7e51277daa1802bbdca">APTSIGNAL_SLEEPSYSTEM</a> = 10, 
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873abbbda6364522d06886da35341bc44f78">APTSIGNAL_TRY_SLEEP</a> = 10, 
 <br />
-&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873a000d03422313d6646d8d749606aced0c">APTSIGNAL_ERROR</a> = 11
+&#160;&#160;<a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873aababf297798d5d07e7c4e5ee2fb284f1">APTSIGNAL_ORDERTOCLOSE</a> = 11
 <br />
  }<tr class="memdesc:a2722d05c62173b5d6e4a22a4666a6873"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT signals.  <a href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873">More...</a><br /></td></tr>
 <tr class="separator:a2722d05c62173b5d6e4a22a4666a6873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:a8542622c76d76df7e17b1a1b05033d98"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> { <br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a4828d70ecbf7985d44cd63de6431acf0">APTCMD_NONE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a6f0b299aa97c2b50152d97fd7dea7312">APTCMD_WAKEUP</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98ad7861a838f4deee180c2dbc55e7aec68">APTCMD_REQUEST</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a5ec2e2a17f83ac6e130d8d6a15ba6f08">APTCMD_RESPONSE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98aed556f2642b7fbb365e40f87fb9eeffe">APTCMD_EXIT</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a13c0d5dff50a550511757236fa98971f">APTCMD_MESSAGE</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98ad6adf059866d4fb59b64228a4c4e2b66">APTCMD_HOMEBUTTON_ONCE</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98aa1577c79c042852dddf9f92ef0c52189">APTCMD_HOMEBUTTON_TWICE</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98abf92d20842377e320af3600c988214ba">APTCMD_DSP_SLEEP</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a60799b8b19f407a933f011c866080177">APTCMD_DSP_WAKEUP</a> = 9, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a06af48051928930b73dccc4c1b65bba5">APTCMD_WAKEUP_EXIT</a> = 10, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98abfb2f5fc31f8c850c77ffbd5e544579a">APTCMD_WAKEUP_PAUSE</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a060497755405133e686228db3b06d160">APTCMD_WAKEUP_CANCEL</a> = 12, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98ae9358e35be3c5ad8a819bde43617f714">APTCMD_WAKEUP_CANCELALL</a> = 13, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a39a88a412587a5b98fb7e7ed84766b94">APTCMD_WAKEUP_POWERBUTTON</a> = 14, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a4d6812d6d3b54ae24281701bd07d0245">APTCMD_WAKEUP_JUMPTOHOME</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98a1439e48aa862f1ce6291048671e62394">APTCMD_SYSAPPLET_REQUEST</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98ae5722f8f2e3793dcd0545036db78b7a8">APTCMD_WAKEUP_LAUNCHAPP</a> = 17
+<br />
+ }<tr class="memdesc:a8542622c76d76df7e17b1a1b05033d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT commands.  <a href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">More...</a><br /></td></tr>
+<tr class="separator:a8542622c76d76df7e17b1a1b05033d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a65688ade2995260aadd4ab7539df58a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a65688ade2995260aadd4ab7539df58a6">APT_HookType</a> { <br />
 &#160;&#160;<a class="el" href="apt_8h.html#a65688ade2995260aadd4ab7539df58a6a13c5520f05c890c64de9cd26a46e5ce6">APTHOOK_ONSUSPEND</a> = 0, 
@@ -225,6 +286,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4f47f5d5e16fd3c7f35cae7ad924ad00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f47f5d5e16fd3c7f35cae7ad924ad00"></a>
+static APT_AppletAttr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a4f47f5d5e16fd3c7f35cae7ad924ad00">aptMakeAppletAttr</a> (<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a> pos, bool manualGpuRights, bool manualDspRights)</td></tr>
+<tr class="memdesc:a4f47f5d5e16fd3c7f35cae7ad924ad00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an APT_AppletAttr bitfield from its components. <br /></td></tr>
+<tr class="separator:a4f47f5d5e16fd3c7f35cae7ad924ad00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948693eacbd602be749512a7c268dc4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a948693eacbd602be749512a7c268dc4a"></a>
 <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a948693eacbd602be749512a7c268dc4a">aptInit</a> (void)</td></tr>
 <tr class="memdesc:a948693eacbd602be749512a7c268dc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes APT. <br /></td></tr>
@@ -233,40 +298,15 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a37c671bbffd1c26e381ecd38fff19ef8">aptExit</a> (void)</td></tr>
 <tr class="memdesc:a37c671bbffd1c26e381ecd38fff19ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits APT. <br /></td></tr>
 <tr class="separator:a37c671bbffd1c26e381ecd38fff19ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45fa3420c9fd7e3353f1c1ab8631bae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45fa3420c9fd7e3353f1c1ab8631bae2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a45fa3420c9fd7e3353f1c1ab8631bae2">aptOpenSession</a> (void)</td></tr>
-<tr class="memdesc:a45fa3420c9fd7e3353f1c1ab8631bae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an APT session. <br /></td></tr>
-<tr class="separator:a45fa3420c9fd7e3353f1c1ab8631bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43496c7fd1323be638e32f81456484e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43496c7fd1323be638e32f81456484e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a43496c7fd1323be638e32f81456484e6">aptCloseSession</a> (void)</td></tr>
-<tr class="memdesc:a43496c7fd1323be638e32f81456484e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an APT session. <br /></td></tr>
-<tr class="separator:a43496c7fd1323be638e32f81456484e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fbd3ed72a947d50ca8b38c7f685f668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a9fbd3ed72a947d50ca8b38c7f685f668">aptSetStatus</a> (<a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a> status)</td></tr>
-<tr class="memdesc:a9fbd3ed72a947d50ca8b38c7f685f668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the app's status.  <a href="#a9fbd3ed72a947d50ca8b38c7f685f668">More...</a><br /></td></tr>
-<tr class="separator:a9fbd3ed72a947d50ca8b38c7f685f668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934a994022b502b18074661ed41edfff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a934a994022b502b18074661ed41edfff">aptGetStatus</a> (void)</td></tr>
-<tr class="memdesc:a934a994022b502b18074661ed41edfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the app's status.  <a href="#a934a994022b502b18074661ed41edfff">More...</a><br /></td></tr>
-<tr class="separator:a934a994022b502b18074661ed41edfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0182d88ee69776fa23be4ec014cb9448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a0182d88ee69776fa23be4ec014cb9448">aptGetStatusPower</a> (void)</td></tr>
-<tr class="memdesc:a0182d88ee69776fa23be4ec014cb9448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the app's power status.  <a href="#a0182d88ee69776fa23be4ec014cb9448">More...</a><br /></td></tr>
-<tr class="separator:a0182d88ee69776fa23be4ec014cb9448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c55086efa92d739a9b05171f55dbb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a41c55086efa92d739a9b05171f55dbb2">aptSetStatusPower</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> status)</td></tr>
-<tr class="memdesc:a41c55086efa92d739a9b05171f55dbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the app's power status.  <a href="#a41c55086efa92d739a9b05171f55dbb2">More...</a><br /></td></tr>
-<tr class="separator:a41c55086efa92d739a9b05171f55dbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace90f5a90cf1625f210703f38ce6bed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ace90f5a90cf1625f210703f38ce6bed3">aptReturnToMenu</a> (void)</td></tr>
-<tr class="memdesc:ace90f5a90cf1625f210703f38ce6bed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a return to the home menu.  <a href="#ace90f5a90cf1625f210703f38ce6bed3">More...</a><br /></td></tr>
-<tr class="separator:ace90f5a90cf1625f210703f38ce6bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe05ea63cebea87bbe31ce8adaefa68d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe05ea63cebea87bbe31ce8adaefa68d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#afe05ea63cebea87bbe31ce8adaefa68d">aptWaitStatusEvent</a> (void)</td></tr>
-<tr class="memdesc:afe05ea63cebea87bbe31ce8adaefa68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for an APT status event. <br /></td></tr>
-<tr class="separator:afe05ea63cebea87bbe31ce8adaefa68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd26782aa0d4e85b953c17ef78d3e62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cd26782aa0d4e85b953c17ef78d3e62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a5cd26782aa0d4e85b953c17ef78d3e62">aptSignalReadyForSleep</a> (void)</td></tr>
-<tr class="memdesc:a5cd26782aa0d4e85b953c17ef78d3e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals that the app is ready to sleep. <br /></td></tr>
-<tr class="separator:a5cd26782aa0d4e85b953c17ef78d3e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0758146d7d1535374a8bf9660045b248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a0758146d7d1535374a8bf9660045b248">aptGetMenuAppID</a> (void)</td></tr>
-<tr class="memdesc:a0758146d7d1535374a8bf9660045b248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the menu's app ID.  <a href="#a0758146d7d1535374a8bf9660045b248">More...</a><br /></td></tr>
-<tr class="separator:a0758146d7d1535374a8bf9660045b248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d5e5004797d534ce0af21a3fc6cc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ad0d5e5004797d534ce0af21a3fc6cc4a">aptSendCommand</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *aptcmdbuf)</td></tr>
+<tr class="memdesc:ad0d5e5004797d534ce0af21a3fc6cc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an APT command through IPC, taking care of locking, opening and closing an APT session.  <a href="#ad0d5e5004797d534ce0af21a3fc6cc4a">More...</a><br /></td></tr>
+<tr class="separator:ad0d5e5004797d534ce0af21a3fc6cc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1eba93df85f2c930bcd7c333a06aac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#acf1eba93df85f2c930bcd7c333a06aac">aptIsSleepAllowed</a> (void)</td></tr>
+<tr class="memdesc:acf1eba93df85f2c930bcd7c333a06aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether to allow the system to enter sleep mode.  <a href="#acf1eba93df85f2c930bcd7c333a06aac">More...</a><br /></td></tr>
+<tr class="separator:acf1eba93df85f2c930bcd7c333a06aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efaaf8933a5f92b59ce0c1bf927ab69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a3efaaf8933a5f92b59ce0c1bf927ab69">aptSetSleepAllowed</a> (bool allowed)</td></tr>
+<tr class="memdesc:a3efaaf8933a5f92b59ce0c1bf927ab69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to allow the system to enter sleep mode.  <a href="#a3efaaf8933a5f92b59ce0c1bf927ab69">More...</a><br /></td></tr>
+<tr class="separator:a3efaaf8933a5f92b59ce0c1bf927ab69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84808c36d9a8c389896ecf241c7f89cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a84808c36d9a8c389896ecf241c7f89cb">aptMainLoop</a> (void)</td></tr>
 <tr class="memdesc:a84808c36d9a8c389896ecf241c7f89cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the current APT status.  <a href="#a84808c36d9a8c389896ecf241c7f89cb">More...</a><br /></td></tr>
 <tr class="separator:a84808c36d9a8c389896ecf241c7f89cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,12 +316,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_
 <tr class="memitem:a63034559615a68c7b390ac2912ad38f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a63034559615a68c7b390ac2912ad38f4">aptUnhook</a> (<a class="el" href="structaptHookCookie.html">aptHookCookie</a> *cookie)</td></tr>
 <tr class="memdesc:a63034559615a68c7b390ac2912ad38f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an APT status hook.  <a href="#a63034559615a68c7b390ac2912ad38f4">More...</a><br /></td></tr>
 <tr class="separator:a63034559615a68c7b390ac2912ad38f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af138b11246928874c3a7ecb070128a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af138b11246928874c3a7ecb070128a43">aptSetMessageCallback</a> (<a class="el" href="apt_8h.html#a9496a9fa3eefa3d4c43435aa9884baa5">aptMessageCb</a> callback, void *user)</td></tr>
+<tr class="memdesc:af138b11246928874c3a7ecb070128a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when an APT message from another applet is received.  <a href="#af138b11246928874c3a7ecb070128a43">More...</a><br /></td></tr>
+<tr class="separator:af138b11246928874c3a7ecb070128a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1323b8023f8fc92f840bc914637e925"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ab1323b8023f8fc92f840bc914637e925">aptLaunchLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appId, void *buf, size_t bufsize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:ab1323b8023f8fc92f840bc914637e925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches a library applet.  <a href="#ab1323b8023f8fc92f840bc914637e925">More...</a><br /></td></tr>
+<tr class="separator:ab1323b8023f8fc92f840bc914637e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445fa08d61a93c171b7b920c75261e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a445fa08d61a93c171b7b920c75261e6d">APT_GetLockHandle</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> flags, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *lockHandle)</td></tr>
 <tr class="memdesc:a445fa08d61a93c171b7b920c75261e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an APT lock handle.  <a href="#a445fa08d61a93c171b7b920c75261e6d">More...</a><br /></td></tr>
 <tr class="separator:a445fa08d61a93c171b7b920c75261e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44cc270cef75948c601d02a6b72e331a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a44cc270cef75948c601d02a6b72e331a">APT_Initialize</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appId, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *eventHandle1, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *eventHandle2)</td></tr>
-<tr class="memdesc:a44cc270cef75948c601d02a6b72e331a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an application's registration with APT.  <a href="#a44cc270cef75948c601d02a6b72e331a">More...</a><br /></td></tr>
-<tr class="separator:a44cc270cef75948c601d02a6b72e331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa798c78b56dcf2b451123986f087b1f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#aa798c78b56dcf2b451123986f087b1f4">APT_Initialize</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appId, APT_AppletAttr attr, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *signalEvent, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *resumeEvent)</td></tr>
+<tr class="memdesc:aa798c78b56dcf2b451123986f087b1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an application's registration with APT.  <a href="#aa798c78b56dcf2b451123986f087b1f4">More...</a><br /></td></tr>
+<tr class="separator:aa798c78b56dcf2b451123986f087b1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d69aa12d945ff02344f19edadeb5270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a3d69aa12d945ff02344f19edadeb5270">APT_Finalize</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appId)</td></tr>
 <tr class="memdesc:a3d69aa12d945ff02344f19edadeb5270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates an application's registration with APT.  <a href="#a3d69aa12d945ff02344f19edadeb5270">More...</a><br /></td></tr>
 <tr class="separator:a3d69aa12d945ff02344f19edadeb5270"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,15 +335,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_
 <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a8f843ae7cade12403160de70ec7d6f91">APT_HardwareResetAsync</a> (void)</td></tr>
 <tr class="memdesc:a8f843ae7cade12403160de70ec7d6f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously resets the hardware. <br /></td></tr>
 <tr class="separator:a8f843ae7cade12403160de70ec7d6f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f397c13eb78616181c966f9ade86224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a5f397c13eb78616181c966f9ade86224">APT_Enable</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> a)</td></tr>
-<tr class="memdesc:a5f397c13eb78616181c966f9ade86224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables APT.  <a href="#a5f397c13eb78616181c966f9ade86224">More...</a><br /></td></tr>
-<tr class="separator:a5f397c13eb78616181c966f9ade86224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e1cdaafbacf5b774c42e459620db1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af5e1cdaafbacf5b774c42e459620db1a">APT_GetAppletManInfo</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> inval, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *outval8, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *outval32, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *menu_appid, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *active_appid)</td></tr>
-<tr class="memdesc:af5e1cdaafbacf5b774c42e459620db1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets applet management info.  <a href="#af5e1cdaafbacf5b774c42e459620db1a">More...</a><br /></td></tr>
-<tr class="separator:af5e1cdaafbacf5b774c42e459620db1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59f808677b4f056e33b9b2721893d32e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a59f808677b4f056e33b9b2721893d32e">APT_GetAppletInfo</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *pProgramID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *pMediaType, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *pRegistered, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *pLoadState, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *pAttributes)</td></tr>
-<tr class="memdesc:a59f808677b4f056e33b9b2721893d32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an applet's information.  <a href="#a59f808677b4f056e33b9b2721893d32e">More...</a><br /></td></tr>
-<tr class="separator:a59f808677b4f056e33b9b2721893d32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f784fef7b1e1be921778b2326cd074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ac7f784fef7b1e1be921778b2326cd074">APT_Enable</a> (APT_AppletAttr attr)</td></tr>
+<tr class="memdesc:ac7f784fef7b1e1be921778b2326cd074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables APT.  <a href="#ac7f784fef7b1e1be921778b2326cd074">More...</a><br /></td></tr>
+<tr class="separator:ac7f784fef7b1e1be921778b2326cd074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a1dd51575a98af27c2262fdc1215bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a84a1dd51575a98af27c2262fdc1215bc">APT_GetAppletManInfo</a> (<a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a> inpos, <a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a> *outpos, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *req_appid, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *menu_appid, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *active_appid)</td></tr>
+<tr class="memdesc:a84a1dd51575a98af27c2262fdc1215bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets applet management info.  <a href="#a84a1dd51575a98af27c2262fdc1215bc">More...</a><br /></td></tr>
+<tr class="separator:a84a1dd51575a98af27c2262fdc1215bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89354d3c51b1708a962df82242bdbcb4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a89354d3c51b1708a962df82242bdbcb4">aptGetMenuAppID</a> (void)</td></tr>
+<tr class="memdesc:a89354d3c51b1708a962df82242bdbcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the menu's app ID.  <a href="#a89354d3c51b1708a962df82242bdbcb4">More...</a><br /></td></tr>
+<tr class="separator:a89354d3c51b1708a962df82242bdbcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee5005a29aa032fa54e3ebddb5bacf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a3ee5005a29aa032fa54e3ebddb5bacf6">APT_GetAppletInfo</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *pProgramID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *pMediaType, bool *pRegistered, bool *pLoadState, APT_AppletAttr *pAttributes)</td></tr>
+<tr class="memdesc:a3ee5005a29aa032fa54e3ebddb5bacf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an applet's information.  <a href="#a3ee5005a29aa032fa54e3ebddb5bacf6">More...</a><br /></td></tr>
+<tr class="separator:a3ee5005a29aa032fa54e3ebddb5bacf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9d76b263196257d9473234075c3fbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#aeb9d76b263196257d9473234075c3fbb">APT_GetAppletProgramInfo</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> id, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags, <a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *titleversion)</td></tr>
 <tr class="memdesc:aeb9d76b263196257d9473234075c3fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an applet's program information.  <a href="#aeb9d76b263196257d9473234075c3fbb">More...</a><br /></td></tr>
 <tr class="separator:aeb9d76b263196257d9473234075c3fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,136 +357,200 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_
 <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a56bf96b3c92e926b62664df57d478a4d">APT_PrepareToJumpToHomeMenu</a> (void)</td></tr>
 <tr class="memdesc:a56bf96b3c92e926b62664df57d478a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to jump to the home menu. <br /></td></tr>
 <tr class="separator:a56bf96b3c92e926b62664df57d478a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a4915880650fb6c0b1b4cc82fa45d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a63a4915880650fb6c0b1b4cc82fa45d8">APT_JumpToHomeMenu</a> (const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
-<tr class="memdesc:a63a4915880650fb6c0b1b4cc82fa45d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to the home menu.  <a href="#a63a4915880650fb6c0b1b4cc82fa45d8">More...</a><br /></td></tr>
-<tr class="separator:a63a4915880650fb6c0b1b4cc82fa45d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d462e41e1146266c88034f4eea17709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a5d462e41e1146266c88034f4eea17709">APT_PrepareToJumpToApplication</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> a)</td></tr>
-<tr class="memdesc:a5d462e41e1146266c88034f4eea17709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to jump to an application.  <a href="#a5d462e41e1146266c88034f4eea17709">More...</a><br /></td></tr>
-<tr class="separator:a5d462e41e1146266c88034f4eea17709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada8a2e9dcf5883c1e36ef72cb9c53a5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ada8a2e9dcf5883c1e36ef72cb9c53a5b">APT_JumpToApplication</a> (const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
-<tr class="memdesc:ada8a2e9dcf5883c1e36ef72cb9c53a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to an application.  <a href="#ada8a2e9dcf5883c1e36ef72cb9c53a5b">More...</a><br /></td></tr>
-<tr class="separator:ada8a2e9dcf5883c1e36ef72cb9c53a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3877c4a86d4e491557e7e9bf86b8da95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a3877c4a86d4e491557e7e9bf86b8da95">APT_IsRegistered</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out)</td></tr>
-<tr class="memdesc:a3877c4a86d4e491557e7e9bf86b8da95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether an application is registered.  <a href="#a3877c4a86d4e491557e7e9bf86b8da95">More...</a><br /></td></tr>
-<tr class="separator:a3877c4a86d4e491557e7e9bf86b8da95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f49ecfa1d838f1cb511f4258728e688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a2f49ecfa1d838f1cb511f4258728e688">APT_JumpToHomeMenu</a> (const void *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:a2f49ecfa1d838f1cb511f4258728e688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to the home menu.  <a href="#a2f49ecfa1d838f1cb511f4258728e688">More...</a><br /></td></tr>
+<tr class="separator:a2f49ecfa1d838f1cb511f4258728e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af778eab1656c5e01d8b03c72cfd4936a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af778eab1656c5e01d8b03c72cfd4936a">APT_PrepareToJumpToApplication</a> (bool exiting)</td></tr>
+<tr class="memdesc:af778eab1656c5e01d8b03c72cfd4936a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to jump to an application.  <a href="#af778eab1656c5e01d8b03c72cfd4936a">More...</a><br /></td></tr>
+<tr class="separator:af778eab1656c5e01d8b03c72cfd4936a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac217768d36b8c34c46bcb153cc4dd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a8ac217768d36b8c34c46bcb153cc4dd7">APT_JumpToApplication</a> (const void *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:a8ac217768d36b8c34c46bcb153cc4dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to an application.  <a href="#a8ac217768d36b8c34c46bcb153cc4dd7">More...</a><br /></td></tr>
+<tr class="separator:a8ac217768d36b8c34c46bcb153cc4dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98402a39a7476fd2fcf705688b8f8364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a98402a39a7476fd2fcf705688b8f8364">APT_IsRegistered</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, bool *out)</td></tr>
+<tr class="memdesc:a98402a39a7476fd2fcf705688b8f8364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether an application is registered.  <a href="#a98402a39a7476fd2fcf705688b8f8364">More...</a><br /></td></tr>
+<tr class="separator:a98402a39a7476fd2fcf705688b8f8364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d9c84201b13a43c3417d7e2f61b231b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a6d9c84201b13a43c3417d7e2f61b231b">APT_InquireNotification</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> appID, <a class="el" href="apt_8h.html#a2722d05c62173b5d6e4a22a4666a6873">APT_Signal</a> *signalType)</td></tr>
 <tr class="memdesc:a6d9c84201b13a43c3417d7e2f61b231b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquires as to whether a signal has been received.  <a href="#a6d9c84201b13a43c3417d7e2f61b231b">More...</a><br /></td></tr>
 <tr class="separator:a6d9c84201b13a43c3417d7e2f61b231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99188445583d14b149c898f8fb10f16f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a99188445583d14b149c898f8fb10f16f">APT_NotifyToWait</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID)</td></tr>
 <tr class="memdesc:a99188445583d14b149c898f8fb10f16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies an application to wait.  <a href="#a99188445583d14b149c898f8fb10f16f">More...</a><br /></td></tr>
 <tr class="separator:a99188445583d14b149c898f8fb10f16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8d528478207bac751c7a1b09cdc258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a1b8d528478207bac751c7a1b09cdc258">APT_AppletUtility</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> a, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size1, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf1, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size2, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf2)</td></tr>
-<tr class="memdesc:a1b8d528478207bac751c7a1b09cdc258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls an applet utility function.  <a href="#a1b8d528478207bac751c7a1b09cdc258">More...</a><br /></td></tr>
-<tr class="separator:a1b8d528478207bac751c7a1b09cdc258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b4b990c35882daff854edae3d69a8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a76b4b990c35882daff854edae3d69a8c">APT_GlanceParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufferSize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *actualSize, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *signalType)</td></tr>
-<tr class="memdesc:a76b4b990c35882daff854edae3d69a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glances at a receieved parameter without removing it from the queue.  <a href="#a76b4b990c35882daff854edae3d69a8c">More...</a><br /></td></tr>
-<tr class="separator:a76b4b990c35882daff854edae3d69a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102a0f3aca2d09620a1aa9f8ee0e0e11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a102a0f3aca2d09620a1aa9f8ee0e0e11">APT_ReceiveParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufferSize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *actualSize, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *signalType)</td></tr>
-<tr class="memdesc:a102a0f3aca2d09620a1aa9f8ee0e0e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a parameter.  <a href="#a102a0f3aca2d09620a1aa9f8ee0e0e11">More...</a><br /></td></tr>
-<tr class="separator:a102a0f3aca2d09620a1aa9f8ee0e0e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fbeb50994fe5fb57bf79b4892d324e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a7fbeb50994fe5fb57bf79b4892d324e9">APT_SendParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> src_appID, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> dst_appID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufferSize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buffer, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> paramhandle, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> signalType)</td></tr>
-<tr class="memdesc:a7fbeb50994fe5fb57bf79b4892d324e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a parameter.  <a href="#a7fbeb50994fe5fb57bf79b4892d324e9">More...</a><br /></td></tr>
-<tr class="separator:a7fbeb50994fe5fb57bf79b4892d324e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a874e4c54a2e45c4ff6ded2b6d6f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a82a874e4c54a2e45c4ff6ded2b6d6f49">APT_SendCaptureBufferInfo</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufferSize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buffer)</td></tr>
-<tr class="memdesc:a82a874e4c54a2e45c4ff6ded2b6d6f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends capture buffer information.  <a href="#a82a874e4c54a2e45c4ff6ded2b6d6f49">More...</a><br /></td></tr>
-<tr class="separator:a82a874e4c54a2e45c4ff6ded2b6d6f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac89f363acef9b400afa38a7dd54ddd91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ac89f363acef9b400afa38a7dd54ddd91">APT_ReplySleepQuery</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> a)</td></tr>
-<tr class="memdesc:ac89f363acef9b400afa38a7dd54ddd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to a sleep query.  <a href="#ac89f363acef9b400afa38a7dd54ddd91">More...</a><br /></td></tr>
-<tr class="separator:ac89f363acef9b400afa38a7dd54ddd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d75c42d78a95795e8fa87c8b98daa26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a1d75c42d78a95795e8fa87c8b98daa26">APT_AppletUtility</a> (int id, void *out, size_t outSize, const void *in, size_t inSize)</td></tr>
+<tr class="memdesc:a1d75c42d78a95795e8fa87c8b98daa26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls an applet utility function.  <a href="#a1d75c42d78a95795e8fa87c8b98daa26">More...</a><br /></td></tr>
+<tr class="separator:a1d75c42d78a95795e8fa87c8b98daa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344dc2220cffe3ef39975cb220d839c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a344dc2220cffe3ef39975cb220d839c9"></a>
+<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a344dc2220cffe3ef39975cb220d839c9">APT_SleepIfShellClosed</a> (void)</td></tr>
+<tr class="memdesc:a344dc2220cffe3ef39975cb220d839c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleeps if shell is closed (?). <br /></td></tr>
+<tr class="separator:a344dc2220cffe3ef39975cb220d839c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4103547c919d699bd63a73e67c4c122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ab4103547c919d699bd63a73e67c4c122">APT_TryLockTransition</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> transition, bool *succeeded)</td></tr>
+<tr class="memdesc:ab4103547c919d699bd63a73e67c4c122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to lock a transition (?).  <a href="#ab4103547c919d699bd63a73e67c4c122">More...</a><br /></td></tr>
+<tr class="separator:ab4103547c919d699bd63a73e67c4c122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c39328a07c156458ca934106637c9ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a2c39328a07c156458ca934106637c9ea">APT_UnlockTransition</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> transition)</td></tr>
+<tr class="memdesc:a2c39328a07c156458ca934106637c9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks a transition (?).  <a href="#a2c39328a07c156458ca934106637c9ea">More...</a><br /></td></tr>
+<tr class="separator:a2c39328a07c156458ca934106637c9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add62abbab8218ea7a580e07ba1c065b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#add62abbab8218ea7a580e07ba1c065b5">APT_GlanceParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, void *buffer, size_t bufferSize, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *sender, <a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> *command, size_t *actualSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *parameter)</td></tr>
+<tr class="memdesc:add62abbab8218ea7a580e07ba1c065b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glances at a receieved parameter without removing it from the queue.  <a href="#add62abbab8218ea7a580e07ba1c065b5">More...</a><br /></td></tr>
+<tr class="separator:add62abbab8218ea7a580e07ba1c065b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344ecade14264e6278d84f2445bfefc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a344ecade14264e6278d84f2445bfefc5">APT_ReceiveParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, void *buffer, size_t bufferSize, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *sender, <a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> *command, size_t *actualSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *parameter)</td></tr>
+<tr class="memdesc:a344ecade14264e6278d84f2445bfefc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a parameter.  <a href="#a344ecade14264e6278d84f2445bfefc5">More...</a><br /></td></tr>
+<tr class="separator:a344ecade14264e6278d84f2445bfefc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e606e7c80be25f4fc2dd3ed90b1cdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a94e606e7c80be25f4fc2dd3ed90b1cdd">APT_SendParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> source, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> dest, <a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> command, const void *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufferSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> parameter)</td></tr>
+<tr class="memdesc:a94e606e7c80be25f4fc2dd3ed90b1cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a parameter.  <a href="#a94e606e7c80be25f4fc2dd3ed90b1cdd">More...</a><br /></td></tr>
+<tr class="separator:a94e606e7c80be25f4fc2dd3ed90b1cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7037c79388ac12cad20f454746bd45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a3b7037c79388ac12cad20f454746bd45">APT_CancelParameter</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> source, <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> dest, bool *success)</td></tr>
+<tr class="memdesc:a3b7037c79388ac12cad20f454746bd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a parameter which matches the specified source and dest AppIDs.  <a href="#a3b7037c79388ac12cad20f454746bd45">More...</a><br /></td></tr>
+<tr class="separator:a3b7037c79388ac12cad20f454746bd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bda011a9d90d72e02cd89792e6074c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a1bda011a9d90d72e02cd89792e6074c7">APT_SendCaptureBufferInfo</a> (const <a class="el" href="structaptCaptureBufInfo.html">aptCaptureBufInfo</a> *captureBuf)</td></tr>
+<tr class="memdesc:a1bda011a9d90d72e02cd89792e6074c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends capture buffer information.  <a href="#a1bda011a9d90d72e02cd89792e6074c7">More...</a><br /></td></tr>
+<tr class="separator:a1bda011a9d90d72e02cd89792e6074c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6212210410280fad33f934aba6cbca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ae6212210410280fad33f934aba6cbca7">APT_ReplySleepQuery</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="apt_8h.html#a0c86495cfcd1fb626efeb9138cb9e622">APT_QueryReply</a> reply)</td></tr>
+<tr class="memdesc:ae6212210410280fad33f934aba6cbca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to a sleep query.  <a href="#ae6212210410280fad33f934aba6cbca7">More...</a><br /></td></tr>
+<tr class="separator:ae6212210410280fad33f934aba6cbca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40df8aaaef30ec1f31741a9d8299592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#aa40df8aaaef30ec1f31741a9d8299592">APT_ReplySleepNotificationComplete</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID)</td></tr>
 <tr class="memdesc:aa40df8aaaef30ec1f31741a9d8299592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies that a sleep notification has been completed.  <a href="#aa40df8aaaef30ec1f31741a9d8299592">More...</a><br /></td></tr>
 <tr class="separator:aa40df8aaaef30ec1f31741a9d8299592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd9ccbdfc73aebaa20098e419d0a498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a1bd9ccbdfc73aebaa20098e419d0a498">APT_PrepareToCloseApplication</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> a)</td></tr>
-<tr class="memdesc:a1bd9ccbdfc73aebaa20098e419d0a498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to close the application.  <a href="#a1bd9ccbdfc73aebaa20098e419d0a498">More...</a><br /></td></tr>
-<tr class="separator:a1bd9ccbdfc73aebaa20098e419d0a498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ef22016948a53bd940187a0497cbfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a68ef22016948a53bd940187a0497cbfe">APT_CloseApplication</a> (const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
-<tr class="memdesc:a68ef22016948a53bd940187a0497cbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the application.  <a href="#a68ef22016948a53bd940187a0497cbfe">More...</a><br /></td></tr>
-<tr class="separator:a68ef22016948a53bd940187a0497cbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff6d0e1b695cbeb832a73910c3ea857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a0ff6d0e1b695cbeb832a73910c3ea857">APT_PrepareToCloseApplication</a> (bool cancelPreload)</td></tr>
+<tr class="memdesc:a0ff6d0e1b695cbeb832a73910c3ea857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to close the application.  <a href="#a0ff6d0e1b695cbeb832a73910c3ea857">More...</a><br /></td></tr>
+<tr class="separator:a0ff6d0e1b695cbeb832a73910c3ea857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20bdce7b2c7ad39de790a604115fe19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ac20bdce7b2c7ad39de790a604115fe19">APT_CloseApplication</a> (const void *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:ac20bdce7b2c7ad39de790a604115fe19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the application.  <a href="#ac20bdce7b2c7ad39de790a604115fe19">More...</a><br /></td></tr>
+<tr class="separator:ac20bdce7b2c7ad39de790a604115fe19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa83ab636d5c52e2c95eae3f3abe940e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#aa83ab636d5c52e2c95eae3f3abe940e7">APT_SetAppCpuTimeLimit</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> percent)</td></tr>
 <tr class="memdesc:aa83ab636d5c52e2c95eae3f3abe940e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the application's CPU time limit.  <a href="#aa83ab636d5c52e2c95eae3f3abe940e7">More...</a><br /></td></tr>
 <tr class="separator:aa83ab636d5c52e2c95eae3f3abe940e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad356b2e371c9fa57fd3d4d039075e46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ad356b2e371c9fa57fd3d4d039075e46a">APT_GetAppCpuTimeLimit</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *percent)</td></tr>
 <tr class="memdesc:ad356b2e371c9fa57fd3d4d039075e46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the application's CPU time limit.  <a href="#ad356b2e371c9fa57fd3d4d039075e46a">More...</a><br /></td></tr>
 <tr class="separator:ad356b2e371c9fa57fd3d4d039075e46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2633ad4c7e3256753acc9e4967dad19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ab2633ad4c7e3256753acc9e4967dad19">APT_CheckNew3DS_Application</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out)</td></tr>
-<tr class="memdesc:ab2633ad4c7e3256753acc9e4967dad19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the system is a New 3DS.  <a href="#ab2633ad4c7e3256753acc9e4967dad19">More...</a><br /></td></tr>
-<tr class="separator:ab2633ad4c7e3256753acc9e4967dad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22cd9d2f7439e562886e0532fb6e5308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a22cd9d2f7439e562886e0532fb6e5308">APT_CheckNew3DS_System</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out)</td></tr>
-<tr class="memdesc:a22cd9d2f7439e562886e0532fb6e5308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the system is a New 3DS.  <a href="#a22cd9d2f7439e562886e0532fb6e5308">More...</a><br /></td></tr>
-<tr class="separator:a22cd9d2f7439e562886e0532fb6e5308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602af3a7809914511da021d44f2dfb61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a602af3a7809914511da021d44f2dfb61">APT_CheckNew3DS</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out)</td></tr>
-<tr class="memdesc:a602af3a7809914511da021d44f2dfb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the system is a New 3DS.  <a href="#a602af3a7809914511da021d44f2dfb61">More...</a><br /></td></tr>
-<tr class="separator:a602af3a7809914511da021d44f2dfb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab470801d295f1ee5a633b358b875a8b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ab470801d295f1ee5a633b358b875a8b7">APT_PrepareToDoAppJump</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> programID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> mediatype)</td></tr>
-<tr class="memdesc:ab470801d295f1ee5a633b358b875a8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares for an applicaton jump.  <a href="#ab470801d295f1ee5a633b358b875a8b7">More...</a><br /></td></tr>
-<tr class="separator:ab470801d295f1ee5a633b358b875a8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcf73a6f87b32ef0c7cf346debe9cb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a7dcf73a6f87b32ef0c7cf346debe9cb1">APT_DoAppJump</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> NSbuf0Size, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> NSbuf1Size, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *NSbuf0Ptr, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *NSbuf1Ptr)</td></tr>
-<tr class="memdesc:a7dcf73a6f87b32ef0c7cf346debe9cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an application jump.  <a href="#a7dcf73a6f87b32ef0c7cf346debe9cb1">More...</a><br /></td></tr>
-<tr class="separator:a7dcf73a6f87b32ef0c7cf346debe9cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1a13d3f49a8f40229cd2443371ddaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ada1a13d3f49a8f40229cd2443371ddaa">APT_CheckNew3DS</a> (bool *out)</td></tr>
+<tr class="memdesc:ada1a13d3f49a8f40229cd2443371ddaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the system is a New 3DS.  <a href="#ada1a13d3f49a8f40229cd2443371ddaa">More...</a><br /></td></tr>
+<tr class="separator:ada1a13d3f49a8f40229cd2443371ddaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba728efcd35d8a4f6bcceee19c597c31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#aba728efcd35d8a4f6bcceee19c597c31">APT_PrepareToDoApplicationJump</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> programID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> mediatype)</td></tr>
+<tr class="memdesc:aba728efcd35d8a4f6bcceee19c597c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares for an applicaton jump.  <a href="#aba728efcd35d8a4f6bcceee19c597c31">More...</a><br /></td></tr>
+<tr class="separator:aba728efcd35d8a4f6bcceee19c597c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a840a131632e11303933edaf2e1223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a78a840a131632e11303933edaf2e1223">APT_DoApplicationJump</a> (const void *param, size_t paramSize, const void *hmac)</td></tr>
+<tr class="memdesc:a78a840a131632e11303933edaf2e1223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an application jump.  <a href="#a78a840a131632e11303933edaf2e1223">More...</a><br /></td></tr>
+<tr class="separator:a78a840a131632e11303933edaf2e1223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80ae4fce5a7efc802ed22f5bb87b11d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af80ae4fce5a7efc802ed22f5bb87b11d">APT_PrepareToStartLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID)</td></tr>
 <tr class="memdesc:af80ae4fce5a7efc802ed22f5bb87b11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to start a library applet.  <a href="#af80ae4fce5a7efc802ed22f5bb87b11d">More...</a><br /></td></tr>
 <tr class="separator:af80ae4fce5a7efc802ed22f5bb87b11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc8b4ca8a26033d08c60d43e4707c9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a4bc8b4ca8a26033d08c60d43e4707c9f">APT_StartLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> inhandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *parambuf, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> parambufsize)</td></tr>
-<tr class="memdesc:a4bc8b4ca8a26033d08c60d43e4707c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a library applet.  <a href="#a4bc8b4ca8a26033d08c60d43e4707c9f">More...</a><br /></td></tr>
-<tr class="separator:a4bc8b4ca8a26033d08c60d43e4707c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8745f47f3f72d961dbd50223cdf3b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#af8745f47f3f72d961dbd50223cdf3b6c">APT_LaunchLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> inhandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *parambuf, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> parambufsize)</td></tr>
-<tr class="memdesc:af8745f47f3f72d961dbd50223cdf3b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches a library applet.  <a href="#af8745f47f3f72d961dbd50223cdf3b6c">More...</a><br /></td></tr>
-<tr class="separator:af8745f47f3f72d961dbd50223cdf3b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe759128f9e9f4c8d1875b2d54d466fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#abe759128f9e9f4c8d1875b2d54d466fe">APT_StartLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, const void *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:abe759128f9e9f4c8d1875b2d54d466fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a library applet.  <a href="#abe759128f9e9f4c8d1875b2d54d466fe">More...</a><br /></td></tr>
+<tr class="separator:abe759128f9e9f4c8d1875b2d54d466fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9431bc6170912ea0f217b8dede0bc996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a9431bc6170912ea0f217b8dede0bc996">APT_PrepareToStartSystemApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID)</td></tr>
 <tr class="memdesc:a9431bc6170912ea0f217b8dede0bc996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares to start a system applet.  <a href="#a9431bc6170912ea0f217b8dede0bc996">More...</a><br /></td></tr>
 <tr class="separator:a9431bc6170912ea0f217b8dede0bc996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d1004156faa98ab4f0211e3a6549d01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a9d1004156faa98ab4f0211e3a6549d01">APT_StartSystemApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bufSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> applHandle, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf)</td></tr>
-<tr class="memdesc:a9d1004156faa98ab4f0211e3a6549d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a system applet.  <a href="#a9d1004156faa98ab4f0211e3a6549d01">More...</a><br /></td></tr>
-<tr class="separator:a9d1004156faa98ab4f0211e3a6549d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:afb9fcff1eafd3b0278af6e9b8217e8ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb9fcff1eafd3b0278af6e9b8217e8ef"></a>
-<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#afb9fcff1eafd3b0278af6e9b8217e8ef">aptEvents</a> [3]</td></tr>
-<tr class="memdesc:afb9fcff1eafd3b0278af6e9b8217e8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT events. <br /></td></tr>
-<tr class="separator:afb9fcff1eafd3b0278af6e9b8217e8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dabcc9d42123aa58e8f10a08d730d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ad4dabcc9d42123aa58e8f10a08d730d5">APT_StartSystemApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appID, const void *param, size_t paramSize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:ad4dabcc9d42123aa58e8f10a08d730d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a system applet.  <a href="#ad4dabcc9d42123aa58e8f10a08d730d5">More...</a><br /></td></tr>
+<tr class="separator:ad4dabcc9d42123aa58e8f10a08d730d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227cff8cbdfee1e6ae700ecc23a75008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a227cff8cbdfee1e6ae700ecc23a75008">APT_GetSharedFont</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *fontHandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *mapAddr)</td></tr>
+<tr class="memdesc:a227cff8cbdfee1e6ae700ecc23a75008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the shared system font.  <a href="#a227cff8cbdfee1e6ae700ecc23a75008">More...</a><br /></td></tr>
+<tr class="separator:a227cff8cbdfee1e6ae700ecc23a75008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edf363b8c9d23b5a6652e5ff7b1062b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a1edf363b8c9d23b5a6652e5ff7b1062b">APT_ReceiveDeliverArg</a> (const void *param, size_t paramSize, const void *hmac, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *sender, bool *received)</td></tr>
+<tr class="memdesc:a1edf363b8c9d23b5a6652e5ff7b1062b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives the deliver (launch) argument.  <a href="#a1edf363b8c9d23b5a6652e5ff7b1062b">More...</a><br /></td></tr>
+<tr class="separator:a1edf363b8c9d23b5a6652e5ff7b1062b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>APT (Applet) service. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="af758bda479df7ac72bc891fb7c068f47"></a>
+<a class="anchor" id="a9593943634f18b7678ec5dab635ff605"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a></td>
+          <td class="memname">enum <a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>App status values. </p>
+<p>APT applet position. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47a89cf5389dbaa1450c13c06add477a5ff"></a>APP_NOTINITIALIZED&#160;</td><td class="fielddoc">
-<p>App not initialized. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605a24ea14a4343ca2b4b534b5da32772688"></a>APTPOS_NONE&#160;</td><td class="fielddoc">
+<p>No position specified. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47a71b026b3a2b676e4176ee9f8dae22f1d"></a>APP_RUNNING&#160;</td><td class="fielddoc">
-<p>App running. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605ae4531c99a0a8f8803fd75296a4b65227"></a>APTPOS_APP&#160;</td><td class="fielddoc">
+<p>Application. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47a424275934bd427edfec40795fd3dfc87"></a>APP_SUSPENDED&#160;</td><td class="fielddoc">
-<p>App suspended. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605aeadeceaba1dcca5d89aa8d24963a3fdb"></a>APTPOS_APPLIB&#160;</td><td class="fielddoc">
+<p>Application library (?). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47aee012b4f899fb0d3885f261b6c8f6302"></a>APP_EXITING&#160;</td><td class="fielddoc">
-<p>App exiting. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605ae501a457f683909c1f53d62408d0c677"></a>APTPOS_SYS&#160;</td><td class="fielddoc">
+<p>System applet. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47a95c4af5ec1843b957bcf1389d17a9ac1"></a>APP_SUSPENDING&#160;</td><td class="fielddoc">
-<p>App suspending. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605a2fc1817b3a3a4157f90271fc5a1346d6"></a>APTPOS_SYSLIB&#160;</td><td class="fielddoc">
+<p>System library (?). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47ad69419936a7afd06c6767cad6341e058"></a>APP_SLEEPMODE&#160;</td><td class="fielddoc">
-<p>App in sleep mode. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9593943634f18b7678ec5dab635ff605a34acfdba1f4294f8d91bb6cf83beda46"></a>APTPOS_RESIDENT&#160;</td><td class="fielddoc">
+<p>Resident applet. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47a80154eb5cf9d6e4a50b6842e3372793f"></a>APP_PREPARE_SLEEPMODE&#160;</td><td class="fielddoc">
-<p>App preparing to enter sleep mode. </p>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>APT commands. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a4828d70ecbf7985d44cd63de6431acf0"></a>APTCMD_NONE&#160;</td><td class="fielddoc">
+<p>No command received. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47aa6ae16e4812f03d3cf7d0109c4fe166f"></a>APP_APPLETSTARTED&#160;</td><td class="fielddoc">
-<p>Applet started. </p>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a6f0b299aa97c2b50152d97fd7dea7312"></a>APTCMD_WAKEUP&#160;</td><td class="fielddoc">
+<p>Applet should wake up. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af758bda479df7ac72bc891fb7c068f47ac95725568a2a4bc7bbff2c892b8ad119"></a>APP_APPLETCLOSED&#160;</td><td class="fielddoc">
-<p>Applet closed. </p>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98ad7861a838f4deee180c2dbc55e7aec68"></a>APTCMD_REQUEST&#160;</td><td class="fielddoc">
+<p>Source applet sent us a parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a5ec2e2a17f83ac6e130d8d6a15ba6f08"></a>APTCMD_RESPONSE&#160;</td><td class="fielddoc">
+<p>Target applet replied to our parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98aed556f2642b7fbb365e40f87fb9eeffe"></a>APTCMD_EXIT&#160;</td><td class="fielddoc">
+<p>Exit (??) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a13c0d5dff50a550511757236fa98971f"></a>APTCMD_MESSAGE&#160;</td><td class="fielddoc">
+<p>Message (??) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98ad6adf059866d4fb59b64228a4c4e2b66"></a>APTCMD_HOMEBUTTON_ONCE&#160;</td><td class="fielddoc">
+<p>HOME button pressed once. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98aa1577c79c042852dddf9f92ef0c52189"></a>APTCMD_HOMEBUTTON_TWICE&#160;</td><td class="fielddoc">
+<p>HOME button pressed twice (double-pressed). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98abf92d20842377e320af3600c988214ba"></a>APTCMD_DSP_SLEEP&#160;</td><td class="fielddoc">
+<p>DSP should sleep (manual DSP rights related?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a60799b8b19f407a933f011c866080177"></a>APTCMD_DSP_WAKEUP&#160;</td><td class="fielddoc">
+<p>DSP should wake up (manual DSP rights related?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a06af48051928930b73dccc4c1b65bba5"></a>APTCMD_WAKEUP_EXIT&#160;</td><td class="fielddoc">
+<p>Applet wakes up due to a different applet exiting. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98abfb2f5fc31f8c850c77ffbd5e544579a"></a>APTCMD_WAKEUP_PAUSE&#160;</td><td class="fielddoc">
+<p>Applet wakes up after being paused through HOME menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a060497755405133e686228db3b06d160"></a>APTCMD_WAKEUP_CANCEL&#160;</td><td class="fielddoc">
+<p>Applet wakes up due to being cancelled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98ae9358e35be3c5ad8a819bde43617f714"></a>APTCMD_WAKEUP_CANCELALL&#160;</td><td class="fielddoc">
+<p>Applet wakes up due to all applets being cancelled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a39a88a412587a5b98fb7e7ed84766b94"></a>APTCMD_WAKEUP_POWERBUTTON&#160;</td><td class="fielddoc">
+<p>Applet wakes up due to POWER button being pressed (?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a4d6812d6d3b54ae24281701bd07d0245"></a>APTCMD_WAKEUP_JUMPTOHOME&#160;</td><td class="fielddoc">
+<p>Applet wakes up and is instructed to jump to HOME menu (?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98a1439e48aa862f1ce6291048671e62394"></a>APTCMD_SYSAPPLET_REQUEST&#160;</td><td class="fielddoc">
+<p>Request for sysapplet (?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8542622c76d76df7e17b1a1b05033d98ae5722f8f2e3793dcd0545036db78b7a8"></a>APTCMD_WAKEUP_LAUNCHAPP&#160;</td><td class="fielddoc">
+<p>Applet wakes up and is instructed to launch another applet (?). </p>
 </td></tr>
 </table>
 
@@ -489,32 +602,41 @@ Variables</h2></td></tr>
 
 <p>APT signals. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ae56c10181fe655bfd60690c5d32866a2"></a>APTSIGNAL_HOMEBUTTON&#160;</td><td class="fielddoc">
-<p>Home button pressed. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873acd8c323472bd444cb228cec75d548c4e"></a>APTSIGNAL_NONE&#160;</td><td class="fielddoc">
+<p>No signal received. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a046b52a126ac897dc193379ed860d06a"></a>APTSIGNAL_PREPARESLEEP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ae56c10181fe655bfd60690c5d32866a2"></a>APTSIGNAL_HOMEBUTTON&#160;</td><td class="fielddoc">
+<p>HOME button pressed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ad085835392043f93d9e5e10204c35e1b"></a>APTSIGNAL_HOMEBUTTON2&#160;</td><td class="fielddoc">
+<p>HOME button pressed (again?). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a03000a0f1fad0511a293d88a72176c4f"></a>APTSIGNAL_SLEEP_QUERY&#160;</td><td class="fielddoc">
 <p>Prepare to enter sleep mode. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873af8166042874c4fdb924214cdd5896c6e"></a>APTSIGNAL_ENTERSLEEP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873aeb102d4c3a815b2f5dc8b0d620b7baf2"></a>APTSIGNAL_SLEEP_CANCEL&#160;</td><td class="fielddoc">
+<p>Triggered when ptm:s GetShellStatus() returns 5. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ae09630e05e425bdd78326593a5211c23"></a>APTSIGNAL_SLEEP_ENTER&#160;</td><td class="fielddoc">
 <p>Enter sleep mode. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ae944de692c8d9ef085d909e138e21bc9"></a>APTSIGNAL_WAKEUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a5cf102854cc06805f4997227fc7df22b"></a>APTSIGNAL_SLEEP_WAKEUP&#160;</td><td class="fielddoc">
 <p>Wake from sleep mode. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a32a307f57737ea8366297b23f550bb7f"></a>APTSIGNAL_ENABLE&#160;</td><td class="fielddoc">
-<p>Enable. </p>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873ab87eaa3f2baff06850ff8625b1450cec"></a>APTSIGNAL_SHUTDOWN&#160;</td><td class="fielddoc">
+<p>Shutdown. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a079561f459d1f1838a33834beffb8aed"></a>APTSIGNAL_POWERBUTTON&#160;</td><td class="fielddoc">
-<p>Power button pressed. </p>
+<p>POWER button pressed. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a6475f5b012c2f4a00c2db6ca44a19b4f"></a>APTSIGNAL_UTILITY&#160;</td><td class="fielddoc">
-<p>Utility called. </p>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873aa517964f8ed1d6e340feaf7b7bc0f645"></a>APTSIGNAL_POWERBUTTON2&#160;</td><td class="fielddoc">
+<p>POWER button cleared (?). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a3031c83ed6b3b7e51277daa1802bbdca"></a>APTSIGNAL_SLEEPSYSTEM&#160;</td><td class="fielddoc">
-<p>System sleeping. </p>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873abbbda6364522d06886da35341bc44f78"></a>APTSIGNAL_TRY_SLEEP&#160;</td><td class="fielddoc">
+<p>System sleeping (?). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873a000d03422313d6646d8d749606aced0c"></a>APTSIGNAL_ERROR&#160;</td><td class="fielddoc">
-<p>Error occurred. </p>
+<tr><td class="fieldname"><a class="anchor" id="a2722d05c62173b5d6e4a22a4666a6873aababf297798d5d07e7c4e5ee2fb284f1"></a>APTSIGNAL_ORDERTOCLOSE&#160;</td><td class="fielddoc">
+<p>Order to close (such as when an error happens?). </p>
 </td></tr>
 </table>
 
@@ -598,45 +720,39 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a1b8d528478207bac751c7a1b09cdc258"></a>
+<a class="anchor" id="a1d75c42d78a95795e8fa87c8b98daa26"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_AppletUtility </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>outSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>size1</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>buf1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>size2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>buf2</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>inSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -649,26 +765,67 @@ Variables</h2></td></tr>
 <p>Calls an applet utility function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">id</td><td>Utility function to call. </td></tr>
     <tr><td class="paramname">out</td><td>Pointer to write output data to. </td></tr>
-    <tr><td class="paramname">a</td><td>Utility function to call. </td></tr>
-    <tr><td class="paramname">size1</td><td>Size of the first buffer. </td></tr>
-    <tr><td class="paramname">buf1</td><td>First buffer. </td></tr>
-    <tr><td class="paramname">size2</td><td>Size of the second buffer. </td></tr>
-    <tr><td class="paramname">buf2</td><td>Second buffer. </td></tr>
+    <tr><td class="paramname">outSize</td><td>Size of the output buffer. </td></tr>
+    <tr><td class="paramname">in</td><td>Pointer to the input data. </td></tr>
+    <tr><td class="paramname">inSize</td><td>Size of the input buffer. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a602af3a7809914511da021d44f2dfb61"></a>
+<a class="anchor" id="a3b7037c79388ac12cad20f454746bd45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_CancelParameter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>success</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancels a parameter which matches the specified source and dest AppIDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>AppID of the source application (use APPID_NONE to disable the check). </td></tr>
+    <tr><td class="paramname">dest</td><td>AppID of the destination application (use APPID_NONE to disable the check). </td></tr>
+    <tr><td class="paramname">success</td><td>Pointer to output true if a parameter was cancelled, or false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ada1a13d3f49a8f40229cd2443371ddaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_CheckNew3DS </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><em>out</em></td><td>)</td>
           <td></td>
         </tr>
@@ -685,62 +842,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2633ad4c7e3256753acc9e4967dad19"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_CheckNew3DS_Application </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether the system is a New 3DS. </p>
-<p>Note: this function is unreliable, see: <a href="http://3dbrew.org/wiki/APT:PrepareToStartApplication">http://3dbrew.org/wiki/APT:PrepareToStartApplication</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>Pointer to write the New 3DS flag to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a22cd9d2f7439e562886e0532fb6e5308"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_CheckNew3DS_System </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether the system is a New 3DS. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>Pointer to write the New 3DS flag to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a68ef22016948a53bd940187a0497cbfe"></a>
+<a class="anchor" id="ac20bdce7b2c7ad39de790a604115fe19"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_CloseApplication </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>param</em>, </td>
         </tr>
         <tr>
@@ -775,33 +884,27 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7dcf73a6f87b32ef0c7cf346debe9cb1"></a>
+<a class="anchor" id="a78a840a131632e11303933edaf2e1223"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_DoAppJump </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_DoApplicationJump </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>NSbuf0Size</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>NSbuf1Size</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>paramSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>NSbuf0Ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>NSbuf1Ptr</em>&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>hmac</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -814,26 +917,25 @@ Variables</h2></td></tr>
 <p>Performs an application jump. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">NSbuf0Size</td><td>Size of NSbuf0Ptr. </td></tr>
-    <tr><td class="paramname">NSbuf1Size</td><td>Size of NSbuf1Ptr. </td></tr>
-    <tr><td class="paramname">NSbuf0Ptr</td><td>Launch buffer 0. </td></tr>
-    <tr><td class="paramname">NSbuf1Ptr</td><td>Launch buffer 1. </td></tr>
+    <tr><td class="paramname">param</td><td>Parameter buffer. </td></tr>
+    <tr><td class="paramname">paramSize</td><td>Size of parameter buffer. </td></tr>
+    <tr><td class="paramname">hmac</td><td>HMAC buffer (should be 0x20 bytes long). </td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a7">app_launch/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a6">app_launch/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a5f397c13eb78616181c966f9ade86224"></a>
+<a class="anchor" id="ac7f784fef7b1e1be921778b2326cd074"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_Enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
+          <td class="paramtype">APT_AppletAttr&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -842,7 +944,7 @@ Variables</h2></td></tr>
 <p>Enables APT. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>Parameter to enable with. </td></tr>
+    <tr><td class="paramname">attr</td><td>Attributes of the application. </td></tr>
   </table>
   </dd>
 </dl>
@@ -897,7 +999,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a59f808677b4f056e33b9b2721893d32e"></a>
+<a class="anchor" id="a3ee5005a29aa032fa54e3ebddb5bacf6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -922,19 +1024,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><em>pRegistered</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><em>pLoadState</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">APT_AppletAttr *&#160;</td>
           <td class="paramname"><em>pAttributes</em>&#160;</td>
         </tr>
         <tr>
@@ -948,39 +1050,39 @@ Variables</h2></td></tr>
 <p>Gets an applet's information. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the applet. </td></tr>
     <tr><td class="paramname">pProgramID</td><td>Pointer to output the program ID to. </td></tr>
     <tr><td class="paramname">pMediaType</td><td>Pointer to output the media type to. </td></tr>
     <tr><td class="paramname">pRegistered</td><td>Pointer to output the registration status to. </td></tr>
     <tr><td class="paramname">pLoadState</td><td>Pointer to output the load state to. </td></tr>
-    <tr><td class="paramname">pAttributes</td><td>Pointer to output the atrributes to. </td></tr>
+    <tr><td class="paramname">pAttributes</td><td>Pointer to output the applet atrributes to. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="af5e1cdaafbacf5b774c42e459620db1a"></a>
+<a class="anchor" id="a84a1dd51575a98af27c2262fdc1215bc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_GetAppletManInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
-          <td class="paramname"><em>inval</em>, </td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a>&#160;</td>
+          <td class="paramname"><em>inpos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>outval8</em>, </td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a9593943634f18b7678ec5dab635ff605">APT_AppletPos</a> *&#160;</td>
+          <td class="paramname"><em>outpos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>outval32</em>, </td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *&#160;</td>
+          <td class="paramname"><em>req_appid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1005,12 +1107,11 @@ Variables</h2></td></tr>
 <p>Gets applet management info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inval</td><td>Requested applet type. </td></tr>
-    <tr><td class="paramname">outval8</td><td>Pointer to output the current applet type to. </td></tr>
-    <tr><td class="paramname">outval32</td><td>Pointer to output the requested app ID to. </td></tr>
-    <tr><td class="paramname">menu_appid</td><td>Pointer to output the home menu app ID to. </td></tr>
-    <tr><td class="paramname">active_appid</td><td>Pointer to output the currently active app ID to. </td></tr>
-    <tr><td class="paramname">pAttributes</td><td>Pointer to output the atrributes to. </td></tr>
+    <tr><td class="paramname">inpos</td><td>Requested applet position. </td></tr>
+    <tr><td class="paramname">outpos</td><td>Pointer to output the position of the current applet to. </td></tr>
+    <tr><td class="paramname">req_appid</td><td>Pointer to output the AppID of the applet at the requested position to. </td></tr>
+    <tr><td class="paramname">menu_appid</td><td>Pointer to output the HOME menu AppID to. </td></tr>
+    <tr><td class="paramname">active_appid</td><td>Pointer to output the AppID of the currently active applet to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1126,7 +1227,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76b4b990c35882daff854edae3d69a8c"></a>
+<a class="anchor" id="a227cff8cbdfee1e6ae700ecc23a75008"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_GetSharedFont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>fontHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>mapAddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the shared system font. </p>
+<p>fontHandle Pointer to write the handle of the system font memory block to. mapAddr Pointer to write the mapping address of the system font memory block to. </p>
+
+</div>
+</div>
+<a class="anchor" id="add62abbab8218ea7a580e07ba1c065b5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1139,26 +1269,38 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>bufferSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><em>actualSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>signalType</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>parameter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1171,18 +1313,20 @@ Variables</h2></td></tr>
 <p>Glances at a receieved parameter without removing it from the queue. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the application. </td></tr>
-    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the application. </td></tr>
     <tr><td class="paramname">buffer</td><td>Buffer to receive to. </td></tr>
+    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">sender</td><td>Pointer to output the sender's AppID to. </td></tr>
+    <tr><td class="paramname">command</td><td>Pointer to output the command ID to. </td></tr>
     <tr><td class="paramname">actualSize</td><td>Pointer to output the actual received data size to. </td></tr>
-    <tr><td class="paramname">signalType</td><td>Pointer to output the signal type to. </td></tr>
+    <tr><td class="paramname">parameter</td><td>Pointer to output the parameter handle to. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a44cc270cef75948c601d02a6b72e331a"></a>
+<a class="anchor" id="aa798c78b56dcf2b451123986f087b1f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1195,14 +1339,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
-          <td class="paramname"><em>eventHandle1</em>, </td>
+          <td class="paramtype">APT_AppletAttr&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
-          <td class="paramname"><em>eventHandle2</em>&#160;</td>
+          <td class="paramname"><em>signalEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>resumeEvent</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1216,8 +1366,9 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">appId</td><td>ID of the application. </td></tr>
-    <tr><td class="paramname">eventHandle1</td><td>Pointer to output the signal event handle to. </td></tr>
-    <tr><td class="paramname">eventHandle2</td><td>Pointer to output the launch and exit event handle to. </td></tr>
+    <tr><td class="paramname">attr</td><td>Attributes of the application. </td></tr>
+    <tr><td class="paramname">signalEvent</td><td>Pointer to output the signal event handle to. </td></tr>
+    <tr><td class="paramname">resumeEvent</td><td>Pointer to output the resume event handle to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1259,7 +1410,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3877c4a86d4e491557e7e9bf86b8da95"></a>
+<a class="anchor" id="a98402a39a7476fd2fcf705688b8f8364"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1272,7 +1423,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -1294,14 +1445,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ada8a2e9dcf5883c1e36ef72cb9c53a5b"></a>
+<a class="anchor" id="a8ac217768d36b8c34c46bcb153cc4dd7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_JumpToApplication </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>param</em>, </td>
         </tr>
         <tr>
@@ -1336,14 +1487,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a63a4915880650fb6c0b1b4cc82fa45d8"></a>
+<a class="anchor" id="a2f49ecfa1d838f1cb511f4258728e688"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_JumpToHomeMenu </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>param</em>, </td>
         </tr>
         <tr>
@@ -1378,56 +1529,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af8745f47f3f72d961dbd50223cdf3b6c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_LaunchLibraryApplet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
-          <td class="paramname"><em>appID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>inhandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>parambuf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>parambufsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Launches a library applet. </p>
-<p>Note: This is not usable from the homebrew launcher. This is broken: when the applet does get launched at all, the applet process doesn't actually get terminated when the applet gets closed. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet to launch. </td></tr>
-    <tr><td class="paramname">inhandle</td><td>Handle to pass to the applet. </td></tr>
-    <tr><td class="paramname">parambuf</td><td>Buffer containing applet parameters. </td></tr>
-    <tr><td class="paramname">parambufsize</td><td>Size of parambuf. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="libapplet_launch_2source_2main_8c-example.html#a11">libapplet_launch/source/main.c</a>.</dd>
-</dl>
-</div>
-</div>
 <a class="anchor" id="a99188445583d14b149c898f8fb10f16f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1452,15 +1553,15 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1bd9ccbdfc73aebaa20098e419d0a498"></a>
+<a class="anchor" id="a0ff6d0e1b695cbeb832a73910c3ea857"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_PrepareToCloseApplication </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cancelPreload</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1469,19 +1570,19 @@ Variables</h2></td></tr>
 <p>Prepares to close the application. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>Whether the jump is to the home menu. </td></tr>
+    <tr><td class="paramname">cancelPreload</td><td>Whether applet preloads should be cancelled. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ab470801d295f1ee5a633b358b875a8b7"></a>
+<a class="anchor" id="aba728efcd35d8a4f6bcceee19c597c31"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_PrepareToDoAppJump </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_PrepareToDoApplicationJump </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
           <td class="paramname"><em>flags</em>, </td>
@@ -1515,19 +1616,19 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a6">app_launch/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a5">app_launch/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a5d462e41e1146266c88034f4eea17709"></a>
+<a class="anchor" id="af778eab1656c5e01d8b03c72cfd4936a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_PrepareToJumpToApplication </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exiting</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1536,7 +1637,7 @@ Variables</h2></td></tr>
 <p>Prepares to jump to an application. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>Application to jump to. </td></tr>
+    <tr><td class="paramname">exiting</td><td>Specifies whether the applet is exiting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1560,7 +1661,7 @@ Variables</h2></td></tr>
 <p>Prepares to start a library applet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet to start. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the applet to start. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1584,14 +1685,70 @@ Variables</h2></td></tr>
 <p>Prepares to start a system applet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet to start. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the applet to start. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a102a0f3aca2d09620a1aa9f8ee0e0e11"></a>
+<a class="anchor" id="a1edf363b8c9d23b5a6652e5ff7b1062b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_ReceiveDeliverArg </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>paramSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>hmac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>received</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receives the deliver (launch) argument. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>Parameter buffer. </td></tr>
+    <tr><td class="paramname">paramSize</td><td>Size of parameter buffer. </td></tr>
+    <tr><td class="paramname">hmac</td><td>HMAC buffer (should be 0x20 bytes long). </td></tr>
+    <tr><td class="paramname">sender</td><td>Pointer to output the sender's AppID to. </td></tr>
+    <tr><td class="paramname">received</td><td>Pointer to output whether an argument was received to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a344ecade14264e6278d84f2445bfefc5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1604,26 +1761,38 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>bufferSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a> *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><em>actualSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>signalType</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>parameter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1636,11 +1805,13 @@ Variables</h2></td></tr>
 <p>Receives a parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the application. </td></tr>
-    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the application. </td></tr>
     <tr><td class="paramname">buffer</td><td>Buffer to receive to. </td></tr>
+    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">sender</td><td>Pointer to output the sender's AppID to. </td></tr>
+    <tr><td class="paramname">command</td><td>Pointer to output the command ID to. </td></tr>
     <tr><td class="paramname">actualSize</td><td>Pointer to output the actual received data size to. </td></tr>
-    <tr><td class="paramname">signalType</td><td>Pointer to output the signal type to. </td></tr>
+    <tr><td class="paramname">parameter</td><td>Pointer to output the parameter handle to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1671,7 +1842,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac89f363acef9b400afa38a7dd54ddd91"></a>
+<a class="anchor" id="ae6212210410280fad33f934aba6cbca7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1684,8 +1855,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a0c86495cfcd1fb626efeb9138cb9e622">APT_QueryReply</a>&#160;</td>
+          <td class="paramname"><em>reply</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1699,33 +1870,23 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">appID</td><td>ID of the application. </td></tr>
-    <tr><td class="paramname">a</td><td>Parameter to reply with. </td></tr>
+    <tr><td class="paramname">reply</td><td>Query reply value. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a82a874e4c54a2e45c4ff6ded2b6d6f49"></a>
+<a class="anchor" id="a1bda011a9d90d72e02cd89792e6074c7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_SendCaptureBufferInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>bufferSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structaptCaptureBufInfo.html">aptCaptureBufInfo</a> *&#160;</td>
+          <td class="paramname"><em>captureBuf</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1733,15 +1894,14 @@ Variables</h2></td></tr>
 <p>Sends capture buffer information. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bufferSize</td><td>Size of the buffer to send. </td></tr>
-    <tr><td class="paramname">buffer</td><td>Buffer to send. </td></tr>
+    <tr><td class="paramname">captureBuf</td><td>Capture buffer information to send. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a7fbeb50994fe5fb57bf79b4892d324e9"></a>
+<a class="anchor" id="a94e606e7c80be25f4fc2dd3ed90b1cdd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1749,13 +1909,25 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_SendParameter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
-          <td class="paramname"><em>src_appID</em>, </td>
+          <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
-          <td class="paramname"><em>dst_appID</em>, </td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a8542622c76d76df7e17b1a1b05033d98">APT_Command</a>&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1766,20 +1938,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>paramhandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
-          <td class="paramname"><em>signalType</em>&#160;</td>
+          <td class="paramname"><em>parameter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1792,12 +1952,12 @@ Variables</h2></td></tr>
 <p>Sends a parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src_appID</td><td>ID of the source application. </td></tr>
-    <tr><td class="paramname">dst_appID</td><td>ID of the destination application. </td></tr>
-    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">source</td><td>AppID of the source application. </td></tr>
+    <tr><td class="paramname">dest</td><td>AppID of the destination application. </td></tr>
+    <tr><td class="paramname">command</td><td>Command to send. </td></tr>
     <tr><td class="paramname">buffer</td><td>Buffer to send. </td></tr>
-    <tr><td class="paramname">paramhandle</td><td>Handle to pass. </td></tr>
-    <tr><td class="paramname">signalType</td><td>Signal type to send. </td></tr>
+    <tr><td class="paramname">bufferSize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">parameter</td><td>Parameter handle to pass. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1828,7 +1988,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4bc8b4ca8a26033d08c60d43e4707c9f"></a>
+<a class="anchor" id="abe759128f9e9f4c8d1875b2d54d466fe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1841,20 +2001,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>paramSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>inhandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>parambuf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>parambufsize</em>&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1867,17 +2027,17 @@ Variables</h2></td></tr>
 <p>Starts a library applet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet to launch. </td></tr>
-    <tr><td class="paramname">inhandle</td><td>Handle to pass to the applet. </td></tr>
-    <tr><td class="paramname">parambuf</td><td>Buffer containing applet parameters. </td></tr>
-    <tr><td class="paramname">parambufsize</td><td>Size of parambuf. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the applet to launch. </td></tr>
+    <tr><td class="paramname">param</td><td>Buffer containing applet parameters. </td></tr>
+    <tr><td class="paramname">paramsize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">handle</td><td>Handle to pass to the applet. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a9d1004156faa98ab4f0211e3a6549d01"></a>
+<a class="anchor" id="ad4dabcc9d42123aa58e8f10a08d730d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1890,20 +2050,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>bufSize</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>paramSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>applHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1916,70 +2076,99 @@ Variables</h2></td></tr>
 <p>Starts a system applet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appID</td><td>ID of the applet to launch. </td></tr>
-    <tr><td class="paramname">bufSize</td><td>Size of the parameter buffer. </td></tr>
-    <tr><td class="paramname">applHandle</td><td>Handle to pass to the applet. </td></tr>
-    <tr><td class="paramname">buf</td><td>Buffer containing applet parameters. </td></tr>
+    <tr><td class="paramname">appID</td><td>AppID of the applet to launch. </td></tr>
+    <tr><td class="paramname">param</td><td>Buffer containing applet parameters. </td></tr>
+    <tr><td class="paramname">paramSize</td><td>Size of the parameter buffer. </td></tr>
+    <tr><td class="paramname">handle</td><td>Handle to pass to the applet. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a0758146d7d1535374a8bf9660045b248"></a>
+<a class="anchor" id="ab4103547c919d699bd63a73e67c4c122"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> aptGetMenuAppID </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_TryLockTransition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>transition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>succeeded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tries to lock a transition (?). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transition</td><td>Transition ID. </td></tr>
+    <tr><td class="paramname">succeeded</td><td>Pointer to output whether the lock was successfully applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c39328a07c156458ca934106637c9ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> APT_UnlockTransition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>transition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unlocks a transition (?). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transition</td><td>Transition ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a89354d3c51b1708a962df82242bdbcb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> aptGetMenuAppID </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the menu's app ID. </p>
 <dl class="section return"><dt>Returns</dt><dd>The menu's app ID. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a934a994022b502b18074661ed41edfff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a> aptGetStatus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the app's status. </p>
-<dl class="section return"><dt>Returns</dt><dd>The app's status. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0182d88ee69776fa23be4ec014cb9448"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> aptGetStatusPower </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the app's power status. </p>
-<p>When the status is APT_SUSPEND, this can be used to check what triggered a return-to-menu. </p><dl class="section return"><dt>Returns</dt><dd>The app's power status. (0 = normal, 1 = power button pressed) </dd></dl>
 
 </div>
 </div>
@@ -2025,6 +2214,76 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acf1eba93df85f2c930bcd7c333a06aac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool aptIsSleepAllowed </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets whether to allow the system to enter sleep mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether sleep mode is allowed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1323b8023f8fc92f840bc914637e925"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool aptLaunchLibraryApplet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a>&#160;</td>
+          <td class="paramname"><em>appId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Launches a library applet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appId</td><td>ID of the applet to launch. </td></tr>
+    <tr><td class="paramname">buf</td><td>Input/output buffer that contains launch parameters on entry and result data on exit. </td></tr>
+    <tr><td class="paramname">bufsize</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">handle</td><td>Handle to pass to the library applet. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the application should continue running after the library applet launch. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="libapplet_launch_2source_2main_8c-example.html#a26">libapplet_launch/source/main.c</a>.</dd>
+</dl>
+</div>
+</div>
 <a class="anchor" id="a84808c36d9a8c389896ecf241c7f89cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2040,72 +2299,88 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Processes the current APT status. </p>
-<p>Generally used within a main loop. </p><dl class="section return"><dt>Returns</dt><dd>Whether the application is closing. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a1">app_launch/source/main.c</a>, <a class="el" href="audio_2mic_2source_2main_8c-example.html#a8">audio/mic/source/main.c</a>, <a class="el" href="get_system_language_2source_2main_8c-example.html#a5">get_system_language/source/main.c</a>, <a class="el" href="graphics_2bitmap_224bit-color_2source_2main_8c-example.html#a7">graphics/bitmap/24bit-color/source/main.c</a>, <a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a27">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a23">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a31">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a20">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a22">graphics/gpu/simple_tri/source/main.c</a>, <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a26">graphics/gpu/textured_cube/source/main.c</a>, <a class="el" href="graphics_2printing_2both-screen-text_2source_2main_8c-example.html#a6">graphics/printing/both-screen-text/source/main.c</a>, <a class="el" href="graphics_2printing_2colored-text_2source_2main_8c-example.html#a3">graphics/printing/colored-text/source/main.c</a>, <a class="el" href="graphics_2printing_2hello-world_2source_2main_8c-example.html#a3">graphics/printing/hello-world/source/main.c</a>, <a class="el" href="graphics_2printing_2multiple-windows-text_2source_2main_8c-example.html#a6">graphics/printing/multiple-windows-text/source/main.c</a>, <a class="el" href="http_2source_2main_8c-example.html#a17">http/source/main.c</a>, <a class="el" href="input_2read-controls_2source_2main_8c-example.html#a3">input/read-controls/source/main.c</a>, <a class="el" href="input_2touch-screen_2source_2main_8c-example.html#a3">input/touch-screen/source/main.c</a>, <a class="el" href="libapplet_launch_2source_2main_8c-example.html#a3">libapplet_launch/source/main.c</a>, <a class="el" href="mvd_2source_2main_8c-example.html#a20">mvd/source/main.c</a>, <a class="el" href="qtm_2source_2main_8c-example.html#a6">qtm/source/main.c</a>, <a class="el" href="sdmc_2source_2main_8c-example.html#a4">sdmc/source/main.c</a>, <a class="el" href="threads_2event_2source_2main_8c-example.html#a8">threads/event/source/main.c</a>, <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a8">threads/thread-basic/source/main.c</a>, and <a class="el" href="time_2rtc_2source_2main_8c-example.html#a3">time/rtc/source/main.c</a>.</dd>
+<p>Generally used within a main loop. </p><dl class="section return"><dt>Returns</dt><dd>Whether the application should continue running. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="app_launch_2source_2main_8c-example.html#a1">app_launch/source/main.c</a>, <a class="el" href="audio_2mic_2source_2main_8c-example.html#a8">audio/mic/source/main.c</a>, <a class="el" href="get_system_language_2source_2main_8c-example.html#a5">get_system_language/source/main.c</a>, <a class="el" href="graphics_2bitmap_224bit-color_2source_2main_8c-example.html#a7">graphics/bitmap/24bit-color/source/main.c</a>, <a class="el" href="graphics_2gpu_2fragment_light_2source_2main_8c-example.html#a27">graphics/gpu/fragment_light/source/main.c</a>, <a class="el" href="graphics_2gpu_2geoshader_2source_2main_8c-example.html#a23">graphics/gpu/geoshader/source/main.c</a>, <a class="el" href="graphics_2gpu_2gpusprites_2source_2main_8c-example.html#a30">graphics/gpu/gpusprites/source/main.c</a>, <a class="el" href="graphics_2gpu_2immediate_2source_2main_8c-example.html#a20">graphics/gpu/immediate/source/main.c</a>, <a class="el" href="graphics_2gpu_2simple_tri_2source_2main_8c-example.html#a22">graphics/gpu/simple_tri/source/main.c</a>, <a class="el" href="graphics_2gpu_2textured_cube_2source_2main_8c-example.html#a26">graphics/gpu/textured_cube/source/main.c</a>, <a class="el" href="graphics_2printing_2both-screen-text_2source_2main_8c-example.html#a6">graphics/printing/both-screen-text/source/main.c</a>, <a class="el" href="graphics_2printing_2colored-text_2source_2main_8c-example.html#a3">graphics/printing/colored-text/source/main.c</a>, <a class="el" href="graphics_2printing_2hello-world_2source_2main_8c-example.html#a3">graphics/printing/hello-world/source/main.c</a>, <a class="el" href="graphics_2printing_2multiple-windows-text_2source_2main_8c-example.html#a6">graphics/printing/multiple-windows-text/source/main.c</a>, <a class="el" href="graphics_2printing_2system-font_2source_2main_8c-example.html#a59">graphics/printing/system-font/source/main.c</a>, <a class="el" href="http_2source_2main_8c-example.html#a21">http/source/main.c</a>, <a class="el" href="input_2read-controls_2source_2main_8c-example.html#a3">input/read-controls/source/main.c</a>, <a class="el" href="input_2touch-screen_2source_2main_8c-example.html#a3">input/touch-screen/source/main.c</a>, <a class="el" href="libapplet_launch_2source_2main_8c-example.html#a3">libapplet_launch/source/main.c</a>, <a class="el" href="mvd_2source_2main_8c-example.html#a38">mvd/source/main.c</a>, <a class="el" href="qtm_2source_2main_8c-example.html#a6">qtm/source/main.c</a>, <a class="el" href="sdmc_2source_2main_8c-example.html#a4">sdmc/source/main.c</a>, <a class="el" href="threads_2event_2source_2main_8c-example.html#a8">threads/event/source/main.c</a>, <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a8">threads/thread-basic/source/main.c</a>, and <a class="el" href="time_2rtc_2source_2main_8c-example.html#a3">time/rtc/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="ace90f5a90cf1625f210703f38ce6bed3"></a>
+<a class="anchor" id="ad0d5e5004797d534ce0af21a3fc6cc4a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void aptReturnToMenu </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> aptSendCommand </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>aptcmdbuf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Triggers a return to the home menu. </p>
-<p>This should be called by the user application when <a class="el" href="apt_8h.html#a934a994022b502b18074661ed41edfff" title="Gets the app&#39;s status. ">aptGetStatus()</a> returns APP_SUSPENDING, not calling this will result in return-to-menu being disabled with the status left at APP_SUSPENDING. This function will not return until the system returns to the application, or when the status was changed to APP_EXITING. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9fbd3ed72a947d50ca8b38c7f685f668"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void aptSetStatus </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="apt_8h.html#af758bda479df7ac72bc891fb7c068f47">APT_AppStatus</a>&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the app's status. </p>
+<p>Sends an APT command through IPC, taking care of locking, opening and closing an APT session. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>Status to set. </td></tr>
+    <tr><td class="paramname">aptcmdbuf</td><td>Pointer to command buffer (should have capacity for at least 16 words). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a41c55086efa92d739a9b05171f55dbb2"></a>
+<a class="anchor" id="af138b11246928874c3a7ecb070128a43"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void aptSetStatusPower </td>
+          <td class="memname">void aptSetMessageCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="apt_8h.html#a9496a9fa3eefa3d4c43435aa9884baa5">aptMessageCb</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the function to be called when an APT message from another applet is received. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>Callback function. </td></tr>
+    <tr><td class="paramname">user</td><td>User-defined data to be passed to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3efaaf8933a5f92b59ce0c1bf927ab69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aptSetSleepAllowed </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowed</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the app's power status. </p>
+<p>Sets whether to allow the system to enter sleep mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>Power status to set. </td></tr>
+    <tr><td class="paramname">allowed</td><td>Whether to allow sleep mode. </td></tr>
   </table>
   </dd>
 </dl>

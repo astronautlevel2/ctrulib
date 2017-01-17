@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['mediatypes_5fenum',['mediatypes_enum',['../types_8h.html#a7a67b7ba2b5b494eadbe1089ade6fe80',1,'types.h']]],
-  ['memop',['MemOp',['../svc_8h.html#a754721841a571940880975d2191f3e0f',1,'svc.h']]],
-  ['memperm',['MemPerm',['../svc_8h.html#a933c1284d3be96f93a10a06f9c13aef8',1,'svc.h']]],
-  ['memstate',['MemState',['../svc_8h.html#a9475ce2cc58483c4a96c970bc6d87cf7',1,'svc.h']]],
-  ['mvdstdmode',['mvdstdMode',['../mvd_8h.html#a7727fc7f0cd8323ea3441e3c2c6b1312',1,'mvd.h']]],
-  ['mvdstdtypeinput',['mvdstdTypeInput',['../mvd_8h.html#a13f3a4ebf72d9e2627f01f07e55c1e28',1,'mvd.h']]],
-  ['mvdstdtypeoutput',['mvdstdTypeOutput',['../mvd_8h.html#aa869ba1b2c74bdbde19b33c6f7b9a54f',1,'mvd.h']]]
+  ['hid_5fevent',['HID_Event',['../hid_8h.html#aa6eff5e15e98cebd0012c1f2ae96cc78',1,'hid.h']]],
+  ['httpc_5fkeepalive',['HTTPC_KeepAlive',['../httpc_8h.html#a745527cd864f2240d767d85b8479a6bd',1,'httpc.h']]],
+  ['httpc_5frequestmethod',['HTTPC_RequestMethod',['../httpc_8h.html#a8d04e9f19b82970a3260b6f361c079dd',1,'httpc.h']]],
+  ['httpc_5frequeststatus',['HTTPC_RequestStatus',['../httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d',1,'httpc.h']]]
 ];

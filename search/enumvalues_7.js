@@ -6,6 +6,6 @@ var searchData=
   ['hidevent_5fmax',['HIDEVENT_MAX',['../hid_8h.html#aa6eff5e15e98cebd0012c1f2ae96cc78a532a5a1c265afd939f945836e2ff68ed',1,'hid.h']]],
   ['hidevent_5fpad0',['HIDEVENT_PAD0',['../hid_8h.html#aa6eff5e15e98cebd0012c1f2ae96cc78aef24b7f682103500bd42daf6d17690a4',1,'hid.h']]],
   ['hidevent_5fpad1',['HIDEVENT_PAD1',['../hid_8h.html#aa6eff5e15e98cebd0012c1f2ae96cc78a5a886f067880b2931251b0d78d5728f1',1,'hid.h']]],
-  ['httpcreqstat_5fdlready',['HTTPCREQSTAT_DLREADY',['../httpc_8h.html#a85133a49885df86e509e6f25315216f3ab072d29d4cdfdae67c39551803330976',1,'httpc.h']]],
-  ['httpcreqstat_5finprogress_5freqsent',['HTTPCREQSTAT_INPROGRESS_REQSENT',['../httpc_8h.html#a85133a49885df86e509e6f25315216f3ace8cae9a80c3e32fddea1ddc1651b7df',1,'httpc.h']]]
+  ['httpc_5fstatus_5fdownload_5fready',['HTTPC_STATUS_DOWNLOAD_READY',['../httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64da2e62946f93c0092d62c20577c6be1c19',1,'httpc.h']]],
+  ['httpc_5fstatus_5frequest_5fin_5fprogress',['HTTPC_STATUS_REQUEST_IN_PROGRESS',['../httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64dad210be04b032dbcebec1d139ec446885',1,'httpc.h']]]
 ];

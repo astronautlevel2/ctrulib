@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -204,8 +204,10 @@ Functions</h2></td></tr>
 <li>Processor #1 is the system core. If APT_SetAppCpuTimeLimit is used, it is possible to create a single thread on this core.</li>
 <li>Processor #2 is New3DS exclusive. Normal applications can create threads on this core if the exheader kernel flags bitmask has 0x2000 set.</li>
 <li>Processor #3 is New3DS exclusive. Normal applications cannot create threads on this core.</li>
-<li>Processes in the BASE memory region can always create threads on processors #2 and #3. </li>
+<li>Processes in the BASE memory region can always create threads on processors #2 and #3.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>Default exit code of a thread is 0. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="svc_8h.html#a2ddb0d1da1ee4e65a5d2408da6239921">svcExitThread</a> should never be called from the thread, use <a class="el" href="thread_8h.html#aa018f7fca858955b66821d6faa4e9b47">threadExit</a> instead. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="threads_2event_2source_2main_8c-example.html#a7">threads/event/source/main.c</a>, and <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a7">threads/thread-basic/source/main.c</a>.</dd>
 </dl>
 </div>

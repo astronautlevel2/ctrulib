@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -115,27 +115,63 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a31bcededc713f0f986a067e21829241a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31bcededc713f0f986a067e21829241a"></a>
-<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a31bcededc713f0f986a067e21829241a">romfsInit</a> (void)</td></tr>
-<tr class="memdesc:a31bcededc713f0f986a067e21829241a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the RomFS driver. <br /></td></tr>
-<tr class="separator:a31bcededc713f0f986a067e21829241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca0bc594757414b4b4afb097188dcf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a6ca0bc594757414b4b4afb097188dcf7">romfsInitFromFile</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> file, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset)</td></tr>
-<tr class="memdesc:a6ca0bc594757414b4b4afb097188dcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the RomFS driver from a RomFS file.  <a href="#a6ca0bc594757414b4b4afb097188dcf7">More...</a><br /></td></tr>
-<tr class="separator:a6ca0bc594757414b4b4afb097188dcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a232c580ecac788fbff9c71539360a64e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a232c580ecac788fbff9c71539360a64e"></a>
-<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a232c580ecac788fbff9c71539360a64e">romfsExit</a> (void)</td></tr>
-<tr class="memdesc:a232c580ecac788fbff9c71539360a64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits the RomFS driver. <br /></td></tr>
-<tr class="separator:a232c580ecac788fbff9c71539360a64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333fb291fa86330102bcf2e831ffb854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a333fb291fa86330102bcf2e831ffb854">romfsMount</a> (struct romfs_mount **mount)</td></tr>
+<tr class="memdesc:a333fb291fa86330102bcf2e831ffb854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounts the Application's RomFS.  <a href="#a333fb291fa86330102bcf2e831ffb854">More...</a><br /></td></tr>
+<tr class="separator:a333fb291fa86330102bcf2e831ffb854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e06b453b9b7bc98333702553572574"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12e06b453b9b7bc98333702553572574"></a>
+static <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>romfsInit</b> (void)</td></tr>
+<tr class="separator:a12e06b453b9b7bc98333702553572574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfac50b262028cb046ac6202f6f6038"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a7bfac50b262028cb046ac6202f6f6038">romfsMountFromFile</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> file, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset, struct romfs_mount **mount)</td></tr>
+<tr class="memdesc:a7bfac50b262028cb046ac6202f6f6038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounts RomFS from an open file.  <a href="#a7bfac50b262028cb046ac6202f6f6038">More...</a><br /></td></tr>
+<tr class="separator:a7bfac50b262028cb046ac6202f6f6038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc57de0c2b279e25ba8f7cb629965ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc57de0c2b279e25ba8f7cb629965ad"></a>
+static <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>romfsInitFromFile</b> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> file, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset)</td></tr>
+<tr class="separator:afbc57de0c2b279e25ba8f7cb629965ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0aec90ecc1fac728db391ba2f6cbc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb0aec90ecc1fac728db391ba2f6cbc6"></a>
+<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#afb0aec90ecc1fac728db391ba2f6cbc6">romfsBind</a> (struct romfs_mount *mount)</td></tr>
+<tr class="memdesc:afb0aec90ecc1fac728db391ba2f6cbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the RomFS mount. <br /></td></tr>
+<tr class="separator:afb0aec90ecc1fac728db391ba2f6cbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22afb3615946a262ee7e93cc4b74e666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22afb3615946a262ee7e93cc4b74e666"></a>
+<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="romfs_8h.html#a22afb3615946a262ee7e93cc4b74e666">romfsUnmount</a> (struct romfs_mount *mount)</td></tr>
+<tr class="memdesc:a22afb3615946a262ee7e93cc4b74e666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmounts the RomFS device. <br /></td></tr>
+<tr class="separator:a22afb3615946a262ee7e93cc4b74e666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b28376bd1c13790398fc00fedd2feb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0b28376bd1c13790398fc00fedd2feb"></a>
+static <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>romfsExit</b> (void)</td></tr>
+<tr class="separator:ab0b28376bd1c13790398fc00fedd2feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RomFS driver. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6ca0bc594757414b4b4afb097188dcf7"></a>
+<a class="anchor" id="a333fb291fa86330102bcf2e831ffb854"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> romfsInitFromFile </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> romfsMount </td>
+          <td>(</td>
+          <td class="paramtype">struct romfs_mount **&#160;</td>
+          <td class="paramname"><em>mount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mounts the Application's RomFS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mount</td><td>Output mount handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7bfac50b262028cb046ac6202f6f6038"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> romfsMountFromFile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
           <td class="paramname"><em>file</em>, </td>
@@ -144,7 +180,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct romfs_mount **&#160;</td>
+          <td class="paramname"><em>mount</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,11 +196,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the RomFS driver from a RomFS file. </p>
+<p>Mounts RomFS from an open file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>Handle of the RomFS file. </td></tr>
     <tr><td class="paramname">offset</td><td>Offset of the RomFS within the file. </td></tr>
+    <tr><td class="paramname">mount</td><td>Output mount handle </td></tr>
   </table>
   </dd>
 </dl>

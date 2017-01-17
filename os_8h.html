@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -266,7 +266,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The corresponding physical address. It is sometimes required by services or when using the GPU command buffer. </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="mvd_2source_2main_8c-example.html#a24">mvd/source/main.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a3b62a51a9c8f111843c1fd3ef0756026"></a>
@@ -470,7 +471,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the NAND system-version stored in NVer/CVer. </p>
-<p>The romfs device must not be already initialized(via romfsInit*()) at the time this function is called, since this code uses the romfs device. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nver_versionbin</td><td>Output <a class="el" href="structOS__VersionBin.html" title="OS_VersionBin. Format of the system version: &quot;<major>.<minor>.<build>-<nupver><region>&quot;. ">OS_VersionBin</a> structure for the data read from NVer. </td></tr>
     <tr><td class="paramname">cver_versionbin</td><td>Output <a class="el" href="structOS__VersionBin.html" title="OS_VersionBin. Format of the system version: &quot;<major>.<minor>.<build>-<nupver><region>&quot;. ">OS_VersionBin</a> structure for the data read from CVer. </td></tr>

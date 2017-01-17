@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,36 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ada69da275073503a6b0edfdd19d8db8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada69da275073503a6b0edfdd19d8db8d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_ESC</b>(x)&#160;&#160;&#160;&quot;\x1b[&quot; #x</td></tr>
+<tr class="separator:ada69da275073503a6b0edfdd19d8db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf9ac7b2fa0c4e790ed0750a2d548ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bf9ac7b2fa0c4e790ed0750a2d548ac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_RESET</b>&#160;&#160;&#160;CONSOLE_ESC(0m)</td></tr>
+<tr class="separator:a5bf9ac7b2fa0c4e790ed0750a2d548ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c5df90973a92f0673d1c71922a4690"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c5df90973a92f0673d1c71922a4690"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_BLACK</b>&#160;&#160;&#160;CONSOLE_ESC(30m)</td></tr>
+<tr class="separator:a32c5df90973a92f0673d1c71922a4690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6972d3d624d2aeed390817b1d1b77ce8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6972d3d624d2aeed390817b1d1b77ce8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_RED</b>&#160;&#160;&#160;CONSOLE_ESC(31;1m)</td></tr>
+<tr class="separator:a6972d3d624d2aeed390817b1d1b77ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6031939572473bdc067eeb645d6b080e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6031939572473bdc067eeb645d6b080e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_GREEN</b>&#160;&#160;&#160;CONSOLE_ESC(32;1m)</td></tr>
+<tr class="separator:a6031939572473bdc067eeb645d6b080e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e904b4ee6efda3d7017d4862766695e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e904b4ee6efda3d7017d4862766695e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_YELLOW</b>&#160;&#160;&#160;CONSOLE_ESC(33;1m)</td></tr>
+<tr class="separator:a8e904b4ee6efda3d7017d4862766695e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ea557c39ed061ef17bd2496cc57262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1ea557c39ed061ef17bd2496cc57262"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_BLUE</b>&#160;&#160;&#160;CONSOLE_ESC(34;1m)</td></tr>
+<tr class="separator:ab1ea557c39ed061ef17bd2496cc57262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda5dd499ef491a51be79c1da5c077ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acda5dd499ef491a51be79c1da5c077ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_MAGENTA</b>&#160;&#160;&#160;CONSOLE_ESC(35;1m)</td></tr>
+<tr class="separator:acda5dd499ef491a51be79c1da5c077ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2750ca2a5e52125aae9021551b7b346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2750ca2a5e52125aae9021551b7b346"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_CYAN</b>&#160;&#160;&#160;CONSOLE_ESC(36;1m)</td></tr>
+<tr class="separator:aa2750ca2a5e52125aae9021551b7b346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab00c62b2da3e8468c2f6d89587f1aa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab00c62b2da3e8468c2f6d89587f1aa9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_WHITE</b>&#160;&#160;&#160;CONSOLE_ESC(37;1m)</td></tr>
+<tr class="separator:aab00c62b2da3e8468c2f6d89587f1aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41fe600f48a6367d8807559efec50c23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41fe600f48a6367d8807559efec50c23"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#a41fe600f48a6367d8807559efec50c23">CONSOLE_COLOR_BOLD</a>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
 <tr class="memdesc:a41fe600f48a6367d8807559efec50c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bold text. <br /></td></tr>
@@ -306,7 +336,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cons
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the current console. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="audio_2mic_2source_2main_8c-example.html#a1">audio/mic/source/main.c</a>, <a class="el" href="get_system_language_2source_2main_8c-example.html#a2">get_system_language/source/main.c</a>, <a class="el" href="graphics_2bitmap_224bit-color_2source_2main_8c-example.html#a1">graphics/bitmap/24bit-color/source/main.c</a>, <a class="el" href="graphics_2printing_2both-screen-text_2source_2main_8c-example.html#a2">graphics/printing/both-screen-text/source/main.c</a>, <a class="el" href="graphics_2printing_2colored-text_2source_2main_8c-example.html#a1">graphics/printing/colored-text/source/main.c</a>, <a class="el" href="graphics_2printing_2hello-world_2source_2main_8c-example.html#a1">graphics/printing/hello-world/source/main.c</a>, <a class="el" href="graphics_2printing_2multiple-windows-text_2source_2main_8c-example.html#a2">graphics/printing/multiple-windows-text/source/main.c</a>, <a class="el" href="http_2source_2main_8c-example.html#a13">http/source/main.c</a>, <a class="el" href="input_2read-controls_2source_2main_8c-example.html#a1">input/read-controls/source/main.c</a>, <a class="el" href="input_2touch-screen_2source_2main_8c-example.html#a1">input/touch-screen/source/main.c</a>, <a class="el" href="libapplet_launch_2source_2main_8c-example.html#a1">libapplet_launch/source/main.c</a>, <a class="el" href="qtm_2source_2main_8c-example.html#a3">qtm/source/main.c</a>, <a class="el" href="threads_2event_2source_2main_8c-example.html#a4">threads/event/source/main.c</a>, <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a3">threads/thread-basic/source/main.c</a>, and <a class="el" href="time_2rtc_2source_2main_8c-example.html#a1">time/rtc/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="audio_2mic_2source_2main_8c-example.html#a1">audio/mic/source/main.c</a>, <a class="el" href="get_system_language_2source_2main_8c-example.html#a2">get_system_language/source/main.c</a>, <a class="el" href="graphics_2bitmap_224bit-color_2source_2main_8c-example.html#a1">graphics/bitmap/24bit-color/source/main.c</a>, <a class="el" href="graphics_2printing_2both-screen-text_2source_2main_8c-example.html#a2">graphics/printing/both-screen-text/source/main.c</a>, <a class="el" href="graphics_2printing_2colored-text_2source_2main_8c-example.html#a1">graphics/printing/colored-text/source/main.c</a>, <a class="el" href="graphics_2printing_2hello-world_2source_2main_8c-example.html#a1">graphics/printing/hello-world/source/main.c</a>, <a class="el" href="graphics_2printing_2multiple-windows-text_2source_2main_8c-example.html#a2">graphics/printing/multiple-windows-text/source/main.c</a>, <a class="el" href="graphics_2printing_2system-font_2source_2main_8c-example.html#a51">graphics/printing/system-font/source/main.c</a>, <a class="el" href="http_2source_2main_8c-example.html#a19">http/source/main.c</a>, <a class="el" href="input_2read-controls_2source_2main_8c-example.html#a1">input/read-controls/source/main.c</a>, <a class="el" href="input_2touch-screen_2source_2main_8c-example.html#a1">input/touch-screen/source/main.c</a>, <a class="el" href="libapplet_launch_2source_2main_8c-example.html#a1">libapplet_launch/source/main.c</a>, <a class="el" href="mvd_2source_2main_8c-example.html#a35">mvd/source/main.c</a>, <a class="el" href="qtm_2source_2main_8c-example.html#a3">qtm/source/main.c</a>, <a class="el" href="threads_2event_2source_2main_8c-example.html#a4">threads/event/source/main.c</a>, <a class="el" href="threads_2thread-basic_2source_2main_8c-example.html#a3">threads/thread-basic/source/main.c</a>, and <a class="el" href="time_2rtc_2source_2main_8c-example.html#a1">time/rtc/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>

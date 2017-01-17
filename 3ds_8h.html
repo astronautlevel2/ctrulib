@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="ipc_8h_source.html">3ds/ipc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="svc_8h_source.html">3ds/svc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="srv_8h_source.html">3ds/srv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="errf_8h_source.html">3ds/errf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="os_8h_source.html">3ds/os.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="synchronization_8h_source.html">3ds/synchronization.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="thread_8h_source.html">3ds/thread.h</a>&gt;</code><br />
@@ -111,7 +112,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="vram_8h_source.html">3ds/allocator/vram.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ac_8h_source.html">3ds/services/ac.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="am_8h_source.html">3ds/services/am.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ampxi_8h_source.html">3ds/services/ampxi.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="apt_8h_source.html">3ds/services/apt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="boss_8h_source.html">3ds/services/boss.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cam_8h_source.html">3ds/services/cam.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cfgnor_8h_source.html">3ds/services/cfgnor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cfgu_8h_source.html">3ds/services/cfgu.h</a>&gt;</code><br />
@@ -122,16 +125,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="gsplcd_8h_source.html">3ds/services/gsplcd.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hid_8h_source.html">3ds/services/hid.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="irrst_8h_source.html">3ds/services/irrst.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sslc_8h_source.html">3ds/services/sslc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="httpc_8h_source.html">3ds/services/httpc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uds_8h_source.html">3ds/services/uds.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ndm_8h_source.html">3ds/services/ndm.h</a>&gt;</code><br />
+<code>#include &lt;3ds/services/nwmext.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="ir_8h_source.html">3ds/services/ir.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ns_8h_source.html">3ds/services/ns.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pm_8h_source.html">3ds/services/pm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ps_8h_source.html">3ds/services/ps.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ptmu_8h_source.html">3ds/services/ptmu.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ptmsysm_8h_source.html">3ds/services/ptmsysm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pxidev_8h_source.html">3ds/services/pxidev.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="soc_8h_source.html">3ds/services/soc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mic_8h_source.html">3ds/services/mic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mvd_8h_source.html">3ds/services/mvd.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="nfc_8h_source.html">3ds/services/nfc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="news_8h_source.html">3ds/services/news.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="qtm_8h_source.html">3ds/services/qtm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="srvpm_8h_source.html">3ds/services/srvpm.h</a>&gt;</code><br />
@@ -139,13 +148,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="hb_8h_source.html">3ds/services/hb.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="gx_8h_source.html">3ds/gpu/gx.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="gpu_8h_source.html">3ds/gpu/gpu.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="gpu-old_8h_source.html">3ds/gpu/gpu-old.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="shbin_8h_source.html">3ds/gpu/shbin.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="shaderProgram_8h_source.html">3ds/gpu/shaderProgram.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ndsp_8h_source.html">3ds/ndsp/ndsp.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="channel_8h_source.html">3ds/ndsp/channel.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="swkbd_8h_source.html">3ds/applets/swkbd.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sdmc_8h_source.html">3ds/sdmc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="romfs_8h_source.html">3ds/romfs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="font_8h_source.html">3ds/font.h</a>&gt;</code><br />
 </div>
 <p><a href="3ds_8h_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

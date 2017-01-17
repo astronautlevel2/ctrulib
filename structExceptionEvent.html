@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -98,18 +98,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a03874ff8b51ed9ae4c9cc456d5b3fcbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03874ff8b51ed9ae4c9cc456d5b3fcbd"></a>
-<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExceptionEvent.html#a03874ff8b51ed9ae4c9cc456d5b3fcbd">type</a></td></tr>
-<tr class="memdesc:a03874ff8b51ed9ae4c9cc456d5b3fcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of event. See <a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">ExceptionEventType</a>. <br /></td></tr>
-<tr class="separator:a03874ff8b51ed9ae4c9cc456d5b3fcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a16b663ed61d882f78694856ff856e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a16b663ed61d882f78694856ff856e0"></a>
+<a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">ExceptionEventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExceptionEvent.html#a2a16b663ed61d882f78694856ff856e0">type</a></td></tr>
+<tr class="memdesc:a2a16b663ed61d882f78694856ff856e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of event. See <a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">ExceptionEventType</a>. <br /></td></tr>
+<tr class="separator:a2a16b663ed61d882f78694856ff856e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e351285983b30cc394025b929431cec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e351285983b30cc394025b929431cec"></a>
 <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExceptionEvent.html#a5e351285983b30cc394025b929431cec">address</a></td></tr>
 <tr class="memdesc:a5e351285983b30cc394025b929431cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of the exception. <br /></td></tr>
 <tr class="separator:a5e351285983b30cc394025b929431cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca3dbf819f832467f8a62f79d3eb4de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ca3dbf819f832467f8a62f79d3eb4de"></a>
-<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExceptionEvent.html#a2ca3dbf819f832467f8a62f79d3eb4de">argument</a></td></tr>
-<tr class="memdesc:a2ca3dbf819f832467f8a62f79d3eb4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event argument. See <a class="el" href="svc_8h.html#ad31e210a0f421d1ca7f5c55c7110f961">ExceptionEventType</a>. <br /></td></tr>
-<tr class="separator:a2ca3dbf819f832467f8a62f79d3eb4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76375ae62747c950af875388f4c93600"><td class="memItemLeft" ><a class="anchor" id="a76375ae62747c950af875388f4c93600"></a>
+union {</td></tr>
+<tr class="memitem:aced4da514538e39137e04c8254219ecb"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structFaultExceptionEvent.html">FaultExceptionEvent</a>&#160;&#160;&#160;<a class="el" href="structExceptionEvent.html#a6f67b148ec6fcb5064b09e5e5c70c357">fault</a></td></tr>
+<tr class="memdesc:aced4da514538e39137e04c8254219ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fault exception event data. <br /></td></tr>
+<tr class="separator:aced4da514538e39137e04c8254219ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364ffaab9dfe569227d4cfecf06a0453"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structStopPointExceptionEvent.html">StopPointExceptionEvent</a>&#160;&#160;&#160;<a class="el" href="structExceptionEvent.html#a8f87fbd05a1735dedfaea55c528e2855">stop_point</a></td></tr>
+<tr class="memdesc:a364ffaab9dfe569227d4cfecf06a0453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop point exception event data. <br /></td></tr>
+<tr class="separator:a364ffaab9dfe569227d4cfecf06a0453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe1981065cd69864c57c7ee063b155a"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structUserBreakExceptionEvent.html">UserBreakExceptionEvent</a>&#160;&#160;&#160;<a class="el" href="structExceptionEvent.html#a331606aa5792056b999bc99756cbd598">user_break</a></td></tr>
+<tr class="memdesc:a5fe1981065cd69864c57c7ee063b155a"><td class="mdescLeft">&#160;</td><td class="mdescRight">User break exception event data. <br /></td></tr>
+<tr class="separator:a5fe1981065cd69864c57c7ee063b155a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11eaf68a33dd80f2e74ef1a048f65b4"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structDebuggerBreakExceptionEvent.html">DebuggerBreakExceptionEvent</a>&#160;&#160;&#160;<a class="el" href="structExceptionEvent.html#acb328082531198ee15b3fb1be53c47a8">debugger_break</a></td></tr>
+<tr class="memdesc:ae11eaf68a33dd80f2e74ef1a048f65b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debugger break exception event data. <br /></td></tr>
+<tr class="separator:ae11eaf68a33dd80f2e74ef1a048f65b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76375ae62747c950af875388f4c93600"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a76375ae62747c950af875388f4c93600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event relating to exceptions. </p>

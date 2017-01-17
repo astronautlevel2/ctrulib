@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,88 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Version 1.1.0</h2>
+<div class="textblock"><h2>Version 1.2.0</h2>
+<ul>
+<li>New features:<ul>
+<li>Added support for the nfc:m/nfc:u service.</li>
+<li>Added support for the ssl:C service.</li>
+<li>Added support for the nwm::UDS service (Local wireless).</li>
+<li>Added support for the boss:P/boss:U service (SpotPass).</li>
+<li>Added support for using the err:f global port.</li>
+<li>Added support for using and parsing the shared system font.</li>
+<li>Added support for using the 3DS' built-in software keyboard applet.</li>
+<li>Added support for using Light Events, a lightweight alternative to normal events that doesn't consume handles.</li>
+<li>Added NDSP commands for setting up per-channel monopole &amp; biquad filters.</li>
+</ul>
+</li>
+<li>Major breaking changes:<ul>
+<li>Major revamp of the APT code; some old deprecated functions were completely removed, homebrew code abiding by recent standards shouldn't be affected though.</li>
+<li>Major revamp of the HTTPC code, including both additions and bugfixes.</li>
+<li>Major revamp of the AM code, with some enhancements.</li>
+<li>Major revamp of FSUSER code, archive handle handling has been refactored. fs(End)UseSession replaced with fsExemptFromSession.</li>
+<li>Major revamp of MVD code to support video processing.</li>
+<li>Major revamp of the GPU shader code to fully support geometry shaders.</li>
+<li>The old deprecated GPU wrapper commands have been removed. Use direct GPU register writes or a separate GPU wrapper library (such as citro3d) instead.</li>
+<li>Major revamp and update of the SVC debugger API.</li>
+<li>Heap size management has been simplified and made more flexible. All applications now default to 32MB of linear heap and all remaining APPLICATION memory is allocated as the application heap, regardless of entrypoint or application format.</li>
+</ul>
+</li>
+<li>Miscellaneous additions:<ul>
+<li>Several enhancements to SOC:u support:<ul>
+<li>Added getaddrinfo, getnameinfo, gethostname, gai_strerror.</li>
+<li>Added SOCU_ShutdownSockets, SOCU_CloseSockets, SOCU_GetIPInfo, SOCU_GetNetworkOpt, SOCU_AddGlobalSocket.</li>
+<li>Added several missing flags.</li>
+</ul>
+</li>
+<li>Minor am:net corrections and additions.</li>
+<li>Added sdmcWriteSafe to disable copying data to temporary RW buffers before calling FSFILE_Write.</li>
+<li>Added sdmc_getmtime to retrieve the modification time for a file.</li>
+<li>Added opendir/readdir/rewinddir/closedir/stat support to romfs.</li>
+<li>Added support for multiple RomFS mounts.</li>
+<li>Added macros for console color codes (ANSI escape sequences).</li>
+<li>Added support for specifying a fallback RomFS path for when argv isn't available.</li>
+<li>Added aptIsSleepAllowed/aptSetSleepAllowed.</li>
+<li>Added ResetType enum for use with svcCreateEvent and svcCreateTimer.</li>
+<li>Added psInitHandle and psGetSessionHandle.</li>
+<li>Added AM commands: AM_ExportTwlBackup, AM_ImportTwlBackup, AM_ReadTwlBackupInfo, AM_DeleteAllDemoLaunchInfos, AM_FinishCiaInstallWithoutCommit, AM_CommitImportPrograms.</li>
+<li>Added AMPXI commands: AMPXI_WriteTWLSavedata, AMPXI_InstallTitlesFinish.</li>
+<li>Added APT commands: APT_ReceiveDeliverArg.</li>
+<li>Added CFG commands: CFG_GetConfigInfoBlk4, CFG_GetConfigInfoBlk8, CFG_SetConfigInfoBlk4, CFG_SetConfigInfoBlk8, CFG_UpdateConfigNANDSavegame.</li>
+<li>Added GSPLCD commands: GSPLCD_GetVendors</li>
+<li>Added FSUSER commands: FSUSER_UpdateSha256Context.</li>
+<li>Added NEWS commands: NEWS_GetTotalNotifications, NEWS_SetNotificationHeader, NEWS_GetNotificationHeader, NEWS_GetNotificationMessage, NEWS_GetNotificationImage, NEWS_SetNotificationMessage, NEWS_SetNotificationImage.</li>
+<li>Added NS commands: NS_TerminateProcessTID, NS_LaunchFIRM, NS_LaunchApplicationFIRM.</li>
+<li>Added PS commands: PS_SignRsaSha256, PS_VerifyRsaSha256.</li>
+<li>Added PTMSYSM commands: PTMSYSM_CheckNew3DS, PTMSYSM_ShutdownAsync, PTMSYSM_RebootAsync.</li>
+<li>Added PXIDEV commands: PXIDEV_SPIMultiWriteRead, PXIDEV_SPIWriteRead.</li>
+<li>Added system calls: svcCreateCodeSet, svcCreateProcess, svcGetResourceLimit, svcGetResourceLimitValues, svcGetResourceLimitCurrentValues, svcSetProcessAffinityMask, svcSetProcessIdealProcessor, svcRun, svcBindInterrupt, svcUnbindInterrupt, svcGetHandleInfo, svcBreakRO, svcGetThreadList.</li>
+<li>Added result module codes.</li>
+<li>Added GPU A4 texture format enum.</li>
+</ul>
+</li>
+<li>Miscellaneous changes and bug fixes:<ul>
+<li>Optimized sdmc's readdir to batch directory entries.</li>
+<li>APT, GSPGPU and NDSP code was tuned to take advantage of Light Events.</li>
+<li>Moved am:app init to a separate function.</li>
+<li>Several issues concerning IPC static buffer saving/restoring were fixed.</li>
+<li>Several issues concerning sdmc/RomFS devoptabs were fixed.</li>
+<li>Several issues concerning SOC:u were fixed.</li>
+<li>An issue concerning cam:u was fixed.</li>
+<li>An issue concerning HID was fixed.</li>
+<li>An issue concerning <a href="news:u">news:u</a> was fixed.</li>
+<li>The GPU ETC1 texture format enums were fixed.</li>
+<li>usleep was fixed.</li>
+<li>Fixed incorrect bool return values from services.</li>
+<li>Fixed buffer overflow after gfxSetScreenFormat.</li>
+<li>Fixed home menu display of suspended 2D applications.</li>
+<li>Fixed buffer overrun in console code.</li>
+<li>Fixed PS_EncryptDecryptAes and PS_EncryptSignDecryptVerifyAesCcm.</li>
+<li>Fixed the implementation of svcGetProcessList.</li>
+<li>Corrected svcKernelSetState function signature.</li>
+</ul>
+</li>
+</ul>
+<h2>Version 1.1.0</h2>
 <ul>
 <li>Additions:<ul>
 <li>GSPGPU/GX code was revised and enhanced:<ul>
@@ -97,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 </li>
 <li>Changes:<ul>
-<li>NDSP thread priority has been increasing, therefore mitigating potential sound issues due to high CPU usage on the main thread.</li>
+<li>NDSP thread priority has been increased, therefore mitigating potential sound issues due to high CPU usage on the main thread.</li>
 <li>RomFS initialization no longer makes romfs:/ the default device.</li>
 </ul>
 </li>

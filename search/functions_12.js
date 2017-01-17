@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['vramalloc',['vramAlloc',['../vram_8h.html#a00b84b8d38c127d8af9a89b9b7e2a5a4',1,'vram.cpp']]],
-  ['vramfree',['vramFree',['../vram_8h.html#a867318cde93cdd997588d6dcbfc584e1',1,'vram.cpp']]],
-  ['vrammemalign',['vramMemAlign',['../vram_8h.html#a0d6d17e0944fd2303b7bb6c8da5ecef6',1,'vram.cpp']]],
-  ['vramrealloc',['vramRealloc',['../vram_8h.html#ab5bec40d445d439bddd2b66c7fdfbfd7',1,'vram.cpp']]],
-  ['vramspacefree',['vramSpaceFree',['../vram_8h.html#a62360e978f102480949259420e975c7f',1,'vram.cpp']]]
+  ['threadcreate',['threadCreate',['../thread_8h.html#a1b3d0a88bb3337500968da224df797a1',1,'thread.h']]],
+  ['threadexit',['threadExit',['../thread_8h.html#aa018f7fca858955b66821d6faa4e9b47',1,'thread.h']]],
+  ['threadfree',['threadFree',['../thread_8h.html#aed4c2f06cf2ae66583325bd96588fa27',1,'thread.h']]],
+  ['threadgetcurrent',['threadGetCurrent',['../thread_8h.html#aaf77fd339bcd06c1aa63aaffa74ba118',1,'thread.h']]],
+  ['threadgetexitcode',['threadGetExitCode',['../thread_8h.html#aece3cff1637deec4b6497bb438dba2e8',1,'thread.h']]],
+  ['threadgethandle',['threadGetHandle',['../thread_8h.html#a6f95b5664998852d05adfe79d2490988',1,'thread.h']]],
+  ['threadjoin',['threadJoin',['../thread_8h.html#a5d7a5a77d24710c19f866d02594553db',1,'thread.h']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['in_5faddr',['in_addr',['../structin__addr.html',1,'']]]
+  ['hostent',['hostent',['../structhostent.html',1,'']]],
+  ['httpccontext',['httpcContext',['../structhttpcContext.html',1,'']]]
 ];

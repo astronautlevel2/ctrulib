@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -100,6 +101,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><a href="ps_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpsRSAContext.html">psRSAContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RSA context.  <a href="structpsRSAContext.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ab10858511e98add85a2b5ec56feb0287"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#ab10858511e98add85a2b5ec56feb0287">PS_AESAlgorithm</a> { <br />
@@ -149,10 +156,23 @@ Functions</h2></td></tr>
 <a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#abae489204853edc2e7dcf8c341c75e82">psInit</a> (void)</td></tr>
 <tr class="memdesc:abae489204853edc2e7dcf8c341c75e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes PS. <br /></td></tr>
 <tr class="separator:abae489204853edc2e7dcf8c341c75e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e1ef12d50adaa235c50ba03dc4b4e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#aa1e1ef12d50adaa235c50ba03dc4b4e6">psInitHandle</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
+<tr class="memdesc:aa1e1ef12d50adaa235c50ba03dc4b4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes PS with the specified session handle.  <a href="#aa1e1ef12d50adaa235c50ba03dc4b4e6">More...</a><br /></td></tr>
+<tr class="separator:aa1e1ef12d50adaa235c50ba03dc4b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d5a2ff4ba80cb80432c0c9a1f3acc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91d5a2ff4ba80cb80432c0c9a1f3acc0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#a91d5a2ff4ba80cb80432c0c9a1f3acc0">psExit</a> (void)</td></tr>
 <tr class="memdesc:a91d5a2ff4ba80cb80432c0c9a1f3acc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits PS. <br /></td></tr>
 <tr class="separator:a91d5a2ff4ba80cb80432c0c9a1f3acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9d99c8c874f7aa0b06b8ea1178b647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e9d99c8c874f7aa0b06b8ea1178b647"></a>
+<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#a6e9d99c8c874f7aa0b06b8ea1178b647">psGetSessionHandle</a> ()</td></tr>
+<tr class="memdesc:a6e9d99c8c874f7aa0b06b8ea1178b647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the PS session handle. <br /></td></tr>
+<tr class="separator:a6e9d99c8c874f7aa0b06b8ea1178b647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd4d62b202c65c5399488a07ebc3888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#afcd4d62b202c65c5399488a07ebc3888">PS_SignRsaSha256</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *hash, <a class="el" href="structpsRSAContext.html">psRSAContext</a> *ctx, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *signature)</td></tr>
+<tr class="memdesc:afcd4d62b202c65c5399488a07ebc3888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signs a RSA signature.  <a href="#afcd4d62b202c65c5399488a07ebc3888">More...</a><br /></td></tr>
+<tr class="separator:afcd4d62b202c65c5399488a07ebc3888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d7877dfc25f204656600f63a62eb06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#ae4d7877dfc25f204656600f63a62eb06">PS_VerifyRsaSha256</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *hash, <a class="el" href="structpsRSAContext.html">psRSAContext</a> *ctx, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *signature)</td></tr>
+<tr class="memdesc:ae4d7877dfc25f204656600f63a62eb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies a RSA signature.  <a href="#ae4d7877dfc25f204656600f63a62eb06">More...</a><br /></td></tr>
+<tr class="separator:ae4d7877dfc25f204656600f63a62eb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa2079e5ccea5884e369c51db1bf151"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#aefa2079e5ccea5884e369c51db1bf151">PS_EncryptDecryptAes</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *in, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out, <a class="el" href="ps_8h.html#ab10858511e98add85a2b5ec56feb0287">PS_AESAlgorithm</a> aes_algo, <a class="el" href="ps_8h.html#a688e29201cdfb3c66b884d125c20fce8">PS_AESKeyType</a> key_type, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *iv)</td></tr>
 <tr class="memdesc:aefa2079e5ccea5884e369c51db1bf151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts/Decrypts AES data.  <a href="#aefa2079e5ccea5884e369c51db1bf151">More...</a><br /></td></tr>
 <tr class="separator:aefa2079e5ccea5884e369c51db1bf151"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +185,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8
 <tr class="memitem:acbfc784101f2e99a5debb6fcd69f98ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#acbfc784101f2e99a5debb6fcd69f98ea">PS_GetDeviceId</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *device_id)</td></tr>
 <tr class="memdesc:acbfc784101f2e99a5debb6fcd69f98ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the 32-bit device ID.  <a href="#acbfc784101f2e99a5debb6fcd69f98ea">More...</a><br /></td></tr>
 <tr class="separator:acbfc784101f2e99a5debb6fcd69f98ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535dc015b8a14fcf5993640db964451d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8h.html#a535dc015b8a14fcf5993640db964451d">PS_GenerateRandomBytes</a> (void *out, size_t len)</td></tr>
+<tr class="memdesc:a535dc015b8a14fcf5993640db964451d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates cryptographically secure random bytes.  <a href="#a535dc015b8a14fcf5993640db964451d">More...</a><br /></td></tr>
+<tr class="separator:a535dc015b8a14fcf5993640db964451d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PS service. </p>
@@ -182,22 +205,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8
 <p>PS AES algorithms. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287a2cd2a9861abf410b5bd2dc2fe70eb79d"></a>PS_ALGORITHM_CBC_ENC&#160;</td><td class="fielddoc">
-<p>CBC encoding. </p>
+<p>CBC encryption. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287adefeac6ff96b1a759d2fc08dcf2af3a0"></a>PS_ALGORITHM_CBC_DEC&#160;</td><td class="fielddoc">
-<p>CBC decoding. </p>
+<p>CBC decryption. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287aab35ad00fe4831766ed846b4a703dfe8"></a>PS_ALGORITHM_CTR_ENC&#160;</td><td class="fielddoc">
-<p>CTR encoding. </p>
+<p>CTR encryption. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287a79c9789656335faea186b63d9e60bf18"></a>PS_ALGORITHM_CTR_DEC&#160;</td><td class="fielddoc">
-<p>CTR decoding. </p>
+<p>CTR decryption(same as PS_ALGORITHM_CTR_ENC). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287afcc072da4e473ef280bad304d5251451"></a>PS_ALGORITHM_CCM_ENC&#160;</td><td class="fielddoc">
-<p>CCM encoding. </p>
+<p>CCM encryption. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab10858511e98add85a2b5ec56feb0287ae1276d85a463ebaf22894e5bd7f53b92"></a>PS_ALGORITHM_CCM_DEC&#160;</td><td class="fielddoc">
-<p>CCM decoding. </p>
+<p>CCM decryption. </p>
 </td></tr>
 </table>
 
@@ -306,7 +329,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8
     <tr><td class="paramname">out</td><td>Output buffer. </td></tr>
     <tr><td class="paramname">aes_algo</td><td>AES algorithm to use. </td></tr>
     <tr><td class="paramname">key_type</td><td>Key type to use. </td></tr>
-    <tr><td class="paramname">iv</td><td>Pointer to the CTR/IV. </td></tr>
+    <tr><td class="paramname">iv</td><td>Pointer to the CTR/IV. The output CTR/IV is also written here. </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,6 +427,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8
 
 </div>
 </div>
+<a class="anchor" id="a535dc015b8a14fcf5993640db964451d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> PS_GenerateRandomBytes </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates cryptographically secure random bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>Pointer to the buffer to write the bytes to. </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="acbfc784101f2e99a5debb6fcd69f98ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -446,6 +504,114 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ps_8
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seed</td><td>Pointer to write the friend code seed to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afcd4d62b202c65c5399488a07ebc3888"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> PS_SignRsaSha256 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpsRSAContext.html">psRSAContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signs a RSA signature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hash</td><td>SHA256 hash to sign. </td></tr>
+    <tr><td class="paramname">ctx</td><td>RSA context. </td></tr>
+    <tr><td class="paramname">signature</td><td>RSA signature. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae4d7877dfc25f204656600f63a62eb06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> PS_VerifyRsaSha256 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpsRSAContext.html">psRSAContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifies a RSA signature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hash</td><td>SHA256 hash to compare with. </td></tr>
+    <tr><td class="paramname">ctx</td><td>RSA context. </td></tr>
+    <tr><td class="paramname">signature</td><td>RSA signature. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa1e1ef12d50adaa235c50ba03dc4b4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> psInitHandle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes PS with the specified session handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Session handle. </td></tr>
   </table>
   </dd>
 </dl>

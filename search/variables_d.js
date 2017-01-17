@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['name',['name',['../structromfs__dir.html#a07d2028d8d26a190dbb0fefd5aa15e13',1,'romfs_dir::name()'],['../structromfs__file.html#a3006ecde26b50c2d30f7bed33db10e73',1,'romfs_file::name()'],['../structFS__dirent.html#a3e5a7007397c27af874933846679c497',1,'FS_dirent::name()']]],
+  ['name',['name',['../structromfs__dir.html#a07d2028d8d26a190dbb0fefd5aa15e13',1,'romfs_dir::name()'],['../structromfs__file.html#a3006ecde26b50c2d30f7bed33db10e73',1,'romfs_file::name()'],['../structFS__DirectoryEntry.html#a25cdaf849c043d127ac5e9c96fa39f62',1,'FS_DirectoryEntry::name()'],['../structCodeSetInfo.html#aa1f60681b5e3ba82bee0552777a234a4',1,'CodeSetInfo::name()']]],
   ['namelen',['nameLen',['../structromfs__dir.html#a23aa470d929a32b6dfd11ae63fa2d933',1,'romfs_dir::nameLen()'],['../structromfs__file.html#a690d35645dd2a707bfb7ed4e2425b6b6',1,'romfs_file::nameLen()']]],
-  ['next',['next',['../structtag__ndspWaveBuf.html#a227ff854f75d71f04bbea7fc48b364f6',1,'tag_ndspWaveBuf::next()'],['../structaptHookCookie.html#a33a1ae3e3190e03beaa711bda3f4fc95',1,'aptHookCookie::next()']]],
+  ['nblocks',['nBlocks',['../structCFNT__s.html#a8234a7f3ae4c53208893a81c65e5f712',1,'CFNT_s']]],
+  ['netmask',['netmask',['../structSOCU__IPInfo.html#abf4f6a9cbda4c0d0b053f94413669df9',1,'SOCU_IPInfo::netmask()'],['../structSOCU__RoutingTableEntry.html#a1a23b0bdc866127a3c85189c7a55667e',1,'SOCU_RoutingTableEntry::netmask()']]],
+  ['next',['next',['../structtag__CWDH__s.html#add2dc81b2f75381299bd1211ba279b7f',1,'tag_CWDH_s::next()'],['../structtag__CMAP__s.html#ae6f0e5b3ffc51bf172d704fdebd60306',1,'tag_CMAP_s::next()'],['../structtag__ndspWaveBuf.html#a227ff854f75d71f04bbea7fc48b364f6',1,'tag_ndspWaveBuf::next()'],['../structaptHookCookie.html#a33a1ae3e3190e03beaa711bda3f4fc95',1,'aptHookCookie::next()']]],
   ['nexthash',['nextHash',['../structromfs__dir.html#af957c0dda90285806b9973b29552781c',1,'romfs_dir::nextHash()'],['../structromfs__file.html#a6cedcd73580bdbd9370f2131eaeac43c',1,'romfs_file::nextHash()']]],
+  ['nickname',['nickname',['../structNFC__AmiiboSettings.html#a8af186bc8f48b4b07a06553e3c1fbd96',1,'NFC_AmiiboSettings']]],
+  ['nlines',['nLines',['../structTGLP__s.html#a5e200983d2972701c7d24adcd772dca9',1,'TGLP_s']]],
   ['noisefilteron',['noiseFilterOn',['../structCAMU__PackageParameterCameraSelect.html#ada6b842c20d0ad14a348556f65ac25ca',1,'CAMU_PackageParameterCameraSelect']]],
+  ['nrows',['nRows',['../structTGLP__s.html#ac78f50b102feed3a26511522446186da',1,'TGLP_s']]],
   ['nsamples',['nsamples',['../structtag__ndspWaveBuf.html#a8be46881ae491c7e7df54e81289c7a96',1,'tag_ndspWaveBuf']]],
+  ['nscanentries',['nScanEntries',['../structtag__CMAP__s.html#ac579a3eab9f9f5eaa4417e86c71a0a8d',1,'tag_CMAP_s']]],
+  ['nsheets',['nSheets',['../structTGLP__s.html#a276a1b85878f441a69c044959a2f64ed',1,'TGLP_s']]],
   ['numchars',['numChars',['../structConsoleFont.html#a741f70973f2dd71acdd7153ef3f7336d',1,'ConsoleFont']]],
   ['numdvle',['numDVLE',['../structDVLB__s.html#ac2b7148545a0f90613898c5052299be0',1,'DVLB_s']]],
   ['numfloat24uniforms',['numFloat24Uniforms',['../structshaderInstance__s.html#acea4d3b5b3767e7047e42eddc1907937',1,'shaderInstance_s']]]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ns_5fappid',['NS_APPID',['../apt_8h.html#a932c939a3c27fefb8eadfd97704f8867',1,'apt.h']]]
+  ['ipc_5fbufferrights',['IPC_BufferRights',['../ipc_8h.html#ae0ccf9e363a4bd3b070762b57ffc8783',1,'ipc.h']]]
 ];

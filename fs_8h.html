@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -129,43 +130,47 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device move context.  <a href="structFS__DeviceMoveContext.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFS__Path.html">FS_Path</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FS path.  <a href="structFS__Path.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem path data, detailing the specific target of an operation.  <a href="structFS__Path.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFS__Archive.html">FS_Archive</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FS archive.  <a href="structFS__Archive.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a64b19cc2d36043ad4060f2b7d17b16ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b19cc2d36043ad4060f2b7d17b16ef"></a>
+typedef <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a></td></tr>
+<tr class="memdesc:a64b19cc2d36043ad4060f2b7d17b16ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem archive handle, providing access to a filesystem's contents. <br /></td></tr>
+<tr class="separator:a64b19cc2d36043ad4060f2b7d17b16ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:af9bdc3014f3d54c426b6d2df10de4960"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="fs_8h.html#af9bdc3014f3d54c426b6d2df10de4960aebc25118925a19a2d7d8593fdb21a574">FS_OPEN_READ</a> = BIT(0), 
+<tr class="memitem:a1f9aebf1de3ebbf4283a4dcf73308562"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="fs_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562aebc25118925a19a2d7d8593fdb21a574">FS_OPEN_READ</a> = BIT(0), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#af9bdc3014f3d54c426b6d2df10de4960a3bd1b8a673bf36d0d7aa8eb543dc3fb2">FS_OPEN_WRITE</a> = BIT(1), 
+&#160;&#160;<a class="el" href="fs_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a3bd1b8a673bf36d0d7aa8eb543dc3fb2">FS_OPEN_WRITE</a> = BIT(1), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#af9bdc3014f3d54c426b6d2df10de4960a5a0af82eec8be53934152016600bea9a">FS_OPEN_CREATE</a> = BIT(2)
+&#160;&#160;<a class="el" href="fs_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a5a0af82eec8be53934152016600bea9a">FS_OPEN_CREATE</a> = BIT(2)
 <br />
- }<tr class="memdesc:af9bdc3014f3d54c426b6d2df10de4960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open flags.  <a href="fs_8h.html#af9bdc3014f3d54c426b6d2df10de4960">More...</a><br /></td></tr>
-<tr class="separator:af9bdc3014f3d54c426b6d2df10de4960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:a1f9aebf1de3ebbf4283a4dcf73308562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open flags.  <a href="fs_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562">More...</a><br /></td></tr>
+<tr class="separator:a1f9aebf1de3ebbf4283a4dcf73308562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="fs_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5ca37b181e92ad91749a114aeb05325f">FS_WRITE_FLUSH</a> = BIT(0), 
+<tr class="memitem:a77867ab4129f63159b37bca3b652a798"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="fs_8h.html#a77867ab4129f63159b37bca3b652a798a5ca37b181e92ad91749a114aeb05325f">FS_WRITE_FLUSH</a> = BIT(0), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aeefbba4772c406afbefc2fdb2c05a469">FS_WRITE_UPDATE_TIME</a> = BIT(8)
+&#160;&#160;<a class="el" href="fs_8h.html#a77867ab4129f63159b37bca3b652a798aeefbba4772c406afbefc2fdb2c05a469">FS_WRITE_UPDATE_TIME</a> = BIT(8)
 <br />
- }<tr class="memdesc:adb49720dc49f7d4e4cf9adbf2948e409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write flags.  <a href="fs_8h.html#adb49720dc49f7d4e4cf9adbf2948e409">More...</a><br /></td></tr>
-<tr class="separator:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:a77867ab4129f63159b37bca3b652a798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write flags.  <a href="fs_8h.html#a77867ab4129f63159b37bca3b652a798">More...</a><br /></td></tr>
+<tr class="separator:a77867ab4129f63159b37bca3b652a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:aae05225933a42f81e7c4a9fb286596f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="fs_8h.html#aae05225933a42f81e7c4a9fb286596f9add210297e401efd4d60174cce2b63df6">FS_ATTRIBUTE_DIRECTORY</a> = BIT(0), 
+<tr class="memitem:a16685eea158879e41b101ca3634de462"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="fs_8h.html#a16685eea158879e41b101ca3634de462add210297e401efd4d60174cce2b63df6">FS_ATTRIBUTE_DIRECTORY</a> = BIT(0), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#aae05225933a42f81e7c4a9fb286596f9a964ecf3f9b625100372d13418dff14bf">FS_ATTRIBUTE_HIDDEN</a> = BIT(8), 
+&#160;&#160;<a class="el" href="fs_8h.html#a16685eea158879e41b101ca3634de462a964ecf3f9b625100372d13418dff14bf">FS_ATTRIBUTE_HIDDEN</a> = BIT(8), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#aae05225933a42f81e7c4a9fb286596f9a9b60bc97a4bd63ba24a3431d1905695a">FS_ATTRIBUTE_ARCHIVE</a> = BIT(16), 
+&#160;&#160;<a class="el" href="fs_8h.html#a16685eea158879e41b101ca3634de462a9b60bc97a4bd63ba24a3431d1905695a">FS_ATTRIBUTE_ARCHIVE</a> = BIT(16), 
 <br />
-&#160;&#160;<a class="el" href="fs_8h.html#aae05225933a42f81e7c4a9fb286596f9aeb36f9fbbc299cfedc2ed20a8adfc785">FS_ATTRIBUTE_READ_ONLY</a> = BIT(24)
+&#160;&#160;<a class="el" href="fs_8h.html#a16685eea158879e41b101ca3634de462aeb36f9fbbc299cfedc2ed20a8adfc785">FS_ATTRIBUTE_READ_ONLY</a> = BIT(24)
 <br />
- }<tr class="memdesc:aae05225933a42f81e7c4a9fb286596f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute flags.  <a href="fs_8h.html#aae05225933a42f81e7c4a9fb286596f9">More...</a><br /></td></tr>
-<tr class="separator:aae05225933a42f81e7c4a9fb286596f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="memdesc:a16685eea158879e41b101ca3634de462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute flags.  <a href="fs_8h.html#a16685eea158879e41b101ca3634de462">More...</a><br /></td></tr>
+<tr class="separator:a16685eea158879e41b101ca3634de462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a3526d37c529b39a862b9b7371a53e137"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137">FS_MediaType</a> { <br />
 &#160;&#160;<a class="el" href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137ae1d592f99c375473d1e05bec79ddde26">MEDIATYPE_NAND</a> = 0, 
@@ -176,6 +181,18 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="memdesc:a3526d37c529b39a862b9b7371a53e137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Media types.  <a href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137">More...</a><br /></td></tr>
 <tr class="separator:a3526d37c529b39a862b9b7371a53e137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:acdbf253270893656d28d7c35d7b7070c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070c">FS_SystemMediaType</a> { <br />
+&#160;&#160;<a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070ca250d43fc8ba9189c116e8911033f147c">SYSTEM_MEDIATYPE_CTR_NAND</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070ca27732504585449ac9b1b127f2ae8cc18">SYSTEM_MEDIATYPE_TWL_NAND</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070ca74e138a7903a41a31666eb6a3a9daed8">SYSTEM_MEDIATYPE_SD</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070ca8bd94eae78baf5bad5e62b2e6e00d43b">SYSTEM_MEDIATYPE_TWL_PHOTO</a> = 3
+<br />
+ }<tr class="memdesc:acdbf253270893656d28d7c35d7b7070c"><td class="mdescLeft">&#160;</td><td class="mdescRight">System media types.  <a href="fs_8h.html#acdbf253270893656d28d7c35d7b7070c">More...</a><br /></td></tr>
+<tr class="separator:acdbf253270893656d28d7c35d7b7070c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a24416208e0f4c6c6efc3b2118a2d8803"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803">FS_ArchiveID</a> { <br />
 &#160;&#160;<a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a4492905cbe9982d7748d2afc7343e409">ARCHIVE_ROMFS</a> = 0x00000003, 
@@ -213,6 +230,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a96f8512c05e296beb21d3c6822280b28">ARCHIVE_NAND_CTR_FS</a> = 0x567890AB, 
 <br />
 &#160;&#160;<a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a799eead9b7a4b20cdcbdf0a4f6750ccc">ARCHIVE_TWL_PHOTO</a> = 0x567890AC, 
+<br />
+&#160;&#160;<a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a527f3a6f54aab2efe7537bf4df9bdb21">ARCHIVE_TWL_SOUND</a> = 0x567890AD, 
 <br />
 &#160;&#160;<a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803afebe77c83017f58bec3c61f3050dc505">ARCHIVE_NAND_TWL_FS</a> = 0x567890AE, 
 <br />
@@ -325,15 +344,21 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a3a12b515c5a4d2514cfb07014dbfa3eb">fsExit</a> (void)</td></tr>
 <tr class="memdesc:a3a12b515c5a4d2514cfb07014dbfa3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits FS. <br /></td></tr>
 <tr class="separator:a3a12b515c5a4d2514cfb07014dbfa3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423605e92371f4af0ed34d3c6f57e668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a423605e92371f4af0ed34d3c6f57e668">fsUseSession</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> session, bool sdmc)</td></tr>
-<tr class="memdesc:a423605e92371f4af0ed34d3c6f57e668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the FSUSER session to use in the current thread.  <a href="#a423605e92371f4af0ed34d3c6f57e668">More...</a><br /></td></tr>
-<tr class="separator:a423605e92371f4af0ed34d3c6f57e668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c83784d540badb04f67e00c5144cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#af1c83784d540badb04f67e00c5144cf3">fsUseSession</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> session)</td></tr>
+<tr class="memdesc:af1c83784d540badb04f67e00c5144cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the FSUSER session to use in the current thread.  <a href="#af1c83784d540badb04f67e00c5144cf3">More...</a><br /></td></tr>
+<tr class="separator:af1c83784d540badb04f67e00c5144cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af29084d2b427ff5874421c192313e6ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29084d2b427ff5874421c192313e6ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#af29084d2b427ff5874421c192313e6ce">fsEndUseSession</a> (void)</td></tr>
 <tr class="memdesc:af29084d2b427ff5874421c192313e6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the FSUSER session override in the current thread. <br /></td></tr>
 <tr class="separator:af29084d2b427ff5874421c192313e6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37db378ead3ffd0c55c5c7833d2b6a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a37db378ead3ffd0c55c5c7833d2b6a52">fsExemptFromSession</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive)</td></tr>
+<tr class="memdesc:a37db378ead3ffd0c55c5c7833d2b6a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exempts an archive from using alternate FS session handles provided with <a class="el" href="fs_8h.html#af1c83784d540badb04f67e00c5144cf3">fsUseSession</a> Instead, the archive will use the default FS session handle, opened with <a class="el" href="srv_8h.html#aab6cdc04019fc64b219add4013e02b65">srvGetSessionHandle</a>.  <a href="#a37db378ead3ffd0c55c5c7833d2b6a52">More...</a><br /></td></tr>
+<tr class="separator:a37db378ead3ffd0c55c5c7833d2b6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd200207f5550eaa8382b474d4ba79f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a4fd200207f5550eaa8382b474d4ba79f">fsUnexemptFromSession</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive)</td></tr>
+<tr class="memdesc:a4fd200207f5550eaa8382b474d4ba79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unexempts an archive from using alternate FS session handles provided with <a class="el" href="fs_8h.html#af1c83784d540badb04f67e00c5144cf3">fsUseSession</a>.  <a href="#a4fd200207f5550eaa8382b474d4ba79f">More...</a><br /></td></tr>
+<tr class="separator:a4fd200207f5550eaa8382b474d4ba79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae72d50f45f4573540c1ea2ae796ca905"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFS__Path.html">FS_Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ae72d50f45f4573540c1ea2ae796ca905">fsMakePath</a> (<a class="el" href="fs_8h.html#a2ac939166d53f34606e046ade4c937ab">FS_PathType</a> type, const void *path)</td></tr>
-<tr class="memdesc:ae72d50f45f4573540c1ea2ae796ca905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structFS__Path.html" title="FS path. ">FS_Path</a> instance.  <a href="#ae72d50f45f4573540c1ea2ae796ca905">More...</a><br /></td></tr>
+<tr class="memdesc:ae72d50f45f4573540c1ea2ae796ca905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structFS__Path.html" title="Filesystem path data, detailing the specific target of an operation. ">FS_Path</a> instance.  <a href="#ae72d50f45f4573540c1ea2ae796ca905">More...</a><br /></td></tr>
 <tr class="separator:ae72d50f45f4573540c1ea2ae796ca905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6eff50e035a6544dca96fc86dc88b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ae6eff50e035a6544dca96fc86dc88b91">fsGetSessionHandle</a> (void)</td></tr>
 <tr class="memdesc:ae6eff50e035a6544dca96fc86dc88b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current FS session handle.  <a href="#ae6eff50e035a6544dca96fc86dc88b91">More...</a><br /></td></tr>
@@ -344,46 +369,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <tr class="memitem:a65613779d51d5f5063f33601b10748ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a65613779d51d5f5063f33601b10748ef">FSUSER_Initialize</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> session)</td></tr>
 <tr class="memdesc:a65613779d51d5f5063f33601b10748ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a FSUSER session.  <a href="#a65613779d51d5f5063f33601b10748ef">More...</a><br /></td></tr>
 <tr class="separator:a65613779d51d5f5063f33601b10748ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a972f8f4ab83adae7582787b7c23d82cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a972f8f4ab83adae7582787b7c23d82cf">FSUSER_OpenFile</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> openFlags, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
+<tr class="memitem:a972f8f4ab83adae7582787b7c23d82cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a972f8f4ab83adae7582787b7c23d82cf">FSUSER_OpenFile</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> openFlags, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
 <tr class="memdesc:a972f8f4ab83adae7582787b7c23d82cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file.  <a href="#a972f8f4ab83adae7582787b7c23d82cf">More...</a><br /></td></tr>
 <tr class="separator:a972f8f4ab83adae7582787b7c23d82cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7faefcc6b8fc34f4f2959fd9781fb765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a7faefcc6b8fc34f4f2959fd9781fb765">FSUSER_OpenFileDirectly</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> openFlags, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
-<tr class="memdesc:a7faefcc6b8fc34f4f2959fd9781fb765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file directly.  <a href="#a7faefcc6b8fc34f4f2959fd9781fb765">More...</a><br /></td></tr>
-<tr class="separator:a7faefcc6b8fc34f4f2959fd9781fb765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92c308811733816a3048903076c398f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#aa92c308811733816a3048903076c398f">FSUSER_DeleteFile</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
+<tr class="memitem:a550b1a046e66ef8216f737225adbf934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a550b1a046e66ef8216f737225adbf934">FSUSER_OpenFileDirectly</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803">FS_ArchiveID</a> archiveId, <a class="el" href="structFS__Path.html">FS_Path</a> archivePath, <a class="el" href="structFS__Path.html">FS_Path</a> filePath, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> openFlags, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
+<tr class="memdesc:a550b1a046e66ef8216f737225adbf934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file directly, bypassing the requirement of an opened archive handle.  <a href="#a550b1a046e66ef8216f737225adbf934">More...</a><br /></td></tr>
+<tr class="separator:a550b1a046e66ef8216f737225adbf934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92c308811733816a3048903076c398f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#aa92c308811733816a3048903076c398f">FSUSER_DeleteFile</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
 <tr class="memdesc:aa92c308811733816a3048903076c398f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a file.  <a href="#aa92c308811733816a3048903076c398f">More...</a><br /></td></tr>
 <tr class="separator:aa92c308811733816a3048903076c398f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d2337aee6ed9c01e0c24b84d1ae9ccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a6d2337aee6ed9c01e0c24b84d1ae9ccb">FSUSER_RenameFile</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> srcArchive, <a class="el" href="structFS__Path.html">FS_Path</a> srcPath, <a class="el" href="structFS__Archive.html">FS_Archive</a> dstArchive, <a class="el" href="structFS__Path.html">FS_Path</a> dstPath)</td></tr>
+<tr class="memitem:a6d2337aee6ed9c01e0c24b84d1ae9ccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a6d2337aee6ed9c01e0c24b84d1ae9ccb">FSUSER_RenameFile</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> srcArchive, <a class="el" href="structFS__Path.html">FS_Path</a> srcPath, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> dstArchive, <a class="el" href="structFS__Path.html">FS_Path</a> dstPath)</td></tr>
 <tr class="memdesc:a6d2337aee6ed9c01e0c24b84d1ae9ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a file.  <a href="#a6d2337aee6ed9c01e0c24b84d1ae9ccb">More...</a><br /></td></tr>
 <tr class="separator:a6d2337aee6ed9c01e0c24b84d1ae9ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ceefaf8cfaf6deefff2e2000fc8e62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#aa9ceefaf8cfaf6deefff2e2000fc8e62">FSUSER_DeleteDirectory</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
+<tr class="memitem:aa9ceefaf8cfaf6deefff2e2000fc8e62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#aa9ceefaf8cfaf6deefff2e2000fc8e62">FSUSER_DeleteDirectory</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
 <tr class="memdesc:aa9ceefaf8cfaf6deefff2e2000fc8e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a directory, failing if it is not empty.  <a href="#aa9ceefaf8cfaf6deefff2e2000fc8e62">More...</a><br /></td></tr>
 <tr class="separator:aa9ceefaf8cfaf6deefff2e2000fc8e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57b8a279ff700a6d117b6a98a0c0b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac57b8a279ff700a6d117b6a98a0c0b8c">FSUSER_DeleteDirectoryRecursively</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
+<tr class="memitem:ac57b8a279ff700a6d117b6a98a0c0b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac57b8a279ff700a6d117b6a98a0c0b8c">FSUSER_DeleteDirectoryRecursively</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
 <tr class="memdesc:ac57b8a279ff700a6d117b6a98a0c0b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a directory, also deleting its contents.  <a href="#ac57b8a279ff700a6d117b6a98a0c0b8c">More...</a><br /></td></tr>
 <tr class="separator:ac57b8a279ff700a6d117b6a98a0c0b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc945a229289c0f0a7a205b7c7d5179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a2bc945a229289c0f0a7a205b7c7d5179">FSUSER_CreateFile</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> fileSize)</td></tr>
+<tr class="memitem:a2bc945a229289c0f0a7a205b7c7d5179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a2bc945a229289c0f0a7a205b7c7d5179">FSUSER_CreateFile</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> fileSize)</td></tr>
 <tr class="memdesc:a2bc945a229289c0f0a7a205b7c7d5179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a file.  <a href="#a2bc945a229289c0f0a7a205b7c7d5179">More...</a><br /></td></tr>
 <tr class="separator:a2bc945a229289c0f0a7a205b7c7d5179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6009491439458c1e7dffd77f49157eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ae6009491439458c1e7dffd77f49157eb">FSUSER_CreateDirectory</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
+<tr class="memitem:ae6009491439458c1e7dffd77f49157eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ae6009491439458c1e7dffd77f49157eb">FSUSER_CreateDirectory</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> attributes)</td></tr>
 <tr class="memdesc:ae6009491439458c1e7dffd77f49157eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a directory.  <a href="#ae6009491439458c1e7dffd77f49157eb">More...</a><br /></td></tr>
 <tr class="separator:ae6009491439458c1e7dffd77f49157eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb78fb5f243542b20b8ad9595d97ae9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#addb78fb5f243542b20b8ad9595d97ae9">FSUSER_RenameDirectory</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> srcArchive, <a class="el" href="structFS__Path.html">FS_Path</a> srcPath, <a class="el" href="structFS__Archive.html">FS_Archive</a> dstArchive, <a class="el" href="structFS__Path.html">FS_Path</a> dstPath)</td></tr>
+<tr class="memitem:addb78fb5f243542b20b8ad9595d97ae9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#addb78fb5f243542b20b8ad9595d97ae9">FSUSER_RenameDirectory</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> srcArchive, <a class="el" href="structFS__Path.html">FS_Path</a> srcPath, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> dstArchive, <a class="el" href="structFS__Path.html">FS_Path</a> dstPath)</td></tr>
 <tr class="memdesc:addb78fb5f243542b20b8ad9595d97ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames a directory.  <a href="#addb78fb5f243542b20b8ad9595d97ae9">More...</a><br /></td></tr>
 <tr class="separator:addb78fb5f243542b20b8ad9595d97ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e4cb575a97ad7a70845fd4900f4d852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a1e4cb575a97ad7a70845fd4900f4d852">FSUSER_OpenDirectory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
+<tr class="memitem:a1e4cb575a97ad7a70845fd4900f4d852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a1e4cb575a97ad7a70845fd4900f4d852">FSUSER_OpenDirectory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
 <tr class="memdesc:a1e4cb575a97ad7a70845fd4900f4d852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a directory.  <a href="#a1e4cb575a97ad7a70845fd4900f4d852">More...</a><br /></td></tr>
 <tr class="separator:a1e4cb575a97ad7a70845fd4900f4d852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b1cf38ecd75d8bc746a6ac20c3ec51f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a5b1cf38ecd75d8bc746a6ac20c3ec51f">FSUSER_OpenArchive</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> *archive)</td></tr>
-<tr class="memdesc:a5b1cf38ecd75d8bc746a6ac20c3ec51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an archive.  <a href="#a5b1cf38ecd75d8bc746a6ac20c3ec51f">More...</a><br /></td></tr>
-<tr class="separator:a5b1cf38ecd75d8bc746a6ac20c3ec51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab720a77777a35fa7112556af2c1c4e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ab720a77777a35fa7112556af2c1c4e0b">FSUSER_ControlArchive</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="fs_8h.html#ac3958094a809b4f036fa86e981e99352">FS_ArchiveAction</a> action, void *input, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> inputSize, void *output, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outputSize)</td></tr>
+<tr class="memitem:a92bb1a78bd0a8372936b98beda8ef43c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a92bb1a78bd0a8372936b98beda8ef43c">FSUSER_OpenArchive</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> *archive, <a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803">FS_ArchiveID</a> id, <a class="el" href="structFS__Path.html">FS_Path</a> path)</td></tr>
+<tr class="memdesc:a92bb1a78bd0a8372936b98beda8ef43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an archive.  <a href="#a92bb1a78bd0a8372936b98beda8ef43c">More...</a><br /></td></tr>
+<tr class="separator:a92bb1a78bd0a8372936b98beda8ef43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab720a77777a35fa7112556af2c1c4e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ab720a77777a35fa7112556af2c1c4e0b">FSUSER_ControlArchive</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="fs_8h.html#ac3958094a809b4f036fa86e981e99352">FS_ArchiveAction</a> action, void *input, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> inputSize, void *output, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outputSize)</td></tr>
 <tr class="memdesc:ab720a77777a35fa7112556af2c1c4e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a control operation on an archive.  <a href="#ab720a77777a35fa7112556af2c1c4e0b">More...</a><br /></td></tr>
 <tr class="separator:ab720a77777a35fa7112556af2c1c4e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4490e0a4739769735cb88cfae909291"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ad4490e0a4739769735cb88cfae909291">FSUSER_CloseArchive</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> *archive)</td></tr>
-<tr class="memdesc:ad4490e0a4739769735cb88cfae909291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an archive.  <a href="#ad4490e0a4739769735cb88cfae909291">More...</a><br /></td></tr>
-<tr class="separator:ad4490e0a4739769735cb88cfae909291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc830c7c137e903489d85c96fefa74c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a7bc830c7c137e903489d85c96fefa74c">FSUSER_GetFreeBytes</a> (<a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *freeBytes, <a class="el" href="structFS__Archive.html">FS_Archive</a> archive)</td></tr>
+<tr class="memitem:a32e368aef60d5c5a464cc95c43c02f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a32e368aef60d5c5a464cc95c43c02f0d">FSUSER_CloseArchive</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive)</td></tr>
+<tr class="memdesc:a32e368aef60d5c5a464cc95c43c02f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an archive.  <a href="#a32e368aef60d5c5a464cc95c43c02f0d">More...</a><br /></td></tr>
+<tr class="separator:a32e368aef60d5c5a464cc95c43c02f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc830c7c137e903489d85c96fefa74c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a7bc830c7c137e903489d85c96fefa74c">FSUSER_GetFreeBytes</a> (<a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *freeBytes, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive)</td></tr>
 <tr class="memdesc:a7bc830c7c137e903489d85c96fefa74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of free bytes within an archive.  <a href="#a7bc830c7c137e903489d85c96fefa74c">More...</a><br /></td></tr>
 <tr class="separator:a7bc830c7c137e903489d85c96fefa74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cdb9fe9fda62f3d4d567502fafddc82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a6cdb9fe9fda62f3d4d567502fafddc82">FSUSER_GetCardType</a> (<a class="el" href="fs_8h.html#ab06968444dcba08b02ed34b6db2ad5b5">FS_CardType</a> *type)</td></tr>
@@ -528,9 +553,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <tr class="memitem:abcd43519e25e532efaea0998968aa511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#abcd43519e25e532efaea0998968aa511">FSUSER_GetSdmcCtrRootPath</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *out, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> length)</td></tr>
 <tr class="memdesc:abcd43519e25e532efaea0998968aa511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the CTR SDMC root path.  <a href="#abcd43519e25e532efaea0998968aa511">More...</a><br /></td></tr>
 <tr class="separator:abcd43519e25e532efaea0998968aa511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23bb66f4e44da19c2fc564d1b53f3f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a23bb66f4e44da19c2fc564d1b53f3f90">FSUSER_GetArchiveResource</a> (<a class="el" href="structFS__ArchiveResource.html">FS_ArchiveResource</a> *archiveResource, <a class="el" href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137">FS_MediaType</a> mediaType)</td></tr>
-<tr class="memdesc:a23bb66f4e44da19c2fc564d1b53f3f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an archive's resource information.  <a href="#a23bb66f4e44da19c2fc564d1b53f3f90">More...</a><br /></td></tr>
-<tr class="separator:a23bb66f4e44da19c2fc564d1b53f3f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5fd63ba7fe39e33bdb24bc9e33fbc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a5f5fd63ba7fe39e33bdb24bc9e33fbc3">FSUSER_GetArchiveResource</a> (<a class="el" href="structFS__ArchiveResource.html">FS_ArchiveResource</a> *archiveResource, <a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070c">FS_SystemMediaType</a> mediaType)</td></tr>
+<tr class="memdesc:a5f5fd63ba7fe39e33bdb24bc9e33fbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an archive's resource information.  <a href="#a5f5fd63ba7fe39e33bdb24bc9e33fbc3">More...</a><br /></td></tr>
+<tr class="separator:a5f5fd63ba7fe39e33bdb24bc9e33fbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cf7cc64448889235772601ec0cdcaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac0cf7cc64448889235772601ec0cdcaf">FSUSER_ExportIntegrityVerificationSeed</a> (<a class="el" href="structFS__IntegrityVerificationSeed.html">FS_IntegrityVerificationSeed</a> *seed)</td></tr>
 <tr class="memdesc:ac0cf7cc64448889235772601ec0cdcaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the integrity verification seed.  <a href="#ac0cf7cc64448889235772601ec0cdcaf">More...</a><br /></td></tr>
 <tr class="separator:ac0cf7cc64448889235772601ec0cdcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -543,6 +568,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <tr class="memitem:a5403a61d2e5a4d819891e1100db021be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a5403a61d2e5a4d819891e1100db021be">FSUSER_GetLegacySubBannerData</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bannerSize, <a class="el" href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137">FS_MediaType</a> mediaType, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> programId, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *banner)</td></tr>
 <tr class="memdesc:a5403a61d2e5a4d819891e1100db021be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the legacy sub banner data of a program.  <a href="#a5403a61d2e5a4d819891e1100db021be">More...</a><br /></td></tr>
 <tr class="separator:a5403a61d2e5a4d819891e1100db021be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a626e8d21052058c5ca712e743f71e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac6a626e8d21052058c5ca712e743f71e">FSUSER_UpdateSha256Context</a> (const void *data, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> inputSize, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *hash)</td></tr>
+<tr class="memdesc:ac6a626e8d21052058c5ca712e743f71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hashes the given data and outputs a SHA256 hash.  <a href="#ac6a626e8d21052058c5ca712e743f71e">More...</a><br /></td></tr>
+<tr class="separator:ac6a626e8d21052058c5ca712e743f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6a653c8784906c1e325047aa4de8f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a3f6a653c8784906c1e325047aa4de8f1">FSUSER_ReadSpecialFile</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *bytesRead, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> fileOffset, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *data)</td></tr>
 <tr class="memdesc:a3f6a653c8784906c1e325047aa4de8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from a special file.  <a href="#a3f6a653c8784906c1e325047aa4de8f1">More...</a><br /></td></tr>
 <tr class="separator:a3f6a653c8784906c1e325047aa4de8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,10 +604,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <tr class="memitem:abacf405c107cfd13196d8268a425fcf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#abacf405c107cfd13196d8268a425fcf9">FSUSER_StartDeviceMoveAsDestination</a> (<a class="el" href="structFS__DeviceMoveContext.html">FS_DeviceMoveContext</a> context, bool clear)</td></tr>
 <tr class="memdesc:abacf405c107cfd13196d8268a425fcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a device move as the destination device.  <a href="#abacf405c107cfd13196d8268a425fcf9">More...</a><br /></td></tr>
 <tr class="separator:abacf405c107cfd13196d8268a425fcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac848f8623bca82353495973e849fd01f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac848f8623bca82353495973e849fd01f">FSUSER_SetArchivePriority</a> (<a class="el" href="structFS__Archive.html">FS_Archive</a> archive, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> priority)</td></tr>
+<tr class="memitem:ac848f8623bca82353495973e849fd01f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ac848f8623bca82353495973e849fd01f">FSUSER_SetArchivePriority</a> (<a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> priority)</td></tr>
 <tr class="memdesc:ac848f8623bca82353495973e849fd01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an archive's priority.  <a href="#ac848f8623bca82353495973e849fd01f">More...</a><br /></td></tr>
 <tr class="separator:ac848f8623bca82353495973e849fd01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0571dd827c573dbf37561b9112a29433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a0571dd827c573dbf37561b9112a29433">FSUSER_GetArchivePriority</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *priority, <a class="el" href="structFS__Archive.html">FS_Archive</a> archive)</td></tr>
+<tr class="memitem:a0571dd827c573dbf37561b9112a29433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a0571dd827c573dbf37561b9112a29433">FSUSER_GetArchivePriority</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *priority, <a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> archive)</td></tr>
 <tr class="memdesc:a0571dd827c573dbf37561b9112a29433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an archive's priority.  <a href="#a0571dd827c573dbf37561b9112a29433">More...</a><br /></td></tr>
 <tr class="separator:a0571dd827c573dbf37561b9112a29433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a449bdc2b54331f420eba3b2db6b88c57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a449bdc2b54331f420eba3b2db6b88c57">FSUSER_SetCtrCardLatencyParameter</a> (<a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> latency, bool emulateEndurance)</td></tr>
@@ -588,9 +616,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <tr class="memitem:a8d546ae30727a839c702364901b64952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a8d546ae30727a839c702364901b64952">FSUSER_SwitchCleanupInvalidSaveData</a> (bool enable)</td></tr>
 <tr class="memdesc:a8d546ae30727a839c702364901b64952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles cleaning up invalid save data.  <a href="#a8d546ae30727a839c702364901b64952">More...</a><br /></td></tr>
 <tr class="separator:a8d546ae30727a839c702364901b64952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58c156992f005473ee5c72041f81331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ad58c156992f005473ee5c72041f81331">FSUSER_EnumerateSystemSaveData</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *idsWritten, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> idsSize, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *ids)</td></tr>
-<tr class="memdesc:ad58c156992f005473ee5c72041f81331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates system save data.  <a href="#ad58c156992f005473ee5c72041f81331">More...</a><br /></td></tr>
-<tr class="separator:ad58c156992f005473ee5c72041f81331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049db06b83ef3e9e4310a99b13cbd97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a049db06b83ef3e9e4310a99b13cbd97c">FSUSER_EnumerateSystemSaveData</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *idsWritten, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> idsSize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *ids)</td></tr>
+<tr class="memdesc:a049db06b83ef3e9e4310a99b13cbd97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates system save data.  <a href="#a049db06b83ef3e9e4310a99b13cbd97c">More...</a><br /></td></tr>
+<tr class="separator:a049db06b83ef3e9e4310a99b13cbd97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed395102523af510392243d7fa2a9ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#aed395102523af510392243d7fa2a9ad4">FSUSER_InitializeWithSdkVersion</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> session, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> version)</td></tr>
 <tr class="memdesc:aed395102523af510392243d7fa2a9ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a FSUSER session with an SDK version.  <a href="#aed395102523af510392243d7fa2a9ad4">More...</a><br /></td></tr>
 <tr class="separator:aed395102523af510392243d7fa2a9ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -670,7 +698,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Filesystem Services. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="af9bdc3014f3d54c426b6d2df10de4960"></a>
+<a class="anchor" id="a1f9aebf1de3ebbf4283a4dcf73308562"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -682,20 +710,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 <p>Open flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af9bdc3014f3d54c426b6d2df10de4960aebc25118925a19a2d7d8593fdb21a574"></a>FS_OPEN_READ&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1f9aebf1de3ebbf4283a4dcf73308562aebc25118925a19a2d7d8593fdb21a574"></a>FS_OPEN_READ&#160;</td><td class="fielddoc">
 <p>Open for reading. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9bdc3014f3d54c426b6d2df10de4960a3bd1b8a673bf36d0d7aa8eb543dc3fb2"></a>FS_OPEN_WRITE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a1f9aebf1de3ebbf4283a4dcf73308562a3bd1b8a673bf36d0d7aa8eb543dc3fb2"></a>FS_OPEN_WRITE&#160;</td><td class="fielddoc">
 <p>Open for writing. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af9bdc3014f3d54c426b6d2df10de4960a5a0af82eec8be53934152016600bea9a"></a>FS_OPEN_CREATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a1f9aebf1de3ebbf4283a4dcf73308562a5a0af82eec8be53934152016600bea9a"></a>FS_OPEN_CREATE&#160;</td><td class="fielddoc">
 <p>Create file. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="adb49720dc49f7d4e4cf9adbf2948e409"></a>
+<a class="anchor" id="a77867ab4129f63159b37bca3b652a798"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -707,17 +735,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 <p>Write flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adb49720dc49f7d4e4cf9adbf2948e409a5ca37b181e92ad91749a114aeb05325f"></a>FS_WRITE_FLUSH&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a77867ab4129f63159b37bca3b652a798a5ca37b181e92ad91749a114aeb05325f"></a>FS_WRITE_FLUSH&#160;</td><td class="fielddoc">
 <p>Flush. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="adb49720dc49f7d4e4cf9adbf2948e409aeefbba4772c406afbefc2fdb2c05a469"></a>FS_WRITE_UPDATE_TIME&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a77867ab4129f63159b37bca3b652a798aeefbba4772c406afbefc2fdb2c05a469"></a>FS_WRITE_UPDATE_TIME&#160;</td><td class="fielddoc">
 <p>Update file timestamp. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9"></a>
+<a class="anchor" id="a16685eea158879e41b101ca3634de462"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -729,16 +757,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 <p>Attribute flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9add210297e401efd4d60174cce2b63df6"></a>FS_ATTRIBUTE_DIRECTORY&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a16685eea158879e41b101ca3634de462add210297e401efd4d60174cce2b63df6"></a>FS_ATTRIBUTE_DIRECTORY&#160;</td><td class="fielddoc">
 <p>Directory. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9a964ecf3f9b625100372d13418dff14bf"></a>FS_ATTRIBUTE_HIDDEN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a16685eea158879e41b101ca3634de462a964ecf3f9b625100372d13418dff14bf"></a>FS_ATTRIBUTE_HIDDEN&#160;</td><td class="fielddoc">
 <p>Hidden. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9a9b60bc97a4bd63ba24a3431d1905695a"></a>FS_ATTRIBUTE_ARCHIVE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a16685eea158879e41b101ca3634de462a9b60bc97a4bd63ba24a3431d1905695a"></a>FS_ATTRIBUTE_ARCHIVE&#160;</td><td class="fielddoc">
 <p>Archive. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aae05225933a42f81e7c4a9fb286596f9aeb36f9fbbc299cfedc2ed20a8adfc785"></a>FS_ATTRIBUTE_READ_ONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a16685eea158879e41b101ca3634de462aeb36f9fbbc299cfedc2ed20a8adfc785"></a>FS_ATTRIBUTE_READ_ONLY&#160;</td><td class="fielddoc">
 <p>Read-only. </p>
 </td></tr>
 </table>
@@ -832,6 +860,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a24416208e0f4c6c6efc3b2118a2d8803a799eead9b7a4b20cdcbdf0a4f6750ccc"></a>ARCHIVE_TWL_PHOTO&#160;</td><td class="fielddoc">
 <p>TWL PHOTO archive. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a24416208e0f4c6c6efc3b2118a2d8803a527f3a6f54aab2efe7537bf4df9bdb21"></a>ARCHIVE_TWL_SOUND&#160;</td><td class="fielddoc">
+<p>TWL SOUND archive. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a24416208e0f4c6c6efc3b2118a2d8803afebe77c83017f58bec3c61f3050dc505"></a>ARCHIVE_NAND_TWL_FS&#160;</td><td class="fielddoc">
 <p>NAND TWL FS archive. </p>
@@ -1050,6 +1081,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
+<a class="anchor" id="acdbf253270893656d28d7c35d7b7070c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070c">FS_SystemMediaType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>System media types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acdbf253270893656d28d7c35d7b7070ca250d43fc8ba9189c116e8911033f147c"></a>SYSTEM_MEDIATYPE_CTR_NAND&#160;</td><td class="fielddoc">
+<p>CTR NAND. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acdbf253270893656d28d7c35d7b7070ca27732504585449ac9b1b127f2ae8cc18"></a>SYSTEM_MEDIATYPE_TWL_NAND&#160;</td><td class="fielddoc">
+<p>TWL NAND. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acdbf253270893656d28d7c35d7b7070ca74e138a7903a41a31666eb6a3a9daed8"></a>SYSTEM_MEDIATYPE_SD&#160;</td><td class="fielddoc">
+<p>SD card. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acdbf253270893656d28d7c35d7b7070ca8bd94eae78baf5bad5e62b2e6e00d43b"></a>SYSTEM_MEDIATYPE_TWL_PHOTO&#160;</td><td class="fielddoc">
+<p>TWL Photo. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad59c41ef622b629803b2768585bc81c7"></a>
 <div class="memitem">
@@ -1251,6 +1310,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
   <table class="params">
     <tr><td class="paramname">handle</td><td>Handle of the directory. </td></tr>
     <tr><td class="paramname">priority</td><td>Priority to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a37db378ead3ffd0c55c5c7833d2b6a52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsExemptFromSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exempts an archive from using alternate FS session handles provided with <a class="el" href="fs_8h.html#af1c83784d540badb04f67e00c5144cf3">fsUseSession</a> Instead, the archive will use the default FS session handle, opened with <a class="el" href="srv_8h.html#aab6cdc04019fc64b219add4013e02b65">srvGetSessionHandle</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive</td><td>Archive to exempt. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1824,7 +1907,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
       </table>
 </div><div class="memdoc">
 
-<p>Creates an <a class="el" href="structFS__Path.html" title="FS path. ">FS_Path</a> instance. </p>
+<p>Creates an <a class="el" href="structFS__Path.html" title="Filesystem path data, detailing the specific target of an operation. ">FS_Path</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of path. </td></tr>
@@ -1832,7 +1915,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The created <a class="el" href="structFS__Path.html" title="FS path. ">FS_Path</a> instance. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The created <a class="el" href="structFS__Path.html" title="Filesystem path data, detailing the specific target of an operation. ">FS_Path</a> instance. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4fd200207f5550eaa8382b474d4ba79f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsUnexemptFromSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unexempts an archive from using alternate FS session handles provided with <a class="el" href="fs_8h.html#af1c83784d540badb04f67e00c5144cf3">fsUseSession</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive</td><td>Archive to remove from the exemption list. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2361,14 +2468,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="ad4490e0a4739769735cb88cfae909291"></a>
+<a class="anchor" id="a32e368aef60d5c5a464cc95c43c02f0d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_CloseArchive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2448,7 +2555,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_ControlArchive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -2567,7 +2674,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_CreateDirectory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -2593,7 +2700,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <p>Creates a directory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">archive</td><td>Archive containing the directory. </td></tr>
+    <tr><td class="paramname">archive</td><td>Archive to create the directory in. </td></tr>
     <tr><td class="paramname">path</td><td>Path of the directory. </td></tr>
     <tr><td class="paramname">attributes</td><td>Attributes of the directory. </td></tr>
   </table>
@@ -2672,7 +2779,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_CreateFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -2704,7 +2811,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <p>Creates a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">archive</td><td>Archive containing the file. </td></tr>
+    <tr><td class="paramname">archive</td><td>Archive to create the file in. </td></tr>
     <tr><td class="paramname">path</td><td>Path of the file. </td></tr>
     <tr><td class="paramname">attributes</td><td>Attributes of the file. </td></tr>
     <tr><td class="paramname">fileSize</td><td>Size of the file. </td></tr>
@@ -2798,7 +2905,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_DeleteDirectory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -2833,7 +2940,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_DeleteDirectoryRecursively </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -2892,7 +2999,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_DeleteFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -3007,7 +3114,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="ad58c156992f005473ee5c72041f81331"></a>
+<a class="anchor" id="a049db06b83ef3e9e4310a99b13cbd97c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3026,7 +3133,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>ids</em>&#160;</td>
         </tr>
         <tr>
@@ -3163,7 +3270,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>&#160;</td>
         </tr>
         <tr>
@@ -3185,7 +3292,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="a23bb66f4e44da19c2fc564d1b53f3f90"></a>
+<a class="anchor" id="a5f5fd63ba7fe39e33bdb24bc9e33fbc3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3198,7 +3305,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fs_8h.html#a3526d37c529b39a862b9b7371a53e137">FS_MediaType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#acdbf253270893656d28d7c35d7b7070c">FS_SystemMediaType</a>&#160;</td>
           <td class="paramname"><em>mediaType</em>&#160;</td>
         </tr>
         <tr>
@@ -3213,7 +3320,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">archiveResource</td><td>Pointer to output the archive resource information to. </td></tr>
-    <tr><td class="paramname">mediaType</td><td>Media type to check. </td></tr>
+    <tr><td class="paramname">mediaType</td><td>System media type to check. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3369,7 +3476,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>&#160;</td>
         </tr>
         <tr>
@@ -4246,16 +4353,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="a5b1cf38ecd75d8bc746a6ac20c3ec51f"></a>
+<a class="anchor" id="a92bb1a78bd0a8372936b98beda8ef43c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_OpenArchive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a> *&#160;</td>
-          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a> *&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803">FS_ArchiveID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFS__Path.html">FS_Path</a>&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4263,7 +4386,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 <p>Opens an archive. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">archive</td><td>Archive to open. </td></tr>
+    <tr><td class="paramname">archive</td><td>Pointer to output the opened archive to. </td></tr>
+    <tr><td class="paramname">id</td><td>ID of the archive. </td></tr>
+    <tr><td class="paramname">path</td><td>Path of the archive. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4283,7 +4408,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -4325,7 +4450,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -4368,7 +4493,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="a7faefcc6b8fc34f4f2959fd9781fb765"></a>
+<a class="anchor" id="a550b1a046e66ef8216f737225adbf934"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4381,14 +4506,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
-          <td class="paramname"><em>archive</em>, </td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803">FS_ArchiveID</a>&#160;</td>
+          <td class="paramname"><em>archiveId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structFS__Path.html">FS_Path</a>&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
+          <td class="paramname"><em>archivePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFS__Path.html">FS_Path</a>&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4410,12 +4541,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
       </table>
 </div><div class="memdoc">
 
-<p>Opens a file directly. </p>
+<p>Opens a file directly, bypassing the requirement of an opened archive handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">out</td><td>Pointer to output the file handle to. </td></tr>
-    <tr><td class="paramname">archive</td><td>Archive containing the file. </td></tr>
-    <tr><td class="paramname">path</td><td>Path of the file. </td></tr>
+    <tr><td class="paramname">archiveId</td><td>ID of the archive containing the file. </td></tr>
+    <tr><td class="paramname">archivePath</td><td>Path of the archive containing the file. </td></tr>
+    <tr><td class="paramname">filePath</td><td>Path of the file. </td></tr>
     <tr><td class="paramname">openFlags</td><td>Flags to open the file with. </td></tr>
     <tr><td class="paramname">attributes</td><td>Attributes of the file. </td></tr>
   </table>
@@ -4585,7 +4717,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_RenameDirectory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>srcArchive</em>, </td>
         </tr>
         <tr>
@@ -4597,7 +4729,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>dstArchive</em>, </td>
         </tr>
         <tr>
@@ -4634,7 +4766,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_RenameFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>srcArchive</em>, </td>
         </tr>
         <tr>
@@ -4646,7 +4778,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>dstArchive</em>, </td>
         </tr>
         <tr>
@@ -4683,7 +4815,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_SetArchivePriority </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structFS__Archive.html">FS_Archive</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fs_8h.html#a64b19cc2d36043ad4060f2b7d17b16ef">FS_Archive</a>&#160;</td>
           <td class="paramname"><em>archive</em>, </td>
         </tr>
         <tr>
@@ -4950,21 +5082,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
 
 </div>
 </div>
-<a class="anchor" id="a423605e92371f4af0ed34d3c6f57e668"></a>
+<a class="anchor" id="ac6a626e8d21052058c5ca712e743f71e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fsUseSession </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> FSUSER_UpdateSha256Context </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>session</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sdmc</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>inputSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4974,11 +5112,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8
       </table>
 </div><div class="memdoc">
 
+<p>Hashes the given data and outputs a SHA256 hash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Pointer to the data to be hashed. </td></tr>
+    <tr><td class="paramname">inputSize</td><td>The size of the data. </td></tr>
+    <tr><td class="paramname">hash</td><td>Hash output pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af1c83784d540badb04f67e00c5144cf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsUseSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>session</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Sets the FSUSER session to use in the current thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">session</td><td>The handle of the FSUSER session to use. </td></tr>
-    <tr><td class="paramname">sdmc</td><td>When true, SDMC archive commands are redirected to this session too. Otherwise the default session is used. </td></tr>
   </table>
   </dd>
 </dl>

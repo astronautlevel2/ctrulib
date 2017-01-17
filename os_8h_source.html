@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -254,22 +254,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> * @brief Gets the NAND system-version stored in NVer/CVer.</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> * The romfs device must not be already initialized(via romfsInit*()) at the time this function is called, since this code uses the romfs device.</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> * @param nver_versionbin Output OS_VersionBin structure for the data read from NVer.</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> * @param cver_versionbin Output OS_VersionBin structure for the data read from CVer.</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> * @return The result-code. This value can be positive if opening &quot;romfs:/version.bin&quot; fails with stdio, since errno would be returned in that case. In some cases the error can be special negative values as well.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="os_8h.html#ac3bc6073f0b8a41926ad0de5a2a4d4cb">osGetSystemVersionData</a>(<a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *nver_versionbin, <a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *cver_versionbin);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> * @brief This is a wrapper for osGetSystemVersionData.</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> * @param nver_versionbin Optional output OS_VersionBin structure for the data read from NVer, can be NULL.</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> * @param cver_versionbin Optional output OS_VersionBin structure for the data read from CVer, can be NULL.</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> * @param sysverstr Output string where the printed system-version will be written, in the same format displayed by the System Settings title.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> * @param sysverstr_maxsize Max size of the above string buffer, *including* NULL-terminator.</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> * @return See osGetSystemVersionData.</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="os_8h.html#abeb74bb5b93330aff04bf10d317aa9d3">osGetSystemVersionDataString</a>(<a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *nver_versionbin, <a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *cver_versionbin, <span class="keywordtype">char</span> *sysverstr, <a class="code" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> sysverstr_maxsize);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> * @param nver_versionbin Output OS_VersionBin structure for the data read from NVer.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> * @param cver_versionbin Output OS_VersionBin structure for the data read from CVer.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> * @return The result-code. This value can be positive if opening &quot;romfs:/version.bin&quot; fails with stdio, since errno would be returned in that case. In some cases the error can be special negative values as well.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="os_8h.html#ac3bc6073f0b8a41926ad0de5a2a4d4cb">osGetSystemVersionData</a>(<a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *nver_versionbin, <a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *cver_versionbin);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> * @brief This is a wrapper for osGetSystemVersionData.</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> * @param nver_versionbin Optional output OS_VersionBin structure for the data read from NVer, can be NULL.</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> * @param cver_versionbin Optional output OS_VersionBin structure for the data read from CVer, can be NULL.</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> * @param sysverstr Output string where the printed system-version will be written, in the same format displayed by the System Settings title.</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> * @param sysverstr_maxsize Max size of the above string buffer, *including* NULL-terminator.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> * @return See osGetSystemVersionData.</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="os_8h.html#abeb74bb5b93330aff04bf10d317aa9d3">osGetSystemVersionDataString</a>(<a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *nver_versionbin, <a class="code" href="structOS__VersionBin.html">OS_VersionBin</a> *cver_versionbin, <span class="keywordtype">char</span> *sysverstr, <a class="code" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> sysverstr_maxsize);</div>
 <div class="ttc" id="os_8h_html_ac4f63d4e584005af063b41bc55bb92ebaa6dca7f0283dc36043000cf009b3037d"><div class="ttname"><a href="os_8h.html#ac4f63d4e584005af063b41bc55bb92ebaa6dca7f0283dc36043000cf009b3037d">MEMREGION_APPLICATION</a></div><div class="ttdoc">APPLICATION memory. </div><div class="ttdef"><b>Definition:</b> os.h:24</div></div>
 <div class="ttc" id="types_8h_html_abcdd5d61f51cb4c472ac6637916cf72a"><div class="ttname"><a href="types_8h.html#abcdd5d61f51cb4c472ac6637916cf72a">vu32</a></div><div class="ttdeci">volatile u32 vu32</div><div class="ttdoc">32-bit volatile unsigned integer. </div><div class="ttdef"><b>Definition:</b> types.h:33</div></div>
 <div class="ttc" id="os_8h_html_a19f063780d025bae2b9c169440eb7598"><div class="ttname"><a href="os_8h.html#a19f063780d025bae2b9c169440eb7598">osGetKernelVersion</a></div><div class="ttdeci">static u32 osGetKernelVersion(void)</div><div class="ttdoc">Gets the system&#39;s kernel version. </div><div class="ttdef"><b>Definition:</b> os.h:85</div></div>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,29 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a8dcddd501cd54b29b9289394ba04945c">HTTPC_RESULTCODE_DOWNLOADPENDING</a>&#160;&#160;&#160;0xd840a02b</td></tr>
 <tr class="memdesc:a8dcddd501cd54b29b9289394ba04945c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code returned when a download is pending. <br /></td></tr>
 <tr class="separator:a8dcddd501cd54b29b9289394ba04945c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5611425036dc0a71a78003ff77a3e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb5611425036dc0a71a78003ff77a3e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTPC_RESULTCODE_NOTFOUND</b>&#160;&#160;&#160;0xd840a028</td></tr>
+<tr class="separator:adb5611425036dc0a71a78003ff77a3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e20dceb4e013462e6d75ce2e0e545cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e20dceb4e013462e6d75ce2e0e545cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTPC_RESULTCODE_TIMEDOUT</b>&#160;&#160;&#160;0xd820a069</td></tr>
+<tr class="separator:a5e20dceb4e013462e6d75ce2e0e545cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a8d04e9f19b82970a3260b6f361c079dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d04e9f19b82970a3260b6f361c079dd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a8d04e9f19b82970a3260b6f361c079dd">HTTPC_RequestMethod</a> { <br />
+&#160;&#160;<b>HTTPC_METHOD_GET</b> = 0x1, 
+<br />
+&#160;&#160;<b>HTTPC_METHOD_POST</b> = 0x2, 
+<br />
+&#160;&#160;<b>HTTPC_METHOD_HEAD</b> = 0x3, 
+<br />
+&#160;&#160;<b>HTTPC_METHOD_PUT</b> = 0x4, 
+<br />
+&#160;&#160;<b>HTTPC_METHOD_DELETE</b> = 0x5
+<br />
+ }<tr class="memdesc:a8d04e9f19b82970a3260b6f361c079dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP request method. <br /></td></tr>
+<tr class="separator:a8d04e9f19b82970a3260b6f361c079dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:acf1d4f75e50ea1f3d391d4260f91d64d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d">HTTPC_RequestStatus</a> { <br />
 &#160;&#160;<a class="el" href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64dad210be04b032dbcebec1d139ec446885">HTTPC_STATUS_REQUEST_IN_PROGRESS</a> = 0x5, 
 <br />
@@ -125,83 +145,121 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:acf1d4f75e50ea1f3d391d4260f91d64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP request status.  <a href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d">More...</a><br /></td></tr>
 <tr class="separator:acf1d4f75e50ea1f3d391d4260f91d64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:a745527cd864f2240d767d85b8479a6bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a745527cd864f2240d767d85b8479a6bd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a745527cd864f2240d767d85b8479a6bd">HTTPC_KeepAlive</a> { <br />
+&#160;&#160;<b>HTTPC_KEEPALIVE_DISABLED</b> = 0x0, 
+<br />
+&#160;&#160;<b>HTTPC_KEEPALIVE_ENABLED</b> = 0x1
+<br />
+ }<tr class="memdesc:a745527cd864f2240d767d85b8479a6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP KeepAlive option. <br /></td></tr>
+<tr class="separator:a745527cd864f2240d767d85b8479a6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4602ee84bed380ae03eff3947411b232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4602ee84bed380ae03eff3947411b232"></a>
-<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a4602ee84bed380ae03eff3947411b232">httpcInit</a> (void)</td></tr>
-<tr class="memdesc:a4602ee84bed380ae03eff3947411b232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes HTTPC. <br /></td></tr>
-<tr class="separator:a4602ee84bed380ae03eff3947411b232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f28efe4eea836febc6ae618200ba7a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f28efe4eea836febc6ae618200ba7a1"></a>
+<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a5f28efe4eea836febc6ae618200ba7a1">httpcInit</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> sharedmem_size)</td></tr>
+<tr class="memdesc:a5f28efe4eea836febc6ae618200ba7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes HTTPC. For HTTP GET the sharedmem_size can be zero. The sharedmem contains data which will be later uploaded for HTTP POST. sharedmem_size should be aligned to 0x1000-bytes. <br /></td></tr>
+<tr class="separator:a5f28efe4eea836febc6ae618200ba7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4d4079c3afac6ce38dc1244a6d0be1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b4d4079c3afac6ce38dc1244a6d0be1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a7b4d4079c3afac6ce38dc1244a6d0be1">httpcExit</a> (void)</td></tr>
 <tr class="memdesc:a7b4d4079c3afac6ce38dc1244a6d0be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits HTTPC. <br /></td></tr>
 <tr class="separator:a7b4d4079c3afac6ce38dc1244a6d0be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00d40ba6f6578f46240447e941edb8ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a00d40ba6f6578f46240447e941edb8ff">httpcOpenContext</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, char *url, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> use_defaultproxy)</td></tr>
-<tr class="memdesc:a00d40ba6f6578f46240447e941edb8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a HTTP context.  <a href="#a00d40ba6f6578f46240447e941edb8ff">More...</a><br /></td></tr>
-<tr class="separator:a00d40ba6f6578f46240447e941edb8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed4daffa542d35e3a9cd33f61738545"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a6ed4daffa542d35e3a9cd33f61738545">httpcOpenContext</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="httpc_8h.html#a8d04e9f19b82970a3260b6f361c079dd">HTTPC_RequestMethod</a> method, const char *url, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> use_defaultproxy)</td></tr>
+<tr class="memdesc:a6ed4daffa542d35e3a9cd33f61738545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a HTTP context.  <a href="#a6ed4daffa542d35e3a9cd33f61738545">More...</a><br /></td></tr>
+<tr class="separator:a6ed4daffa542d35e3a9cd33f61738545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade878d05b08d6c761e165cae4e63ea49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#ade878d05b08d6c761e165cae4e63ea49">httpcCloseContext</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context)</td></tr>
 <tr class="memdesc:ade878d05b08d6c761e165cae4e63ea49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a HTTP context.  <a href="#ade878d05b08d6c761e165cae4e63ea49">More...</a><br /></td></tr>
 <tr class="separator:ade878d05b08d6c761e165cae4e63ea49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05be759c7b2344be48ab458517ba649e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a05be759c7b2344be48ab458517ba649e">httpcAddRequestHeaderField</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, char *name, char *value)</td></tr>
-<tr class="memdesc:a05be759c7b2344be48ab458517ba649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a request header field to a HTTP context.  <a href="#a05be759c7b2344be48ab458517ba649e">More...</a><br /></td></tr>
-<tr class="separator:a05be759c7b2344be48ab458517ba649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8158cc91ea695edf2d4fe506f8a8b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a8f8158cc91ea695edf2d4fe506f8a8b6">httpcCancelConnection</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context)</td></tr>
+<tr class="memdesc:a8f8158cc91ea695edf2d4fe506f8a8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a HTTP connection.  <a href="#a8f8158cc91ea695edf2d4fe506f8a8b6">More...</a><br /></td></tr>
+<tr class="separator:a8f8158cc91ea695edf2d4fe506f8a8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518ad8e0992bd341c489d5ae0b2fe7aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a518ad8e0992bd341c489d5ae0b2fe7aa">httpcAddRequestHeaderField</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const char *name, const char *value)</td></tr>
+<tr class="memdesc:a518ad8e0992bd341c489d5ae0b2fe7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a request header field to a HTTP context.  <a href="#a518ad8e0992bd341c489d5ae0b2fe7aa">More...</a><br /></td></tr>
+<tr class="separator:a518ad8e0992bd341c489d5ae0b2fe7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24454dec91560ebb36daa0d53f147428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a24454dec91560ebb36daa0d53f147428">httpcAddPostDataAscii</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const char *name, const char *value)</td></tr>
+<tr class="memdesc:a24454dec91560ebb36daa0d53f147428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a POST form field to a HTTP context.  <a href="#a24454dec91560ebb36daa0d53f147428">More...</a><br /></td></tr>
+<tr class="separator:a24454dec91560ebb36daa0d53f147428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5b528743e6462893d7bd9ecd11bca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a7c5b528743e6462893d7bd9ecd11bca1">httpcAddPostDataRaw</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *data, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
+<tr class="memdesc:a7c5b528743e6462893d7bd9ecd11bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a POST body to a HTTP context.  <a href="#a7c5b528743e6462893d7bd9ecd11bca1">More...</a><br /></td></tr>
+<tr class="separator:a7c5b528743e6462893d7bd9ecd11bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004e59467a69491deb1f4fa44b160c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a004e59467a69491deb1f4fa44b160c81">httpcBeginRequest</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context)</td></tr>
 <tr class="memdesc:a004e59467a69491deb1f4fa44b160c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a HTTP request.  <a href="#a004e59467a69491deb1f4fa44b160c81">More...</a><br /></td></tr>
 <tr class="separator:a004e59467a69491deb1f4fa44b160c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af4c5a10432a68c705adac29c50e1e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a6af4c5a10432a68c705adac29c50e1e4">httpcReceiveData</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
 <tr class="memdesc:a6af4c5a10432a68c705adac29c50e1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from a HTTP context.  <a href="#a6af4c5a10432a68c705adac29c50e1e4">More...</a><br /></td></tr>
 <tr class="separator:a6af4c5a10432a68c705adac29c50e1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5159d5a5198e932ac8f2f13d40ef89cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a5159d5a5198e932ac8f2f13d40ef89cf">httpcReceiveDataTimeout</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> timeout)</td></tr>
+<tr class="memdesc:a5159d5a5198e932ac8f2f13d40ef89cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from a HTTP context with a timeout value.  <a href="#a5159d5a5198e932ac8f2f13d40ef89cf">More...</a><br /></td></tr>
+<tr class="separator:a5159d5a5198e932ac8f2f13d40ef89cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a9e219190bacbb11eb95094ee8c3f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a70a9e219190bacbb11eb95094ee8c3f1">httpcGetRequestState</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d">HTTPC_RequestStatus</a> *out)</td></tr>
 <tr class="memdesc:a70a9e219190bacbb11eb95094ee8c3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the request state of a HTTP context.  <a href="#a70a9e219190bacbb11eb95094ee8c3f1">More...</a><br /></td></tr>
 <tr class="separator:a70a9e219190bacbb11eb95094ee8c3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8077d1e1f871f340f6d93d4731c666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a1b8077d1e1f871f340f6d93d4731c666">httpcGetDownloadSizeState</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *downloadedsize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *contentsize)</td></tr>
 <tr class="memdesc:a1b8077d1e1f871f340f6d93d4731c666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the download size state of a HTTP context.  <a href="#a1b8077d1e1f871f340f6d93d4731c666">More...</a><br /></td></tr>
 <tr class="separator:a1b8077d1e1f871f340f6d93d4731c666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c204a85750ed4a1d1bb36ad81e4bc81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a6c204a85750ed4a1d1bb36ad81e4bc81">httpcGetResponseStatusCode</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> delay)</td></tr>
-<tr class="memdesc:a6c204a85750ed4a1d1bb36ad81e4bc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the response code of the HTTP context.  <a href="#a6c204a85750ed4a1d1bb36ad81e4bc81">More...</a><br /></td></tr>
-<tr class="separator:a6c204a85750ed4a1d1bb36ad81e4bc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29826111e62aefc2893e647aa686a77a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a29826111e62aefc2893e647aa686a77a">httpcGetResponseHeader</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, char *name, char *value, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> valuebuf_maxsize)</td></tr>
-<tr class="memdesc:a29826111e62aefc2893e647aa686a77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a response header field from a HTTP context.  <a href="#a29826111e62aefc2893e647aa686a77a">More...</a><br /></td></tr>
-<tr class="separator:a29826111e62aefc2893e647aa686a77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004025b7a5c5ae003e42bebbbdc73952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a004025b7a5c5ae003e42bebbbdc73952">httpcGetResponseStatusCode</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out)</td></tr>
+<tr class="memdesc:a004025b7a5c5ae003e42bebbbdc73952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the response code of the HTTP context.  <a href="#a004025b7a5c5ae003e42bebbbdc73952">More...</a><br /></td></tr>
+<tr class="separator:a004025b7a5c5ae003e42bebbbdc73952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdecef13551522531ce287d019326057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#acdecef13551522531ce287d019326057">httpcGetResponseStatusCodeTimeout</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> timeout)</td></tr>
+<tr class="memdesc:acdecef13551522531ce287d019326057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the response code of the HTTP context with a timeout value.  <a href="#acdecef13551522531ce287d019326057">More...</a><br /></td></tr>
+<tr class="separator:acdecef13551522531ce287d019326057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08124d231e4fd936c516d90e481c1352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a08124d231e4fd936c516d90e481c1352">httpcGetResponseHeader</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const char *name, char *value, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> valuebuf_maxsize)</td></tr>
+<tr class="memdesc:a08124d231e4fd936c516d90e481c1352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a response header field from a HTTP context.  <a href="#a08124d231e4fd936c516d90e481c1352">More...</a><br /></td></tr>
+<tr class="separator:a08124d231e4fd936c516d90e481c1352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1a5c6166a3b7bfaa5f452acd764c04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a1e1a5c6166a3b7bfaa5f452acd764c04">httpcAddTrustedRootCA</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *cert, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> certsize)</td></tr>
+<tr class="memdesc:a1e1a5c6166a3b7bfaa5f452acd764c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a trusted RootCA cert to a HTTP context.  <a href="#a1e1a5c6166a3b7bfaa5f452acd764c04">More...</a><br /></td></tr>
+<tr class="separator:a1e1a5c6166a3b7bfaa5f452acd764c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cab0161a0658a3710697ee9c0423d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a2cab0161a0658a3710697ee9c0423d05">httpcAddDefaultCert</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, SSLC_DefaultRootCert certID)</td></tr>
+<tr class="memdesc:a2cab0161a0658a3710697ee9c0423d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a default RootCA cert to a HTTP context.  <a href="#a2cab0161a0658a3710697ee9c0423d05">More...</a><br /></td></tr>
+<tr class="separator:a2cab0161a0658a3710697ee9c0423d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b60b715a3729fa085517b4c973d174b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a4b60b715a3729fa085517b4c973d174b">httpcSelectRootCertChain</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> RootCertChain_contexthandle)</td></tr>
+<tr class="memdesc:a4b60b715a3729fa085517b4c973d174b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the RootCertChain for a HTTP context.  <a href="#a4b60b715a3729fa085517b4c973d174b">More...</a><br /></td></tr>
+<tr class="separator:a4b60b715a3729fa085517b4c973d174b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971cee3c9136cd37ced5422ba6ef76dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a971cee3c9136cd37ced5422ba6ef76dc">httpcSetClientCert</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *cert, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> certsize, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *privk, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> privk_size)</td></tr>
+<tr class="memdesc:a971cee3c9136cd37ced5422ba6ef76dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ClientCert for a HTTP context.  <a href="#a971cee3c9136cd37ced5422ba6ef76dc">More...</a><br /></td></tr>
+<tr class="separator:a971cee3c9136cd37ced5422ba6ef76dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b01b4c2c3c8d3805698d682417cb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a65b01b4c2c3c8d3805698d682417cb64">httpcSetClientCertDefault</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, SSLC_DefaultClientCert certID)</td></tr>
+<tr class="memdesc:a65b01b4c2c3c8d3805698d682417cb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default clientcert for a HTTP context.  <a href="#a65b01b4c2c3c8d3805698d682417cb64">More...</a><br /></td></tr>
+<tr class="separator:a65b01b4c2c3c8d3805698d682417cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60cd535a6b0b6eb9d785b3e17caab02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#ab60cd535a6b0b6eb9d785b3e17caab02">httpcSetClientCertContext</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> ClientCert_contexthandle)</td></tr>
+<tr class="memdesc:ab60cd535a6b0b6eb9d785b3e17caab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ClientCert contexthandle for a HTTP context.  <a href="#ab60cd535a6b0b6eb9d785b3e17caab02">More...</a><br /></td></tr>
+<tr class="separator:ab60cd535a6b0b6eb9d785b3e17caab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2942f552241a762fad2894da6657d42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#ab2942f552241a762fad2894da6657d42">httpcSetSSLOpt</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> options)</td></tr>
+<tr class="memdesc:ab2942f552241a762fad2894da6657d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets SSL options for the context.  <a href="#ab2942f552241a762fad2894da6657d42">More...</a><br /></td></tr>
+<tr class="separator:ab2942f552241a762fad2894da6657d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93d03fa9a93a73c18edd53208d28939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#ac93d03fa9a93a73c18edd53208d28939">httpcSetSSLClearOpt</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> options)</td></tr>
+<tr class="memdesc:ac93d03fa9a93a73c18edd53208d28939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SSL options which will be cleared for the context.  <a href="#ac93d03fa9a93a73c18edd53208d28939">More...</a><br /></td></tr>
+<tr class="separator:ac93d03fa9a93a73c18edd53208d28939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22f3288fe1b978fb1c1e7088b024f2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#af22f3288fe1b978fb1c1e7088b024f2d">httpcCreateRootCertChain</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *RootCertChain_contexthandle)</td></tr>
+<tr class="memdesc:af22f3288fe1b978fb1c1e7088b024f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RootCertChain.  <a href="#af22f3288fe1b978fb1c1e7088b024f2d">More...</a><br /></td></tr>
+<tr class="separator:af22f3288fe1b978fb1c1e7088b024f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413541946669b0f85f07002a5dfa0fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a413541946669b0f85f07002a5dfa0fe7">httpcDestroyRootCertChain</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> RootCertChain_contexthandle)</td></tr>
+<tr class="memdesc:a413541946669b0f85f07002a5dfa0fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a RootCertChain.  <a href="#a413541946669b0f85f07002a5dfa0fe7">More...</a><br /></td></tr>
+<tr class="separator:a413541946669b0f85f07002a5dfa0fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5aa819772f7aa0540a304425f8c566"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#afb5aa819772f7aa0540a304425f8c566">httpcRootCertChainAddCert</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> RootCertChain_contexthandle, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *cert, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> certsize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *cert_contexthandle)</td></tr>
+<tr class="memdesc:afb5aa819772f7aa0540a304425f8c566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a RootCA cert to a RootCertChain.  <a href="#afb5aa819772f7aa0540a304425f8c566">More...</a><br /></td></tr>
+<tr class="separator:afb5aa819772f7aa0540a304425f8c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9336148bc6194431bbe9b46e52ac291d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a9336148bc6194431bbe9b46e52ac291d">httpcRootCertChainAddDefaultCert</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> RootCertChain_contexthandle, SSLC_DefaultRootCert certID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *cert_contexthandle)</td></tr>
+<tr class="memdesc:a9336148bc6194431bbe9b46e52ac291d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a default RootCA cert to a RootCertChain.  <a href="#a9336148bc6194431bbe9b46e52ac291d">More...</a><br /></td></tr>
+<tr class="separator:a9336148bc6194431bbe9b46e52ac291d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29138760e47d6d90bd47577d17d07cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#af29138760e47d6d90bd47577d17d07cf">httpcRootCertChainRemoveCert</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> RootCertChain_contexthandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> cert_contexthandle)</td></tr>
+<tr class="memdesc:af29138760e47d6d90bd47577d17d07cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a cert from a RootCertChain.  <a href="#af29138760e47d6d90bd47577d17d07cf">More...</a><br /></td></tr>
+<tr class="separator:af29138760e47d6d90bd47577d17d07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07190e9fc2a2f50a097e0cb92e0c87c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a07190e9fc2a2f50a097e0cb92e0c87c0">httpcOpenClientCertContext</a> (const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *cert, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> certsize, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *privk, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> privk_size, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *ClientCert_contexthandle)</td></tr>
+<tr class="memdesc:a07190e9fc2a2f50a097e0cb92e0c87c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a ClientCert-context.  <a href="#a07190e9fc2a2f50a097e0cb92e0c87c0">More...</a><br /></td></tr>
+<tr class="separator:a07190e9fc2a2f50a097e0cb92e0c87c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b37506a0414ea48b9b098ae598bec7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a0b37506a0414ea48b9b098ae598bec7f">httpcOpenDefaultClientCertContext</a> (SSLC_DefaultClientCert certID, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *ClientCert_contexthandle)</td></tr>
+<tr class="memdesc:a0b37506a0414ea48b9b098ae598bec7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a ClientCert-context with a default clientclient.  <a href="#a0b37506a0414ea48b9b098ae598bec7f">More...</a><br /></td></tr>
+<tr class="separator:a0b37506a0414ea48b9b098ae598bec7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a33b1dbb404c4f78b9ec0b7a5b02ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a4a33b1dbb404c4f78b9ec0b7a5b02ee1">httpcCloseClientCertContext</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> ClientCert_contexthandle)</td></tr>
+<tr class="memdesc:a4a33b1dbb404c4f78b9ec0b7a5b02ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a ClientCert context.  <a href="#a4a33b1dbb404c4f78b9ec0b7a5b02ee1">More...</a><br /></td></tr>
+<tr class="separator:a4a33b1dbb404c4f78b9ec0b7a5b02ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e3e9bfa4c07393a3c149a825451da5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a62e3e9bfa4c07393a3c149a825451da5">httpcDownloadData</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *downloadedsize)</td></tr>
 <tr class="memdesc:a62e3e9bfa4c07393a3c149a825451da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads data from the HTTP context into a buffer.  <a href="#a62e3e9bfa4c07393a3c149a825451da5">More...</a><br /></td></tr>
 <tr class="separator:a62e3e9bfa4c07393a3c149a825451da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705fa1fa482e838e3ea98ea7acb8ae2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a705fa1fa482e838e3ea98ea7acb8ae2b">HTTPC_Initialize</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
-<tr class="memdesc:a705fa1fa482e838e3ea98ea7acb8ae2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes HTTPC.  <a href="#a705fa1fa482e838e3ea98ea7acb8ae2b">More...</a><br /></td></tr>
-<tr class="separator:a705fa1fa482e838e3ea98ea7acb8ae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9716b1cbd2ee6d4be35bb015739ff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a0a9716b1cbd2ee6d4be35bb015739ff3">HTTPC_InitializeConnectionSession</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle)</td></tr>
-<tr class="memdesc:a0a9716b1cbd2ee6d4be35bb015739ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a HTTP connection session.  <a href="#a0a9716b1cbd2ee6d4be35bb015739ff3">More...</a><br /></td></tr>
-<tr class="separator:a0a9716b1cbd2ee6d4be35bb015739ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab7d3b3bfca752c41ffed555e59999a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a2ab7d3b3bfca752c41ffed555e59999a">HTTPC_CreateContext</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, char *url, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *contextHandle)</td></tr>
-<tr class="memdesc:a2ab7d3b3bfca752c41ffed555e59999a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a HTTP context.  <a href="#a2ab7d3b3bfca752c41ffed555e59999a">More...</a><br /></td></tr>
-<tr class="separator:a2ab7d3b3bfca752c41ffed555e59999a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c1fcbe7110854ff7d071f80fb44bcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#af3c1fcbe7110854ff7d071f80fb44bcb">HTTPC_CloseContext</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle)</td></tr>
-<tr class="memdesc:af3c1fcbe7110854ff7d071f80fb44bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a HTTP context.  <a href="#af3c1fcbe7110854ff7d071f80fb44bcb">More...</a><br /></td></tr>
-<tr class="separator:af3c1fcbe7110854ff7d071f80fb44bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad95f65a025d5934f59792d9bf4086c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#ad95f65a025d5934f59792d9bf4086c3b">HTTPC_SetProxyDefault</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle)</td></tr>
-<tr class="memdesc:ad95f65a025d5934f59792d9bf4086c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the default proxy to a HTTP context.  <a href="#ad95f65a025d5934f59792d9bf4086c3b">More...</a><br /></td></tr>
-<tr class="separator:ad95f65a025d5934f59792d9bf4086c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b01d0915beea0cb655f1ecf9c709a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a10b01d0915beea0cb655f1ecf9c709a4">HTTPC_AddRequestHeaderField</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, char *name, char *value)</td></tr>
-<tr class="memdesc:a10b01d0915beea0cb655f1ecf9c709a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a request header field to a HTTP context.  <a href="#a10b01d0915beea0cb655f1ecf9c709a4">More...</a><br /></td></tr>
-<tr class="separator:a10b01d0915beea0cb655f1ecf9c709a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aade38d6afd89f26ff54907612b92b028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#aade38d6afd89f26ff54907612b92b028">HTTPC_BeginRequest</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle)</td></tr>
-<tr class="memdesc:aade38d6afd89f26ff54907612b92b028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a HTTP request.  <a href="#aade38d6afd89f26ff54907612b92b028">More...</a><br /></td></tr>
-<tr class="separator:aade38d6afd89f26ff54907612b92b028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03bb4970e6508b4f418d2997e9be85a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a03bb4970e6508b4f418d2997e9be85a1">HTTPC_ReceiveData</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
-<tr class="memdesc:a03bb4970e6508b4f418d2997e9be85a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from a HTTP context.  <a href="#a03bb4970e6508b4f418d2997e9be85a1">More...</a><br /></td></tr>
-<tr class="separator:a03bb4970e6508b4f418d2997e9be85a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82aa13dd7ebd77f8bfadc7d9765a35b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a82aa13dd7ebd77f8bfadc7d9765a35b0">HTTPC_GetRequestState</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, <a class="el" href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d">HTTPC_RequestStatus</a> *out)</td></tr>
-<tr class="memdesc:a82aa13dd7ebd77f8bfadc7d9765a35b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the request state of a HTTP context.  <a href="#a82aa13dd7ebd77f8bfadc7d9765a35b0">More...</a><br /></td></tr>
-<tr class="separator:a82aa13dd7ebd77f8bfadc7d9765a35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663a41aba64f481110314ce9902c2315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a663a41aba64f481110314ce9902c2315">HTTPC_GetDownloadSizeState</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *downloadedsize, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *contentsize)</td></tr>
-<tr class="memdesc:a663a41aba64f481110314ce9902c2315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the download size state of a HTTP context.  <a href="#a663a41aba64f481110314ce9902c2315">More...</a><br /></td></tr>
-<tr class="separator:a663a41aba64f481110314ce9902c2315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2486a868b705a55e8fdfa5750c7252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#aca2486a868b705a55e8fdfa5750c7252">HTTPC_GetResponseHeader</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, char *name, char *value, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> valuebuf_maxsize)</td></tr>
-<tr class="memdesc:aca2486a868b705a55e8fdfa5750c7252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a response header field from a HTTP context.  <a href="#aca2486a868b705a55e8fdfa5750c7252">More...</a><br /></td></tr>
-<tr class="separator:aca2486a868b705a55e8fdfa5750c7252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0ced95ab91ba3184f5a170cefd4436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a5a0ced95ab91ba3184f5a170cefd4436">HTTPC_GetResponseStatusCode</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> contextHandle, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out)</td></tr>
-<tr class="memdesc:a5a0ced95ab91ba3184f5a170cefd4436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the status code of a HTTP context.  <a href="#a5a0ced95ab91ba3184f5a170cefd4436">More...</a><br /></td></tr>
-<tr class="separator:a5a0ced95ab91ba3184f5a170cefd4436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be3e33a15f9edd323a56d52b1124fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a1be3e33a15f9edd323a56d52b1124fdd">httpcSetKeepAlive</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, <a class="el" href="httpc_8h.html#a745527cd864f2240d767d85b8479a6bd">HTTPC_KeepAlive</a> option)</td></tr>
+<tr class="memdesc:a1be3e33a15f9edd323a56d52b1124fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets Keep-Alive for the context.  <a href="#a1be3e33a15f9edd323a56d52b1124fdd">More...</a><br /></td></tr>
+<tr class="separator:a1be3e33a15f9edd323a56d52b1124fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HTTP service. </p>
@@ -229,32 +287,61 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a10b01d0915beea0cb655f1ecf9c709a4"></a>
+<a class="anchor" id="a2cab0161a0658a3710697ee9c0423d05"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_AddRequestHeaderField </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcAddDefaultCert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
+          <td class="paramtype">SSLC_DefaultRootCert&#160;</td>
+          <td class="paramname"><em>certID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a default RootCA cert to a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">certID</td><td>ID of the cert to add, see <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a24454dec91560ebb36daa0d53f147428"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcAddPostDataAscii </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -265,255 +352,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
       </table>
 </div><div class="memdoc">
 
-<p>Adds a request header field to a HTTP context. </p>
+<p>Adds a POST form field to a HTTP context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
     <tr><td class="paramname">name</td><td>Name of the field. </td></tr>
-    <tr><td class="paramname">value</td><td>of the field. </td></tr>
+    <tr><td class="paramname">value</td><td>Value of the field. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aade38d6afd89f26ff54907612b92b028"></a>
+<a class="anchor" id="a7c5b528743e6462893d7bd9ecd11bca1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_BeginRequest </td>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcAddPostDataRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begins a HTTP request. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af3c1fcbe7110854ff7d071f80fb44bcb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_CloseContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Closes a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2ab7d3b3bfca752c41ffed555e59999a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_CreateContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
-          <td class="paramname"><em>contextHandle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">url</td><td>URL to connect to. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>Pointer to output the created HTTP context handle to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a663a41aba64f481110314ce9902c2315"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_GetDownloadSizeState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>downloadedsize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>contentsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the download size state of a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-    <tr><td class="paramname">downloadedsize</td><td>Pointer to output the downloaded size to. </td></tr>
-    <tr><td class="paramname">contentsize</td><td>Pointer to output the total content size to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a82aa13dd7ebd77f8bfadc7d9765a35b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_GetRequestState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="httpc_8h.html#acf1d4f75e50ea1f3d391d4260f91d64d">HTTPC_RequestStatus</a> *&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the request state of a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-    <tr><td class="paramname">out</td><td>Pointer to output the request state to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aca2486a868b705a55e8fdfa5750c7252"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_GetResponseHeader </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>valuebuf_maxsize</em>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -523,206 +394,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
       </table>
 </div><div class="memdoc">
 
-<p>Gets a response header field from a HTTP context. </p>
+<p>Adds a POST body to a HTTP context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-    <tr><td class="paramname">name</td><td>Name of the field. </td></tr>
-    <tr><td class="paramname">value</td><td>Pointer to output the value of the field to. </td></tr>
-    <tr><td class="paramname">valuebuf_maxsize</td><td>Maximum size of the value buffer. </td></tr>
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">data</td><td>The data to be passed as raw into the body of the post request. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data passed by data param. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a5a0ced95ab91ba3184f5a170cefd4436"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_GetResponseStatusCode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the status code of a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-    <tr><td class="paramname">out</td><td>Pointer to output the status code to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a705fa1fa482e838e3ea98ea7acb8ae2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_Initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes HTTPC. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a0a9716b1cbd2ee6d4be35bb015739ff3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_InitializeConnectionSession </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes a HTTP connection session. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a03bb4970e6508b4f418d2997e9be85a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_ReceiveData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receives data from a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-    <tr><td class="paramname">buffer</td><td>Buffer to receive data to. </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad95f65a025d5934f59792d9bf4086c3b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> HTTPC_SetProxyDefault </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
-          <td class="paramname"><em>contextHandle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the default proxy to a HTTP context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>HTTPC service handle to use. </td></tr>
-    <tr><td class="paramname">contextHandle</td><td>HTTP context handle to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a05be759c7b2344be48ab458517ba649e"></a>
+<a class="anchor" id="a518ad8e0992bd341c489d5ae0b2fe7aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -735,13 +419,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -758,6 +442,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
     <tr><td class="paramname">context</td><td>Context to use. </td></tr>
     <tr><td class="paramname">name</td><td>Name of the field. </td></tr>
     <tr><td class="paramname">value</td><td>Value of the field. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a4">http/source/main.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a1e1a5c6166a3b7bfaa5f452acd764c04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcAddTrustedRootCA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>certsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a trusted RootCA cert to a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">cert</td><td>Pointer to DER cert. </td></tr>
+    <tr><td class="paramname">certsize</td><td>Size of the DER cert. </td></tr>
   </table>
   </dd>
 </dl>
@@ -785,8 +512,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a1">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a5">http/source/main.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a8f8158cc91ea695edf2d4fe506f8a8b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcCancelConnection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancels a HTTP connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to close. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a33b1dbb404c4f78b9ec0b7a5b02ee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcCloseClientCertContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>ClientCert_contexthandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes a ClientCert context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ClientCert_contexthandle</td><td>ClientCert context to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ade878d05b08d6c761e165cae4e63ea49"></a>
@@ -810,8 +585,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a16">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a6">http/source/main.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="af22f3288fe1b978fb1c1e7088b024f2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcCreateRootCertChain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a RootCertChain. </p>
+<p>Up to 2 RootCertChains can be created under this user-process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>Output RootCertChain contexthandle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a413541946669b0f85f07002a5dfa0fe7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcDestroyRootCertChain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a RootCertChain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>RootCertChain to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a62e3e9bfa4c07393a3c149a825451da5"></a>
@@ -860,7 +683,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a5">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a10">http/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -903,7 +726,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a3">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a9">http/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -942,7 +765,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
 
 </div>
 </div>
-<a class="anchor" id="a29826111e62aefc2893e647aa686a77a"></a>
+<a class="anchor" id="a08124d231e4fd936c516d90e481c1352"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -955,7 +778,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -988,10 +811,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a8">http/source/main.c</a>.</dd>
+</dl>
 </div>
 </div>
-<a class="anchor" id="a6c204a85750ed4a1d1bb36ad81e4bc81"></a>
+<a class="anchor" id="a004025b7a5c5ae003e42bebbbdc73952"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1005,13 +829,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td>
-          <td class="paramname"><em>delay</em>&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1026,15 +844,112 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   <table class="params">
     <tr><td class="paramname">context</td><td>Context to get the response code of. </td></tr>
     <tr><td class="paramname">out</td><td>Pointer to write the response code to. </td></tr>
-    <tr><td class="paramname">delay</td><td>Delay to wait for the status code. Not used yet. </td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a2">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a7">http/source/main.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a00d40ba6f6578f46240447e941edb8ff"></a>
+<a class="anchor" id="acdecef13551522531ce287d019326057"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcGetResponseStatusCodeTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the response code of the HTTP context with a timeout value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to get the response code of. </td></tr>
+    <tr><td class="paramname">out</td><td>Pointer to write the response code to. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Maximum time in nanoseconds to wait for a reply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a07190e9fc2a2f50a097e0cb92e0c87c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcOpenClientCertContext </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>certsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>privk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>privk_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>ClientCert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens a ClientCert-context. </p>
+<p>Up to 2 ClientCert-contexts can be open under this user-process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cert</td><td>Pointer to DER cert. </td></tr>
+    <tr><td class="paramname">certsize</td><td>Size of the DER cert. </td></tr>
+    <tr><td class="paramname">privk</td><td>Pointer to the DER private key. </td></tr>
+    <tr><td class="paramname">privk_size</td><td>Size of the privk. </td></tr>
+    <tr><td class="paramname">ClientCert_contexthandle</td><td>Output ClientCert context handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ed4daffa542d35e3a9cd33f61738545"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1047,7 +962,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="httpc_8h.html#a8d04e9f19b82970a3260b6f361c079dd">HTTPC_RequestMethod</a>&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>url</em>, </td>
         </tr>
         <tr>
@@ -1073,8 +994,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a15">http/source/main.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a2">http/source/main.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a0b37506a0414ea48b9b098ae598bec7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcOpenDefaultClientCertContext </td>
+          <td>(</td>
+          <td class="paramtype">SSLC_DefaultClientCert&#160;</td>
+          <td class="paramname"><em>certID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>ClientCert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens a ClientCert-context with a default clientclient. </p>
+<p>Up to 2 ClientCert-contexts can be open under this user-process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">certID</td><td>ID of the cert to add, see <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a>. </td></tr>
+    <tr><td class="paramname">ClientCert_contexthandle</td><td>Output ClientCert context handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a6af4c5a10432a68c705adac29c50e1e4"></a>
@@ -1117,6 +1073,448 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
   </dd>
 </dl>
 
+</div>
+</div>
+<a class="anchor" id="a5159d5a5198e932ac8f2f13d40ef89cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcReceiveDataTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receives data from a HTTP context with a timeout value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer to receive data to. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the buffer. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Maximum time in nanoseconds to wait for a reply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afb5aa819772f7aa0540a304425f8c566"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcRootCertChainAddCert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>certsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>cert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a RootCA cert to a RootCertChain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>RootCertChain to use. </td></tr>
+    <tr><td class="paramname">cert</td><td>Pointer to DER cert. </td></tr>
+    <tr><td class="paramname">certsize</td><td>Size of the DER cert. </td></tr>
+    <tr><td class="paramname">cert_contexthandle</td><td>Optional output ptr for the cert contexthandle(this can be NULL). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9336148bc6194431bbe9b46e52ac291d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcRootCertChainAddDefaultCert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SSLC_DefaultRootCert&#160;</td>
+          <td class="paramname"><em>certID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>cert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a default RootCA cert to a RootCertChain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>RootCertChain to use. </td></tr>
+    <tr><td class="paramname">certID</td><td>ID of the cert to add, see <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a>. </td></tr>
+    <tr><td class="paramname">cert_contexthandle</td><td>Optional output ptr for the cert contexthandle(this can be NULL). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af29138760e47d6d90bd47577d17d07cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcRootCertChainRemoveCert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>cert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a cert from a RootCertChain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>RootCertChain to use. </td></tr>
+    <tr><td class="paramname">cert_contexthandle</td><td>Contexthandle of the cert to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b60b715a3729fa085517b4c973d174b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSelectRootCertChain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>RootCertChain_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the RootCertChain for a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">RootCertChain_contexthandle</td><td>Contexthandle for the RootCertChain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a971cee3c9136cd37ced5422ba6ef76dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetClientCert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>certsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>privk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>privk_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the ClientCert for a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">cert</td><td>Pointer to DER cert. </td></tr>
+    <tr><td class="paramname">certsize</td><td>Size of the DER cert. </td></tr>
+    <tr><td class="paramname">privk</td><td>Pointer to the DER private key. </td></tr>
+    <tr><td class="paramname">privk_size</td><td>Size of the privk. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab60cd535a6b0b6eb9d785b3e17caab02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetClientCertContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>ClientCert_contexthandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the ClientCert contexthandle for a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">ClientCert_contexthandle</td><td>Contexthandle for the ClientCert. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a65b01b4c2c3c8d3805698d682417cb64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetClientCertDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SSLC_DefaultClientCert&#160;</td>
+          <td class="paramname"><em>certID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the default clientcert for a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">certID</td><td>ID of the cert to add, see <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1be3e33a15f9edd323a56d52b1124fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetKeepAlive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="httpc_8h.html#a745527cd864f2240d767d85b8479a6bd">HTTPC_KeepAlive</a>&#160;</td>
+          <td class="paramname"><em>option</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets Keep-Alive for the context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to set the KeepAlive flag on. </td></tr>
+    <tr><td class="paramname">option</td><td>HTTPC_KeepAlive option. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac93d03fa9a93a73c18edd53208d28939"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetSSLClearOpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the SSL options which will be cleared for the context. </p>
+<p>The HTTPC SSL option bits are the same as those defined in <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to clear flags on. </td></tr>
+    <tr><td class="paramname">options</td><td>SSL option flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2942f552241a762fad2894da6657d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcSetSSLOpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets SSL options for the context. </p>
+<p>The HTTPC SSL option bits are the same as those defined in <a class="el" href="sslc_8h.html" title="SSLC(TLS) service. ">sslc.h</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to set flags on. </td></tr>
+    <tr><td class="paramname">options</td><td>SSL option flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="http_2source_2main_8c-example.html#a3">http/source/main.c</a>.</dd>
+</dl>
 </div>
 </div>
 </div><!-- contents -->

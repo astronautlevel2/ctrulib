@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.1.0</span>
+   &#160;<span id="projectnumber">v1.2.0</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a1251c8456a0f92b49eecbe2c21f0a9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a register write to the current command buffer. <br /></td></tr>
 <tr class="separator:a1251c8456a0f92b49eecbe2c21f0a9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebed2367475fe34eee4b76095e141bc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebed2367475fe34eee4b76095e141bc2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#aebed2367475fe34eee4b76095e141bc2">GPUCMD_AddMaskedWrites</a>(reg,  mask,  vals,  num)&#160;&#160;&#160;<a class="el" href="gpu_8h.html#a83019ebc7d4f5e28da7072f04303851e">GPUCMD_Add</a>(<a class="el" href="gpu_8h.html#a53d850bb4682f7a192c19156e95da49b">GPUCMD_HEADER</a>(0, (mask), (reg)), (vals), (num))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#aebed2367475fe34eee4b76095e141bc2">GPUCMD_AddMaskedWrites</a>(reg,  mask,  vals,  num)&#160;&#160;&#160;<a class="el" href="gpu_8h.html#a15b87b8b5fb312dbcd86ea65bd3c2c33">GPUCMD_Add</a>(<a class="el" href="gpu_8h.html#a53d850bb4682f7a192c19156e95da49b">GPUCMD_HEADER</a>(0, (mask), (reg)), (vals), (num))</td></tr>
 <tr class="memdesc:aebed2367475fe34eee4b76095e141bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds multiple masked register writes to the current command buffer. <br /></td></tr>
 <tr class="separator:aebed2367475fe34eee4b76095e141bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752c8a6b19caed0f212e6cf74f7de39d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a752c8a6b19caed0f212e6cf74f7de39d"></a>
@@ -126,7 +126,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a752c8a6b19caed0f212e6cf74f7de39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds multiple register writes to the current command buffer. <br /></td></tr>
 <tr class="separator:a752c8a6b19caed0f212e6cf74f7de39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8af84a6eb8bc51add463e0269084413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8af84a6eb8bc51add463e0269084413"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#ab8af84a6eb8bc51add463e0269084413">GPUCMD_AddMaskedIncrementalWrites</a>(reg,  mask,  vals,  num)&#160;&#160;&#160;<a class="el" href="gpu_8h.html#a83019ebc7d4f5e28da7072f04303851e">GPUCMD_Add</a>(<a class="el" href="gpu_8h.html#a53d850bb4682f7a192c19156e95da49b">GPUCMD_HEADER</a>(1, (mask), (reg)), (vals), (num))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#ab8af84a6eb8bc51add463e0269084413">GPUCMD_AddMaskedIncrementalWrites</a>(reg,  mask,  vals,  num)&#160;&#160;&#160;<a class="el" href="gpu_8h.html#a15b87b8b5fb312dbcd86ea65bd3c2c33">GPUCMD_Add</a>(<a class="el" href="gpu_8h.html#a53d850bb4682f7a192c19156e95da49b">GPUCMD_HEADER</a>(1, (mask), (reg)), (vals), (num))</td></tr>
 <tr class="memdesc:ab8af84a6eb8bc51add463e0269084413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds multiple masked incremental register writes to the current command buffer. <br /></td></tr>
 <tr class="separator:ab8af84a6eb8bc51add463e0269084413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356802c7598a632a356417466f8137da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a356802c7598a632a356417466f8137da"></a>
@@ -145,9 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4073bdddc12cd08b9e0c489d2e92f051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a4073bdddc12cd08b9e0c489d2e92f051">GPUCMD_GetBuffer</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> **adr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *size, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *offset)</td></tr>
 <tr class="memdesc:a4073bdddc12cd08b9e0c489d2e92f051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current GPU command buffer.  <a href="#a4073bdddc12cd08b9e0c489d2e92f051">More...</a><br /></td></tr>
 <tr class="separator:a4073bdddc12cd08b9e0c489d2e92f051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d67c5ea95672350bf8efd79c866d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#ad8d67c5ea95672350bf8efd79c866d79">GPUCMD_AddRawCommands</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *cmd, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
-<tr class="memdesc:ad8d67c5ea95672350bf8efd79c866d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds raw GPU commands to the current command buffer.  <a href="#ad8d67c5ea95672350bf8efd79c866d79">More...</a><br /></td></tr>
-<tr class="separator:ad8d67c5ea95672350bf8efd79c866d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc038bc05a2dfd3008913552d50a7c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#aabc038bc05a2dfd3008913552d50a7c1">GPUCMD_AddRawCommands</a> (const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *cmd, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:aabc038bc05a2dfd3008913552d50a7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds raw GPU commands to the current command buffer.  <a href="#aabc038bc05a2dfd3008913552d50a7c1">More...</a><br /></td></tr>
+<tr class="separator:aabc038bc05a2dfd3008913552d50a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e510445d7e80115353a893fd4206647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e510445d7e80115353a893fd4206647"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a8e510445d7e80115353a893fd4206647">GPUCMD_Run</a> (void)</td></tr>
 <tr class="memdesc:a8e510445d7e80115353a893fd4206647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the GPU command buffer. <br /></td></tr>
@@ -156,9 +156,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a7a806155f4e52af7775737d45d9342d5">GPUCMD_FlushAndRun</a> (void)</td></tr>
 <tr class="memdesc:a7a806155f4e52af7775737d45d9342d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes linear memory and executes the GPU command buffer. <br /></td></tr>
 <tr class="separator:a7a806155f4e52af7775737d45d9342d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83019ebc7d4f5e28da7072f04303851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a83019ebc7d4f5e28da7072f04303851e">GPUCMD_Add</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> header, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *param, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> paramlength)</td></tr>
-<tr class="memdesc:a83019ebc7d4f5e28da7072f04303851e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a GPU command to the current command buffer.  <a href="#a83019ebc7d4f5e28da7072f04303851e">More...</a><br /></td></tr>
-<tr class="separator:a83019ebc7d4f5e28da7072f04303851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b87b8b5fb312dbcd86ea65bd3c2c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a15b87b8b5fb312dbcd86ea65bd3c2c33">GPUCMD_Add</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> header, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *param, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> paramlength)</td></tr>
+<tr class="memdesc:a15b87b8b5fb312dbcd86ea65bd3c2c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a GPU command to the current command buffer.  <a href="#a15b87b8b5fb312dbcd86ea65bd3c2c33">More...</a><br /></td></tr>
+<tr class="separator:a15b87b8b5fb312dbcd86ea65bd3c2c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a418b5471dc141d47267cbc9b8facc4a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a418b5471dc141d47267cbc9b8facc4a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpu_8h.html#a418b5471dc141d47267cbc9b8facc4a3">GPUCMD_Finalize</a> (void)</td></tr>
 <tr class="memdesc:a418b5471dc141d47267cbc9b8facc4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the GPU command buffer. <br /></td></tr>
@@ -298,7 +298,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a83019ebc7d4f5e28da7072f04303851e"></a>
+<a class="anchor" id="a15b87b8b5fb312dbcd86ea65bd3c2c33"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -311,7 +311,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>param</em>, </td>
         </tr>
         <tr>
@@ -340,14 +340,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad8d67c5ea95672350bf8efd79c866d79"></a>
+<a class="anchor" id="aabc038bc05a2dfd3008913552d50a7c1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void GPUCMD_AddRawCommands </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
         </tr>
         <tr>
