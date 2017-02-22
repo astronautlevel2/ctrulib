@@ -1,8 +1,9 @@
 var searchData=
 [
   ['packed',['PACKED',['../types_8h.html#a36d525cf4d116b2fe4ecc00222b256f1',1,'types.h']]],
-  ['padding',['padding',['../structCAMU__StereoCameraCalibrationData.html#a1c0f80cb2575181fe7e2c95b283761c4',1,'CAMU_StereoCameraCalibrationData::padding()'],['../structCAMU__PackageParameterCameraSelect.html#abbf8bda3a676bec8840016f0558dda60',1,'CAMU_PackageParameterCameraSelect::padding()'],['../structFS__ProgramInfo.html#a6e4994c5ec62559ef253d35d77cc638d',1,'FS_ProgramInfo::padding()'],['../structQTM__HeadTrackingInfo.html#ab12d596183f2c66de83b897e11fcf529',1,'QTM_HeadTrackingInfo::padding()'],['../structSOCU__DNSTableEntry.html#a8956c28d7311d8fedd543a29e453ac1d',1,'SOCU_DNSTableEntry::padding()']]],
+  ['padding',['padding',['../structCAMU__StereoCameraCalibrationData.html#a1c0f80cb2575181fe7e2c95b283761c4',1,'CAMU_StereoCameraCalibrationData::padding()'],['../structCAMU__PackageParameterCameraSelect.html#abbf8bda3a676bec8840016f0558dda60',1,'CAMU_PackageParameterCameraSelect::padding()'],['../structFS__ProgramInfo.html#a6e4994c5ec62559ef253d35d77cc638d',1,'FS_ProgramInfo::padding()'],['../structNIM__TitleConfig.html#aaa758671d7cc933fd9d0f6413f9c9216',1,'NIM_TitleConfig::padding()'],['../structQTM__HeadTrackingInfo.html#ab12d596183f2c66de83b897e11fcf529',1,'QTM_HeadTrackingInfo::padding()'],['../structSOCU__DNSTableEntry.html#a8956c28d7311d8fedd543a29e453ac1d',1,'SOCU_DNSTableEntry::padding()']]],
   ['pageinfo',['PageInfo',['../structPageInfo.html',1,'']]],
+  ['pagex4_5fbyte3',['pagex4_byte3',['../structNFC__AmiiboConfig.html#a9f0d49ca13914f283b47014d366377c8',1,'NFC_AmiiboConfig']]],
   ['param',['param',['../structaptHookCookie.html#a2f81fb95e85a1c4b9e0cb411deccf94f',1,'aptHookCookie']]],
   ['parent',['parent',['../structromfs__dir.html#a7d7aa924be9730d3c887b8ec715cfec5',1,'romfs_dir::parent()'],['../structromfs__file.html#aa8a3d86e5375a482ba8fad62e8505ae7',1,'romfs_file::parent()']]],
   ['parent_5fcolor',['parent_color',['../structrbtree__node.html#a626427e7352bdd7ca3c06d2fad573fa4',1,'rbtree_node']]],

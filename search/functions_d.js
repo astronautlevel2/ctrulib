@@ -13,5 +13,8 @@ var searchData=
   ['osgettime',['osGetTime',['../os_8h.html#a05661250c79188dc1c54cd2776d9fb21',1,'os.h']]],
   ['osgetwifistrength',['osGetWifiStrength',['../os_8h.html#aa38acca606f2880ac3ee9f6c531a6eaa',1,'os.h']]],
   ['ossetspeedupenable',['osSetSpeedupEnable',['../os_8h.html#a7484b739da8ae26a3df6d363eeb13d98',1,'os.h']]],
-  ['osstrerror',['osStrError',['../os_8h.html#af9679bbae7bf7326ce31b40be6f18432',1,'os.h']]]
+  ['osstrerror',['osStrError',['../os_8h.html#af9679bbae7bf7326ce31b40be6f18432',1,'os.h']]],
+  ['ostickcounterread',['osTickCounterRead',['../os_8h.html#a1518a48b6203d8ec5c1dac0a10d592e8',1,'os.h']]],
+  ['ostickcounterstart',['osTickCounterStart',['../os_8h.html#ae51bb4cd74ac9cda5f40cb23b8e5b146',1,'os.h']]],
+  ['ostickcounterupdate',['osTickCounterUpdate',['../os_8h.html#a2b5624b8fab29f0d4f2d9e996d0a7d21',1,'os.h']]]
 ];

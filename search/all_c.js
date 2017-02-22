@@ -1,6 +1,7 @@
 var searchData=
 [
   ['language',['language',['../structSwkbdDictWord.html#aaa1ff887f1d888595340ad2fa60a1d09',1,'SwkbdDictWord']]],
+  ['lastresult',['lastResult',['../structNIM__TitleProgress.html#ab3a428ec2477ee4bd75ab781f5b654d1',1,'NIM_TitleProgress']]],
   ['left',['left',['../structcharWidthInfo__s.html#a7c05ffca23db8b34c4acea4b4e5fc8e0',1,'charWidthInfo_s']]],
   ['lens_5fcorrection_5fbright',['LENS_CORRECTION_BRIGHT',['../cam_8h.html#a495e5c707772c7bfb891444bc4970a49a50b6c261601994f3f39562e8c68b166c',1,'cam.h']]],
   ['lens_5fcorrection_5fdark',['LENS_CORRECTION_DARK',['../cam_8h.html#a495e5c707772c7bfb891444bc4970a49a589d6c4e00af85e1c28244cd8b9325c8',1,'cam.h']]],
@@ -24,6 +25,7 @@ var searchData=
   ['linear_2eh',['linear.h',['../linear_8h.html',1,'']]],
   ['linearalloc',['linearAlloc',['../linear_8h.html#a73a6bd0b398a08f695e16e07267a7424',1,'linear.h']]],
   ['linearfree',['linearFree',['../linear_8h.html#aeb28d4069fd209e0067ac185fb9b83e2',1,'linear.h']]],
+  ['lineargetsize',['linearGetSize',['../linear_8h.html#a39e3e3dd46f82252a4470f84d75c8f47',1,'linear.h']]],
   ['linearmemalign',['linearMemAlign',['../linear_8h.html#a9fe68cfcd17878cbcd7f6d08d846798d',1,'linear.h']]],
   ['linearrealloc',['linearRealloc',['../linear_8h.html#a4e40b7ae9d3faccf4fcd137cf1952b92',1,'linear.h']]],
   ['linearspacefree',['linearSpaceFree',['../linear_8h.html#ab8d8493cef4d6b8b58e2f07f12f5e090',1,'linear.h']]],

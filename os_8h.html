@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.0</span>
+   &#160;<span id="projectnumber">v1.2.1</span>
    </div>
   </td>
  </tr>
@@ -99,11 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>OS related stuff.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="svc_8h_source.html">svc.h</a>&quot;</code><br />
+</div>
 <p><a href="os_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTickCounter.html">TickCounter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick counter.  <a href="structTickCounter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOS__VersionBin.html">OS_VersionBin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structOS__VersionBin.html" title="OS_VersionBin. Format of the system version: &quot;<major>.<minor>.<build>-<nupver><region>&quot;. ">OS_VersionBin</a>. Format of the system version: "&lt;major&gt;.&lt;minor&gt;.&lt;build&gt;-&lt;nupver&gt;&lt;region&gt;".  <a href="structOS__VersionBin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +175,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a05661250c79188dc1c54cd2776d9fb21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#a05661250c79188dc1c54cd2776d9fb21">osGetTime</a> (void)</td></tr>
 <tr class="memdesc:a05661250c79188dc1c54cd2776d9fb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current time.  <a href="#a05661250c79188dc1c54cd2776d9fb21">More...</a><br /></td></tr>
 <tr class="separator:a05661250c79188dc1c54cd2776d9fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51bb4cd74ac9cda5f40cb23b8e5b146"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#ae51bb4cd74ac9cda5f40cb23b8e5b146">osTickCounterStart</a> (<a class="el" href="structTickCounter.html">TickCounter</a> *cnt)</td></tr>
+<tr class="memdesc:ae51bb4cd74ac9cda5f40cb23b8e5b146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a tick counter.  <a href="#ae51bb4cd74ac9cda5f40cb23b8e5b146">More...</a><br /></td></tr>
+<tr class="separator:ae51bb4cd74ac9cda5f40cb23b8e5b146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5624b8fab29f0d4f2d9e996d0a7d21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#a2b5624b8fab29f0d4f2d9e996d0a7d21">osTickCounterUpdate</a> (<a class="el" href="structTickCounter.html">TickCounter</a> *cnt)</td></tr>
+<tr class="memdesc:a2b5624b8fab29f0d4f2d9e996d0a7d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the elapsed time in a tick counter.  <a href="#a2b5624b8fab29f0d4f2d9e996d0a7d21">More...</a><br /></td></tr>
+<tr class="separator:a2b5624b8fab29f0d4f2d9e996d0a7d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1518a48b6203d8ec5c1dac0a10d592e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#a1518a48b6203d8ec5c1dac0a10d592e8">osTickCounterRead</a> (<a class="el" href="structTickCounter.html">TickCounter</a> *cnt)</td></tr>
+<tr class="memdesc:a1518a48b6203d8ec5c1dac0a10d592e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the elapsed time in a tick counter.  <a href="#a1518a48b6203d8ec5c1dac0a10d592e8">More...</a><br /></td></tr>
+<tr class="separator:a1518a48b6203d8ec5c1dac0a10d592e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa38acca606f2880ac3ee9f6c531a6eaa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#aa38acca606f2880ac3ee9f6c531a6eaa">osGetWifiStrength</a> (void)</td></tr>
 <tr class="memdesc:aa38acca606f2880ac3ee9f6c531a6eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current Wifi signal strength.  <a href="#aa38acca606f2880ac3ee9f6c531a6eaa">More...</a><br /></td></tr>
 <tr class="separator:aa38acca606f2880ac3ee9f6c531a6eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -633,6 +646,95 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing a summary of an error.</dd></dl>
 <p>This can be used to get some details about an error returned by a service call. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1518a48b6203d8ec5c1dac0a10d592e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double osTickCounterRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTickCounter.html">TickCounter</a> *&#160;</td>
+          <td class="paramname"><em>cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads the elapsed time in a tick counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cnt</td><td>The tick counter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of milliseconds elapsed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae51bb4cd74ac9cda5f40cb23b8e5b146"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void osTickCounterStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTickCounter.html">TickCounter</a> *&#160;</td>
+          <td class="paramname"><em>cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts a tick counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cnt</td><td>The tick counter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b5624b8fab29f0d4f2d9e996d0a7d21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void osTickCounterUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTickCounter.html">TickCounter</a> *&#160;</td>
+          <td class="paramname"><em>cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the elapsed time in a tick counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cnt</td><td>The tick counter. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

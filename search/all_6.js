@@ -7,6 +7,7 @@ var searchData=
   ['effect_5fnone',['EFFECT_NONE',['../cam_8h.html#a7e400ffb69486cc57f317d94eca445bfad6b811c739c8c8ed4e7d5f1bcc9c0915',1,'cam.h']]],
   ['effect_5fsepia',['EFFECT_SEPIA',['../cam_8h.html#a7e400ffb69486cc57f317d94eca445bfaac1c03f495cf0262a3378b87944c5807',1,'cam.h']]],
   ['effect_5fsepia01',['EFFECT_SEPIA01',['../cam_8h.html#a7e400ffb69486cc57f317d94eca445bfac45e1b7b99506e9493c32b14aa3e6b4f',1,'cam.h']]],
+  ['elapsed',['elapsed',['../structTickCounter.html#a1999e3d45c2898670489c2625e895d78',1,'TickCounter']]],
   ['enable_5fcropping',['enable_cropping',['../structMVDSTD__Config.html#a95647b6dc9d9e1c251877b002de9a54d',1,'MVDSTD_Config']]],
   ['encode_5futf16',['encode_utf16',['../utf_8h.html#a39a8de618e547cfb59367bc254a7a4d8',1,'utf.h']]],
   ['encode_5futf8',['encode_utf8',['../utf_8h.html#af8127b9052fc5671da5589a486bd90c7',1,'utf.h']]],

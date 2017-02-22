@@ -17,6 +17,7 @@ var searchData=
   ['dirtablesize',['dirTableSize',['../structromfs__header.html#a3d55de35b6579d211430645d1fbbe070',1,'romfs_header']]],
   ['distancecameras',['distanceCameras',['../structCAMU__StereoCameraCalibrationData.html#a0283ceebabd56efc49a208318094ea91',1,'CAMU_StereoCameraCalibrationData']]],
   ['distancetochart',['distanceToChart',['../structCAMU__StereoCameraCalibrationData.html#a5320dda35a896aed071098f4e48e19cb',1,'CAMU_StereoCameraCalibrationData']]],
+  ['downloadedsize',['downloadedSize',['../structNIM__TitleProgress.html#a85833d41dcb3f889e03390cdb042df0f',1,'NIM_TitleProgress']]],
   ['dvle',['dvle',['../structshaderInstance__s.html#a3e0cff4ae283440abfb6b94ad97b5e6d',1,'shaderInstance_s::dvle()'],['../structDVLB__s.html#a1934abe9c4109579746d57c5b20b5834',1,'DVLB_s::DVLE()']]],
   ['dvlp',['dvlp',['../structDVLE__s.html#a6a6c88a5c720fdf20f3b8e28032960b7',1,'DVLE_s::dvlp()'],['../structDVLB__s.html#a89394562d20aa2dbe82e56db7a7b0138',1,'DVLB_s::DVLP()']]],
   ['dx',['dx',['../structcirclePosition.html#a2a234ca65b74a2634e067261050021bb',1,'circlePosition']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['mappablealloc',['mappableAlloc',['../mappable_8h.html#aa57924376b36c85a8aea0c57eeff5ce0',1,'mappable.h']]],
   ['mappablefree',['mappableFree',['../mappable_8h.html#ae5c4f0ba891e3a82b8f76253a8e3ac13',1,'mappable.h']]],
+  ['mappablegetsize',['mappableGetSize',['../mappable_8h.html#a272d8ac15d79820f3ced609aad37caee',1,'mappable.h']]],
   ['mappablespacefree',['mappableSpaceFree',['../mappable_8h.html#ad2de177d65c49ea3807d1dae1a5b3223',1,'mappable.h']]],
   ['micexit',['micExit',['../mic_8h.html#a5de3831a1aa13b444a812ebfef218361',1,'mic.h']]],
   ['micgetlastsampleoffset',['micGetLastSampleOffset',['../mic_8h.html#aa2590afec7ac205e877ab94c9203a4c9',1,'mic.h']]],

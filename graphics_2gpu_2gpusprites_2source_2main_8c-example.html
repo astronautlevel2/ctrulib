@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.0</span>
+   &#160;<span id="projectnumber">v1.2.1</span>
    </div>
   </td>
  </tr>
@@ -121,8 +121,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="comment">//simple sprite struct</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line">    <span class="keywordtype">int</span> x,y;            <span class="comment">// screen co-ordinates </span></div>
-<div class="line">    <span class="keywordtype">int</span> dx, dy;         <span class="comment">// velocity</span></div>
+<div class="line">    <span class="keywordtype">float</span> x,y;          <span class="comment">// screen co-ordinates</span></div>
+<div class="line">    <span class="keywordtype">float</span> dx, dy;           <span class="comment">// velocity</span></div>
 <div class="line">    <span class="keywordtype">int</span> image;</div>
 <div class="line">}Sprite;</div>
 <div class="line"></div>
@@ -145,28 +145,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">float</span> bottom = images[image].bottom;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Draw a textured quad directly</span></div>
-<div class="line">    C3D_ImmDrawBegin(<a name="a0"></a><a class="code" href="enums_8h.html#a94bdee50fa003d70dd3888f347397806abee71ba286bcf6b5222049ac7beb2d8b">GPU_TRIANGLES</a>);</div>
-<div class="line">        C3D_ImmSendAttrib(x, y, 0.5f, 0.0f); <span class="comment">// v0=position</span></div>
-<div class="line">        C3D_ImmSendAttrib( left, top, 0.0f, 0.0f);</div>
-<div class="line"></div>
-<div class="line">        C3D_ImmSendAttrib(x+width, y+height, 0.5f, 0.0f);</div>
-<div class="line">        C3D_ImmSendAttrib( right, bottom, 0.0f, 0.0f);</div>
-<div class="line"></div>
-<div class="line">        C3D_ImmSendAttrib(x+width, y, 0.5f, 0.0f);</div>
-<div class="line">        C3D_ImmSendAttrib( right, top, 0.0f, 0.0f);</div>
-<div class="line"></div>
+<div class="line">    C3D_ImmDrawBegin(<a name="a0"></a><a class="code" href="enums_8h.html#a94bdee50fa003d70dd3888f347397806abeb8d11a9f99878cfb4b97a2d00f9c9f">GPU_TRIANGLE_STRIP</a>);</div>
 <div class="line">        C3D_ImmSendAttrib(x, y, 0.5f, 0.0f); <span class="comment">// v0=position</span></div>
 <div class="line">        C3D_ImmSendAttrib( left, top, 0.0f, 0.0f);</div>
 <div class="line"></div>
 <div class="line">        C3D_ImmSendAttrib(x, y+height, 0.5f, 0.0f);</div>
 <div class="line">        C3D_ImmSendAttrib( left, bottom, 0.0f, 0.0f);</div>
 <div class="line"></div>
+<div class="line">        C3D_ImmSendAttrib(x+width, y, 0.5f, 0.0f);</div>
+<div class="line">        C3D_ImmSendAttrib( right, top, 0.0f, 0.0f);</div>
+<div class="line"></div>
 <div class="line">        C3D_ImmSendAttrib(x+width, y+height, 0.5f, 0.0f);</div>
 <div class="line">        C3D_ImmSendAttrib( right, bottom, 0.0f, 0.0f);</div>
-<div class="line"></div>
-<div class="line"></div>
 <div class="line">    C3D_ImmDrawEnd();</div>
-<div class="line"></div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -256,10 +247,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">for</span>(i = 0; i &lt; NUM_SPRITES; i++) {</div>
 <div class="line">        <span class="comment">//random place and speed</span></div>
-<div class="line">        sprites[i].x = (rand() % (400 - 32 )) &lt;&lt; 8;</div>
-<div class="line">        sprites[i].y = (rand() % (240 - 32 )) &lt;&lt; 8 ;</div>
-<div class="line">        sprites[i].dx = (rand() &amp; 0xFF) + 0x100;</div>
-<div class="line">        sprites[i].dy = (rand() &amp; 0xFF) + 0x100;</div>
+<div class="line">        sprites[i].x = rand() % (400 - 32);</div>
+<div class="line">        sprites[i].y = rand() % (240 - 32);</div>
+<div class="line">        sprites[i].dx = 1.0f + 1.0f / (rand() % 256);</div>
+<div class="line">        sprites[i].dy = 1.0f + 1.0f / (rand() % 256);</div>
 <div class="line">        sprites[i].image = rand() &amp; 3;</div>
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">if</span>(rand() &amp; 1)</div>
@@ -281,12 +272,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordflow">for</span>(i = 0; i &lt; NUM_SPRITES; i++) {</div>
 <div class="line">        sprites[i].x += sprites[i].dx;</div>
 <div class="line">        sprites[i].y += sprites[i].dy;</div>
-<div class="line">            </div>
+<div class="line"></div>
 <div class="line">        <span class="comment">//check for collision with the screen boundaries</span></div>
-<div class="line">        <span class="keywordflow">if</span>(sprites[i].x &lt; (1&lt;&lt;8) || sprites[i].x &gt; ((400-32) &lt;&lt; 8))</div>
+<div class="line">        <span class="keywordflow">if</span>(sprites[i].x &lt; 1 || sprites[i].x &gt; (400-32))</div>
 <div class="line">            sprites[i].dx = -sprites[i].dx;</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordflow">if</span>(sprites[i].y &lt; (1&lt;&lt;8) || sprites[i].y &gt; ((240-32) &lt;&lt; 8))</div>
+<div class="line">        <span class="keywordflow">if</span>(sprites[i].y &lt; 1 || sprites[i].y &gt; (240-32))</div>
 <div class="line">            sprites[i].dy = -sprites[i].dy;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
@@ -300,7 +291,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">for</span>(i = 0; i &lt; NUM_SPRITES; i++) {</div>
 <div class="line"></div>
-<div class="line">        drawSprite( sprites[i].x &gt;&gt; 8, sprites[i].y &gt;&gt; 8, 32, 32, sprites[i].image);</div>
+<div class="line">        drawSprite( sprites[i].x, sprites[i].y, 32, 32, sprites[i].image);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">}</div>

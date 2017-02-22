@@ -1,6 +1,7 @@
 var searchData=
 [
   ['language',['language',['../structSwkbdDictWord.html#aaa1ff887f1d888595340ad2fa60a1d09',1,'SwkbdDictWord']]],
+  ['lastresult',['lastResult',['../structNIM__TitleProgress.html#ab3a428ec2477ee4bd75ab781f5b654d1',1,'NIM_TitleProgress']]],
   ['left',['left',['../structcharWidthInfo__s.html#a7c05ffca23db8b34c4acea4b4e5fc8e0',1,'charWidthInfo_s']]],
   ['lenscorrection',['lensCorrection',['../structCAMU__PackageParameterCameraSelect.html#af3de38877056496facb20c3eaf5eaadd',1,'CAMU_PackageParameterCameraSelect']]],
   ['linefeed',['lineFeed',['../structFINF__s.html#a61c7d30b360074723a75335ebc1de1d7',1,'FINF_s']]],

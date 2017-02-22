@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.0</span>
+   &#160;<span id="projectnumber">v1.2.1</span>
    </div>
   </td>
  </tr>
@@ -147,27 +147,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @brief Frees a finished libctru thread.</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * @param thread libctru thread handle</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="thread_8h.html#aed4c2f06cf2ae66583325bd96588fa27">threadFree</a>(<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> thread);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * @brief Waits for a libctru thread to finish (or returns immediately if it is already finished).</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @param thread libctru thread handle</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param timeout_ns Timeout in nanoseconds. Pass U64_MAX if a timeout isn&#39;t desired</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="thread_8h.html#a5d7a5a77d24710c19f866d02594553db">threadJoin</a>(<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> thread, <a class="code" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> timeout_ns);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * @brief Retrieves the libctru thread handle of the current thread.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @return libctru thread handle of the current thread, or NULL for the main thread</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> <a class="code" href="thread_8h.html#aaf77fd339bcd06c1aa63aaffa74ba118">threadGetCurrent</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * @brief Exits the current libctru thread with an exit code (not usable from the main thread).</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * @param rc Exit code</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="thread_8h.html#aa018f7fca858955b66821d6faa4e9b47">threadExit</a>(<span class="keywordtype">int</span> rc) <a class="code" href="rbtree_8h.html#a797a3e1c8507a7c7b4e051d3f1349154">__attribute__</a>((noreturn));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * @remarks This function should not be called if the thread is detached, as it is freed automatically when it finishes.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="thread_8h.html#aed4c2f06cf2ae66583325bd96588fa27">threadFree</a>(<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> thread);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @brief Waits for a libctru thread to finish (or returns immediately if it is already finished).</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param thread libctru thread handle</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param timeout_ns Timeout in nanoseconds. Pass U64_MAX if a timeout isn&#39;t desired</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> <a class="code" href="thread_8h.html#a5d7a5a77d24710c19f866d02594553db">threadJoin</a>(<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> thread, <a class="code" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> timeout_ns);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @brief Retrieves the libctru thread handle of the current thread.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * @return libctru thread handle of the current thread, or NULL for the main thread</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="thread_8h.html#a32603732d12a56b392a691e42360b035">Thread</a> <a class="code" href="thread_8h.html#aaf77fd339bcd06c1aa63aaffa74ba118">threadGetCurrent</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * @brief Exits the current libctru thread with an exit code (not usable from the main thread).</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * @param rc Exit code</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="thread_8h.html#aa018f7fca858955b66821d6faa4e9b47">threadExit</a>(<span class="keywordtype">int</span> rc) <a class="code" href="rbtree_8h.html#a797a3e1c8507a7c7b4e051d3f1349154">__attribute__</a>((noreturn));</div>
 <div class="ttc" id="thread_8h_html_a1b3d0a88bb3337500968da224df797a1"><div class="ttname"><a href="thread_8h.html#a1b3d0a88bb3337500968da224df797a1">threadCreate</a></div><div class="ttdeci">Thread threadCreate(ThreadFunc entrypoint, void *arg, size_t stack_size, int prio, int affinity, bool detached)</div><div class="ttdoc">Creates a new libctru thread. </div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Various system types. </div></div>
 <div class="ttc" id="types_8h_html_ac830bf5a4f2cf8273f61ab99a46cf163"><div class="ttname"><a href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a></div><div class="ttdeci">s32 Result</div><div class="ttdoc">Function result. </div><div class="ttdef"><b>Definition:</b> types.h:42</div></div>

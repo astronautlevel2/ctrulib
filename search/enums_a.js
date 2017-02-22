@@ -7,5 +7,7 @@ var searchData=
   ['networkopt',['NetworkOpt',['../soc_8h.html#a68bfdefaf8aaf20a49442b5a16bc195b',1,'soc.h']]],
   ['nfc_5foptype',['NFC_OpType',['../nfc_8h.html#a9eece04c91681b888fb1fa0744944cd7',1,'nfc.h']]],
   ['nfc_5ftagstate',['NFC_TagState',['../nfc_8h.html#a69a16164e08b77836ef1bc9482f16d48',1,'nfc.h']]],
+  ['nim_5fdownloadstate',['NIM_DownloadState',['../nim_8h.html#afe21b8e82d3ea0c25ee8d00e9accdc99',1,'nim.h']]],
+  ['nim_5finstallationmode',['NIM_InstallationMode',['../nim_8h.html#afe2032f64d1715e952d818170fc1d8e8',1,'nim.h']]],
   ['ns_5fappid',['NS_APPID',['../apt_8h.html#a932c939a3c27fefb8eadfd97704f8867',1,'apt.h']]]
 ];

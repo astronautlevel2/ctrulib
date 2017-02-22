@@ -12,6 +12,7 @@ var searchData=
   ['lightlock_5funlock',['LightLock_Unlock',['../synchronization_8h.html#a82283ae772ec2eac3a193b1431a681af',1,'synchronization.h']]],
   ['linearalloc',['linearAlloc',['../linear_8h.html#a73a6bd0b398a08f695e16e07267a7424',1,'linear.h']]],
   ['linearfree',['linearFree',['../linear_8h.html#aeb28d4069fd209e0067ac185fb9b83e2',1,'linear.h']]],
+  ['lineargetsize',['linearGetSize',['../linear_8h.html#a39e3e3dd46f82252a4470f84d75c8f47',1,'linear.h']]],
   ['linearmemalign',['linearMemAlign',['../linear_8h.html#a9fe68cfcd17878cbcd7f6d08d846798d',1,'linear.h']]],
   ['linearrealloc',['linearRealloc',['../linear_8h.html#a4e40b7ae9d3faccf4fcd137cf1952b92',1,'linear.h']]],
   ['linearspacefree',['linearSpaceFree',['../linear_8h.html#ab8d8493cef4d6b8b58e2f07f12f5e090',1,'linear.h']]]

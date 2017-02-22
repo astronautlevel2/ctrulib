@@ -41,6 +41,7 @@ var searchData=
   ['netopt_5fudp_5ftable',['NETOPT_UDP_TABLE',['../soc_8h.html#a68bfdefaf8aaf20a49442b5a16bc195bacf2e5444441f93c89d89eceda5eebf4c',1,'soc.h']]],
   ['nfc_5famiiboflag_5fappdatasetup',['NFC_amiiboFlag_AppDataSetup',['../nfc_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa16ce51e6a1dce2256d7a988d1dd9add4',1,'nfc.h']]],
   ['nfc_5foptype_5fnfctag',['NFC_OpType_NFCTag',['../nfc_8h.html#a9eece04c91681b888fb1fa0744944cd7a0cd7ce431e3b1f84d93ae5f1c60fa8b7',1,'nfc.h']]],
+  ['nfc_5foptype_5frawnfc',['NFC_OpType_RawNFC',['../nfc_8h.html#a9eece04c91681b888fb1fa0744944cd7a4dfe8836eb56105d0b7a3f84c615ffb3',1,'nfc.h']]],
   ['nfc_5ftagstate_5fdataready',['NFC_TagState_DataReady',['../nfc_8h.html#a69a16164e08b77836ef1bc9482f16d48a05ee15a8c4822b2cfe6d5c609ef02069',1,'nfc.h']]],
   ['nfc_5ftagstate_5finrange',['NFC_TagState_InRange',['../nfc_8h.html#a69a16164e08b77836ef1bc9482f16d48af5614df893e8dff6bed2e253e869073a',1,'nfc.h']]],
   ['nfc_5ftagstate_5foutofrange',['NFC_TagState_OutOfRange',['../nfc_8h.html#a69a16164e08b77836ef1bc9482f16d48a3724306f91d953f27676392d586144ed',1,'nfc.h']]],

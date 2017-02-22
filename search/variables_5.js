@@ -1,6 +1,7 @@
 var searchData=
 [
   ['effect',['effect',['../structCAMU__PackageParameterContext.html#ace066aa1943785fc1e5d7309b8711ad6',1,'CAMU_PackageParameterContext::effect()'],['../structCAMU__PackageParameterContextDetail.html#aac5f8cde5c5841d68718fb2973dcd28c',1,'CAMU_PackageParameterContextDetail::effect()']]],
+  ['elapsed',['elapsed',['../structTickCounter.html#a1999e3d45c2898670489c2625e895d78',1,'TickCounter']]],
   ['enable_5fcropping',['enable_cropping',['../structMVDSTD__Config.html#a95647b6dc9d9e1c251877b002de9a54d',1,'MVDSTD_Config']]],
   ['encoding',['encoding',['../structFINF__s.html#abfdb94de23ab59222c6740299792ca2b',1,'FINF_s']]],
   ['encryptparameter',['encryptParameter',['../structFS__DeviceMoveContext.html#a366d21c07babd7313aa61e2d6fc34199',1,'FS_DeviceMoveContext']]],
