@@ -81,7 +81,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Version 1.2.0</h2>
+<div class="textblock"><h2>Version 1.2.1</h2>
+<ul>
+<li>Added NFC support</li>
+<li>Update and renamed <a class="el" href="structNFC__AmiiboConfig.html" title="AmiiboConfig structure, see also here: https://3dbrew.org/wiki/NFC:GetAmiiboConfig. ">NFC_AmiiboConfig</a> members</li>
+<li>Added <a class="el" href="structTickCounter.html" title="Tick counter. ">TickCounter</a> for measuring performance</li>
+<li>Added (linear/vram/mappable)GetSize for retrieving allocated buffer size</li>
+<li>Added nim:s client implementation.</li>
+<li>Correct bus clock used for time calulations</li>
+<li>Default to file write without internal copy buffer</li>
+<li>GPUCMD_Add: allow NULL for adding zerofilled parameter data</li>
+<li>Clarify threadFree usage in documentation</li>
+<li>Add GPU_TEXFACE enumeration</li>
+</ul>
+<h2>Version 1.2.0</h2>
 <ul>
 <li>New features:<ul>
 <li>Added support for the nfc:m/nfc:u service.</li>
