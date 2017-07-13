@@ -81,7 +81,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Version 1.2.1</h2>
+<div class="textblock"><h2>Version 1.30</h2>
+<ul>
+<li>Implement more svc calls<ul>
+<li>svcCreateResourceLimit</li>
+<li>svcSetResourceLimitValues</li>
+<li>svcSetProcessResourceLimits</li>
+<li>svcCreateSession</li>
+<li>svcCreateSessionToPort</li>
+<li>svcSetGpuProt</li>
+<li>svcSetWifiEnabled</li>
+</ul>
+</li>
+<li>Additional functions<ul>
+<li>implement httpcAddPostDataBinary</li>
+<li>implement PTMU_GetAdapterState</li>
+<li>implement GSPLCD_GetBrightness</li>
+<li>add threadDetach</li>
+</ul>
+</li>
+<li>srv fixes<ul>
+<li>Fix srvPublishToSubscriber documentation</li>
+<li>Fix handling of service/named port names of length 8</li>
+<li>Fix srvRegisterPort</li>
+</ul>
+</li>
+<li>debugging support<ul>
+<li>Add support for user-specified exception handlers</li>
+<li>Rename debugDevice_3DMOO to debugDevice_SVC</li>
+<li>created debug version of library</li>
+</ul>
+</li>
+<li>Implement error applet</li>
+<li>GPU updates<ul>
+<li>Add GX command queue system for batching GX commands</li>
+<li>Correct GPU_PROCTEX_LUTID definition</li>
+<li>Add GPU_FOGMODE, GPU_GASMODE and GPU_GASLUTINPUT</li>
+</ul>
+</li>
+<li>Other improvements and minor adjustments for overall system stability to enhance the user experience</li>
+</ul>
+<h2>Version 1.2.1</h2>
 <ul>
 <li>Added NFC support</li>
 <li>Update and renamed <a class="el" href="structNFC__AmiiboConfig.html" title="AmiiboConfig structure, see also here: https://3dbrew.org/wiki/NFC:GetAmiiboConfig. ">NFC_AmiiboConfig</a> members</li>
