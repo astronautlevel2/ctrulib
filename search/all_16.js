@@ -16,7 +16,7 @@ var searchData=
   ['vs32',['vs32',['../types_8h.html#a6c6cf6e3aedfd399080c6f52c2870063',1,'types.h']]],
   ['vs64',['vs64',['../types_8h.html#a484adfab567791250a9fdbf0db8d3144',1,'types.h']]],
   ['vs8',['vs8',['../types_8h.html#a108e1a5e4c3e8322825ef7dcd45966ca',1,'types.h']]],
-  ['vtxcoord',['vtxcoord',['../structfontGlyphPos__s.html#af0f890809d0e692bdac5e666917c60b7',1,'fontGlyphPos_s']]],
+  ['vtxcoord',['vtxcoord',['../structfontGlyphPos__s.html#a43cc6c43d771abacf9c3896529f036ca',1,'fontGlyphPos_s']]],
   ['vu16',['vu16',['../types_8h.html#a677aa1edce4bbb53741b1cc24eb4c035',1,'types.h']]],
   ['vu32',['vu32',['../types_8h.html#abcdd5d61f51cb4c472ac6637916cf72a',1,'types.h']]],
   ['vu64',['vu64',['../types_8h.html#ace392b4d1c3911331b2fe5ddc99fdcba',1,'types.h']]],

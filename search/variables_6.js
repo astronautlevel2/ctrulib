@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['f',['f',['../structFpuRegisters.html#a3108510d50c2ba8020afccbe35287c55',1,'FpuRegisters']]],
-  ['failure_5fmesg',['failure_mesg',['../structERRF__FatalErrInfo.html#aca0ac41c358dfbad2fef62a203c2bfaf',1,'ERRF_FatalErrInfo']]],
+  ['failure_5fmesg',['failure_mesg',['../structERRF__FatalErrInfo.html#a2bb4275b48b6373f058e5e8b4011a893',1,'ERRF_FatalErrInfo']]],
+  ['far',['far',['../structERRF__ExceptionInfo.html#aaa73674afcab2c7a396c56a765e39327',1,'ERRF_ExceptionInfo']]],
   ['fault',['fault',['../structExceptionEvent.html#a6f67b148ec6fcb5064b09e5e5c70c357',1,'ExceptionEvent']]],
   ['fault_5finformation',['fault_information',['../structFaultExceptionEvent.html#a98ddfc2eacfa9ae2a0374a80f19f77a3',1,'FaultExceptionEvent::fault_information()'],['../structStopPointExceptionEvent.html#a6dbbc526a72b163971660b29da44a6ae',1,'StopPointExceptionEvent::fault_information()']]],
   ['fd',['fd',['../structsdmc__dir__t.html#ae48e1a2dc1d4d0de201b1c6b2ba02482',1,'sdmc_dir_t']]],
@@ -31,5 +31,6 @@ var searchData=
   ['framebuffer',['frameBuffer',['../structPrintConsole.html#a9b70d87ea405c8761ebca625001c761e',1,'PrintConsole']]],
   ['framerate',['frameRate',['../structCAMU__PackageParameterCameraSelect.html#a2fc80df4f942792d629ddc00efc8aac6',1,'CAMU_PackageParameterCameraSelect']]],
   ['freeclusters',['freeClusters',['../structFS__ArchiveResource.html#a83300abfe22c3c756c74ee1d7d337a0c',1,'FS_ArchiveResource']]],
-  ['freespace',['freeSpace',['../structAM__TWLPartitionInfo.html#a786a5d0e83d80d8004c394ed8526213b',1,'AM_TWLPartitionInfo']]]
+  ['freespace',['freeSpace',['../structAM__TWLPartitionInfo.html#a786a5d0e83d80d8004c394ed8526213b',1,'AM_TWLPartitionInfo']]],
+  ['fsr',['fsr',['../structERRF__ExceptionInfo.html#a90895b755e52f619654d907818b8e68e',1,'ERRF_ExceptionInfo']]]
 ];

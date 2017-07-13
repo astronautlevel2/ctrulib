@@ -16,6 +16,7 @@ var searchData=
   ['angleofviewright',['angleOfViewRight',['../structCAMU__StereoCameraCalibrationData.html#afd4e30bc40e473447ff6358084dc2aaa',1,'CAMU_StereoCameraCalibrationData']]],
   ['apptitleid',['appTitleId',['../structERRF__FatalErrInfo.html#a5a32265003e36d6bea87b41d076956cd',1,'ERRF_FatalErrInfo']]],
   ['argc',['argc',['../structStartupInfo.html#a56c8a7d9f72ac6cb8a5d1908ddfc3a7e',1,'StartupInfo']]],
+  ['args',['args',['../uniongxCmdEntry__s.html#a8c9479cc49d2a68b3c24b13c1c65723a',1,'gxCmdEntry_s']]],
   ['argv',['argv',['../structStartupInfo.html#a698216d4a27d8abf674d4368266f8e2a',1,'StartupInfo']]],
   ['ascent',['ascent',['../structFINF__s.html#a6cd373770ee814ae4621d275068c674d',1,'FINF_s']]],
   ['asciioffset',['asciiOffset',['../structConsoleFont.html#a676b4b45082d34b8bfbd21d20e0a6444',1,'ConsoleFont']]],

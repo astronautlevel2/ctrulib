@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -102,6 +103,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><a href="gx_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uniongxCmdEntry__s.html">gxCmdEntry_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GX command entry.  <a href="uniongxCmdEntry__s.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GX command queue structure.  <a href="structgxCmdQueue__s.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad34237bd30a2a96a6074e8967840d4fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#ad34237bd30a2a96a6074e8967840d4fc">GX_BUFFER_DIM</a>(w,  h)&#160;&#160;&#160;(((h)&lt;&lt;16)|((w)&amp;0xFFFF))</td></tr>
@@ -131,10 +141,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#aaa2327272dfcbc724f4c1d09aa60cd45">GX_TRANSFER_SCALING</a>(x)    &#160;&#160;&#160;((x)&lt;&lt;24)</td></tr>
 <tr class="memdesc:aaa2327272dfcbc724f4c1d09aa60cd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transfer scaling flag. <br /></td></tr>
 <tr class="separator:aaa2327272dfcbc724f4c1d09aa60cd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a1527924fe361645067b2ce35c2237f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a1527924fe361645067b2ce35c2237f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a1a1527924fe361645067b2ce35c2237f">GX_CMDLIST_BIT0</a>&#160;&#160;&#160;<a class="el" href="types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(0)</td></tr>
-<tr class="memdesc:a1a1527924fe361645067b2ce35c2237f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command list flag bit 0. <br /></td></tr>
-<tr class="separator:a1a1527924fe361645067b2ce35c2237f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6c9d17fff0a2ec233a3d0120a0f142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c6c9d17fff0a2ec233a3d0120a0f142"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a9c6c9d17fff0a2ec233a3d0120a0f142">GX_CMDLIST_UPDATE_GAS_ACC</a>&#160;&#160;&#160;<a class="el" href="types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(0)</td></tr>
+<tr class="memdesc:a9c6c9d17fff0a2ec233a3d0120a0f142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates gas additive blend results. <br /></td></tr>
+<tr class="separator:a9c6c9d17fff0a2ec233a3d0120a0f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addcc38194ba3a4bf1322b698d19936bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addcc38194ba3a4bf1322b698d19936bc"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#addcc38194ba3a4bf1322b698d19936bc">GX_CMDLIST_FLUSH</a>&#160;&#160;&#160;<a class="el" href="types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(1)</td></tr>
 <tr class="memdesc:addcc38194ba3a4bf1322b698d19936bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the command list. <br /></td></tr>
@@ -183,6 +193,27 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa40b6e85bbb30d85c5e1c7b298868a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#aa40b6e85bbb30d85c5e1c7b298868a90">gxCmdQueueClear</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue)</td></tr>
+<tr class="memdesc:aa40b6e85bbb30d85c5e1c7b298868a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears a GX command queue.  <a href="#aa40b6e85bbb30d85c5e1c7b298868a90">More...</a><br /></td></tr>
+<tr class="separator:aa40b6e85bbb30d85c5e1c7b298868a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f4260c00c2517a50a6967fc2335e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a49f4260c00c2517a50a6967fc2335e28">gxCmdQueueAdd</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue, const <a class="el" href="uniongxCmdEntry__s.html">gxCmdEntry_s</a> *entry)</td></tr>
+<tr class="memdesc:a49f4260c00c2517a50a6967fc2335e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a command to a GX command queue.  <a href="#a49f4260c00c2517a50a6967fc2335e28">More...</a><br /></td></tr>
+<tr class="separator:a49f4260c00c2517a50a6967fc2335e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec48f0e503a76a62827305917445d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#aaec48f0e503a76a62827305917445d11">gxCmdQueueRun</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue)</td></tr>
+<tr class="memdesc:aaec48f0e503a76a62827305917445d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a GX command queue, causing it to begin processing incoming commands as they arrive.  <a href="#aaec48f0e503a76a62827305917445d11">More...</a><br /></td></tr>
+<tr class="separator:aaec48f0e503a76a62827305917445d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8d9de4784ce0864c776780c3bd45fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#aee8d9de4784ce0864c776780c3bd45fe">gxCmdQueueStop</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue)</td></tr>
+<tr class="memdesc:aee8d9de4784ce0864c776780c3bd45fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a GX command queue from processing incoming commands.  <a href="#aee8d9de4784ce0864c776780c3bd45fe">More...</a><br /></td></tr>
+<tr class="separator:aee8d9de4784ce0864c776780c3bd45fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00678a0216e7279bef18d9b7b41fbd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#ac00678a0216e7279bef18d9b7b41fbd9">gxCmdQueueWait</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue, <a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> timeout)</td></tr>
+<tr class="memdesc:ac00678a0216e7279bef18d9b7b41fbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for a GX command queue to finish executing pending commands.  <a href="#ac00678a0216e7279bef18d9b7b41fbd9">More...</a><br /></td></tr>
+<tr class="separator:ac00678a0216e7279bef18d9b7b41fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c4009dfc0fb8a6e43b7e8e0126a366"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a72c4009dfc0fb8a6e43b7e8e0126a366">gxCmdQueueSetCallback</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue, void(*callback)(<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *), void *user)</td></tr>
+<tr class="memdesc:a72c4009dfc0fb8a6e43b7e8e0126a366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the completion callback for a GX command queue.  <a href="#a72c4009dfc0fb8a6e43b7e8e0126a366">More...</a><br /></td></tr>
+<tr class="separator:a72c4009dfc0fb8a6e43b7e8e0126a366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119c56e2949ac765e14a315e43d761d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a119c56e2949ac765e14a315e43d761d9">GX_BindQueue</a> (<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *queue)</td></tr>
+<tr class="memdesc:a119c56e2949ac765e14a315e43d761d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a command queue to which GX_* functions will add commands instead of immediately submitting them to GX.  <a href="#a119c56e2949ac765e14a315e43d761d9">More...</a><br /></td></tr>
+<tr class="separator:a119c56e2949ac765e14a315e43d761d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7020531dad937eb0d9dc0e22a557285e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gx_8h.html#a7020531dad937eb0d9dc0e22a557285e">GX_RequestDma</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *src, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *dst, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> length)</td></tr>
 <tr class="memdesc:a7020531dad937eb0d9dc0e22a557285e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests a DMA.  <a href="#a7020531dad937eb0d9dc0e22a557285e">More...</a><br /></td></tr>
 <tr class="separator:a7020531dad937eb0d9dc0e22a557285e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,6 +370,30 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a119c56e2949ac765e14a315e43d761d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GX_BindQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects a command queue to which GX_* functions will add commands instead of immediately submitting them to GX. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. (Pass NULL to remove the bound command queue) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a4de1f2c27d7984b8cf5b93c8913a499b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +500,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Flushes the cache regions of three buffers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>(This command cannot be queued in a GX command queue) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf0a</td><td>Address of the first buffer. </td></tr>
     <tr><td class="paramname">buf0s</td><td>Size of the first buffer. </td></tr>
@@ -681,6 +736,199 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a49f4260c00c2517a50a6967fc2335e28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gxCmdQueueAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="uniongxCmdEntry__s.html">gxCmdEntry_s</a> *&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a command to a GX command queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+    <tr><td class="paramname">entry</td><td>The GX command to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa40b6e85bbb30d85c5e1c7b298868a90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gxCmdQueueClear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears a GX command queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaec48f0e503a76a62827305917445d11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gxCmdQueueRun </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a GX command queue, causing it to begin processing incoming commands as they arrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a72c4009dfc0fb8a6e43b7e8e0126a366"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gxCmdQueueSetCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the completion callback for a GX command queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+    <tr><td class="paramname">callback</td><td>The completion callback. </td></tr>
+    <tr><td class="paramname">user</td><td>User data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aee8d9de4784ce0864c776780c3bd45fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gxCmdQueueStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops a GX command queue from processing incoming commands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac00678a0216e7279bef18d9b7b41fbd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gxCmdQueueWait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgxCmdQueue__s.html">gxCmdQueue_s</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for a GX command queue to finish executing pending commands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td>The GX command queue. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional timeout (in nanoseconds) to wait (specify -1 for no timeout). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if timeout expired, true otherwise. </dd></dl>
 
 </div>
 </div>

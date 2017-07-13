@@ -25,6 +25,7 @@ var searchData=
   ['hidwaitforevent',['hidWaitForEvent',['../hid_8h.html#aedaa5be3b6bcf878907c11d76dc545a3',1,'hid.h']]],
   ['httpcadddefaultcert',['httpcAddDefaultCert',['../httpc_8h.html#a2cab0161a0658a3710697ee9c0423d05',1,'httpc.h']]],
   ['httpcaddpostdataascii',['httpcAddPostDataAscii',['../httpc_8h.html#a24454dec91560ebb36daa0d53f147428',1,'httpc.h']]],
+  ['httpcaddpostdatabinary',['httpcAddPostDataBinary',['../httpc_8h.html#a0eaca70f8e0ea6568106993d108bce11',1,'httpc.h']]],
   ['httpcaddpostdataraw',['httpcAddPostDataRaw',['../httpc_8h.html#a7c5b528743e6462893d7bd9ecd11bca1',1,'httpc.h']]],
   ['httpcaddrequestheaderfield',['httpcAddRequestHeaderField',['../httpc_8h.html#a518ad8e0992bd341c489d5ae0b2fe7aa',1,'httpc.h']]],
   ['httpcaddtrustedrootca',['httpcAddTrustedRootCA',['../httpc_8h.html#a1e1a5c6166a3b7bfaa5f452acd764c04',1,'httpc.h']]],

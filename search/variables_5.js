@@ -9,6 +9,7 @@ var searchData=
   ['endindex',['endIndex',['../structtag__CWDH__s.html#a0be974414f176a4e9fcb83df28baa1fb',1,'tag_CWDH_s']]],
   ['endmainoffset',['endmainOffset',['../structDVLE__s.html#a965c0f104b2c60ca8db607b6068ba5ed',1,'DVLE_s']]],
   ['endreg',['endReg',['../structDVLE__uniformEntry__s.html#a0212d06960a526790c56174a6756f837',1,'DVLE_uniformEntry_s']]],
+  ['entries',['entries',['../structgxCmdQueue__s.html#ade3ab748b4aeb24a5b21e9351ae487e1',1,'gxCmdQueue_s']]],
   ['entry_5fdata',['entry_data',['../structsdmc__dir__t.html#a3da9404f88a895dd54e5184231441909',1,'sdmc_dir_t']]],
   ['entry_5fpoint',['entry_point',['../structAttachThreadEvent.html#a280e9603c876bf35eefadc65780d6cd2',1,'AttachThreadEvent']]],
   ['envp',['envp',['../structStartupInfo.html#a4624952a107b46e2187d42631c6207f3',1,'StartupInfo']]],

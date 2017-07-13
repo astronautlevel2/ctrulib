@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -102,13 +102,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:adc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="env_8h.html#adc29c2ff13d900c2f185ee95427fb06cad5366df45cecac4dad1f375eaa0555ab">RUNFLAG_APTWORKAROUND</a> = BIT(0), 
+<tr class="memitem:a61dadd085c1777f559549e05962b2c9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="env_8h.html#a61dadd085c1777f559549e05962b2c9ead5366df45cecac4dad1f375eaa0555ab">RUNFLAG_APTWORKAROUND</a> = BIT(0), 
 <br />
-&#160;&#160;<a class="el" href="env_8h.html#adc29c2ff13d900c2f185ee95427fb06ca426e94cb64bcd44449b1a13d3a977df8">RUNFLAG_APTREINIT</a> = BIT(1)
+&#160;&#160;<a class="el" href="env_8h.html#a61dadd085c1777f559549e05962b2c9ea426e94cb64bcd44449b1a13d3a977df8">RUNFLAG_APTREINIT</a> = BIT(1), 
 <br />
- }<tr class="memdesc:adc29c2ff13d900c2f185ee95427fb06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">System run-flags.  <a href="env_8h.html#adc29c2ff13d900c2f185ee95427fb06c">More...</a><br /></td></tr>
-<tr class="separator:adc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&#160;&#160;<a class="el" href="env_8h.html#a61dadd085c1777f559549e05962b2c9ea5eedd97be189872a5f91a561fbe33c88">RUNFLAG_APTCHAINLOAD</a> = BIT(2)
+<br />
+ }<tr class="memdesc:a61dadd085c1777f559549e05962b2c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">System run-flags.  <a href="env_8h.html#a61dadd085c1777f559549e05962b2c9e">More...</a><br /></td></tr>
+<tr class="separator:a61dadd085c1777f559549e05962b2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -138,7 +140,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Homebrew environment information. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06c"></a>
+<a class="anchor" id="a61dadd085c1777f559549e05962b2c9e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -150,11 +152,14 @@ Functions</h2></td></tr>
 
 <p>System run-flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06cad5366df45cecac4dad1f375eaa0555ab"></a>RUNFLAG_APTWORKAROUND&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a61dadd085c1777f559549e05962b2c9ead5366df45cecac4dad1f375eaa0555ab"></a>RUNFLAG_APTWORKAROUND&#160;</td><td class="fielddoc">
 <p>Use APT workaround. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06ca426e94cb64bcd44449b1a13d3a977df8"></a>RUNFLAG_APTREINIT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a61dadd085c1777f559549e05962b2c9ea426e94cb64bcd44449b1a13d3a977df8"></a>RUNFLAG_APTREINIT&#160;</td><td class="fielddoc">
 <p>Reinitialize APT. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a61dadd085c1777f559549e05962b2c9ea5eedd97be189872a5f91a561fbe33c88"></a>RUNFLAG_APTCHAINLOAD&#160;</td><td class="fielddoc">
+<p>Chainload APT on return. </p>
 </td></tr>
 </table>
 

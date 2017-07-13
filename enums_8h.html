@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -351,13 +351,13 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ab864ff9d46955c2f61539b23688c99aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aa">GPU_PROCTEX_LUTID</a> { <br />
 &#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaa2475efd7159236c56c6e9118adc16c51">GPU_LUT_NOISE</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaad7cce5a3ddbbb5a7f53ebb031c9f9633">GPU_LUT_RGBMAP</a> = 1, 
+&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaad7cce5a3ddbbb5a7f53ebb031c9f9633">GPU_LUT_RGBMAP</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaa53afe5693c1be7c949cb8f079cb69714">GPU_LUT_ALPHAMAP</a> = 2, 
+&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaa53afe5693c1be7c949cb8f079cb69714">GPU_LUT_ALPHAMAP</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaaac64001d8c0dc2401767b95ca05f9544">GPU_LUT_COLOR</a> = 3, 
+&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaaac64001d8c0dc2401767b95ca05f9544">GPU_LUT_COLOR</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaaeb69dab228eff315d3c99bdb36f88e7f">GPU_LUT_COLORDIF</a> = 4
+&#160;&#160;<a class="el" href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aaaeb69dab228eff315d3c99bdb36f88e7f">GPU_LUT_COLORDIF</a> = 5
 <br />
  }<tr class="memdesc:ab864ff9d46955c2f61539b23688c99aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedural texture LUT IDs.  <a href="enums_8h.html#ab864ff9d46955c2f61539b23688c99aa">More...</a><br /></td></tr>
 <tr class="separator:ab864ff9d46955c2f61539b23688c99aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -778,6 +778,32 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ad7023555a35d21727eff58ae264498d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">LUT selection.  <a href="enums_8h.html#ad7023555a35d21727eff58ae264498d1">More...</a><br /></td></tr>
 <tr class="separator:ad7023555a35d21727eff58ae264498d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:a1f70bba2c275f4e43e9126e5017cc982"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982">GPU_FOGMODE</a> { <br />
+&#160;&#160;<a class="el" href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982a9cc54bda4b4512da364324b6c7070bbd">GPU_NO_FOG</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982aceb18d741d8a74b7ade87e126dcb0a72">GPU_FOG</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982a4f31c8ba6139734c419de68ad530e7e3">GPU_GAS</a> = 7
+<br />
+ }<tr class="memdesc:a1f70bba2c275f4e43e9126e5017cc982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fog modes.  <a href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982">More...</a><br /></td></tr>
+<tr class="separator:a1f70bba2c275f4e43e9126e5017cc982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:acc2d65787e8cddd99f2e65dd3168e388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388">GPU_GASMODE</a> { <br />
+&#160;&#160;<a class="el" href="enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388ac28f3063a3c622292bcb9c05be76c229">GPU_PLAIN_DENSITY</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388a057252437cf16b266488ee1e74b20b7b">GPU_DEPTH_DENSITY</a> = 1
+<br />
+ }<tr class="memdesc:acc2d65787e8cddd99f2e65dd3168e388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gas shading density source values.  <a href="enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388">More...</a><br /></td></tr>
+<tr class="separator:acc2d65787e8cddd99f2e65dd3168e388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:adb1be3a2d383032545509998c88ac649"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#adb1be3a2d383032545509998c88ac649">GPU_GASLUTINPUT</a> { <br />
+&#160;&#160;<a class="el" href="enums_8h.html#adb1be3a2d383032545509998c88ac649a85420feac47692869927f28d48fc9249">GPU_GAS_DENSITY</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="enums_8h.html#adb1be3a2d383032545509998c88ac649a40342631dfb48f76188a413867864b8b">GPU_GAS_LIGHT_FACTOR</a> = 1
+<br />
+ }<tr class="memdesc:adb1be3a2d383032545509998c88ac649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gas color LUT inputs.  <a href="enums_8h.html#adb1be3a2d383032545509998c88ac649">More...</a><br /></td></tr>
+<tr class="separator:adb1be3a2d383032545509998c88ac649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:a94bdee50fa003d70dd3888f347397806"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#a94bdee50fa003d70dd3888f347397806">GPU_Primitive_t</a> { <br />
 &#160;&#160;<a class="el" href="enums_8h.html#a94bdee50fa003d70dd3888f347397806abee71ba286bcf6b5222049ac7beb2d8b">GPU_TRIANGLES</a> = 0x0000, 
 <br />
@@ -1071,6 +1097,31 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1f70bba2c275f4e43e9126e5017cc982"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982">GPU_FOGMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fog modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1f70bba2c275f4e43e9126e5017cc982a9cc54bda4b4512da364324b6c7070bbd"></a>GPU_NO_FOG&#160;</td><td class="fielddoc">
+<p>Fog/Gas unit disabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1f70bba2c275f4e43e9126e5017cc982aceb18d741d8a74b7ade87e126dcb0a72"></a>GPU_FOG&#160;</td><td class="fielddoc">
+<p>Fog/Gas unit configured in Fog mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1f70bba2c275f4e43e9126e5017cc982a4f31c8ba6139734c419de68ad530e7e3"></a>GPU_GAS&#160;</td><td class="fielddoc">
+<p>Fog/Gas unit configured in Gas mode. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a3a62c2be4e88ff3de7c69f1b660d1634"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1147,6 +1198,50 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a15f838c1ce92123135c7cb4cf409c745a151f7d3bf955a9218b2292bf1cee72ab"></a>GPU_PRI_SEC_ALPHA_FRESNEL&#160;</td><td class="fielddoc">
 <p>Primary and secondary alpha. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="adb1be3a2d383032545509998c88ac649"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enums_8h.html#adb1be3a2d383032545509998c88ac649">GPU_GASLUTINPUT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gas color LUT inputs. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adb1be3a2d383032545509998c88ac649a85420feac47692869927f28d48fc9249"></a>GPU_GAS_DENSITY&#160;</td><td class="fielddoc">
+<p>Gas density used as input. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adb1be3a2d383032545509998c88ac649a40342631dfb48f76188a413867864b8b"></a>GPU_GAS_LIGHT_FACTOR&#160;</td><td class="fielddoc">
+<p>Light factor used as input. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="acc2d65787e8cddd99f2e65dd3168e388"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388">GPU_GASMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gas shading density source values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acc2d65787e8cddd99f2e65dd3168e388ac28f3063a3c622292bcb9c05be76c229"></a>GPU_PLAIN_DENSITY&#160;</td><td class="fielddoc">
+<p>Plain density. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acc2d65787e8cddd99f2e65dd3168e388a057252437cf16b266488ee1e74b20b7b"></a>GPU_DEPTH_DENSITY&#160;</td><td class="fielddoc">
+<p>Depth density. </p>
 </td></tr>
 </table>
 

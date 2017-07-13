@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['callback',['callback',['../structaptHookCookie.html#aabde96d2b1ce22813acc0502935eed86',1,'aptHookCookie']]],
+  ['callback',['callback',['../structgxCmdQueue__s.html#aa4956f8fd64284338dae9f834c66b300',1,'gxCmdQueue_s::callback()'],['../structaptHookCookie.html#aabde96d2b1ce22813acc0502935eed86',1,'aptHookCookie::callback()']]],
   ['camera',['camera',['../structCAMU__PackageParameterCameraSelect.html#aa77c8b06ef2db109bc263192522a4dce',1,'CAMU_PackageParameterCameraSelect::camera()'],['../structCAMU__PackageParameterContext.html#af34741dabacbb4ae167cd9c820bcdafc',1,'CAMU_PackageParameterContext::camera()'],['../structCAMU__PackageParameterContextDetail.html#a159e415a1914314e1b7c5c1822882f3f',1,'CAMU_PackageParameterContextDetail::camera()']]],
   ['capacity',['capacity',['../structAM__TWLPartitionInfo.html#ad652786a1cf8e9f6d3649226dfb8e60f',1,'AM_TWLPartitionInfo']]],
   ['ccmposition',['ccmPosition',['../structCAMU__ImageQualityCalibrationData.html#af6c8d3357dd201aec4ba5262ecc8f4ff',1,'CAMU_ImageQualityCalibrationData']]],
@@ -41,6 +41,7 @@ var searchData=
   ['csndchannels',['csndChannels',['../csnd_8h.html#ae8ad7f7a5d6df4f74640f64231d799ac',1,'csnd.h']]],
   ['csndsharedmem',['csndSharedMem',['../csnd_8h.html#add1090a634bf4c8a888b1f4c7f20277a',1,'csnd.h']]],
   ['csndsharedmemsize',['csndSharedMemSize',['../csnd_8h.html#adf8852f558062e87303d88b86c6fc801',1,'csnd.h']]],
+  ['curentry',['curEntry',['../structgxCmdQueue__s.html#a509d41b1d690e93ae5738f886a34c725',1,'gxCmdQueue_s']]],
   ['cursorx',['cursorX',['../structPrintConsole.html#a0b3c99b23f2b228279c0b080d4bbf73f',1,'PrintConsole']]],
   ['cursory',['cursorY',['../structPrintConsole.html#a5170137741dc034414b516aebf6716d9',1,'PrintConsole']]],
   ['cwdh',['cwdh',['../structFINF__s.html#a18afa971f307e804096f5f80c4dd5d80',1,'FINF_s']]]

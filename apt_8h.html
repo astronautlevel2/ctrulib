@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -322,6 +322,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_
 <tr class="memitem:ab1323b8023f8fc92f840bc914637e925"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ab1323b8023f8fc92f840bc914637e925">aptLaunchLibraryApplet</a> (<a class="el" href="apt_8h.html#a932c939a3c27fefb8eadfd97704f8867">NS_APPID</a> appId, void *buf, size_t bufsize, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
 <tr class="memdesc:ab1323b8023f8fc92f840bc914637e925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches a library applet.  <a href="#ab1323b8023f8fc92f840bc914637e925">More...</a><br /></td></tr>
 <tr class="separator:ab1323b8023f8fc92f840bc914637e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae608f591659981bc4bcca6329e35874a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#ae608f591659981bc4bcca6329e35874a">aptSetChainloader</a> (<a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> programID, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> mediatype)</td></tr>
+<tr class="memdesc:ae608f591659981bc4bcca6329e35874a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the chainloader target.  <a href="#ae608f591659981bc4bcca6329e35874a">More...</a><br /></td></tr>
+<tr class="separator:ae608f591659981bc4bcca6329e35874a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445fa08d61a93c171b7b920c75261e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_8h.html#a445fa08d61a93c171b7b920c75261e6d">APT_GetLockHandle</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> flags, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *lockHandle)</td></tr>
 <tr class="memdesc:a445fa08d61a93c171b7b920c75261e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an APT lock handle.  <a href="#a445fa08d61a93c171b7b920c75261e6d">More...</a><br /></td></tr>
 <tr class="separator:a445fa08d61a93c171b7b920c75261e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2322,6 +2325,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apt_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aptcmdbuf</td><td>Pointer to command buffer (should have capacity for at least 16 words). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae608f591659981bc4bcca6329e35874a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aptSetChainloader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>&#160;</td>
+          <td class="paramname"><em>programID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>mediatype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the chainloader target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">programID</td><td>ID of the program to chainload to. </td></tr>
+    <tr><td class="paramname">mediatype</td><td>Media type of the program to chainload to. </td></tr>
   </table>
   </dd>
 </dl>

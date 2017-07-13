@@ -121,6 +121,7 @@ var searchData=
   ['aptmainloop',['aptMainLoop',['../apt_8h.html#a84808c36d9a8c389896ecf241c7f89cb',1,'apt.h']]],
   ['aptmakeappletattr',['aptMakeAppletAttr',['../apt_8h.html#a4f47f5d5e16fd3c7f35cae7ad924ad00',1,'apt.h']]],
   ['aptsendcommand',['aptSendCommand',['../apt_8h.html#ad0d5e5004797d534ce0af21a3fc6cc4a',1,'apt.h']]],
+  ['aptsetchainloader',['aptSetChainloader',['../apt_8h.html#ae608f591659981bc4bcca6329e35874a',1,'apt.h']]],
   ['aptsetmessagecallback',['aptSetMessageCallback',['../apt_8h.html#af138b11246928874c3a7ecb070128a43',1,'apt.h']]],
   ['aptsetsleepallowed',['aptSetSleepAllowed',['../apt_8h.html#a3efaaf8933a5f92b59ce0c1bf927ab69',1,'apt.h']]],
   ['aptunhook',['aptUnhook',['../apt_8h.html#a63034559615a68c7b390ac2912ad38f4',1,'apt.h']]]

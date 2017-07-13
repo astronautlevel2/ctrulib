@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -221,9 +221,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a8fb2eca70e97548fed8f521be9d81d5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a8fb2eca70e97548fed8f521be9d81d5e">svcCreateProcess</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> codeset, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *arm11kernelcaps, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> arm11kernelcaps_num)</td></tr>
 <tr class="memdesc:a8fb2eca70e97548fed8f521be9d81d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up virtual address space for a new process.  <a href="#a8fb2eca70e97548fed8f521be9d81d5e">More...</a><br /></td></tr>
 <tr class="separator:a8fb2eca70e97548fed8f521be9d81d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52c7fb0b8c1046268ad81719500eb8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ae52c7fb0b8c1046268ad81719500eb8f">svcGetProcessAffinityMask</a> (<a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
+<tr class="memdesc:ae52c7fb0b8c1046268ad81719500eb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a process's affinity mask.  <a href="#ae52c7fb0b8c1046268ad81719500eb8f">More...</a><br /></td></tr>
+<tr class="separator:ae52c7fb0b8c1046268ad81719500eb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee49171a3a435f8879a019620b51dcd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aee49171a3a435f8879a019620b51dcd0">svcSetProcessAffinityMask</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *affinitymask, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorcount)</td></tr>
 <tr class="memdesc:aee49171a3a435f8879a019620b51dcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a process's affinity mask.  <a href="#aee49171a3a435f8879a019620b51dcd0">More...</a><br /></td></tr>
 <tr class="separator:aee49171a3a435f8879a019620b51dcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec6682f3ea6b524cc44d24986ccc81a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#aaec6682f3ea6b524cc44d24986ccc81a">svcGetProcessIdealProcessor</a> (<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *processorid, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process)</td></tr>
+<tr class="memdesc:aaec6682f3ea6b524cc44d24986ccc81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a process's ideal processor.  <a href="#aaec6682f3ea6b524cc44d24986ccc81a">More...</a><br /></td></tr>
+<tr class="separator:aaec6682f3ea6b524cc44d24986ccc81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7666520d212d0b7de8c703b4c3b00e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a7e7666520d212d0b7de8c703b4c3b00e">svcSetProcessIdealProcessor</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> processorid)</td></tr>
 <tr class="memdesc:a7e7666520d212d0b7de8c703b4c3b00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a process's ideal processor.  <a href="#a7e7666520d212d0b7de8c703b4c3b00e">More...</a><br /></td></tr>
 <tr class="separator:a7e7666520d212d0b7de8c703b4c3b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +273,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a3e2f6333bfcd2a2953b5bde79122e913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a3e2f6333bfcd2a2953b5bde79122e913">svcSendSyncRequest</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> session)</td></tr>
 <tr class="memdesc:a3e2f6333bfcd2a2953b5bde79122e913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a synchronized request to a session handle.  <a href="#a3e2f6333bfcd2a2953b5bde79122e913">More...</a><br /></td></tr>
 <tr class="separator:a3e2f6333bfcd2a2953b5bde79122e913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562f0131519b367335c376b046d1c1aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a562f0131519b367335c376b046d1c1aa">svcCreateSessionToPort</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *clientSession, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> clientPort)</td></tr>
+<tr class="memdesc:a562f0131519b367335c376b046d1c1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to a port via a handle.  <a href="#a562f0131519b367335c376b046d1c1aa">More...</a><br /></td></tr>
+<tr class="separator:a562f0131519b367335c376b046d1c1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e82e4602ee78d3b7bc3ad95c3798cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a39e82e4602ee78d3b7bc3ad95c3798cb">svcCreateSession</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *serverSession, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *clientSession)</td></tr>
+<tr class="memdesc:a39e82e4602ee78d3b7bc3ad95c3798cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a linked pair of session endpoints.  <a href="#a39e82e4602ee78d3b7bc3ad95c3798cb">More...</a><br /></td></tr>
+<tr class="separator:a39e82e4602ee78d3b7bc3ad95c3798cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1cbd6cb9eba21e42c9ec8bb7d08e97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a9b1cbd6cb9eba21e42c9ec8bb7d08e97">svcAcceptSession</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *session, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> port)</td></tr>
 <tr class="memdesc:a9b1cbd6cb9eba21e42c9ec8bb7d08e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts a session.  <a href="#a9b1cbd6cb9eba21e42c9ec8bb7d08e97">More...</a><br /></td></tr>
 <tr class="separator:a9b1cbd6cb9eba21e42c9ec8bb7d08e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +320,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_
 <tr class="memitem:a581cf88669bf459816e5ce5899f1e378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a581cf88669bf459816e5ce5899f1e378">svcGetSystemInfo</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *out, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> type, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> param)</td></tr>
 <tr class="memdesc:a581cf88669bf459816e5ce5899f1e378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the system info.  <a href="#a581cf88669bf459816e5ce5899f1e378">More...</a><br /></td></tr>
 <tr class="separator:a581cf88669bf459816e5ce5899f1e378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d737b48868304a3e144abc6f73ec8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a73d737b48868304a3e144abc6f73ec8f">svcSetGpuProt</a> (bool useApplicationRestriction)</td></tr>
+<tr class="memdesc:a73d737b48868304a3e144abc6f73ec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the GPU protection register to restrict the range of the GPU DMA.  <a href="#a73d737b48868304a3e144abc6f73ec8f">More...</a><br /></td></tr>
+<tr class="separator:a73d737b48868304a3e144abc6f73ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7ca823accc7d580ae25fe385322bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a5a7ca823accc7d580ae25fe385322bbb">svcSetWifiEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:a5a7ca823accc7d580ae25fe385322bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables Wi-Fi.  <a href="#a5a7ca823accc7d580ae25fe385322bbb">More...</a><br /></td></tr>
+<tr class="separator:a5a7ca823accc7d580ae25fe385322bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada13386ccb8cb809658a9878a9941a8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ada13386ccb8cb809658a9878a9941a8b">svcKernelSetState</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> type,...)</td></tr>
 <tr class="memdesc:ada13386ccb8cb809658a9878a9941a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current kernel state.  <a href="#ada13386ccb8cb809658a9878a9941a8b">More...</a><br /></td></tr>
 <tr class="separator:ada13386ccb8cb809658a9878a9941a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -414,12 +432,12 @@ Memory management</h2></td></tr>
 <tr class="memitem:a04bb64a060cd46b28be86fa30e33bb94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a04bb64a060cd46b28be86fa30e33bb94">svcMapMemoryBlock</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> memblock, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr, <a class="el" href="svc_8h.html#a933c1284d3be96f93a10a06f9c13aef8">MemPerm</a> my_perm, <a class="el" href="svc_8h.html#a933c1284d3be96f93a10a06f9c13aef8">MemPerm</a> other_perm)</td></tr>
 <tr class="memdesc:a04bb64a060cd46b28be86fa30e33bb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a block of shared memory.  <a href="#a04bb64a060cd46b28be86fa30e33bb94">More...</a><br /></td></tr>
 <tr class="separator:a04bb64a060cd46b28be86fa30e33bb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0103943cb6ff2d53cb1ade5119455d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0103943cb6ff2d53cb1ade5119455d2e">svcMapProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> startAddr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> endAddr)</td></tr>
-<tr class="memdesc:a0103943cb6ff2d53cb1ade5119455d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a block of process memory.  <a href="#a0103943cb6ff2d53cb1ade5119455d2e">More...</a><br /></td></tr>
-<tr class="separator:a0103943cb6ff2d53cb1ade5119455d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdbd00a80a91ba9b5727375bfaaa2e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0cdbd00a80a91ba9b5727375bfaaa2e9">svcUnmapProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> startAddr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> endAddr)</td></tr>
-<tr class="memdesc:a0cdbd00a80a91ba9b5727375bfaaa2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps a block of process memory.  <a href="#a0cdbd00a80a91ba9b5727375bfaaa2e9">More...</a><br /></td></tr>
-<tr class="separator:a0cdbd00a80a91ba9b5727375bfaaa2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8114b51a10d4515b71ecf5e0b2416a96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a8114b51a10d4515b71ecf5e0b2416a96">svcMapProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> destAddress, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:a8114b51a10d4515b71ecf5e0b2416a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a block of process memory, starting from address 0x00100000.  <a href="#a8114b51a10d4515b71ecf5e0b2416a96">More...</a><br /></td></tr>
+<tr class="separator:a8114b51a10d4515b71ecf5e0b2416a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e5db22e50e03cb4f14e46f09f7635a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#ab1e5db22e50e03cb4f14e46f09f7635a">svcUnmapProcessMemory</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> destAddress, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:ab1e5db22e50e03cb4f14e46f09f7635a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps a block of process memory, starting from address 0x00100000.  <a href="#ab1e5db22e50e03cb4f14e46f09f7635a">More...</a><br /></td></tr>
+<tr class="separator:ab1e5db22e50e03cb4f14e46f09f7635a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e796b6048ab85155160599ce9496142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a1e796b6048ab85155160599ce9496142">svcUnmapMemoryBlock</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> memblock, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> addr)</td></tr>
 <tr class="memdesc:a1e796b6048ab85155160599ce9496142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps a block of shared memory.  <a href="#a1e796b6048ab85155160599ce9496142">More...</a><br /></td></tr>
 <tr class="separator:a1e796b6048ab85155160599ce9496142"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,8 +459,11 @@ Memory management</h2></td></tr>
 <tr class="memitem:a77c839315b2c8158fddde6f98e113e7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a77c839315b2c8158fddde6f98e113e7e">svcInvalidateProcessDataCache</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, void *addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
 <tr class="memdesc:a77c839315b2c8158fddde6f98e113e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates a process's data cache.  <a href="#a77c839315b2c8158fddde6f98e113e7e">More...</a><br /></td></tr>
 <tr class="separator:a77c839315b2c8158fddde6f98e113e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ee14ec947976f9aef075fbb02a9380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a42ee14ec947976f9aef075fbb02a9380">svcStoreProcessDataCache</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, void *addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
+<tr class="memdesc:a42ee14ec947976f9aef075fbb02a9380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans a process's data cache.  <a href="#a42ee14ec947976f9aef075fbb02a9380">More...</a><br /></td></tr>
+<tr class="separator:a42ee14ec947976f9aef075fbb02a9380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a0cfa6639abe895a1a2e6eb1984bc5c46">svcFlushProcessDataCache</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, void const *addr, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size)</td></tr>
-<tr class="memdesc:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes a process's data cache.  <a href="#a0cfa6639abe895a1a2e6eb1984bc5c46">More...</a><br /></td></tr>
+<tr class="memdesc:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes (cleans and invalidates) a process's data cache.  <a href="#a0cfa6639abe895a1a2e6eb1984bc5c46">More...</a><br /></td></tr>
 <tr class="separator:a0cfa6639abe895a1a2e6eb1984bc5c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -511,6 +532,15 @@ Multithreading</h2></td></tr>
 <tr class="memitem:adbefc668774b98e042a80363bf30dce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#adbefc668774b98e042a80363bf30dce2">svcGetResourceLimitCurrentValues</a> (<a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *values, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> resourceLimit, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *names, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> nameCount)</td></tr>
 <tr class="memdesc:adbefc668774b98e042a80363bf30dce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the values of a resource limit set.  <a href="#adbefc668774b98e042a80363bf30dce2">More...</a><br /></td></tr>
 <tr class="separator:adbefc668774b98e042a80363bf30dce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a716eb986a0a9ef0e56ab0ffd2122e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a71a716eb986a0a9ef0e56ab0ffd2122e">svcSetProcessResourceLimits</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> process, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> resourceLimit)</td></tr>
+<tr class="memdesc:a71a716eb986a0a9ef0e56ab0ffd2122e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resource limit set of a process.  <a href="#a71a716eb986a0a9ef0e56ab0ffd2122e">More...</a><br /></td></tr>
+<tr class="separator:a71a716eb986a0a9ef0e56ab0ffd2122e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe17c7bede51c7123fd0e07c3c12788a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#abe17c7bede51c7123fd0e07c3c12788a">svcCreateResourceLimit</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *resourceLimit)</td></tr>
+<tr class="memdesc:abe17c7bede51c7123fd0e07c3c12788a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource limit set.  <a href="#abe17c7bede51c7123fd0e07c3c12788a">More...</a><br /></td></tr>
+<tr class="separator:abe17c7bede51c7123fd0e07c3c12788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a30be357c1ab8e4e55fd124026354df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a1a30be357c1ab8e4e55fd124026354df">svcSetResourceLimitValues</a> (<a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> resourceLimit, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *names, const <a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *values, <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> nameCount)</td></tr>
+<tr class="memdesc:a1a30be357c1ab8e4e55fd124026354df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value limits of a resource limit set.  <a href="#a1a30be357c1ab8e4e55fd124026354df">More...</a><br /></td></tr>
+<tr class="separator:a1a30be357c1ab8e4e55fd124026354df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd17333e3949eaef28ccda04dc7db0f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#acd17333e3949eaef28ccda04dc7db0f7">svcGetProcessIdOfThread</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *out, <a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> handle)</td></tr>
 <tr class="memdesc:acd17333e3949eaef28ccda04dc7db0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the process ID of a thread.  <a href="#acd17333e3949eaef28ccda04dc7db0f7">More...</a><br /></td></tr>
 <tr class="separator:acd17333e3949eaef28ccda04dc7db0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,21 +551,21 @@ Multithreading</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Debugging</h2></td></tr>
 <tr class="memitem:a2e62624dcd35d5795b6f1c99933c576f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576f">ExitProcessEventReason</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576fabcafb4124032dcfde248279cb8404d87">EXITPROCESS_EVENT_NONE</a> = 0, 
+&#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576faccb26b6a0c89e63f867c8882b65f7d57">EXITPROCESS_EVENT_EXIT</a> = 0, 
 <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576faefc8659c329768612032ddd127a1eade">EXITPROCESS_EVENT_TERMINATE</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576fa0ff631f83dc688368ccae655aaabce0c">EXITPROCESS_EVENT_UNHANDLED_EXCEPTION</a> = 2
+&#160;&#160;<a class="el" href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576fa16ce26136f8806a56dc5419954a53010">EXITPROCESS_EVENT_DEBUG_TERMINATE</a> = 2
 <br />
  }<tr class="memdesc:a2e62624dcd35d5795b6f1c99933c576f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reasons for an exit process event.  <a href="svc_8h.html#a2e62624dcd35d5795b6f1c99933c576f">More...</a><br /></td></tr>
 <tr class="separator:a2e62624dcd35d5795b6f1c99933c576f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a9ab9649e4a4445bcf8cba73119895ab9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9">ExitThreadEventReason</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9a7b1ab90ae9875f937b8373d8b82c4c14">EXITTHREAD_EVENT_NONE</a> = 0, 
+&#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9af6e122c684d430dbf1e0154c9861da4f">EXITTHREAD_EVENT_EXIT</a> = 0, 
 <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9ad91d858c68b3f94b62fe4d275f9e9bf5">EXITTHREAD_EVENT_TERMINATE</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9aec654c11c6d603bf65490332fce383a2">EXITTHREAD_EVENT_UNHANDLED_EXC</a> = 2, 
+&#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9a2d99741dd3861d2c2cc0ad3de081151b">EXITTHREAD_EVENT_EXIT_PROCESS</a> = 2, 
 <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a9ab9649e4a4445bcf8cba73119895ab9ac862b5b2c7d0efb53e0f3143c7601ea4">EXITTHREAD_EVENT_TERMINATE_PROCESS</a> = 3
 <br />
@@ -619,7 +649,7 @@ Debugging</h2></td></tr>
 <tr class="separator:ab1fabb8a9dfe0eca4fdd8502dbfa0754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:a83538f74b19d2e9f22e2630c77d54a10"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10">DebugFlags</a> { <br />
-&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a5872517d76bec4682d82e14d79a149b4">DBG_NO_ERRF_CPU_EXCEPTION_DUMPS</a> = BIT(0), 
+&#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a829566e4baa8029d6ae3ff75ab847966">DBG_INHIBIT_USER_CPU_EXCEPTION_HANDLERS</a> = BIT(0), 
 <br />
 &#160;&#160;<a class="el" href="svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a684e18527dea1cd28cc7cd31a1b72c6d">DBG_SIGNAL_FAULT_EXCEPTION_EVENTS</a> = BIT(1), 
 <br />
@@ -809,8 +839,8 @@ Debugging</h2></td></tr>
 
 <p>Debug flags for an attached process, set by <a class="el" href="svc_8h.html#a6afb068c84788f20213bb66c55d7a343">svcContinueDebugEvent</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a5872517d76bec4682d82e14d79a149b4"></a>DBG_NO_ERRF_CPU_EXCEPTION_DUMPS&#160;</td><td class="fielddoc">
-<p>Don't produce err:f-format dumps for CPU exceptions (including watchpoints and breakpoints, regardless of any <a class="el" href="svc_8h.html#ada13386ccb8cb809658a9878a9941a8b">svcKernelSetState</a> call). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a829566e4baa8029d6ae3ff75ab847966"></a>DBG_INHIBIT_USER_CPU_EXCEPTION_HANDLERS&#160;</td><td class="fielddoc">
+<p>Inhibit user-defined CPU exception handlers (including watchpoints and breakpoints, regardless of any <a class="el" href="svc_8h.html#ada13386ccb8cb809658a9878a9941a8b">svcKernelSetState</a> call). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a83538f74b19d2e9f22e2630c77d54a10a684e18527dea1cd28cc7cd31a1b72c6d"></a>DBG_SIGNAL_FAULT_EXCEPTION_EVENTS&#160;</td><td class="fielddoc">
 <p>Signal fault exception events. See <a class="el" href="structFaultExceptionEvent.html">FaultExceptionEvent</a>. </p>
@@ -911,14 +941,14 @@ Debugging</h2></td></tr>
 
 <p>Reasons for an exit process event. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2e62624dcd35d5795b6f1c99933c576fabcafb4124032dcfde248279cb8404d87"></a>EXITPROCESS_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>No reason. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2e62624dcd35d5795b6f1c99933c576faccb26b6a0c89e63f867c8882b65f7d57"></a>EXITPROCESS_EVENT_EXIT&#160;</td><td class="fielddoc">
+<p>Process exited either normally or due to an uncaught exception. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a2e62624dcd35d5795b6f1c99933c576faefc8659c329768612032ddd127a1eade"></a>EXITPROCESS_EVENT_TERMINATE&#160;</td><td class="fielddoc">
-<p>Process terminated. </p>
+<p>Process has been terminated by <a class="el" href="svc_8h.html#a01228468ee9651a6480002cb381fe55e">svcTerminateProcess</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2e62624dcd35d5795b6f1c99933c576fa0ff631f83dc688368ccae655aaabce0c"></a>EXITPROCESS_EVENT_UNHANDLED_EXCEPTION&#160;</td><td class="fielddoc">
-<p>Unhandled exception occurred. </p>
+<tr><td class="fieldname"><a class="anchor" id="a2e62624dcd35d5795b6f1c99933c576fa16ce26136f8806a56dc5419954a53010"></a>EXITPROCESS_EVENT_DEBUG_TERMINATE&#160;</td><td class="fielddoc">
+<p>Process has been terminated by <a class="el" href="svc_8h.html#aea161e7c96b51fd4db42a168f678d413">svcTerminateDebugProcess</a>. </p>
 </td></tr>
 </table>
 
@@ -936,17 +966,17 @@ Debugging</h2></td></tr>
 
 <p>Reasons for an exit thread event. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9a7b1ab90ae9875f937b8373d8b82c4c14"></a>EXITTHREAD_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>No reason. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9af6e122c684d430dbf1e0154c9861da4f"></a>EXITTHREAD_EVENT_EXIT&#160;</td><td class="fielddoc">
+<p>Thread exited. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9ad91d858c68b3f94b62fe4d275f9e9bf5"></a>EXITTHREAD_EVENT_TERMINATE&#160;</td><td class="fielddoc">
 <p>Thread terminated. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9aec654c11c6d603bf65490332fce383a2"></a>EXITTHREAD_EVENT_UNHANDLED_EXC&#160;</td><td class="fielddoc">
-<p>Unhandled exception occurred. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9a2d99741dd3861d2c2cc0ad3de081151b"></a>EXITTHREAD_EVENT_EXIT_PROCESS&#160;</td><td class="fielddoc">
+<p>Process exited either normally or due to an uncaught exception. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9ab9649e4a4445bcf8cba73119895ab9ac862b5b2c7d0efb53e0f3143c7601ea4"></a>EXITTHREAD_EVENT_TERMINATE_PROCESS&#160;</td><td class="fielddoc">
-<p>Process terminated. </p>
+<p>Process has been terminated by <a class="el" href="svc_8h.html#a01228468ee9651a6480002cb381fe55e">svcTerminateProcess</a>. </p>
 </td></tr>
 </table>
 
@@ -1157,7 +1187,7 @@ Debugging</h2></td></tr>
 <p>Control sp, lr, pc, cpsr. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742a2d5de33762b476d2926b7cfb7f3be89b"></a>THREADCONTEXT_CONTROL_FPU_GPRS&#160;</td><td class="fielddoc">
-<p>Control d0-d15 (or f0-f31). </p>
+<p>Control d0-d15 (or s0-s31). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a19ce0516fc6c9dc090735a831ab7a742ae68cca5d6bd39c7225566ae87c541f8e"></a>THREADCONTEXT_CONTROL_FPU_SPRS&#160;</td><td class="fielddoc">
 <p>Control fpscr, fpexc. </p>
@@ -2170,6 +2200,30 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abe17c7bede51c7123fd0e07c3c12788a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcCreateResourceLimit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>resourceLimit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a resource limit set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">resourceLimit</td><td>Pointer to output the resource limit set handle to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a6875852b77e9295f0acefa95a721a102"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2206,6 +2260,76 @@ Debugging</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">semaphore</td><td>Pointer to output the handle of the created semaphore to. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">initial_count</td><td>Initial count of the semaphore. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">max_count</td><td>Maximum count of the semaphore. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a39e82e4602ee78d3b7bc3ad95c3798cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcCreateSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>serverSession</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>clientSession</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a linked pair of session endpoints. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">serverSession</td><td>Pointer to output the created server endpoint handle to. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">clientSession</td><td>Pointer to output the created client endpoint handle to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a562f0131519b367335c376b046d1c1aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcCreateSessionToPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a> *&#160;</td>
+          <td class="paramname"><em>clientSession</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>clientPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connects to a port via a handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">clientSession</td><td>Pointer to output the client session handle to. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">clientPort</td><td>Port client endpoint to connect to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2432,7 +2556,7 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flushes a process's data cache. </p>
+<p>Flushes (cleans and invalidates) a process's data cache. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
@@ -2626,6 +2750,48 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae52c7fb0b8c1046268ad81719500eb8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetProcessAffinityMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>affinitymask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>processorcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a process's affinity mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">affinitymask</td><td>Pointer to store the affinity masks. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">process</td><td>Handle of the process. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">processorcount</td><td>Number of processors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ae43be244fb71321c8101547a20b65693"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2690,6 +2856,41 @@ Debugging</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Pointer to output the process ID to. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">handle</td><td>Handle of the process to get the ID of. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaec6682f3ea6b524cc44d24986ccc81a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcGetProcessIdealProcessor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> *&#160;</td>
+          <td class="paramname"><em>processorid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a process's ideal processor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">processorid</td><td>Pointer to store the ID of the process's ideal processor. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">process</td><td>Handle of the process. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3353,7 +3554,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0103943cb6ff2d53cb1ade5119455d2e"></a>
+<a class="anchor" id="a8114b51a10d4515b71ecf5e0b2416a96"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3367,13 +3568,13 @@ Debugging</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>startAddr</em>, </td>
+          <td class="paramname"><em>destAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>endAddr</em>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3383,12 +3584,12 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maps a block of process memory. </p>
+<p>Maps a block of process memory, starting from address 0x00100000. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
-    <tr><td class="paramname">startAddr</td><td>Start address of the memory to map. </td></tr>
-    <tr><td class="paramname">endAddr</td><td>End address of the memory to map. </td></tr>
+    <tr><td class="paramname">destAddress</td><td>Address of the block of memory to map, in the current (destination) process. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the block of memory to map (truncated to a multiple of 0x1000 bytes). </td></tr>
   </table>
   </dd>
 </dl>
@@ -3918,6 +4119,30 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a73d737b48868304a3e144abc6f73ec8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetGpuProt </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useApplicationRestriction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the GPU protection register to restrict the range of the GPU DMA. </p>
+<p>11.3+ only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useApplicationRestriction</td><td>Whether to use the register value used for APPLICATION titles. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab31e6106eb7e5f4b7ef62cca1054e83f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4030,7 +4255,91 @@ Debugging</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
-    <tr><td class="paramname">processorid</td><td>ID of the thread's ideal processor. </td></tr>
+    <tr><td class="paramname">processorid</td><td>ID of the process's ideal processor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a71a716eb986a0a9ef0e56ab0ffd2122e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetProcessResourceLimits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>resourceLimit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the resource limit set of a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">process</td><td>Process to set the resource limit set to. </td></tr>
+    <tr><td class="paramname">resourceLimit</td><td>Resource limit set handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a30be357c1ab8e4e55fd124026354df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetResourceLimitValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>resourceLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
+          <td class="paramname"><em>names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>nameCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the value limits of a resource limit set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourceLimit</td><td>Resource limit set to use. </td></tr>
+    <tr><td class="paramname">names</td><td>Resource limit names to set the limits of. </td></tr>
+    <tr><td class="paramname">values</td><td>Value limits to set. </td></tr>
+    <tr><td class="paramname">nameCount</td><td>Number of resource limit names. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4191,6 +4500,30 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5a7ca823accc7d580ae25fe385322bbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcSetWifiEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables Wi-Fi. </p>
+<p>11.4+ only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>Whether to enable or disable Wi-Fi. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af1c2d3d3b17455505aa7d277ba230a7a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4335,6 +4668,48 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a42ee14ec947976f9aef075fbb02a9380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> svcStoreProcessDataCache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab6d744c6b5de129f12937e482dc674fb">Handle</a>&#160;</td>
+          <td class="paramname"><em>process</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cleans a process's data cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
+    <tr><td class="paramname">addr</td><td>Address to clean. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the memory to clean. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aea161e7c96b51fd4db42a168f678d413"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4453,7 +4828,7 @@ Debugging</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0cdbd00a80a91ba9b5727375bfaaa2e9"></a>
+<a class="anchor" id="ab1e5db22e50e03cb4f14e46f09f7635a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -4467,13 +4842,13 @@ Debugging</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>startAddr</em>, </td>
+          <td class="paramname"><em>destAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>endAddr</em>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4483,12 +4858,12 @@ Debugging</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unmaps a block of process memory. </p>
+<p>Unmaps a block of process memory, starting from address 0x00100000. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">process</td><td>Handle of the process. </td></tr>
-    <tr><td class="paramname">startAddr</td><td>Start address of the memory to unmap. </td></tr>
-    <tr><td class="paramname">endAddr</td><td>End address of the memory to unmap. </td></tr>
+    <tr><td class="paramname">destAddress</td><td>Address of the block of memory to unmap, in the current (destination) process. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the block of memory to unmap (truncated to a multiple of 0x1000 bytes). </td></tr>
   </table>
   </dd>
 </dl>

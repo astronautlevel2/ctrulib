@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -195,9 +195,11 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ab80a9da3fec1fbf425035eeaa9b51c28"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28">debugDevice</a> { <br />
 &#160;&#160;<a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28af3ea53eb5c0a68a80dbeb1c0c31b6849">debugDevice_NULL</a>, 
 <br />
-&#160;&#160;<a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28a8e0226ea45cd99dacdcfcc38ef7bca7b">debugDevice_3DMOO</a>, 
+&#160;&#160;<a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28a795dfb32f1905816a543c95e5ed17b52">debugDevice_SVC</a>, 
 <br />
-&#160;&#160;<a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28ae5f4a5fe20d1b01a2e211cfe394325d7">debugDevice_CONSOLE</a>
+&#160;&#160;<a class="el" href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28ae5f4a5fe20d1b01a2e211cfe394325d7">debugDevice_CONSOLE</a>, 
+<br />
+&#160;&#160;<b>debugDevice_3DMOO</b> = debugDevice_SVC
 <br />
  }<tr class="memdesc:ab80a9da3fec1fbf425035eeaa9b51c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Console debug devices supported by libnds.  <a href="console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28">More...</a><br /></td></tr>
 <tr class="separator:ab80a9da3fec1fbf425035eeaa9b51c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,8 +251,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cons
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab80a9da3fec1fbf425035eeaa9b51c28af3ea53eb5c0a68a80dbeb1c0c31b6849"></a>debugDevice_NULL&#160;</td><td class="fielddoc">
 <p>Swallows prints to stderr. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab80a9da3fec1fbf425035eeaa9b51c28a8e0226ea45cd99dacdcfcc38ef7bca7b"></a>debugDevice_3DMOO&#160;</td><td class="fielddoc">
-<p>Directs stderr debug statements to 3dmoo. </p>
+<tr><td class="fieldname"><a class="anchor" id="ab80a9da3fec1fbf425035eeaa9b51c28a795dfb32f1905816a543c95e5ed17b52"></a>debugDevice_SVC&#160;</td><td class="fielddoc">
+<p>Outputs stderr debug statements using svcOutputDebugString, which can then be captured by interactive debuggers. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab80a9da3fec1fbf425035eeaa9b51c28ae5f4a5fe20d1b01a2e211cfe394325d7"></a>debugDevice_CONSOLE&#160;</td><td class="fielddoc">
 <p>Directs stderr debug statements to 3DS console window. </p>

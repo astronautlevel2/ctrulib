@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -163,15 +163,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/// Structure representing FPU registers</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structFpuRegisters.html">   72</a></span>&#160;<span class="comment"></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">union</span>{</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structFpuRegisters.html#adcde25b50fd8f0a7a47495eceb837239">   74</a></span>&#160;        <span class="keywordtype">double</span> d[16]; <span class="comment">///&lt; d0-d15.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structFpuRegisters.html#a3108510d50c2ba8020afccbe35287c55">   75</a></span>&#160;<span class="comment"></span>        <span class="keywordtype">float</span>  f[32]; <span class="comment">///&lt; f0-f31.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">struct </span><a class="code" href="types_8h.html#a36d525cf4d116b2fe4ecc00222b256f1">PACKED</a> { <span class="keywordtype">double</span> d[16]; }; <span class="comment">///&lt; d0-d15.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structFpuRegisters.html#accf8774f8dded5b949bf18c3d65dc754">   75</a></span>&#160;<span class="comment"></span>        <span class="keywordtype">float</span>  s[32];                    <span class="comment">///&lt; s0-s31.</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span>    };</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structFpuRegisters.html#a2de5bf8371bb662bbbd472948ffcde6d">   77</a></span>&#160;    <a class="code" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="structFpuRegisters.html#a2de5bf8371bb662bbbd472948ffcde6d">fpscr</a>;        <span class="comment">///&lt; fpscr.</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structFpuRegisters.html#a07418dedf5dd5c4cd9d480ac49e115cf">   78</a></span>&#160;<span class="comment"></span>    <a class="code" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="structFpuRegisters.html#a07418dedf5dd5c4cd9d480ac49e115cf">fpexc</a>;        <span class="comment">///&lt; fpexc.</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span>} <a class="code" href="structFpuRegisters.html">FpuRegisters</a>;</div>
 <div class="ttc" id="types_8h_html_ace392b4d1c3911331b2fe5ddc99fdcba"><div class="ttname"><a href="types_8h.html#ace392b4d1c3911331b2fe5ddc99fdcba">vu64</a></div><div class="ttdeci">volatile u64 vu64</div><div class="ttdoc">64-bit volatile unsigned integer. </div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 <div class="ttc" id="types_8h_html_a9e382f207c65ca13ab4ae98363aeda80"><div class="ttname"><a href="types_8h.html#a9e382f207c65ca13ab4ae98363aeda80">s8</a></div><div class="ttdeci">int8_t s8</div><div class="ttdoc">8-bit signed integer </div><div class="ttdef"><b>Definition:</b> types.h:26</div></div>
+<div class="ttc" id="types_8h_html_a36d525cf4d116b2fe4ecc00222b256f1"><div class="ttname"><a href="types_8h.html#a36d525cf4d116b2fe4ecc00222b256f1">PACKED</a></div><div class="ttdeci">#define PACKED</div><div class="ttdoc">Packs a struct (and other types?) so it won&#39;t include padding bytes. </div><div class="ttdef"><b>Definition:</b> types.h:52</div></div>
 <div class="ttc" id="types_8h_html_abcdd5d61f51cb4c472ac6637916cf72a"><div class="ttname"><a href="types_8h.html#abcdd5d61f51cb4c472ac6637916cf72a">vu32</a></div><div class="ttdeci">volatile u32 vu32</div><div class="ttdoc">32-bit volatile unsigned integer. </div><div class="ttdef"><b>Definition:</b> types.h:33</div></div>
 <div class="ttc" id="structCpuRegisters_html_a729ccdaf16bcc437bcfa2b593e513f6a"><div class="ttname"><a href="structCpuRegisters.html#a729ccdaf16bcc437bcfa2b593e513f6a">CpuRegisters::pc</a></div><div class="ttdeci">u32 pc</div><div class="ttdoc">pc. May need to be adjusted. </div><div class="ttdef"><b>Definition:</b> types.h:67</div></div>
 <div class="ttc" id="types_8h_html_ac830bf5a4f2cf8273f61ab99a46cf163"><div class="ttname"><a href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a></div><div class="ttdeci">s32 Result</div><div class="ttdoc">Function result. </div><div class="ttdef"><b>Definition:</b> types.h:42</div></div>

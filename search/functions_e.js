@@ -24,6 +24,7 @@ var searchData=
   ['ptmsysm_5fshutdownasync',['PTMSYSM_ShutdownAsync',['../ptmsysm_8h.html#a79e300f7b08e04795fdba69d03892b6c',1,'ptmsysm.h']]],
   ['ptmsysmexit',['ptmSysmExit',['../ptmsysm_8h.html#ae8300d0f183d7b958550da5bea974274',1,'ptmsysm.h']]],
   ['ptmsysminit',['ptmSysmInit',['../ptmsysm_8h.html#a18359abfe6fcd1708769ef2dae98ed50',1,'ptmsysm.h']]],
+  ['ptmu_5fgetadapterstate',['PTMU_GetAdapterState',['../ptmu_8h.html#a245750ffc15a78dd6937567cdbd4effe',1,'ptmu.h']]],
   ['ptmu_5fgetbatterychargestate',['PTMU_GetBatteryChargeState',['../ptmu_8h.html#a3a24c72010f8979755de58e19d6b4574',1,'ptmu.h']]],
   ['ptmu_5fgetbatterylevel',['PTMU_GetBatteryLevel',['../ptmu_8h.html#a82373d4c238c33f3a20586b468233688',1,'ptmu.h']]],
   ['ptmu_5fgetpedometerstate',['PTMU_GetPedometerState',['../ptmu_8h.html#ad3c3b5cb00e263bdc27cbf8545dd9b0b',1,'ptmu.h']]],

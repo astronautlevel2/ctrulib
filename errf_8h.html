@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -164,6 +164,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errf
 <tr class="memitem:a7b8dd75d6d8caca5ca1ed957455b47c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errf_8h.html#a7b8dd75d6d8caca5ca1ed957455b47c3">ERRF_ThrowResultWithMessage</a> (<a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> failure, const char *message)</td></tr>
 <tr class="memdesc:a7b8dd75d6d8caca5ca1ed957455b47c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws a system error with the given Result code and message.  <a href="#a7b8dd75d6d8caca5ca1ed957455b47c3">More...</a><br /></td></tr>
 <tr class="separator:a7b8dd75d6d8caca5ca1ed957455b47c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4265599a9b0dcfb716879ae9bd2a0923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errf_8h.html#a4265599a9b0dcfb716879ae9bd2a0923">ERRF_ExceptionHandler</a> (<a class="el" href="structERRF__ExceptionInfo.html">ERRF_ExceptionInfo</a> *excep, <a class="el" href="structCpuRegisters.html">CpuRegisters</a> *regs) <a class="el" href="rbtree_8h.html#a797a3e1c8507a7c7b4e051d3f1349154">__attribute__</a>((noreturn))</td></tr>
+<tr class="memdesc:a4265599a9b0dcfb716879ae9bd2a0923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an exception using ErrDisp.  <a href="#a4265599a9b0dcfb716879ae9bd2a0923">More...</a><br /></td></tr>
+<tr class="separator:a4265599a9b0dcfb716879ae9bd2a0923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Error Display API. </p>
@@ -231,6 +234,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errf
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4265599a9b0dcfb716879ae9bd2a0923"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ERRF_ExceptionHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structERRF__ExceptionInfo.html">ERRF_ExceptionInfo</a> *&#160;</td>
+          <td class="paramname"><em>excep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCpuRegisters.html">CpuRegisters</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles an exception using ErrDisp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">excep</td><td>Exception information </td></tr>
+    <tr><td class="paramname">regs</td><td>CPU registers</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>You might want to clear ENVINFO's bit0 to be able to see any debugging information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="thread_8h.html#ad102ce4415b0054ec6903a5668e5ffab" title="Sets the exception handler for the current thread. ">threadOnException</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a99561fca39e236490227ea10586d5600"></a>
 <div class="memitem">
 <div class="memproto">

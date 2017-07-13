@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['d',['d',['../structFpuRegisters.html#adcde25b50fd8f0a7a47495eceb837239',1,'FpuRegisters']]],
-  ['data',['data',['../structERRF__FatalErrInfo.html#a77e35887fbbc430e943b820878a68673',1,'ERRF_FatalErrInfo::data()'],['../structfloat24Uniform__s.html#a116ab0b7c6e0dd45551baf8427cba375',1,'float24Uniform_s::data()'],['../structDVLE__constEntry__s.html#a211b601d5cc69f0d75dbf999a99f99bd',1,'DVLE_constEntry_s::data()'],['../structFS__Path.html#a6a36deaf24ad6f6c00e3263f0cfc2f59',1,'FS_Path::data()']]],
+  ['data',['data',['../structERRF__FatalErrInfo.html#a5813e689e515cc4587a11be42e65d691',1,'ERRF_FatalErrInfo::data()'],['../uniongxCmdEntry__s.html#acf2ee2685f8ed84154bf22af3968aa50',1,'gxCmdEntry_s::data()'],['../structfloat24Uniform__s.html#a116ab0b7c6e0dd45551baf8427cba375',1,'float24Uniform_s::data()'],['../structDVLE__constEntry__s.html#a211b601d5cc69f0d75dbf999a99f99bd',1,'DVLE_constEntry_s::data()'],['../structFS__Path.html#a6a36deaf24ad6f6c00e3263f0cfc2f59',1,'FS_Path::data()']]],
   ['data_5fadpcm',['data_adpcm',['../structtag__ndspWaveBuf.html#a3f97b49b15a70f10152c14944a5c95ba',1,'tag_ndspWaveBuf']]],
   ['data_5fpcm16',['data_pcm16',['../structtag__ndspWaveBuf.html#ab6347cf7fc44b90999544a4b2ad69a72',1,'tag_ndspWaveBuf']]],
   ['data_5fpcm8',['data_pcm8',['../structtag__ndspWaveBuf.html#a09159f3732f1e8dbee8590517efdb0f6',1,'tag_ndspWaveBuf']]],

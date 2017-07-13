@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -98,10 +98,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a89dd1b1682c13f0f185decd819f209b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89dd1b1682c13f0f185decd819f209b5"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDebuggerBreakExceptionEvent.html#a89dd1b1682c13f0f185decd819f209b5">threads</a> [4]</td></tr>
-<tr class="memdesc:a89dd1b1682c13f0f185decd819f209b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">KThread instances of the attached process's that were running on each at the time of the function call (only the first 2 values are meaningful on O3DS). <br /></td></tr>
-<tr class="separator:a89dd1b1682c13f0f185decd819f209b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d138bd134f1599e331704b9375734b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4d138bd134f1599e331704b9375734b"></a>
+<a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDebuggerBreakExceptionEvent.html#af4d138bd134f1599e331704b9375734b">thread_ids</a> [4]</td></tr>
+<tr class="memdesc:af4d138bd134f1599e331704b9375734b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IDs of the attached process's threads that were running on each core at the time of the <a class="el" href="svc_8h.html#a9609f301ffe5836bc68a8f73fece12b4">svcBreakDebugProcess</a> call, or -1 (only the first 2 values are meaningful on O3DS). <br /></td></tr>
+<tr class="separator:af4d138bd134f1599e331704b9375734b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event relating to <a class="el" href="svc_8h.html#a9609f301ffe5836bc68a8f73fece12b4">svcBreakDebugProcess</a>. </p>

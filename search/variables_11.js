@@ -1,8 +1,9 @@
 var searchData=
 [
+  ['s',['s',['../structFpuRegisters.html#accf8774f8dded5b949bf18c3d65dc754',1,'FpuRegisters']]],
   ['saveid',['saveId',['../structFS__ExtSaveDataInfo.html#abc40792e186f3b1f7fdd9431037e1afb',1,'FS_ExtSaveDataInfo::saveId()'],['../structFS__SystemSaveDataInfo.html#aa29d930e4eff29ee9bab2e5b83317b99',1,'FS_SystemSaveDataInfo::saveId()']]],
   ['scale',['scale',['../structCAMU__StereoCameraCalibrationData.html#a35eb133d3ff323928d993e143e42cad6',1,'CAMU_StereoCameraCalibrationData']]],
-  ['scanentries',['scanEntries',['../structtag__CMAP__s.html#afe822d215b3e40ac6ecfe107a2290454',1,'tag_CMAP_s']]],
+  ['scanentries',['scanEntries',['../structtag__CMAP__s.html#a7c0785fc018809b0d7f6d0e7243a2f9f',1,'tag_CMAP_s']]],
   ['scheduler',['scheduler',['../structDebugEventInfo.html#a2a1c1f9281c782c297054a5adfb6c733',1,'DebugEventInfo']]],
   ['screencapture',['screencapture',['../structGSPGPU__CaptureInfo.html#aed2556cc309dde56f06ad13023cfe406',1,'GSPGPU_CaptureInfo']]],
   ['sectionsize',['sectionSize',['../structFINF__s.html#a05aedb34e709badc0f4f825d9e1405b6',1,'FINF_s']]],

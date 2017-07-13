@@ -15,5 +15,6 @@ var searchData=
   ['nsheets',['nSheets',['../structTGLP__s.html#a276a1b85878f441a69c044959a2f64ed',1,'TGLP_s']]],
   ['numchars',['numChars',['../structConsoleFont.html#a741f70973f2dd71acdd7153ef3f7336d',1,'ConsoleFont']]],
   ['numdvle',['numDVLE',['../structDVLB__s.html#ac2b7148545a0f90613898c5052299be0',1,'DVLB_s']]],
+  ['numentries',['numEntries',['../structgxCmdQueue__s.html#a2d96579b5e31f3cd9377f5b41e0fe659',1,'gxCmdQueue_s']]],
   ['numfloat24uniforms',['numFloat24Uniforms',['../structshaderInstance__s.html#acea4d3b5b3767e7047e42eddc1907937',1,'shaderInstance_s']]]
 ];

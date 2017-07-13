@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lightlock',['LightLock',['../synchronization_8h.html#a0d966c33d353bedf60c66a1a75e68c5e',1,'synchronization.h']]]
+  ['handle',['Handle',['../types_8h.html#ab6d744c6b5de129f12937e482dc674fb',1,'types.h']]]
 ];

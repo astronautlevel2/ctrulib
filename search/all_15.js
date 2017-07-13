@@ -60,6 +60,7 @@ var searchData=
   ['unknown_5f1',['unknown_1',['../structNIM__TitleConfig.html#a281f6a23c15a172de892c94a192c2519',1,'NIM_TitleConfig']]],
   ['unknownzero',['unknownZero',['../unionCSND__ChnInfo.html#aadbf8a1b1680b292a18ca8c421ab1800',1,'CSND_ChnInfo::unknownZero()'],['../unionCSND__CapInfo.html#af9f3170745ba8a9fcebaa085b3e7da82',1,'CSND_CapInfo::unknownZero()']]],
   ['unused',['unused',['../structY2RU__ConversionParams.html#a885735be68b6108cced9af720d28d61a',1,'Y2RU_ConversionParams']]],
+  ['user',['user',['../structgxCmdQueue__s.html#a304d299bfa58e79c08f6a3321b12591d',1,'gxCmdQueue_s']]],
   ['user_5fbreak',['user_break',['../structExceptionEvent.html#a331606aa5792056b999bc99756cbd598',1,'ExceptionEvent']]],
   ['userbreak_5fassert',['USERBREAK_ASSERT',['../svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12ab8652e6cba764ad8b8b205981fa10a2d',1,'svc.h']]],
   ['userbreak_5fload_5fro',['USERBREAK_LOAD_RO',['../svc_8h.html#a1fff1d6b844aedbb1babaa23e0292a12a218f8d14ce85ff686531587f41271b91',1,'svc.h']]],

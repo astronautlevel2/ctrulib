@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dbg_5fno_5ferrf_5fcpu_5fexception_5fdumps',['DBG_NO_ERRF_CPU_EXCEPTION_DUMPS',['../svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a5872517d76bec4682d82e14d79a149b4',1,'svc.h']]],
+  ['dbg_5finhibit_5fuser_5fcpu_5fexception_5fhandlers',['DBG_INHIBIT_USER_CPU_EXCEPTION_HANDLERS',['../svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a829566e4baa8029d6ae3ff75ab847966',1,'svc.h']]],
   ['dbg_5fsignal_5ffault_5fexception_5fevents',['DBG_SIGNAL_FAULT_EXCEPTION_EVENTS',['../svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a684e18527dea1cd28cc7cd31a1b72c6d',1,'svc.h']]],
   ['dbg_5fsignal_5fmap_5fevents',['DBG_SIGNAL_MAP_EVENTS',['../svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a4e4de28dc35f3748319a155b3a5e561c',1,'svc.h']]],
   ['dbg_5fsignal_5fschedule_5fevents',['DBG_SIGNAL_SCHEDULE_EVENTS',['../svc_8h.html#a83538f74b19d2e9f22e2630c77d54a10a0870552809a38121a3f9f8bfac2a7ab5',1,'svc.h']]],
@@ -25,9 +25,9 @@ var searchData=
   ['deassert_5fafter_5fwait',['DEASSERT_AFTER_WAIT',['../pxidev_8h.html#a4692731299afc422de8e2c7956636ebea1fd0ae522b445d2c19113dddaf1c646b',1,'pxidev.h']]],
   ['deassert_5fbefore_5fwait',['DEASSERT_BEFORE_WAIT',['../pxidev_8h.html#a4692731299afc422de8e2c7956636ebea236c0abf6bf06be30062041cb2ff1fea',1,'pxidev.h']]],
   ['deassert_5fnone',['DEASSERT_NONE',['../pxidev_8h.html#a4692731299afc422de8e2c7956636ebea3d516ed34741a0de767ef65218b3bb34',1,'pxidev.h']]],
-  ['debugdevice_5f3dmoo',['debugDevice_3DMOO',['../console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28a8e0226ea45cd99dacdcfcc38ef7bca7b',1,'console.h']]],
   ['debugdevice_5fconsole',['debugDevice_CONSOLE',['../console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28ae5f4a5fe20d1b01a2e211cfe394325d7',1,'console.h']]],
   ['debugdevice_5fnull',['debugDevice_NULL',['../console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28af3ea53eb5c0a68a80dbeb1c0c31b6849',1,'console.h']]],
+  ['debugdevice_5fsvc',['debugDevice_SVC',['../console_8h.html#ab80a9da3fec1fbf425035eeaa9b51c28a795dfb32f1905816a543c95e5ed17b52',1,'console.h']]],
   ['ds_5fcannot_5frecover',['DS_CANNOT_RECOVER',['../nim_8h.html#afe21b8e82d3ea0c25ee8d00e9accdc99a0e2a8ccc9b58047bbbd218cfbd1db315',1,'nim.h']]],
   ['ds_5fcommitting',['DS_COMMITTING',['../nim_8h.html#afe21b8e82d3ea0c25ee8d00e9accdc99a43453458305e7a0d446d6815dc8218a8',1,'nim.h']]],
   ['ds_5fcreate_5fcontext',['DS_CREATE_CONTEXT',['../nim_8h.html#afe21b8e82d3ea0c25ee8d00e9accdc99a43439a49311b0f5c616fe5d9b3bbcba9',1,'nim.h']]],

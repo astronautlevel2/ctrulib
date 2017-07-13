@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">libctru
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -179,6 +179,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
 <tr class="memitem:a24454dec91560ebb36daa0d53f147428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a24454dec91560ebb36daa0d53f147428">httpcAddPostDataAscii</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const char *name, const char *value)</td></tr>
 <tr class="memdesc:a24454dec91560ebb36daa0d53f147428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a POST form field to a HTTP context.  <a href="#a24454dec91560ebb36daa0d53f147428">More...</a><br /></td></tr>
 <tr class="separator:a24454dec91560ebb36daa0d53f147428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaca70f8e0ea6568106993d108bce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a0eaca70f8e0ea6568106993d108bce11">httpcAddPostDataBinary</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const char *name, const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *value, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
+<tr class="memdesc:a0eaca70f8e0ea6568106993d108bce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a POST form field with binary data to a HTTP context.  <a href="#a0eaca70f8e0ea6568106993d108bce11">More...</a><br /></td></tr>
+<tr class="separator:a0eaca70f8e0ea6568106993d108bce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5b528743e6462893d7bd9ecd11bca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="httpc_8h.html#a7c5b528743e6462893d7bd9ecd11bca1">httpcAddPostDataRaw</a> (<a class="el" href="structhttpcContext.html">httpcContext</a> *context, const <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *data, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
 <tr class="memdesc:a7c5b528743e6462893d7bd9ecd11bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a POST body to a HTTP context.  <a href="#a7c5b528743e6462893d7bd9ecd11bca1">More...</a><br /></td></tr>
 <tr class="separator:a7c5b528743e6462893d7bd9ecd11bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,6 +361,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="http
     <tr><td class="paramname">context</td><td>Context to use. </td></tr>
     <tr><td class="paramname">name</td><td>Name of the field. </td></tr>
     <tr><td class="paramname">value</td><td>Value of the field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eaca70f8e0ea6568106993d108bce11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ac830bf5a4f2cf8273f61ab99a46cf163">Result</a> httpcAddPostDataBinary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttpcContext.html">httpcContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a POST form field with binary data to a HTTP context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context to use. </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the field. </td></tr>
+    <tr><td class="paramname">value</td><td>The binary data to pass as a value. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the binary data which has been passed. </td></tr>
   </table>
   </dd>
 </dl>

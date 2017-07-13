@@ -16,6 +16,7 @@ var searchData=
   ['rotation_5fclockwise_5f270',['ROTATION_CLOCKWISE_270',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ea1871297dae513f029c1ea4d359b5a5fd',1,'y2r.h']]],
   ['rotation_5fclockwise_5f90',['ROTATION_CLOCKWISE_90',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ead2694fe82efeff2a555a3c51b9a24259',1,'y2r.h']]],
   ['rotation_5fnone',['ROTATION_NONE',['../y2r_8h.html#a007b376798d35d4236c26916d52bbd0ea3c485d0686ff0555d4db0c22959f9dec',1,'y2r.h']]],
-  ['runflag_5faptreinit',['RUNFLAG_APTREINIT',['../env_8h.html#adc29c2ff13d900c2f185ee95427fb06ca426e94cb64bcd44449b1a13d3a977df8',1,'env.h']]],
-  ['runflag_5faptworkaround',['RUNFLAG_APTWORKAROUND',['../env_8h.html#adc29c2ff13d900c2f185ee95427fb06cad5366df45cecac4dad1f375eaa0555ab',1,'env.h']]]
+  ['runflag_5faptchainload',['RUNFLAG_APTCHAINLOAD',['../env_8h.html#a61dadd085c1777f559549e05962b2c9ea5eedd97be189872a5f91a561fbe33c88',1,'env.h']]],
+  ['runflag_5faptreinit',['RUNFLAG_APTREINIT',['../env_8h.html#a61dadd085c1777f559549e05962b2c9ea426e94cb64bcd44449b1a13d3a977df8',1,'env.h']]],
+  ['runflag_5faptworkaround',['RUNFLAG_APTWORKAROUND',['../env_8h.html#a61dadd085c1777f559549e05962b2c9ead5366df45cecac4dad1f375eaa0555ab',1,'env.h']]]
 ];

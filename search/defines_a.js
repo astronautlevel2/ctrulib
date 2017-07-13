@@ -9,5 +9,6 @@ var searchData=
   ['rbtree_5fitem',['rbtree_item',['../rbtree_8h.html#a9a8909ab0b221c0c11d983a1d8746cf4',1,'rbtree.h']]],
   ['rgb565',['RGB565',['../gfx_8h.html#ab2ed36b98652f54ec3e1fdc8a31c8b13',1,'gfx.h']]],
   ['rgb8_5fto_5f565',['RGB8_to_565',['../gfx_8h.html#ab3ef2df7649f8793a88e87e345749bfc',1,'gfx.h']]],
-  ['routing_5fflag_5fg',['ROUTING_FLAG_G',['../soc_8h.html#a9cee173a7c2a0b5b667fbce872b79a55',1,'soc.h']]]
+  ['routing_5fflag_5fg',['ROUTING_FLAG_G',['../soc_8h.html#a9cee173a7c2a0b5b667fbce872b79a55',1,'soc.h']]],
+  ['run_5fhandler_5fon_5ffaulting_5fstack',['RUN_HANDLER_ON_FAULTING_STACK',['../thread_8h.html#ab40408690d779ababc87bc40b105279b',1,'thread.h']]]
 ];

@@ -15,6 +15,7 @@ var searchData=
   ['mappingmethod',['mappingMethod',['../structtag__CMAP__s.html#a3ef412b95185d5cd6e2a2c7870d9ad8b',1,'tag_CMAP_s']]],
   ['mask',['mask',['../structDVLE__outEntry__s.html#a36213505244a811f39b60e0b46cd63f7',1,'DVLE_outEntry_s']]],
   ['maxcharwidth',['maxCharWidth',['../structTGLP__s.html#add588f1c7ef1ff921ba6fa1cc519675f',1,'TGLP_s']]],
+  ['maxentries',['maxEntries',['../structgxCmdQueue__s.html#abbd998741caf292f1808e0f7fa56de77',1,'gxCmdQueue_s']]],
   ['mediatype',['mediaType',['../structFS__ProgramInfo.html#a6d5658b85ba89db7b6555a41419c8e3a',1,'FS_ProgramInfo::mediaType()'],['../structFS__ExtSaveDataInfo.html#a8201d5dcae3f8d06c52179a672f2e4b5',1,'FS_ExtSaveDataInfo::mediaType()'],['../structFS__SystemSaveDataInfo.html#a0ce2a7ecf07e19ea37b27c15059c045a',1,'FS_SystemSaveDataInfo::mediaType()'],['../structNIM__TitleConfig.html#a61fac82a665ea6fc5495aca1a0fbb6ba',1,'NIM_TitleConfig::mediaType()']]],
   ['mediatype_5fgame_5fcard',['MEDIATYPE_GAME_CARD',['../fs_8h.html#a3526d37c529b39a862b9b7371a53e137a35710db5adf72c7b0b1775f87051e4b0',1,'fs.h']]],
   ['mediatype_5fnand',['MEDIATYPE_NAND',['../fs_8h.html#a3526d37c529b39a862b9b7371a53e137ae1d592f99c375473d1e05bec79ddde26',1,'fs.h']]],

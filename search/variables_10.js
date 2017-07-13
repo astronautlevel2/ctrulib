@@ -7,8 +7,6 @@ var searchData=
   ['reading',['reading',['../structSwkbdDictWord.html#a7cea2111d96631c7082c6e1ba99fe4b8',1,'SwkbdDictWord']]],
   ['reason',['reason',['../structExitProcessEvent.html#a5185f7932899486f78aafefc6d52744a',1,'ExitProcessEvent::reason()'],['../structExitThreadEvent.html#a8cc8a89ab9d43445b52a9c702baa7d43',1,'ExitThreadEvent::reason()']]],
   ['reference',['reference',['../structTickCounter.html#a963ffa0d4bab3f120511f54d10c0db17',1,'TickCounter']]],
-  ['reg1',['reg1',['../structERRF__ExceptionInfo.html#ae462996074f312ec9c1286f1cc0a7c6f',1,'ERRF_ExceptionInfo']]],
-  ['reg2',['reg2',['../structERRF__ExceptionInfo.html#a321c4b657d805c443b069e6378e5af62',1,'ERRF_ExceptionInfo']]],
   ['regid',['regID',['../structDVLE__outEntry__s.html#ab3c4e281eed361c79363ac03aea5dec1',1,'DVLE_outEntry_s']]],
   ['regs',['regs',['../structERRF__ExceptionData.html#a7df9f0624d16e865039a07e798c5aaa8',1,'ERRF_ExceptionData']]],
   ['remasterversion',['remasterVersion',['../structFS__ProductInfo.html#a217c3abd92cca9a48dcd0bdbeb338a94',1,'FS_ProductInfo']]],
