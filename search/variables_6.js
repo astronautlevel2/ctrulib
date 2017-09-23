@@ -13,8 +13,10 @@ var searchData=
   ['filetableoff',['fileTableOff',['../structromfs__header.html#a0af0385e60dc05d4e4a8b86274521dad',1,'romfs_header']]],
   ['filetablesize',['fileTableSize',['../structromfs__header.html#a97a57f77a7db6f37eecfcb7d649dd7cc',1,'romfs_header']]],
   ['finf',['finf',['../structCFNT__s.html#ab309975c3ac9c4029a10160997cd61ee',1,'CFNT_s']]],
+  ['flag1_5funused',['flag1_unused',['../structExHeader__Arm11CoreInfo.html#a141b7955e1c84e40b64b4a0421c80dee',1,'ExHeader_Arm11CoreInfo']]],
+  ['flag2_5funused',['flag2_unused',['../structExHeader__Arm11CoreInfo.html#a733debbba034cd3ae10fee41c4c9ed3e',1,'ExHeader_Arm11CoreInfo']]],
   ['flag_5fx104',['flag_x104',['../structMVDSTD__Config.html#a2b08b2834be94d8e2de90f6fb11490fa',1,'MVDSTD_Config']]],
-  ['flags',['flags',['../structPrintConsole.html#a30ec62fecd8dd432fa16d17a25744538',1,'PrintConsole::flags()'],['../structNFC__AmiiboSettings.html#a0b5fdd43e05a1f74c6471e83a897f969',1,'NFC_AmiiboSettings::flags()'],['../structQTM__HeadTrackingInfo.html#a80fa4fc4c801c0f174145ac189b6aa46',1,'QTM_HeadTrackingInfo::flags()'],['../structSOCU__RoutingTableEntry.html#af54bc8391b1cc417cc450abc3acc99ab',1,'SOCU_RoutingTableEntry::flags()'],['../structPageInfo.html#a3dc8d09f59ee6c9562713186b8b037aa',1,'PageInfo::flags()'],['../structDebugEventInfo.html#a02ae327ec4ab7a5cbdeabc09fb24c606',1,'DebugEventInfo::flags()']]],
+  ['flags',['flags',['../structPrintConsole.html#a30ec62fecd8dd432fa16d17a25744538',1,'PrintConsole::flags()'],['../structExHeader__CodeSetInfo.html#a0cd825ca3a643fbe9981ae9003582c30',1,'ExHeader_CodeSetInfo::flags()'],['../structNFC__AmiiboSettings.html#a0b5fdd43e05a1f74c6471e83a897f969',1,'NFC_AmiiboSettings::flags()'],['../structQTM__HeadTrackingInfo.html#a80fa4fc4c801c0f174145ac189b6aa46',1,'QTM_HeadTrackingInfo::flags()'],['../structSOCU__RoutingTableEntry.html#af54bc8391b1cc417cc450abc3acc99ab',1,'SOCU_RoutingTableEntry::flags()'],['../structPageInfo.html#a3dc8d09f59ee6c9562713186b8b037aa',1,'PageInfo::flags()'],['../structDebugEventInfo.html#a02ae327ec4ab7a5cbdeabc09fb24c606',1,'DebugEventInfo::flags()']]],
   ['flip',['flip',['../structCAMU__PackageParameterContext.html#a84d7b9765454d45161f8d52592d65517',1,'CAMU_PackageParameterContext::flip()'],['../structCAMU__PackageParameterContextDetail.html#a28c37ac85e9cf9dbe631c439d8082542',1,'CAMU_PackageParameterContextDetail::flip()']]],
   ['float24uniforms',['float24Uniforms',['../structshaderInstance__s.html#ad210d25d30bb8afec0b83b55a57483db',1,'shaderInstance_s']]],
   ['floatdata_5fx08',['floatdata_x08',['../structQTM__HeadTrackingInfo.html#a16a3808d035c6b58c276fcb42b932910',1,'QTM_HeadTrackingInfo']]],
@@ -32,5 +34,6 @@ var searchData=
   ['framerate',['frameRate',['../structCAMU__PackageParameterCameraSelect.html#a2fc80df4f942792d629ddc00efc8aac6',1,'CAMU_PackageParameterCameraSelect']]],
   ['freeclusters',['freeClusters',['../structFS__ArchiveResource.html#a83300abfe22c3c756c74ee1d7d337a0c',1,'FS_ArchiveResource']]],
   ['freespace',['freeSpace',['../structAM__TWLPartitionInfo.html#a786a5d0e83d80d8004c394ed8526213b',1,'AM_TWLPartitionInfo']]],
+  ['fs_5faccess_5finfo',['fs_access_info',['../structExHeader__Arm11StorageInfo.html#a7d2905f3419d66dc592bd1ac6b74bd31',1,'ExHeader_Arm11StorageInfo']]],
   ['fsr',['fsr',['../structERRF__ExceptionInfo.html#a90895b755e52f619654d907818b8e68e',1,'ERRF_ExceptionInfo']]]
 ];

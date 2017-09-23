@@ -8,5 +8,6 @@ var searchData=
   ['block_5falignment',['block_alignment',['../structY2RU__ConversionParams.html#ae56d8afb46c4900c66152fbf1fb0fa06',1,'Y2RU_ConversionParams']]],
   ['booluniformmask',['boolUniformMask',['../structshaderInstance__s.html#a4cd7f11860b51ee42bdbd21c4d71a4ef',1,'shaderInstance_s']]],
   ['booluniforms',['boolUniforms',['../structshaderInstance__s.html#a64bf1a13c4bb33e7f8c84ba70dbf696b',1,'shaderInstance_s']]],
-  ['broadcast',['broadcast',['../structSOCU__IPInfo.html#a4402dbb0c9a10e91dbf604105affb8c9',1,'SOCU_IPInfo']]]
+  ['broadcast',['broadcast',['../structSOCU__IPInfo.html#a4402dbb0c9a10e91dbf604105affb8c9',1,'SOCU_IPInfo']]],
+  ['bss_5fsize',['bss_size',['../structExHeader__CodeSetInfo.html#a5f938a0b2589b64e877040affc68a3d4',1,'ExHeader_CodeSetInfo']]]
 ];

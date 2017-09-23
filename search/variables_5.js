@@ -2,7 +2,10 @@ var searchData=
 [
   ['effect',['effect',['../structCAMU__PackageParameterContext.html#ace066aa1943785fc1e5d7309b8711ad6',1,'CAMU_PackageParameterContext::effect()'],['../structCAMU__PackageParameterContextDetail.html#aac5f8cde5c5841d68718fb2973dcd28c',1,'CAMU_PackageParameterContextDetail::effect()']]],
   ['elapsed',['elapsed',['../structTickCounter.html#a1999e3d45c2898670489c2625e895d78',1,'TickCounter']]],
+  ['enable_5fcancel_5fbutton',['enable_cancel_button',['../structMiiSelectorConf.html#aa83aaf31e3f20202d21380c8ec468057',1,'MiiSelectorConf']]],
   ['enable_5fcropping',['enable_cropping',['../structMVDSTD__Config.html#a95647b6dc9d9e1c251877b002de9a54d',1,'MVDSTD_Config']]],
+  ['enable_5fl2c',['enable_l2c',['../structExHeader__Arm11CoreInfo.html#a61d2282365eaa5ff5bd44e9d3fb92c62',1,'ExHeader_Arm11CoreInfo']]],
+  ['enable_5fselecting_5fguests',['enable_selecting_guests',['../structMiiSelectorConf.html#a2d8933cf761c58320c1d06f90b3b6bb4',1,'MiiSelectorConf']]],
   ['encoding',['encoding',['../structFINF__s.html#abfdb94de23ab59222c6740299792ca2b',1,'FINF_s']]],
   ['encryptparameter',['encryptParameter',['../structFS__DeviceMoveContext.html#a366d21c07babd7313aa61e2d6fc34199',1,'FS_DeviceMoveContext']]],
   ['endianness',['endianness',['../structCFNT__s.html#a3aded45cdb1241e97f308eb32665289c',1,'CFNT_s']]],
@@ -18,5 +21,6 @@ var searchData=
   ['exception_5fdata',['exception_data',['../structERRF__FatalErrInfo.html#ae6b7eb065a91bc3a2ede7af660c07cc6',1,'ERRF_FatalErrInfo']]],
   ['exit_5fprocess',['exit_process',['../structDebugEventInfo.html#a11b0fce7e428241a2d2dc91ad125840e',1,'DebugEventInfo']]],
   ['exit_5fthread',['exit_thread',['../structDebugEventInfo.html#a3fd7da7948fd7c8967596b24bdb100cd',1,'DebugEventInfo']]],
-  ['exposure',['exposure',['../structCAMU__PackageParameterCameraSelect.html#a3a409471750c34b15e9cd7cefa0c3bac',1,'CAMU_PackageParameterCameraSelect']]]
+  ['exposure',['exposure',['../structCAMU__PackageParameterCameraSelect.html#a3a409471750c34b15e9cd7cefa0c3bac',1,'CAMU_PackageParameterCameraSelect']]],
+  ['extdata_5fid',['extdata_id',['../structExHeader__Arm11StorageInfo.html#ab7aa9144dbd17e063e589b44bfb111bb',1,'ExHeader_Arm11StorageInfo']]]
 ];

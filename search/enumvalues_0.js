@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['am_5fdelete_5fpending_5fnon_5fsystem',['AM_DELETE_PENDING_NON_SYSTEM',['../am_8h.html#a5d76b81b0ad4c19007a781d4edb8181fafbebba2c1332ef434ecb8f130eda8c77',1,'am.h']]],
-  ['am_5fdelete_5fpending_5fsystem',['AM_DELETE_PENDING_SYSTEM',['../am_8h.html#a5d76b81b0ad4c19007a781d4edb8181fab011acd76ab87c7deb26ae057b8a32ba',1,'am.h']]],
+  ['am_5fdelete_5fpending_5fnon_5fsystem',['AM_DELETE_PENDING_NON_SYSTEM',['../am_8h.html#a0ed680fdb405e7195d9f14032851eebbafbebba2c1332ef434ecb8f130eda8c77',1,'am.h']]],
+  ['am_5fdelete_5fpending_5fsystem',['AM_DELETE_PENDING_SYSTEM',['../am_8h.html#a0ed680fdb405e7195d9f14032851eebbab011acd76ab87c7deb26ae057b8a32ba',1,'am.h']]],
   ['am_5fstatus_5faborted',['AM_STATUS_ABORTED',['../am_8h.html#ad08e0e85fd84747c4f0494ec342a2297ae8c008fbcadfa942abaaeed9ac956d9d',1,'am.h']]],
   ['am_5fstatus_5fawaiting_5ffinalization',['AM_STATUS_AWAITING_FINALIZATION',['../am_8h.html#ad08e0e85fd84747c4f0494ec342a2297a1e6f25470d821241a4a492bc5a6364e2',1,'am.h']]],
   ['am_5fstatus_5finstall_5fin_5fprogress',['AM_STATUS_INSTALL_IN_PROGRESS',['../am_8h.html#ad08e0e85fd84747c4f0494ec342a2297af9d2a6421a1e0f2387e863158eb4403e',1,'am.h']]],
-  ['am_5fstatus_5fmask_5fawaiting_5ffinalization',['AM_STATUS_MASK_AWAITING_FINALIZATION',['../am_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8a613bdea6a05c208de0ef424d2010ff03',1,'am.h']]],
-  ['am_5fstatus_5fmask_5finstalling',['AM_STATUS_MASK_INSTALLING',['../am_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8a0d762c7cbb70351b96aa7b2f5c3a63f2',1,'am.h']]],
+  ['am_5fstatus_5fmask_5fawaiting_5ffinalization',['AM_STATUS_MASK_AWAITING_FINALIZATION',['../am_8h.html#aac34dfe6c6b73b43a4656c9dce041034a613bdea6a05c208de0ef424d2010ff03',1,'am.h']]],
+  ['am_5fstatus_5fmask_5finstalling',['AM_STATUS_MASK_INSTALLING',['../am_8h.html#aac34dfe6c6b73b43a4656c9dce041034a0d762c7cbb70351b96aa7b2f5c3a63f2',1,'am.h']]],
   ['am_5fstatus_5fsaved',['AM_STATUS_SAVED',['../am_8h.html#ad08e0e85fd84747c4f0494ec342a2297ac0a6fbc2498ba7d6cfbe8f6c28716fb4',1,'am.h']]],
   ['appid_5famiibo_5fsettings',['APPID_AMIIBO_SETTINGS',['../apt_8h.html#a932c939a3c27fefb8eadfd97704f8867a4ef448d27710631a82b64e46de9a1a15',1,'apt.h']]],
   ['appid_5fappleted',['APPID_APPLETED',['../apt_8h.html#a932c939a3c27fefb8eadfd97704f8867a3e2137770c1124d177b66a5782359372',1,'apt.h']]],
@@ -100,5 +100,15 @@ var searchData=
   ['archive_5fsystem_5fsavedata2',['ARCHIVE_SYSTEM_SAVEDATA2',['../fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a27ee29d8cfd1baacd3b34cba7b0ce61f',1,'fs.h']]],
   ['archive_5ftwl_5fphoto',['ARCHIVE_TWL_PHOTO',['../fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a799eead9b7a4b20cdcbdf0a4f6750ccc',1,'fs.h']]],
   ['archive_5ftwl_5fsound',['ARCHIVE_TWL_SOUND',['../fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a527f3a6f54aab2efe7537bf4df9bdb21',1,'fs.h']]],
-  ['archive_5fuser_5fsavedata',['ARCHIVE_USER_SAVEDATA',['../fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a323f96e584ab5f690b4cd2915ba32581',1,'fs.h']]]
+  ['archive_5fuser_5fsavedata',['ARCHIVE_USER_SAVEDATA',['../fs_8h.html#a24416208e0f4c6c6efc3b2118a2d8803a323f96e584ab5f690b4cd2915ba32581',1,'fs.h']]],
+  ['arm9desc_5fcreate_5fseed',['ARM9DESC_CREATE_SEED',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2daafd1d9c385dfbf3bb1addb9ff179747e',1,'exheader.h']]],
+  ['arm9desc_5fmount_5fcardspi',['ARM9DESC_MOUNT_CARDSPI',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da43362295e2be9dd49ea4499ea85c650e',1,'exheader.h']]],
+  ['arm9desc_5fmount_5fnand',['ARM9DESC_MOUNT_NAND',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da2bc3c6e2ecd0a313ca15a76a0965b403',1,'exheader.h']]],
+  ['arm9desc_5fmount_5fnandro_5frw',['ARM9DESC_MOUNT_NANDRO_RW',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da0663bbbc420341e8afea22cde501807c',1,'exheader.h']]],
+  ['arm9desc_5fmount_5fsdmc_5frw',['ARM9DESC_MOUNT_SDMC_RW',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da3584b6a734a9b738818bc987e628c97e',1,'exheader.h']]],
+  ['arm9desc_5fmount_5ftwln',['ARM9DESC_MOUNT_TWLN',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2dadfa4798594dfebe5e166e30344b2a238',1,'exheader.h']]],
+  ['arm9desc_5fmount_5fwnand',['ARM9DESC_MOUNT_WNAND',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da3775ec868ccb8057d0f1751ad8dc6e43',1,'exheader.h']]],
+  ['arm9desc_5fsd_5fapplication',['ARM9DESC_SD_APPLICATION',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da2449c55a62280316bcd4ee8fc1b032d2',1,'exheader.h']]],
+  ['arm9desc_5fuse_5fcard_5fspi',['ARM9DESC_USE_CARD_SPI',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da7c649e0f7482508ddd1b3ad140794c66',1,'exheader.h']]],
+  ['arm9desc_5fuse_5fsdif3',['ARM9DESC_USE_SDIF3',['../exheader_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2daa914bea66448d5f1bd9e5f45fc0245df',1,'exheader.h']]]
 ];

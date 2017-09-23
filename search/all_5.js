@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['data',['../structERRF__FatalErrInfo.html#a5813e689e515cc4587a11be42e65d691',1,'ERRF_FatalErrInfo::data()'],['../uniongxCmdEntry__s.html#acf2ee2685f8ed84154bf22af3968aa50',1,'gxCmdEntry_s::data()'],['../structfloat24Uniform__s.html#a116ab0b7c6e0dd45551baf8427cba375',1,'float24Uniform_s::data()'],['../structDVLE__constEntry__s.html#a211b601d5cc69f0d75dbf999a99f99bd',1,'DVLE_constEntry_s::data()'],['../structFS__Path.html#a6a36deaf24ad6f6c00e3263f0cfc2f59',1,'FS_Path::data()']]],
+  ['data',['data',['../structERRF__FatalErrInfo.html#a5813e689e515cc4587a11be42e65d691',1,'ERRF_FatalErrInfo::data()'],['../structExHeader__CodeSetInfo.html#a82dd0df0e5e67034fc642327cb38857f',1,'ExHeader_CodeSetInfo::data()'],['../uniongxCmdEntry__s.html#acf2ee2685f8ed84154bf22af3968aa50',1,'gxCmdEntry_s::data()'],['../structfloat24Uniform__s.html#a116ab0b7c6e0dd45551baf8427cba375',1,'float24Uniform_s::data()'],['../structDVLE__constEntry__s.html#a211b601d5cc69f0d75dbf999a99f99bd',1,'DVLE_constEntry_s::data()'],['../structFS__Path.html#a6a36deaf24ad6f6c00e3263f0cfc2f59',1,'FS_Path::data()']]],
   ['data_5fadpcm',['data_adpcm',['../structtag__ndspWaveBuf.html#a3f97b49b15a70f10152c14944a5c95ba',1,'tag_ndspWaveBuf']]],
   ['data_5fpcm16',['data_pcm16',['../structtag__ndspWaveBuf.html#ab6347cf7fc44b90999544a4b2ad69a72',1,'tag_ndspWaveBuf']]],
   ['data_5fpcm8',['data_pcm8',['../structtag__ndspWaveBuf.html#a09159f3732f1e8dbee8590517efdb0f6',1,'tag_ndspWaveBuf']]],
@@ -45,7 +45,10 @@ var searchData=
   ['decode_5futf16',['decode_utf16',['../utf_8h.html#aab93c2be8e27403ee787ec299bf2bb0d',1,'utf.h']]],
   ['decode_5futf8',['decode_utf8',['../utf_8h.html#aace78933e35ab187df3ad6bd5a2a6383',1,'utf.h']]],
   ['defaultwidth',['defaultWidth',['../structFINF__s.html#a44fde14c7fdb80ed18ec37a222787642',1,'FINF_s']]],
+  ['dependencies',['dependencies',['../structExHeader__SystemControlInfo.html#a31c6025339c011c762aaebf2c52ff90d',1,'ExHeader_SystemControlInfo']]],
   ['deprecated',['DEPRECATED',['../types_8h.html#ac1e8a42306d8e67cb94ca31c3956ee78',1,'types.h']]],
+  ['descriptor_5fversion',['descriptor_version',['../structExHeader__Arm9AccessControl.html#a1532cbb5728aa72ff79b13de7d935f4a',1,'ExHeader_Arm9AccessControl']]],
+  ['descriptors',['descriptors',['../structExHeader__Arm11KernelCapabilities.html#a24ff49897c20d19c0403130a746a9d8c',1,'ExHeader_Arm11KernelCapabilities::descriptors()'],['../structExHeader__Arm9AccessControl.html#ae7a1537d9a27767fe39645fd5b0bf6b5',1,'ExHeader_Arm9AccessControl::descriptors()']]],
   ['dest_5fip',['dest_ip',['../structSOCU__RoutingTableEntry.html#a965d7fd897542b8285c0f65a5195309d',1,'SOCU_RoutingTableEntry']]],
   ['dirhashtableoff',['dirHashTableOff',['../structromfs__header.html#af1347ff1383b016f63505bf270e86d35',1,'romfs_header']]],
   ['dirhashtablesize',['dirHashTableSize',['../structromfs__header.html#a6c84c8f3674cb651abec63695c9570e0',1,'romfs_header']]],
@@ -101,7 +104,7 @@ var searchData=
   ['dvlb_5ffree',['DVLB_Free',['../shbin_8h.html#a60c02d561312081aefb2096f2b005643',1,'shbin.h']]],
   ['dvlb_5fparsefile',['DVLB_ParseFile',['../shbin_8h.html#afd50bf30516e9e3acffd3b62cd061cb0',1,'shbin.h']]],
   ['dvlb_5fs',['DVLB_s',['../structDVLB__s.html',1,'']]],
-  ['dvle',['dvle',['../structshaderInstance__s.html#a3e0cff4ae283440abfb6b94ad97b5e6d',1,'shaderInstance_s::dvle()'],['../structDVLB__s.html#a1934abe9c4109579746d57c5b20b5834',1,'DVLB_s::DVLE()']]],
+  ['dvle',['DVLE',['../structDVLB__s.html#a1934abe9c4109579746d57c5b20b5834',1,'DVLB_s::DVLE()'],['../structshaderInstance__s.html#a3e0cff4ae283440abfb6b94ad97b5e6d',1,'shaderInstance_s::dvle()']]],
   ['dvle_5fconst_5fbool',['DVLE_CONST_BOOL',['../shbin_8h.html#a20873c765b1c44b7c07cfef62ff2cf09a8565a5d83c51b59af0a3f732d458e384',1,'shbin.h']]],
   ['dvle_5fconst_5ffloat24',['DVLE_CONST_FLOAT24',['../shbin_8h.html#a20873c765b1c44b7c07cfef62ff2cf09ac34fa911905a48d40d01403ab69fc438',1,'shbin.h']]],
   ['dvle_5fconst_5fu8',['DVLE_CONST_u8',['../shbin_8h.html#a20873c765b1c44b7c07cfef62ff2cf09acd0a71b8614aa544980ce08a846fb7e8',1,'shbin.h']]],

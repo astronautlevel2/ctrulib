@@ -41,6 +41,7 @@ var searchData=
   ['bosstaskstatus',['bossTaskStatus',['../boss_8h.html#a8d1917af6ca0f9217e8c45469c16fa8b',1,'boss.h']]],
   ['bossunregisterstorage',['bossUnregisterStorage',['../boss_8h.html#a6d8c516ed9331ee157e2583443bb960a',1,'boss.h']]],
   ['broadcast',['broadcast',['../structSOCU__IPInfo.html#a4402dbb0c9a10e91dbf604105affb8c9',1,'SOCU_IPInfo']]],
+  ['bss_5fsize',['bss_size',['../structExHeader__CodeSetInfo.html#a5f938a0b2589b64e877040affc68a3d4',1,'ExHeader_CodeSetInfo']]],
   ['busmode_5f1bit',['BUSMODE_1BIT',['../fs_8h.html#a7354fc838f4b9c704685453576e41cadaf8f53e9b6d40d66f34d95b37073321a4',1,'fs.h']]],
   ['busmode_5f4bit',['BUSMODE_4BIT',['../fs_8h.html#a7354fc838f4b9c704685453576e41cadad8c138fd30a7d426c814f9ee6ab96f77',1,'fs.h']]]
 ];

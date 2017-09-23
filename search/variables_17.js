@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['y',['y',['../structaccelVector.html#abeccae73d6f2ff784357778e80fbc9c0',1,'accelVector::y()'],['../structangularRate.html#a5f970fbd6b7586cea800e0a66a1a9758',1,'angularRate::y()'],['../structQTM__HeadTrackingInfoCoord.html#aafec789c2c84d903bbd80391450c515c',1,'QTM_HeadTrackingInfoCoord::y()']]]
+  ['x',['x',['../structaccelVector.html#a0504512667f03b668fea1f5bc4928885',1,'accelVector::x()'],['../structangularRate.html#aeb9bf87b59b134ea1c7ab84af7f97615',1,'angularRate::x()'],['../structQTM__HeadTrackingInfoCoord.html#a36ab3ab6584f54d59cfe9e9a638771d0',1,'QTM_HeadTrackingInfoCoord::x()']]],
+  ['xadvance',['xAdvance',['../structfontGlyphPos__s.html#a300fb5125c36feed92364416a2e73bd6',1,'fontGlyphPos_s']]],
+  ['xoffset',['xOffset',['../structfontGlyphPos__s.html#ae96778159b2b35a6116814a14d0baeee',1,'fontGlyphPos_s']]]
 ];

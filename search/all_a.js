@@ -1,6 +1,7 @@
 var searchData=
 [
   ['id',['id',['../structfloat24Uniform__s.html#ad48e556dddf7db4c9432e3835c51274e',1,'float24Uniform_s::id()'],['../structDVLE__constEntry__s.html#a411654e97b5b84b2e945c3c0dbdca99a',1,'DVLE_constEntry_s::id()']]],
+  ['ideal_5fprocessor',['ideal_processor',['../structExHeader__Arm11CoreInfo.html#a43702dfec56fb3b15346947d04298a21',1,'ExHeader_Arm11CoreInfo']]],
   ['im_5fdefault',['IM_DEFAULT',['../nim_8h.html#afe2032f64d1715e952d818170fc1d8e8ad02ef05ea4bcac268ab8d4c5d7211d6d',1,'nim.h']]],
   ['im_5freinstall',['IM_REINSTALL',['../nim_8h.html#afe2032f64d1715e952d818170fc1d8e8a73f9f1db542d2575d1c93c58fc32699a',1,'nim.h']]],
   ['im_5funknown1',['IM_UNKNOWN1',['../nim_8h.html#afe2032f64d1715e952d818170fc1d8e8a67a5609e16b26a010a29809ea2e8061b',1,'nim.h']]],
@@ -11,7 +12,9 @@ var searchData=
   ['index',['index',['../structndspAdpcmData.html#aec31f142f53dead462fe78e16b43c8da',1,'ndspAdpcmData::index()'],['../structsdmc__dir__t.html#ab7fa762c02329f248aaccbdf0164b995',1,'sdmc_dir_t::index()']]],
   ['indexoffset',['indexOffset',['../structtag__CMAP__s.html#a6aa0b93d46a622e7061304c90662c3ee',1,'tag_CMAP_s']]],
   ['indextable',['indexTable',['../structtag__CMAP__s.html#a1512ce9a72ee632c20d8cf7660628d10',1,'tag_CMAP_s']]],
+  ['info',['info',['../structExHeader.html#a1e27abb77f2827c2a0edfe1040eb7e4f',1,'ExHeader']]],
   ['inheight',['inheight',['../structMVDSTD__Config.html#a7ff4a05a674f504a7586c2620acc0985',1,'MVDSTD_Config']]],
+  ['initial_5findex',['initial_index',['../structMiiSelectorConf.html#af25e3bbd55383bd88b99343cdbd4c2a1',1,'MiiSelectorConf']]],
   ['input_5fformat',['input_format',['../structY2RU__ConversionParams.html#ac4bbba8371c0235f667e46c3986bb2f4',1,'Y2RU_ConversionParams']]],
   ['input_5fline_5fwidth',['input_line_width',['../structY2RU__ConversionParams.html#aab88b121cfe0e184e347c95695cbd4a6',1,'Y2RU_ConversionParams']]],
   ['input_5flines',['input_lines',['../structY2RU__ConversionParams.html#a6ab3ccc7ca88ecefe3b06694e55701c1',1,'Y2RU_ConversionParams']]],
@@ -66,6 +69,7 @@ var searchData=
   ['iruinit',['iruInit',['../ir_8h.html#a0264bd7e7221e35fd291d3601e4661ca',1,'ir.h']]],
   ['irurecvdata',['iruRecvData',['../ir_8h.html#a33c1841c23388e9498ff8a1f9a25d7ac',1,'ir.h']]],
   ['irusenddata',['iruSendData',['../ir_8h.html#ab1742628da85cddf5953345a36f24361',1,'ir.h']]],
+  ['is_5fsd_5fapplication',['is_sd_application',['../structExHeader__SystemInfoFlags.html#a0ca439a793ded3d383b1b5c4cb3d3895',1,'ExHeader_SystemInfoFlags']]],
   ['isvalidrotationxy',['isValidRotationXY',['../structCAMU__StereoCameraCalibrationData.html#a61454743016d8fa6658a700d0c3039ca',1,'CAMU_StereoCameraCalibrationData']]],
   ['ivs',['ivs',['../structFS__DeviceMoveContext.html#a16f06d589079f9a705d2a63ed26bde19',1,'FS_DeviceMoveContext']]]
 ];

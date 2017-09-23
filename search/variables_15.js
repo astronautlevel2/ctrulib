@@ -1,28 +1,8 @@
 var searchData=
 [
-  ['w0_5fxeven_5fyeven',['w0_xEven_yEven',['../structY2RU__DitheringWeightParams.html#abc50e7aaa093ed6237c983b1957e1374',1,'Y2RU_DitheringWeightParams']]],
-  ['w0_5fxeven_5fyodd',['w0_xEven_yOdd',['../structY2RU__DitheringWeightParams.html#a10d7979ab8ab3dc3993b660e81138867',1,'Y2RU_DitheringWeightParams']]],
-  ['w0_5fxodd_5fyeven',['w0_xOdd_yEven',['../structY2RU__DitheringWeightParams.html#ad665dcce19415f85a8115f9f9c73bb5c',1,'Y2RU_DitheringWeightParams']]],
-  ['w0_5fxodd_5fyodd',['w0_xOdd_yOdd',['../structY2RU__DitheringWeightParams.html#ae773ec687c21dee52fac8518be3d03f0',1,'Y2RU_DitheringWeightParams']]],
-  ['w1_5fxeven_5fyeven',['w1_xEven_yEven',['../structY2RU__DitheringWeightParams.html#a2ed087e0e0020f30988a92184660059e',1,'Y2RU_DitheringWeightParams']]],
-  ['w1_5fxeven_5fyodd',['w1_xEven_yOdd',['../structY2RU__DitheringWeightParams.html#a4356088787f96ff77648607c4fe9e30e',1,'Y2RU_DitheringWeightParams']]],
-  ['w1_5fxodd_5fyeven',['w1_xOdd_yEven',['../structY2RU__DitheringWeightParams.html#ac7c4e579c6da210cdeffba0add701480',1,'Y2RU_DitheringWeightParams']]],
-  ['w1_5fxodd_5fyodd',['w1_xOdd_yOdd',['../structY2RU__DitheringWeightParams.html#a8d3dc666e1ed7128d4f63b82c4ceaebe',1,'Y2RU_DitheringWeightParams']]],
-  ['w2_5fxeven_5fyeven',['w2_xEven_yEven',['../structY2RU__DitheringWeightParams.html#a6c0dffe76ffcbcdbbee52ea29b86682f',1,'Y2RU_DitheringWeightParams']]],
-  ['w2_5fxeven_5fyodd',['w2_xEven_yOdd',['../structY2RU__DitheringWeightParams.html#aa84b0c4dd7d844ec3e19bbe6ef428be3',1,'Y2RU_DitheringWeightParams']]],
-  ['w2_5fxodd_5fyeven',['w2_xOdd_yEven',['../structY2RU__DitheringWeightParams.html#a57711e45e9b873f19d3e18bef9ed6db1',1,'Y2RU_DitheringWeightParams']]],
-  ['w2_5fxodd_5fyodd',['w2_xOdd_yOdd',['../structY2RU__DitheringWeightParams.html#a656d7d1197b50f321121395d42f88266',1,'Y2RU_DitheringWeightParams']]],
-  ['w3_5fxeven_5fyeven',['w3_xEven_yEven',['../structY2RU__DitheringWeightParams.html#a4814f5dc29ee12ffe04cf135ee8bb050',1,'Y2RU_DitheringWeightParams']]],
-  ['w3_5fxeven_5fyodd',['w3_xEven_yOdd',['../structY2RU__DitheringWeightParams.html#ac488204c2b58db396fb9696c23298569',1,'Y2RU_DitheringWeightParams']]],
-  ['w3_5fxodd_5fyeven',['w3_xOdd_yEven',['../structY2RU__DitheringWeightParams.html#ae56625a9df8610aecdcf4e404685521d',1,'Y2RU_DitheringWeightParams']]],
-  ['w3_5fxodd_5fyodd',['w3_xOdd_yOdd',['../structY2RU__DitheringWeightParams.html#aee292af8e9b3baa4340bdb5be2cf88c2',1,'Y2RU_DitheringWeightParams']]],
-  ['waitoperation',['waitOperation',['../structPXIDEV__SPIBuffer.html#a3452cae6c82925d0141d7a29b52b54bf',1,'PXIDEV_SPIBuffer']]],
-  ['whitebalance',['whiteBalance',['../structCAMU__PackageParameterCameraSelect.html#a4778d4499a3cdd043befba607ab1e80b',1,'CAMU_PackageParameterCameraSelect']]],
-  ['width',['width',['../structFINF__s.html#a2fc069b44a00b0cfa74f10e7bfee8a0a',1,'FINF_s::width()'],['../structfontGlyphPos__s.html#aa86a69a70bb52c980461e71dd461b079',1,'fontGlyphPos_s::width()'],['../structCAMU__PackageParameterContextDetail.html#adbb77fc575f6f8700b7d4b3ea5883911',1,'CAMU_PackageParameterContextDetail::width()']]],
-  ['widths',['widths',['../structtag__CWDH__s.html#a0d9ccc0eac1d072d49c1ee28afd856f5',1,'tag_CWDH_s']]],
-  ['windowheight',['windowHeight',['../structPrintConsole.html#a97fa07262bd5a64ba5b5174e01e7128b',1,'PrintConsole']]],
-  ['windowwidth',['windowWidth',['../structPrintConsole.html#a7eaeb319aa6626250a18d52da7b57221',1,'PrintConsole']]],
-  ['windowx',['windowX',['../structPrintConsole.html#a3238a0f3691fd3742db45df2bda726cd',1,'PrintConsole']]],
-  ['windowy',['windowY',['../structPrintConsole.html#af541d301e1ee4f1a8aaecca9f78d40de',1,'PrintConsole']]],
-  ['word',['word',['../structSwkbdDictWord.html#a2cd31e3829c910ad3e77e28516e5a47c',1,'SwkbdDictWord']]]
+  ['valid',['valid',['../structFS__DirectoryEntry.html#a11afbb686a3683f13b0ebd9ae654daa7',1,'FS_DirectoryEntry']]],
+  ['value',['value',['../unionCSND__ChnInfo.html#a7ee49c35f7e2a75f6f45bb6e84f14491',1,'CSND_ChnInfo::value()'],['../unionCSND__CapInfo.html#a9c691452f8d4d804f9dabe36c0de94cc',1,'CSND_CapInfo::value()']]],
+  ['version',['version',['../structCFNT__s.html#ac37f969cb9d7ffcd6be35ffe8f8cd78e',1,'CFNT_s::version()'],['../structAM__TitleEntry.html#a7ce25643edfe43a20e1503fb1c13641a',1,'AM_TitleEntry::version()'],['../structAM__PendingTitleEntry.html#a2f4596c32bd5ff77db5004b8dccd8b48',1,'AM_PendingTitleEntry::version()'],['../structNIM__TitleConfig.html#a5b0a4643706df8115a92b5e8bd11cb48',1,'NIM_TitleConfig::version()']]],
+  ['vertexshader',['vertexShader',['../structshaderProgram__s.html#a607da7b7218dbc29d5bd811ecfe7f8f0',1,'shaderProgram_s']]],
+  ['vtxcoord',['vtxcoord',['../structfontGlyphPos__s.html#a3a6116e2f5115c1adcc114dbffa37e94',1,'fontGlyphPos_s']]]
 ];

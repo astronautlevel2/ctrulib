@@ -17,5 +17,8 @@ var searchData=
   ['gshfixedvtxstart',['gshFixedVtxStart',['../structDVLE__s.html#a5f55a6b075729760d173c66c9f915a69',1,'DVLE_s']]],
   ['gshmode',['gshMode',['../structDVLE__s.html#a38e6e929cc6f014f6fd24f56ff868db3',1,'DVLE_s']]],
   ['gshvariablevtxnum',['gshVariableVtxNum',['../structDVLE__s.html#ad428ca730018d56fafecaa6855910b69',1,'DVLE_s']]],
+  ['guest_5fmii_5findex',['guest_mii_index',['../structMiiSelectorReturn.html#ae33689c2871ba9a26ad9df9d2714bc21',1,'MiiSelectorReturn']]],
+  ['guest_5fmii_5fname',['guest_mii_name',['../structMiiSelectorReturn.html#ac93a228ed21de887f4baf0bf53becee9',1,'MiiSelectorReturn']]],
+  ['guest_5fmii_5fwas_5fselected',['guest_mii_was_selected',['../structMiiSelectorReturn.html#a5835cb97c73227d48a9addb7087d6638',1,'MiiSelectorReturn']]],
   ['gxcmdbuf',['gxCmdBuf',['../gx_8h.html#aee8fbf3aebb34fb5251c245732cccc2e',1,'gx.h']]]
 ];

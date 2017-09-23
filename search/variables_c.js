@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['mac',['mac',['../structSOCU__ARPTableEntry.html#a0d9eb352aaf52e23de092ba6514f3d20',1,'SOCU_ARPTableEntry']]],
-  ['mainoffset',['mainOffset',['../structDVLE__s.html#a3dbfa9a4ac73eae2fe750862bfa27fa7',1,'DVLE_s']]],
-  ['map',['map',['../structDebugEventInfo.html#aecf8557cfd95b333e68028131750e829',1,'DebugEventInfo']]],
-  ['mapped_5faddr',['mapped_addr',['../structMapEvent.html#aaecb80deb0ad7177c80263c4b6bd83cd',1,'MapEvent']]],
-  ['mapped_5fsize',['mapped_size',['../structMapEvent.html#ae034793f645417e52c2892851c54cb80',1,'MapEvent']]],
-  ['mappingmethod',['mappingMethod',['../structtag__CMAP__s.html#a3ef412b95185d5cd6e2a2c7870d9ad8b',1,'tag_CMAP_s']]],
-  ['mask',['mask',['../structDVLE__outEntry__s.html#a36213505244a811f39b60e0b46cd63f7',1,'DVLE_outEntry_s']]],
-  ['maxcharwidth',['maxCharWidth',['../structTGLP__s.html#add588f1c7ef1ff921ba6fa1cc519675f',1,'TGLP_s']]],
-  ['maxentries',['maxEntries',['../structgxCmdQueue__s.html#abbd998741caf292f1808e0f7fa56de77',1,'gxCmdQueue_s']]],
-  ['mediatype',['mediaType',['../structFS__ProgramInfo.html#a6d5658b85ba89db7b6555a41419c8e3a',1,'FS_ProgramInfo::mediaType()'],['../structFS__ExtSaveDataInfo.html#a8201d5dcae3f8d06c52179a672f2e4b5',1,'FS_ExtSaveDataInfo::mediaType()'],['../structFS__SystemSaveDataInfo.html#a0ce2a7ecf07e19ea37b27c15059c045a',1,'FS_SystemSaveDataInfo::mediaType()'],['../structNIM__TitleConfig.html#a61fac82a665ea6fc5495aca1a0fbb6ba',1,'NIM_TitleConfig::mediaType()']]],
-  ['memperm',['memperm',['../structMapEvent.html#acfa673343ba42dc41f5e9b23aa5645f8',1,'MapEvent']]],
-  ['memstate',['memstate',['../structMapEvent.html#a25ebd56741175c344531039dd8850333',1,'MapEvent']]],
-  ['mergeoutmaps',['mergeOutmaps',['../structDVLE__s.html#ac94ddc9959fbf9c60b5aa68fa0347443',1,'DVLE_s']]],
-  ['movablesed',['movableSed',['../structFS__IntegrityVerificationSeed.html#a0bece8ca3e843d78a2ad8f7c282990d9',1,'FS_IntegrityVerificationSeed']]]
+  ['language',['language',['../structSwkbdDictWord.html#aaa1ff887f1d888595340ad2fa60a1d09',1,'SwkbdDictWord']]],
+  ['lastentry',['lastEntry',['../structgxCmdQueue__s.html#a8bf3daf45d08546c0162d754ab66ad96',1,'gxCmdQueue_s']]],
+  ['lastresult',['lastResult',['../structNIM__TitleProgress.html#ab3a428ec2477ee4bd75ab781f5b654d1',1,'NIM_TitleProgress']]],
+  ['left',['left',['../structcharWidthInfo__s.html#a7c05ffca23db8b34c4acea4b4e5fc8e0',1,'charWidthInfo_s']]],
+  ['lenscorrection',['lensCorrection',['../structCAMU__PackageParameterCameraSelect.html#af3de38877056496facb20c3eaf5eaadd',1,'CAMU_PackageParameterCameraSelect']]],
+  ['linefeed',['lineFeed',['../structFINF__s.html#a61c7d30b360074723a75335ebc1de1d7',1,'FINF_s']]],
+  ['local',['local',['../structSOCU__UDPTableEntry.html#ab06e381a05a80b2907f62ad72208e1fa',1,'SOCU_UDPTableEntry::local()'],['../structSOCU__TCPTableEntry.html#a77ef4f04db3d5705452ce8dd32ed9d70',1,'SOCU_TCPTableEntry::local()']]],
+  ['local_5fcaps',['local_caps',['../structExHeader__AccessControlInfo.html#a44195b3bef441a827d56fda1c8baa0f1',1,'ExHeader_AccessControlInfo']]],
+  ['lock',['lock',['../structLightEvent.html#aa903d9a20aebc10972fac85def48f1ac',1,'LightEvent']]],
+  ['looping',['looping',['../structtag__ndspWaveBuf.html#a3c7ea7f11f9e714c385befa490f5079b',1,'tag_ndspWaveBuf']]],
+  ['lr',['lr',['../structCpuRegisters.html#af39510a91f0cb45bf16fa21644d14245',1,'CpuRegisters']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['z',['z',['../structaccelVector.html#ad5eb33a26a0e20565e04fbcd0c541a41',1,'accelVector::z()'],['../structangularRate.html#a8b9a8e550eaa785e065831cc52eeb02c',1,'angularRate::z()']]],
-  ['zeros',['zeros',['../structNFC__AmiiboConfig.html#aa1339708fef551f9e7d70727f9040f65',1,'NFC_AmiiboConfig']]]
+  ['y',['y',['../structaccelVector.html#abeccae73d6f2ff784357778e80fbc9c0',1,'accelVector::y()'],['../structangularRate.html#a5f970fbd6b7586cea800e0a66a1a9758',1,'angularRate::y()'],['../structQTM__HeadTrackingInfoCoord.html#aafec789c2c84d903bbd80391450c515c',1,'QTM_HeadTrackingInfoCoord::y()']]]
 ];
